@@ -1,4 +1,4 @@
-In this episode, we'll be looking at AWS Proton. 
+    In this episode, we'll be looking at AWS Proton. 
 
 AWS Proton provides automated management for container and serverless deployments. As of January 2021, it is in general preview. With Proton, you can manage your infrastructure so developers can focus on coding.
 
@@ -37,7 +37,7 @@ aws proton-preview \
   --description "Proton Example Dev VPC with Public Access and ECS Cluster”
 ```
 
-AWS has provided example proton templates at aws-proton-sample-templates (see https://github.com/aws-samples/aws-proton-sample-templates).
+AWS has provided example proton templates at [aws-proton-sample-templates](https://github.com/aws-samples/aws-proton-sample-templates).
 
 **Pricing**
 There is no additional charge for AWS Proton. You pay for AWS resources you create to store and run your application. There are no minimum fees and no upfront commitments. You pay for the resources that are provisioned through Proton such as S3 buckets, EC2 instances, containers, etc. 
