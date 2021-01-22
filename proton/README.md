@@ -23,15 +23,17 @@ These are the four steps for launching environments and/or services using the AW
 An environment defines a set of shared resources and policies that apply to all of the services deployed to it. A service defines how your application is run within an environment
 
 # CLI
-Since AWS Proton is still in preview, you need to install the Proton APIs in order to run commands.
+Since AWS Proton is still in preview, you need to install the Proton APIs in order to run commands. For this example, I am using the **us-east-2** region. 
 
-First, clone the example template repo from AWS using this command. 
+1. Create a [Connection](https://us-east-2.console.aws.amazon.com/codesuite/settings/connections) using AWS Developer Tools. Enter `https://github.com/brentley/ecsdemo-frontend`. 
+2. Clone the example template repo from AWS using this command. 
 
 ```
 git clone https://github.com/aws-samples/aws-proton-sample-templates.git
 ```
 
-Next, run through the commands for installing the Proton APIs and launching Proton from the commands listed in the [AWS Proton: A first look](https://aws.amazon.com/blogs/containers/intro-to-aws-proton/) blog post.
+1. Run through the commands for installing the Proton APIs and launching Proton from the commands listed in the [AWS Proton: A first look](https://aws.amazon.com/blogs/containers/intro-to-aws-proton/) blog post.
+2. After completing the commands from the blog post, go to the [AWS Proton](https://console.aws.amazon.com/proton/) Console.
 
 AWS has provided example proton templates at [aws-proton-sample-templates](https://github.com/aws-samples/aws-proton-sample-templates).
 
