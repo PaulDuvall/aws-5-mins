@@ -7,7 +7,6 @@ In this episode, we'll be looking at AWS Proton.
 
 AWS mentions that Proton can be used by "…Platform engineering teams…to connect and coordinate all the different tools needed for infrastructure provisioning, code deployments, monitoring, and updates."
 
-
 Proton provides the ability to create pre-baked deployment patterns via templates. It's geared towards enterprise teams that might have a “platform team” (there are many other names for these centralized teams in enterprises) that provide common patterns for deployment of serverless and container-based applications for many teams. 
 
 Proton helps customers define templates that create the structure for applying common deployment patterns using existing AWS services such as AWS CodePipeline, AWS Service Catalog, and AWS CloudFormation – among what will be many other service integrations. These templates define how deployments behave across multiple teams. 
@@ -25,8 +24,11 @@ An environment defines a set of shared resources and policies that apply to all 
 # CLI
 Since AWS Proton is still in preview, you need to install the Proton APIs in order to run commands. For this example, I am using the **us-east-2** region. 
 
-1. Create a [Connection](https://us-east-2.console.aws.amazon.com/codesuite/settings/connections) using AWS Developer Tools. Enter `https://github.com/brentley/ecsdemo-frontend`. 
-2. Clone the example template repo from AWS using this command. 
+1. Create a [Connection](https://us-east-2.console.aws.amazon.com/codesuite/settings/connections) using AWS Developer Tools. 
+1. Click **Create connection**.
+1. Select **GitHub**.
+1. Enter `https://github.com/brentley/ecsdemo-frontend`. 
+1. Go back to Cloud9 and clone the example template repo from AWS using this command. 
 
 ```
 git clone https://github.com/aws-samples/aws-proton-sample-templates.git
