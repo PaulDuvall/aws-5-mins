@@ -25,5 +25,5 @@ Resources:
         - ServiceName: amazonmq
         - ServiceName: amplify
       Roles:
-      - RoleArn: !Sub arn:aws:iam::${AWS::AccountId}:role/AWSServiceRoleForAuditManager
+      - RoleArn: !Sub arn:aws:iam::${AWS::AccountId}:role/aws-service-role/auditmanager.amazonaws.com/AWSServiceRoleForAuditManager
         RoleType: PROCESS_OWNER
