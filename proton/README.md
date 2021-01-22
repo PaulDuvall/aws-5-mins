@@ -1,4 +1,6 @@
-    In this episode, we'll be looking at AWS Proton. 
+In this episode, we'll be looking at AWS Proton.
+
+![How it Works](https://github.com/PaulDuvall/aws-5-mins/_img/proton-how-it-works.png)
 
 AWS Proton provides automated management for container and serverless deployments. As of January 2021, it is in general preview. With Proton, you can manage your infrastructure so developers can focus on coding.
 
