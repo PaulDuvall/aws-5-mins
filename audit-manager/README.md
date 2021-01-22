@@ -3,6 +3,7 @@
 Create an empty YAML file.
 
 ```
+mkdir ~/environment/aws-5-mins
 cd ~/environment/aws-5-mins
 touch audit-manager.yml
 ```
