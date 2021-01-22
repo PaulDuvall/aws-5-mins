@@ -1,6 +1,8 @@
 # How it Works
 [Amazon DevOps Guru](https://aws.amazon.com/devops-guru/) is a machine learning (ML) powered cloud operations service to improve application availability. As of January 2021, this service is currently in preview. 
 
+![How it Works](https://github.com/PaulDuvall/aws-5-mins/blob/main/_img/devops-guru-how-it-works.png)
+
 The ML models that DevOps Guru uses are based on years of experience from Amazon running tens of thousands of applications at scale. DevOps Guru regularly looks for anomalous behavior such as increased latency, error rates, and resource constraints that could lead to possible service outages or disruptions. Since DevOps Guru can be run at all times, it can regularly report on anomalous behavior through its dashboard or notifications. It provides reactive and proactive Insights along with the mean time to recovery of CloudFormation stacks. 
 
 With Proactive Insights – for example – you can be made aware of issues such as memory utilization before they become a problem that affect your end users. Whereas there are numerous ways to assess the operational health of facets of your AWS Accounts (e.g., Config, CloudWatch, Trusted Advisor, and others).
