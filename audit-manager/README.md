@@ -1,6 +1,6 @@
 In this episode, we'll be looking at AWS Audit Manager. 
 
-![How it Works](https://github.com/PaulDuvall/aws-5-mins/blob/main/_img/audit-manager-how-it-works.png)
+![How it Works](https://github.com/PaulDuvall/aws-5-mins/blob/main/_img/audit-manager-howitworks.png)
 
 
 With AWS Audit Manager, you can continuously audit your AWS usage to simplify how you assess risk and compliance. It's a fully-managed service that continuously collects data to help prepare for audits and integrates with over 155 AWS services to provide a single pane of glass on audit-related activities. Audit Manager uses established frameworks for PCI, HIPAA, and others. Essentially, it can help you always be audit ready – whether it's an internal or external audit. It is generally available.
