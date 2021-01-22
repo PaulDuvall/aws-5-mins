@@ -4,7 +4,7 @@ With AWS Audit Manager, you can continuously audit your AWS usage to simplify ho
 
 Here, you see how you can select a prebuilt framework or custom framework (there are currently 29 industry frameworks (e.g., CIS, AWS, PCI, etc.) from which to choose, then you define the assessment scope by selecting the AWS service(s) you want to audit, and activate it. What's more, you can generate assessments reports to provide to auditors. It takes about 24 hours to generate a list of compliance checks along with evidence folders indicating why that particular check failed.
 
-Audit Manager integrates with AWS Security Hub, AWS Config, AWS Control Tower, and AWS CloudTrail.
+Audit Manager integrates with [AWS Security Hub](https://aws.amazon.com/about-aws/whats-new/2020/12/aws-security-hub-integrates-with-aws-audit-manager-for-simplified-security-posture-management/), AWS Config, AWS Control Tower, and AWS CloudTrail.
 
 # CloudFormation Support
 [AWS::AuditManager::Assessment](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-auditmanager-assessment.html) provides the ability to automate the provisioning of an assessment in Audit Manager. 
