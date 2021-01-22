@@ -4,7 +4,7 @@ Resources:
     Type: 'AWS::S3::Bucket'
     DeletionPolicy: Retain
     Properties:
-      BucketName: !Sub ${AWS::StackName}
+      BucketName: !Sub ${AWS::StackName}-${AWS::AccountId}
   Assessment:
     Type: AWS::AuditManager::Assessment
     Properties:
