@@ -31,8 +31,7 @@ First, clone the example template repo from AWS using this command.
 git clone https://github.com/aws-samples/aws-proton-sample-templates.git
 ```
 
-You can run through the commands for installing the Proton APIs and launching Proton from the commands listed in the [AWS Proton: A first look](https://aws.amazon.com/blogs/containers/intro-to-aws-proton/) blog post.
-
+Next, run through the commands for installing the Proton APIs and launching Proton from the commands listed in the [AWS Proton: A first look](https://aws.amazon.com/blogs/containers/intro-to-aws-proton/) blog post.
 
 AWS has provided example proton templates at [aws-proton-sample-templates](https://github.com/aws-samples/aws-proton-sample-templates).
 
