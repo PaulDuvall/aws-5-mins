@@ -1,2 +1,7 @@
-# aws-5-mins
-Example scripts for AWS in 5 Mins Videos
+# Launch CloudFormation Stack
+
+```
+aws cloudformation create-stack --stack-name audit-manager \
+   --template-body file://audit-manager.yml \
+   --capabilities CAPABILITY_IAM
+```

@@ -1,0 +1,23 @@
+Description: AWS Audit Manager demo
+Resources:
+  Assessment:
+    Type: AWS::AuditManager::Assessment
+    Properties:
+      AssessmentReportsDestination:
+        Destination: !Sub s3://${AWS::StackName}-${AWS::AccountId}
+        DestinationType: S3
+      AwsAccount:
+        Id: !Ref AWS::AccountId
+      Name: !Ref AWS::StackName
+      Scope:
+        AwsAccounts:
+        - Id: !Ref AWS::AccountId
+        AwsServices:
+        - ServiceName: a4b
+        - ServiceName: acm
+        - ServiceName: acm-pca
+        - ServiceName: amazonmq
+        - ServiceName: amplify
+      Roles:
+      - RoleArn: !Sub arn:aws:iam::${AWS::AccountId}:role/${AWS::StackName}
+        RoleType: PROCESS_OWNER
