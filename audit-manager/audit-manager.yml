@@ -2,7 +2,7 @@ Description: AWS Audit Manager demo
 Resources:
   S3Bucket:
     Type: 'AWS::S3::Bucket'
-    DeletionPolicy: Retain
+    DeletionPolicy: Delete
     Properties:
       BucketName: !Sub ${AWS::StackName}-${AWS::AccountId}
   Assessment:
