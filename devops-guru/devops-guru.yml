@@ -1,0 +1,9 @@
+Resources:
+  MyResourceCollection:
+    Type: AWS::DevOpsGuru::ResourceCollection
+    Properties:
+      ResourceCollectionFilter:
+        CloudFormation:
+          StackNames:
+          - StackA
+          - StackB
