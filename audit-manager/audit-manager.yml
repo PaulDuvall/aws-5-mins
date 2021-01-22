@@ -1,10 +1,15 @@
 Description: AWS Audit Manager demo
 Resources:
+  S3Bucket:
+    Type: 'AWS::S3::Bucket'
+    DeletionPolicy: Retain
+    Properties:
+      BucketName: !Sub ${AWS::StackName}-${AWS::AccountId}
   Assessment:
     Type: AWS::AuditManager::Assessment
     Properties:
       AssessmentReportsDestination:
-        Destination: !Sub s3://${AWS::StackName}-${AWS::AccountId}
+        Destination: !Ref S3Bucket
         DestinationType: S3
       AwsAccount:
         Id: !Ref AWS::AccountId
