@@ -7,7 +7,7 @@ mkdir ~/environment/my-aws-5-mins
 cd ~/environment/my-aws-5-mins
 touch devops-guru.yml
 ```
-1. Copy the contents from **[devops-guru.yml](https://raw.githubusercontent.com/PaulDuvall/aws-5-mins/main/devops-guru/devops-guru.yml?token=AAMLKO5WPMCUJSMPCSCFW4TACR3NM** to your local **devops-guru.yml** file in Cloud9 and save it. 
+1. Copy the contents from **[devops-guru.yml](https://raw.githubusercontent.com/PaulDuvall/aws-5-mins/main/devops-guru/devops-guru.yml?token=AAMLKO5WPMCUJSMPCSCFW4TACR3NM)** to your local **devops-guru.yml** file in Cloud9 and save it. 
 1. Run the command below to launch a CloudFormation stack. 
 
 ```
