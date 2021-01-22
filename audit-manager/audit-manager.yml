@@ -4,13 +4,13 @@ Resources:
     Type: 'AWS::S3::Bucket'
     DeletionPolicy: Retain
     Properties:
-      BucketName: !Sub ${AWS::StackName}-${AWS::AccountId}
+      BucketName: !Sub ${AWS::StackName}
   Assessment:
     Type: AWS::AuditManager::Assessment
     Properties:
       FrameworkId: "2ad0cca9-a1bf-3b4a-9769-ef78c51902ba"
       AssessmentReportsDestination:
-        Destination: !Ref S3Bucket
+        Destination: !Sub s3://${S3Bucket}
         DestinationType: S3
       AwsAccount:
         Id: !Ref AWS::AccountId
