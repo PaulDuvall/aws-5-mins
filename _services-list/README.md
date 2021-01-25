@@ -12,11 +12,11 @@ Amazon CloudWatch | https://aws.amazon.com/cloudwatch/ | Management & Governance
 Amazon CodeGuru | https://aws.amazon.com/codeguru/ | Machine Learning | TBD | TBD | Service | TBD
 Amazon CodeGuru CodeQuality Detector | https://aws.amazon.com/blogs/aws/new-for-amazon-codeguru-python-support-security-detectors-and-memory-profiling/ | Machine Learning | TBD | 1-Dec-2020 | Feature | TBD
 Amazon CodeGuru Security Detector | https://aws.amazon.com/blogs/devops/incorporating-security-in-code-reviews-using-amazon-codeguru-reviewer/ | Machine Learning | TBD | 1-Dec-2020 | Feature | TBD
-Amazon Cognito | https://aws.amazon.com/cognito/ | "Security |  Identity & Compliance" | TBD | TBD | Service | TBD
+Amazon Cognito | https://aws.amazon.com/cognito/ | Security, Identity & Compliance | TBD | TBD | Service | TBD
 Amazon Comprehend | https://aws.amazon.com/comprehend/ | Machine Learning | TBD | TBD | Service | TBD
 Amazon Connect | https://aws.amazon.com/connect/ | Customer Engagement | TBD | TBD | Service | TBD
 Amazon Data Pipeline | https://aws.amazon.com/datapipeline/ | Analytics | TBD | TBD | Service | TBD
-Amazon Detective | https://aws.amazon.com/detective/ | "Security |  Identity & Compliance" | TBD | TBD | Service | TBD
+Amazon Detective | https://aws.amazon.com/detective/ | Security, Identity & Compliance | TBD | TBD | Service | TBD
 Amazon DevOps Guru (Preview) | https://aws.amazon.com/devops-guru/ | Machine Learning | ML-powered cloud operations service to improve application availability | 1-Dec-2020 | Service | TBD
 Amazon DocumentDB | https://aws.amazon.com/documentdb/ | Database | TBD | TBD | Service | TBD
 Amazon DynamoDB | https://aws.amazon.com/dynamodb/ | Database | TBD | TBD | Service | TBD
@@ -40,16 +40,16 @@ Amazon Fraud Detector | https://aws.amazon.com/fraud-detector/ | Machine Learnin
 Amazon FSx for Lustre | https://aws.amazon.com/fsx/lustre/ | Storage | TBD | TBD | Service | TBD
 Amazon FSx for Windows File Server | https://aws.amazon.com/fsx/windows/ | Storage | TBD | TBD | Service | TBD
 Amazon GameLift | https://aws.amazon.com/gamelift/ | Game Tech | TBD | TBD | Service | TBD
-Amazon GuardDuty | https://aws.amazon.com/guardduty/ | "Security |  Identity & Compliance" | TBD | TBD | Service | TBD
+Amazon GuardDuty | https://aws.amazon.com/guardduty/ | Security, Identity & Compliance | TBD | TBD | Service | TBD
 Amazon Honeycode | https://www.honeycode.aws/ | Business Applications | Build mobile & web apps without programming | TBD | Service | TBD
-Amazon Inspector | https://aws.amazon.com/inspector/ | "Security |  Identity & Compliance" | TBD | TBD | Service | TBD
+Amazon Inspector | https://aws.amazon.com/inspector/ | Security, Identity & Compliance | TBD | TBD | Service | TBD
 Amazon Kendra | https://aws.amazon.com/kendra/ | Machine Learning | TBD | TBD | Service | TBD
 Amazon Keyspaces | http://aws.amazon.com/mcs/ | Database | TBD | TBD | Service | TBD
 Amazon Kinesis | https://aws.amazon.com/kinesis/ | Analytics | TBD | TBD | Service | TBD
 Amazon Kinesis Video Streams | https://aws.amazon.com/kinesis/video-streams/ | Media Services | TBD | TBD | Service | TBD
 Amazon Lex | https://aws.amazon.com/lex/ | Machine Learning | TBD | TBD | Service | TBD
 Amazon Lightsail | https://aws.amazon.com/lightsail/ | Compute | TBD | TBD | Service | TBD
-Amazon Macie | https://aws.amazon.com/macie/ | "Security |  Identity & Compliance" | TBD | TBD | Service | TBD
+Amazon Macie | https://aws.amazon.com/macie/ | Security, Identity & Compliance | TBD | TBD | Service | TBD
 Amazon Managed Blockchain | https://aws.amazon.com/managed-blockchain/ | Blockchain | TBD | TBD | Service | TBD
 Amazon Managed Streaming for Kafka (MSK) | https://aws.amazon.com/msk/ | Analytics | TBD | TBD | Service | TBD
 Amazon Mobile Analytics | https://aws.amazon.com/mobileanalytics/ | Mobile | TBD | TBD | Service | TBD
@@ -93,13 +93,13 @@ AWS Amplify | https://aws.amazon.com/amplify/ | Mobile | TBD | TBD | Service | T
 AWS App Mesh | https://aws.amazon.com/app-mesh/ | Networking & Content Delivery | TBD | TBD | Service | TBD
 AWS Application Discovery Service | https://aws.amazon.com/application-discovery/ | Migration & Transfer | Discover on-premises server inventory and behavior | TBD | Service | TBD
 AWS AppSync | https://aws.amazon.com/appsync/ | Mobile | TBD | TBD | Service | TBD
-AWS Artifact | https://aws.amazon.com/artifact/ | "Security |  Identity & Compliance" | "No cost |  self-service portal for on-demand access to AWS’ compliance reports." | TBD | Service | TBD
-AWS Audit Manager | https://aws.amazon.com/audit-manager/ | "Security |  Identity & Compliance" | TBD | 1-Dec-2020 | Service | TBD
+AWS Artifact | https://aws.amazon.com/artifact/ | Security, Identity & Compliance | "No cost |  self-service portal for on-demand access to AWS’ compliance reports." | TBD | Service | TBD
+AWS Audit Manager | https://aws.amazon.com/audit-manager/ | Security, Identity & Compliance | TBD | 1-Dec-2020 | Service | TBD
 AWS Auto Scaling | https://aws.amazon.com/autoscaling/ | Management & Governance | TBD | TBD | Service | TBD
 AWS Backup | https://aws.amazon.com/backup/ | Storage | TBD | TBD | Service | TBD
 AWS Batch | https://aws.amazon.com/batch/ | Compute | TBD | TBD | Service | TBD
 AWS Budgets | https://aws.amazon.com/aws-cost-management/aws-budgets/ | Cost Management | TBD | TBD | Service | TBD
-AWS Certificate Manager | https://aws.amazon.com/certificate-manager | "Security |  Identity & Compliance" | TBD | TBD | Service | TBD
+AWS Certificate Manager | https://aws.amazon.com/certificate-manager | Security, Identity & Compliance | TBD | TBD | Service | TBD
 AWS Chatbot | https://aws.amazon.com/chatbot/ | Machine Learning | TBD | TBD | Service | TBD
 AWS CLI | https://aws.amazon.com/cli/ | Developer Tools | Unified Tool to Manage AWS Services | TBD | Service | TBD
 AWS Cloud Development Kit (CDK) | https://aws.amazon.com/cdk/ | Developer Tools | Model cloud infrastructure using code | TBD | Service | TBD
@@ -107,7 +107,7 @@ AWS Cloud Map | https://aws.amazon.com/cloud-map/ | Networking & Content Deliver
 AWS Cloud9 | https://aws.amazon.com/cloud9/ | Developer Tools | TBD | TBD | Service | TBD
 AWS CloudFormation | https://aws.amazon.com/cloudformation/ | Management & Governance | TBD | TBD | Service | TBD
 AWS CloudFormation Modules | https://aws.amazon.com/blogs/mt/introducing-aws-cloudformation-modules/ |  | TBD | 1-Dec-2020 | Feature | TBD
-AWS CloudHSM | https://aws.amazon.com/cloudhsm/ | "Security |  Identity & Compliance" | TBD | TBD | Service | TBD
+AWS CloudHSM | https://aws.amazon.com/cloudhsm/ | Security, Identity & Compliance | TBD | TBD | Service | TBD
 AWS CloudTrail | https://aws.amazon.com/cloudtrail/ | Management & Governance | TBD | TBD | Service | TBD
 AWS CodeBuild | https://aws.amazon.com/codebuild/ | Developer Tools | TBD | TBD | Service | TBD
 AWS CodeCommit | https://aws.amazon.com/codecommit/ | Developer Tools | TBD | TBD | Service | TBD
@@ -127,7 +127,7 @@ AWS DeepLens | https://aws.amazon.com/deeplens/ | Machine Learning | TBD | TBD |
 AWS DeepRacer | https://aws.amazon.com/deepracer/ | Machine Learning | TBD | TBD | Service | TBD
 AWS Device Farm | https://aws.amazon.com/device-farm/ | Mobile | TBD | TBD | Service | TBD
 AWS Direct Connect | https://aws.amazon.com/directconnect | Networking & Content Delivery | TBD | TBD | Service | TBD
-AWS Directory Service | https://aws.amazon.com/directoryservice/ | "Security |  Identity & Compliance" | TBD | TBD | Service | TBD
+AWS Directory Service | https://aws.amazon.com/directoryservice/ | Security, Identity & Compliance | TBD | TBD | Service | TBD
 AWS Elastic Beanstalk | https://aws.amazon.com/elasticbeanstalk/ | Compute | TBD | TBD | Service | TBD
 AWS Elemental MediaConnect | https://aws.amazon.com/mediaconnect/ | Media Services | TBD | TBD | Service | TBD
 AWS Elemental MediaConvert | https://aws.amazon.com/mediaconvert/ | Media Services | TBD | TBD | Service | TBD
@@ -141,7 +141,7 @@ AWS Global Accelerator | https://aws.amazon.com/global-accelerator/ | Networking
 AWS Glue | https://aws.amazon.com/glue/ | Analytics | TBD | TBD | Service | TBD
 AWS Glue Elastic Views  |  |  | TBD | TBD | Service | TBD
 AWS Ground Station | https://aws.amazon.com/ground-station/ | Satellite | TBD | TBD | Service | TBD
-AWS Identity & Access Management | https://aws.amazon.com/iam/ | "Security |  Identity & Compliance" | TBD | TBD | Service | TBD
+AWS Identity & Access Management | https://aws.amazon.com/iam/ | Security, Identity & Compliance | TBD | TBD | Service | TBD
 AWS Inferentia | https://aws.amazon.com/inferentia/ | Machine Learning | TBD | TBD | Service | TBD
 AWS IoT 1-Click | https://aws.amazon.com/iot-1-click/ | Internet of Things | TBD | TBD | Service | TBD
 AWS IoT Analytics | https://aws.amazon.com/iot-analytics/ | Internet of Things | TBD | TBD | Service | TBD
@@ -152,7 +152,7 @@ AWS IoT Events | https://aws.amazon.com/iot-events/ | Internet of Things | TBD |
 AWS IoT Greengrass | https://aws.amazon.com/greengrass/ | Internet of Things | TBD | TBD | Service | TBD
 AWS IoT SiteWise | https://aws.amazon.com/iot-sitewise/ | Internet of Things | TBD | TBD | Service | TBD
 AWS IoT Things Graph | https://aws.amazon.com/iot-things-graph/ | Internet of Things | TBD | TBD | Service | TBD
-AWS Key Management Service | https://aws.amazon.com/kms/ | "Security |  Identity & Compliance" | TBD | TBD | Service | TBD
+AWS Key Management Service | https://aws.amazon.com/kms/ | Security, Identity & Compliance | TBD | TBD | Service | TBD
 AWS Lake Formation | https://aws.amazon.com/lake-formation/ | Analytics | TBD | TBD | Service | TBD
 AWS Lambda | https://aws.amazon.com/lambda/ | Compute | TBD | TBD | Service | TBD
 AWS License Manager | https://aws.amazon.com/license-manager/ | Management & Governance | TBD | TBD | Service | TBD
@@ -166,14 +166,14 @@ AWS Outposts | https://aws.amazon.com/outposts/ | Compute | TBD | TBD | Service 
 AWS Personal Health Dashboard | https://aws.amazon.com/premiumsupport/phd/ | Management & Governance | TBD | TBD | Service | TBD
 AWS Proton (Preview) | https://aws.amazon.com/proton/ |  | TBD | 1-Dec-2020 | Service | 2-Feb-2021
 AWS RoboMaker | https://aws.amazon.com/robomaker/ | Robotics | TBD | TBD | Service | TBD
-AWS Secrets Manager | https://aws.amazon.com/secrets-manager/ | "Security |  Identity & Compliance" | TBD | TBD | Service | TBD
-AWS Security Hub | https://aws.amazon.com/security-hub/ | "Security |  Identity & Compliance" | TBD | TBD | Service | TBD
+AWS Secrets Manager | https://aws.amazon.com/secrets-manager/ | Security, Identity & Compliance | TBD | TBD | Service | TBD
+AWS Security Hub | https://aws.amazon.com/security-hub/ | Security, Identity & Compliance | TBD | TBD | Service | TBD
 AWS Server Migration Service | https://aws.amazon.com/server-migration-service/ | Migration & Transfer | TBD | TBD | Service | TBD
 AWS Serverless Application Repository | https://aws.amazon.com/serverlessrepo/ | Compute | TBD | TBD | Service | TBD
 AWS Service Catalog | https://aws.amazon.com/servicecatalog/ | Management & Governance | TBD | TBD | Service | TBD
 AWS Service Catalog AppRegistry | https://aws.amazon.com/blogs/mt/increase-application-visibility-governance-using-aws-service-catalog-appregistry/ | Management & Governance | TBD | 1-Dec-2020 | Feature | TBD
-AWS Shield | https://aws.amazon.com/shield/ | "Security |  Identity & Compliance" | TBD | TBD | Service | TBD
-AWS Single Sign-On (SSO) | https://aws.amazon.com/single-sign-on/ | "Security |  Identity & Compliance" | TBD | TBD | Service | TBD
+AWS Shield | https://aws.amazon.com/shield/ | Security, Identity & Compliance | TBD | TBD | Service | TBD
+AWS Single Sign-On (SSO) | https://aws.amazon.com/single-sign-on/ | Security, Identity & Compliance | TBD | TBD | Service | TBD
 AWS Snowball Family | https://aws.amazon.com/snow/ | Migration & Transfer | TBD | TBD | Service | TBD
 AWS Step Functions | https://aws.amazon.com/step-functions/ | Application Integration | TBD | TBD | Service | TBD
 AWS Storage Gateway | https://aws.amazon.com/storagegateway/ | Storage | TBD | TBD | Service | TBD
@@ -182,7 +182,7 @@ AWS Tools and SDKs | https://aws.amazon.com/getting-started/tools-sdks/ | Develo
 AWS Trusted Advisor | https://aws.amazon.com/trustedadvisor/ | Management & Governance | TBD | TBD | Service | TBD
 AWS VPN | https://aws.amazon.com/vpn/ | Networking & Content Delivery | TBD | TBD | Service | TBD
 AWS Wavelength | https://aws.amazon.com/wavelength/ | Compute | TBD | TBD | Service | TBD
-AWS Web Application Firewall (WAF) | https://aws.amazon.com/waf/ | "Security |  Identity & Compliance" | Protect your web applications from common web exploits | TBD | Service | TBD
+AWS Web Application Firewall (WAF) | https://aws.amazon.com/waf/ | Security, Identity & Compliance | Protect your web applications from common web exploits | TBD | Service | TBD
 AWS Well-Architected Tool | https://aws.amazon.com/well-architected-tool/ | Management & Governance | TBD | TBD | Service | TBD
 AWS X-Ray | https://aws.amazon.com/xray/ | Developer Tools | TBD | TBD | Service | TBD
 Elastic Load Balancing (ELB) | https://aws.amazon.com/elasticloadbalancing/ | Networking & Content Delivery | TBD | TBD | Service | TBD
