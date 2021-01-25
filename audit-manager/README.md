@@ -13,7 +13,8 @@ Audit Manager integrates with [AWS Security Hub](https://aws.amazon.com/about-aw
 
 ## Launch CloudFormation Stack
 
-Create an empty YAML file.
+1. Launch a Cloud9 Environment in **us-east-1** using these [instructions](https://github.com/PaulDuvall/aws-5-mins/tree/main/cloud9).
+1. Create an empty YAML file.
 
 ```
 mkdir ~/environment/my-aws-5-mins
