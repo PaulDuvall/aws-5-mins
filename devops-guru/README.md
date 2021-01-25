@@ -16,7 +16,7 @@ First, you choose the AWS resources you want to analyze, optionally select a SNS
 After enabling it, DevOps Guru populates DevOps Guru dashboard that provides Insights to improve your application performance.
 
 # CloudFormation Support
-There are two DevOps Guru resources supported by AWS CloudFormation. They are AWS::DevOpsGuru::NotificationChannel and AWS::DevOpsGuru::ResourceCollection. NotificationChannel allows you to set up an SNS channel to receive notifications on important DevOps Guru events. ResourceCollection defines a collection of supported resources that DevOps Guru will analyze for anomalous behavior. For example, a collection of CloudFormation stacks. In the snippet below [Source], you can see a simple example of provisioning a DevOps Guru Resource Collection in CloudFormation. 
+There are two DevOps Guru resources supported by AWS CloudFormation. They are [AWS::DevOpsGuru::NotificationChannel](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-devopsguru-notificationchannel.html) and [AWS::DevOpsGuru::ResourceCollection](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-devopsguru-resourcecollection.html). NotificationChannel allows you to set up an SNS channel to receive notifications on important DevOps Guru events. ResourceCollection defines a collection of supported resources that DevOps Guru will analyze for anomalous behavior. For example, a collection of CloudFormation stacks. In the snippet below [Source], you can see a simple example of provisioning a DevOps Guru Resource Collection in CloudFormation. 
 
 ```
 Resources:
