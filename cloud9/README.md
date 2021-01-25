@@ -2,7 +2,7 @@
 
 ## Launch a Cloud9 Environment
 1. Go to the [AWS Cloud9 console](https://console.aws.amazon.com/cloud9/) and select **Create environment**.
-1. Enter a **Name** and **Description** (such as `#csoa-` and your intitials).
+1. Enter a **Name** and **Description** (such as `#aws-5-mins` and your intitials).
 1. Select **Next step**.
 1. Select **Create a new instance for environment (EC2)**.
 1. Select **t2.micro**.
