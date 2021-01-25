@@ -31,13 +31,7 @@ Resources:
 
 ```
 
-# Deployment Pipeline
-You might have CodePipeline deploy a CloudFormation stack that provisions Amazon DevOps Guru for your region(s) using a CodePipeline CloudFormation Deploy Provider.
-
-# Pricing
-There are three pricing dimensions for DevOps Guru. Currently, DevOps Guru charges $0.0028/hour for Lambda Functions and S3 buckets and $0.0042/hour for the remaining resources such as EC2 instances, ECS Service, and ELB. You also pay $0.000040 for each DevOps Guru API call (e.g. DescribeAccountOverview, ListInsights). This translates to $0.40 for 10K API calls. See Amazon DevOps Guru Pricing for more details.
-
-# Launch CloudFormation Stack
+## Launch CloudFormation Stack
 
 Create an empty YAML file.
 
@@ -54,6 +48,12 @@ aws cloudformation create-stack --stack-name aws-5-mins-devops-guru --template-b
 ```
 
 It takes less than 1 minute to launch the stack. You can visit the [DevOps Guru](https://console.aws.amazon.com/codeguru/devops-guru/) Console.
+
+# Deployment Pipeline
+You might have CodePipeline deploy a CloudFormation stack that provisions Amazon DevOps Guru for your region(s) using a CodePipeline CloudFormation Deploy Provider.
+
+# Pricing
+There are three pricing dimensions for DevOps Guru. Currently, DevOps Guru charges $0.0028/hour for Lambda Functions and S3 buckets and $0.0042/hour for the remaining resources such as EC2 instances, ECS Service, and ELB. You also pay $0.000040 for each DevOps Guru API call (e.g. DescribeAccountOverview, ListInsights). This translates to $0.40 for 10K API calls. See Amazon DevOps Guru Pricing for more details.
 
 # Delete Resources
 
