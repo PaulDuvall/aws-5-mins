@@ -34,6 +34,8 @@ It takes less than 1 minute to launch the stack and the Audit Manager assessment
 
 ![Control Evidence Detail](https://github.com/PaulDuvall/aws-5-mins/blob/main/_img/audit-manager-control-detail.png)
 
+If you want to see an overview of an [Audit Manager Assessment](https://docs.aws.amazon.com/audit-manager/latest/userguide/review-assessments.html).
+
 # Deployment Pipeline
 AWS Audit Manager is a regional service. You might deploy it on a per region basis or as part of an overall AWS account or AWS Organizations bootstrapping setup. For example, you might use AWS CodePipeline to use CloudFormationStackSet and CloudFormationStackInstance actions to deploy a CloudFormation StackSet across multiple regions and multiple AWS accounts. 
 
