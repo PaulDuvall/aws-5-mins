@@ -22,7 +22,7 @@
 1. For Select your use case, choose **EC2**.
 1. Choose **Next: Permissions**.
 1. On the *Attach permissions policies* page, in the list of policies, select the box next to **AdministratorAccess**, and then choose **Next: Review**.
-1. On the *Review* page, for Role Name, *type a name for the role* (for example `csoa-cloud9-instance-role`).
+1. On the *Review* page, for Role Name, *type a name for the role* (for example `aws-5-mins-cloud9-instance-role`).
 1. Choose **Create Role**.
 1. Sign in to the [Amazon EC2 console](https://console.aws.amazon.com/ec2).
 1. In the navigation bar, be sure the region selector displays the AWS Region that matches the one for your environment.
