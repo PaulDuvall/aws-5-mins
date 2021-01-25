@@ -11,6 +11,8 @@ Proton provides the ability to create pre-baked deployment patterns via template
 
 Proton helps customers define templates that create the structure for applying common deployment patterns using existing AWS services such as AWS CodePipeline, AWS Service Catalog, and AWS CloudFormation – among what will be many other service integrations. These templates define how deployments behave across multiple teams. 
 
+![Proton Features](https://github.com/PaulDuvall/aws-5-mins/blob/main/_img/proton-features.png)
+
 # Getting Started
 These are the four steps for launching environments and/or services using the [AWS Proton Console](https://console.aws.amazon.com/proton/).
 
