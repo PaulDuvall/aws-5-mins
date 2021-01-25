@@ -39,7 +39,7 @@ cd aws-proton-sample-templates
 
 1. Run through the commands for installing the Proton APIs and launching Proton from the commands listed in the [AWS Proton: A first look](https://aws.amazon.com/blogs/containers/intro-to-aws-proton/) blog post.
 2. After completing the commands from the blog post, go to the [AWS Proton](https://console.aws.amazon.com/proton/) Console to configure an Environment and a Service. 
-1. Also, have a look at the [CodePipeline pipeline](https://us-east-2.console.aws.amazon.com/codesuite/codepipeline/pipelines) it creates. 
+1. Also, have a look at the [CodePipeline pipeline](https://us-east-2.console.aws.amazon.com/codesuite/codepipeline/pipelines) and [CloudFormation stacks](https://us-east-2.console.aws.amazon.com/cloudformation/home?region=us-east-2#/stacks?filteringText=proton&filteringStatus=active&viewNested=true&hideStacks=false&stackId=) that Proton provisions.  
 
 AWS has provided example proton templates at [aws-proton-sample-templates](https://github.com/aws-samples/aws-proton-sample-templates).
 
@@ -47,3 +47,11 @@ There's currently no CloudFormation support but, hopefully, when the service is 
 
 # Pricing
 There is no additional charge for AWS Proton. You pay for AWS resources you create to store and run your application. There are no minimum fees and no upfront commitments. You pay for the resources that are provisioned through Proton such as S3 buckets, EC2 instances, containers, etc. 
+
+# Delete Resources
+
+* Delete Service
+* Delete Service Template
+* Delete Environment
+* Delete Environment Template
+* Delete IAM Role
