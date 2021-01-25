@@ -31,7 +31,9 @@ Since AWS Proton is still in preview, you need to install the Proton APIs in ord
 1. Go back to Cloud9 and clone the example template repo from AWS using this command. 
 
 ```
+cd ~/environment
 git clone https://github.com/aws-samples/aws-proton-sample-templates.git
+cd aws-proton-sample-templates
 ```
 
 1. Run through the commands for installing the Proton APIs and launching Proton from the commands listed in the [AWS Proton: A first look](https://aws.amazon.com/blogs/containers/intro-to-aws-proton/) blog post.
