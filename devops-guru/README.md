@@ -16,7 +16,7 @@ First, you choose the AWS resources you want to analyze, optionally select a SNS
 After enabling it, DevOps Guru populates DevOps Guru dashboard that provides Insights to improve your application performance.
 
 # CloudFormation Support
-There are two DevOps Guru resources supported by AWS CloudFormation. They are [AWS::DevOpsGuru::NotificationChannel](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-devopsguru-notificationchannel.html) and [AWS::DevOpsGuru::ResourceCollection](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-devopsguru-resourcecollection.html). NotificationChannel allows you to set up an SNS channel to receive notifications on important DevOps Guru events. ResourceCollection defines a collection of supported resources that DevOps Guru will analyze for anomalous behavior. For example, a collection of CloudFormation stacks. In this code snippet below, you can see a simple example of provisioning a DevOps Guru Resource Collection in CloudFormation. 
+There are two DevOps Guru resources supported by AWS CloudFormation. They are [AWS::DevOpsGuru::NotificationChannel](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-devopsguru-notificationchannel.html) and [AWS::DevOpsGuru::ResourceCollection](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-devopsguru-resourcecollection.html). NotificationChannel allows you to set up an SNS channel to receive notifications on important DevOps Guru events. ResourceCollection defines a collection of supported resources that DevOps Guru will analyze for anomalous behavior. For example, a collection of CloudFormation stacks. In this code snippet, you can see a simple example of provisioning a DevOps Guru Resource Collection in CloudFormation. 
 
 ```
 Resources:
@@ -42,7 +42,7 @@ cd ~/environment/my-aws-5-mins
 touch devops-guru.yml
 ```
 1. Copy the contents from **[devops-guru.yml](https://raw.githubusercontent.com/PaulDuvall/aws-5-mins/main/devops-guru/devops-guru.yml?token=AAMLKO5WPMCUJSMPCSCFW4TACR3NM)** to your local **devops-guru.yml** file in Cloud9 and save it. 
-1. Run the command below to launch a CloudFormation stack. 
+1. Run this command to launch a CloudFormation stack to enable DevOps Guru. 
 
 ```
 aws cloudformation create-stack --stack-name aws-5-mins-devops-guru --template-body file://devops-guru.yml --capabilities CAPABILITY_IAM
