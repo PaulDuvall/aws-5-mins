@@ -54,7 +54,7 @@ There is no additional charge for AWS Proton. You pay for AWS resources you crea
 * [Delete Service Template](https://us-east-2.console.aws.amazon.com/proton/home?region=us-east-2#/templates/services)
 * [Delete Environment](https://us-east-2.console.aws.amazon.com/proton/home?region=us-east-2#/environments)
 * [Delete Environment Template](https://us-east-2.console.aws.amazon.com/proton/home?region=us-east-2#/templates/environments)
-* Delete IAM Role
+* [Delete IAM Role](https://console.aws.amazon.com/iam/home?region=us-east-1#/roles)
 
 ```
 aws proton-preview help
