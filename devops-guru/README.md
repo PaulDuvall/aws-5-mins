@@ -50,7 +50,13 @@ touch devops-guru.yml
 1. Run the command below to launch a CloudFormation stack. 
 
 ```
-aws cloudformation create-stack --stack-name devops-guru --template-body file://devops-guru.yml --capabilities CAPABILITY_IAM
+aws cloudformation create-stack --stack-name aws-5-mins-devops-guru --template-body file://devops-guru.yml --capabilities CAPABILITY_IAM
 ```
 
 It takes less than 1 minute to launch the stack. You can visit the [DevOps Guru](https://console.aws.amazon.com/codeguru/devops-guru/) Console.
+
+# Delete Resources
+
+```
+aws cloudformation delete-stack --stack-name aws-5-mins-devops-guru
+```
