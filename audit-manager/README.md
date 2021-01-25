@@ -25,7 +25,7 @@ touch audit-manager.yml
 1. Run the command below to launch a CloudFormation stack that generates an Audit Manager assessment. 
 
 ```
-aws cloudformation create-stack --stack-name auditmanager --template-body file://audit-manager.yml --capabilities CAPABILITY_IAM
+aws cloudformation create-stack --stack-name aws-5-mins-auditmanager --template-body file://audit-manager.yml --capabilities CAPABILITY_IAM
 ```
 
 It takes less than 1 minute to launch the [CloudFormation stack](https://console.aws.amazon.com/cloudformation/) and the Audit Manager assessment begins. You will need to wait up to 24 hours to view collected evidence. You can visit the [Audit Manager](https://console.aws.amazon.com/auditmanager/home) Console to see the assessment configuration.
@@ -45,3 +45,9 @@ AWS Audit Manager is a regional service. You might deploy it on a per region bas
 
 # Pricing
 A resource assessment collects, stores, and manages evidence in the form a resource snapshot configuration, user activity, or a compliance check result. AWS Audit Manager currently charges $1.25 per 1,000 resource assessments per account per region. For more information, see [AWS Audit Manager Pricing](https://aws.amazon.com/audit-manager/pricing/).
+
+# Delete Resources
+
+```
+aws cloudformation delete-stack --stack-name aws-5-mins-auditmanager
+```
