@@ -5,7 +5,7 @@
 
 The ML models that DevOps Guru uses are based on years of experience from Amazon running tens of thousands of applications at scale. DevOps Guru regularly looks for anomalous behavior such as increased latency, error rates, and resource constraints that could lead to possible service outages or disruptions. Since DevOps Guru can be run at all times, it can regularly report on anomalous behavior through its dashboard or notifications. It provides reactive and proactive Insights along with the mean time to recovery of CloudFormation stacks. 
 
-With Proactive Insights – for example – you can be made aware of issues such as memory utilization before they become a problem that affect your end users. Whereas there are numerous ways to assess the operational health of facets of your AWS Accounts (e.g., Config, CloudWatch, Trusted Advisor, and others).
+For example, with [Proactive Insights](https://docs.aws.amazon.com/devops-guru/latest/userguide/understanding-insights-console.html), you can be made aware of issues such as memory utilization before they become a problem that affect your end users. Whereas there are numerous ways to assess the operational health of facets of your AWS Accounts (e.g., Config, CloudWatch, Trusted Advisor, and others).
 
 DevOps Guru focuses on your application and infrastructure health by looking at how the applications are running in production. This diagram shows how Amazon DevOps Guru couples machine learning models with CloudWatch, Config, CloudTrail, X-Ray data to analyze the provisioned resources from selected CloudFormation stacks to provide recommendations.  
 
