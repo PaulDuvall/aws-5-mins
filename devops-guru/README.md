@@ -47,7 +47,7 @@ touch devops-guru.yml
 aws cloudformation create-stack --stack-name aws-5-mins-devops-guru --template-body file://devops-guru.yml --capabilities CAPABILITY_IAM
 ```
 
-It takes less than 1 minute to launch the stack. You can visit the [DevOps Guru](https://console.aws.amazon.com/codeguru/devops-guru/) Console.
+It takes less than 1 minute to launch the [CloudFormation Stack](https://console.aws.amazon.com/cloudformation). You can visit the [DevOps Guru](https://console.aws.amazon.com/codeguru/devops-guru/) Console.
 
 # Deployment Pipeline
 You might have CodePipeline deploy a CloudFormation stack that provisions Amazon DevOps Guru for your region(s) using a CodePipeline CloudFormation Deploy Provider.
