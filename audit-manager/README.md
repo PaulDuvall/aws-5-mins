@@ -30,7 +30,7 @@ aws cloudformation create-stack --stack-name auditmanager --template-body file:/
 
 It takes less than 1 minute to launch the [CloudFormation stack](https://console.aws.amazon.com/cloudformation/) and the Audit Manager assessment begins. You will need to wait up to 24 hours to view collected evidence. You can visit the [Audit Manager](https://console.aws.amazon.com/auditmanager/home) Console to see the assessment configuration.
 
-Here you see summary of evidence folders for a particular control.
+Here, you see summary of evidence folders for a particular control.
 
 ![Control Evidence](https://github.com/PaulDuvall/aws-5-mins/blob/main/_img/audit-manager-control-evidence.png)
 
