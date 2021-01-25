@@ -50,10 +50,10 @@ There is no additional charge for AWS Proton. You pay for AWS resources you crea
 
 # Delete Resources
 
-* Delete Service
-* Delete Service Template
-* Delete Environment
-* Delete Environment Template
+* [Delete Service](https://us-east-2.console.aws.amazon.com/proton/home?region=us-east-2#/services)
+* [Delete Service Template](https://us-east-2.console.aws.amazon.com/proton/home?region=us-east-2#/templates/services)
+* [Delete Environment](https://us-east-2.console.aws.amazon.com/proton/home?region=us-east-2#/environments)
+* [Delete Environment Template](https://us-east-2.console.aws.amazon.com/proton/home?region=us-east-2#/templates/environments)
 * Delete IAM Role
 
 ```
