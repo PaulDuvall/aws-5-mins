@@ -39,6 +39,7 @@ cd aws-proton-sample-templates
 
 1. Run through the commands for installing the Proton APIs and launching Proton from the commands listed in the [AWS Proton: A first look](https://aws.amazon.com/blogs/containers/intro-to-aws-proton/) blog post.
 2. After completing the commands from the blog post, go to the [AWS Proton](https://console.aws.amazon.com/proton/) Console to configure an Environment and a Service. 
+1. Also, have a look at the [CodePipeline pipeline](https://us-east-2.console.aws.amazon.com/codesuite/codepipeline/pipelines) it creates. 
 
 AWS has provided example proton templates at [aws-proton-sample-templates](https://github.com/aws-samples/aws-proton-sample-templates).
 
