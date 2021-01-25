@@ -10,7 +10,7 @@ For example, with [Proactive Insights](https://docs.aws.amazon.com/devops-guru/l
 DevOps Guru focuses on your application and infrastructure health by looking at how the applications are running in production. This diagram shows how Amazon DevOps Guru couples machine learning models with CloudWatch, Config, CloudTrail, X-Ray data to analyze the provisioned resources from selected CloudFormation stacks to provide recommendations.  
 
 # Getting Started
-The steps for using the AWS Console to enable Amazon DevOps Guru are pretty straightforward. 
+The steps for using the [AWS Console](https://console.aws.amazon.com/codeguru/devops-guru/) to enable Amazon DevOps Guru are pretty straightforward. 
 First, you choose the AWS resources you want to analyze, optionally select a SNS topic to receive operational notifications, and click the Enable button to start the service. 
 
 After enabling it, DevOps Guru populates DevOps Guru dashboard that provides Insights to improve your application performance.
