@@ -21,7 +21,7 @@ Service or Feature | Category | Description | Release Date | Feature or Service?
 [Amazon DocumentDB](https://aws.amazon.com/documentdb/) | Database | Fast, scalable, highly available MongoDB-compatible database service | TBD | Service | TBD
 [Amazon DynamoDB](https://aws.amazon.com/dynamodb/) | Database | Fast and flexible NoSQL database service for any scale | TBD | Service | TBD
 [Amazon EC2](https://aws.amazon.com/ec2/) | Compute | Secure and resizable compute capacity to support virtually any workload | TBD | Service | TBD
-[Amazon ECS Anywhere](https://aws.amazon.com/blogs/containers/introducing-amazon-ecs-anywhere/) | Compute | TBD | 1-Dec-2020 | Feature | TBD
+[Amazon ECS Anywhere](https://aws.amazon.com/blogs/containers/introducing-amazon-ecs-anywhere/) | Compute | Create and operate ECS on your own infrastructure | 1-Dec-2020 | Feature | TBD
 [Amazon ECS Deployment Circuit Breaker](https://aws.amazon.com/blogs/containers/announcing-amazon-ecs-deployment-circuit-breaker/) | Compute | Automatically roll back unhealthy service deployments without the need for manual intervention | 1-Dec-2020 | Feature | TBD
 [Amazon EKS Anywhere (coming in 2021)](https://aws.amazon.com/eks/eks-anywhere/) | Compute | Create and operate Kubernetes clusters on your own infrastructure | 1-Dec-2020 | Feature | TBD
 [Amazon Elastic Block Store (EBS)](https://aws.amazon.com/ebs/) | Storage | Easy to use, high performance block storage at any scale | TBD | Service | TBD
