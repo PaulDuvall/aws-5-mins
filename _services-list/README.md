@@ -18,10 +18,10 @@ Service or Feature | Category | Description | Release Date | Feature or Service?
 [Amazon Data Pipeline](https://aws.amazon.com/datapipeline/) | Analytics | Easily automate the movement and transformation of data | TBD | Service | TBD
 [Amazon Detective](https://aws.amazon.com/detective/) | Security, Identity & Compliance | Analyze and visualize security data to rapidly get to the root cause of potential security issues | TBD | Service | TBD
 [Amazon DevOps Guru (Preview)](https://aws.amazon.com/devops-guru/) | Machine Learning | ML-powered cloud operations service to improve application availability | 1-Dec-2020 | Service | TBD
-[Amazon DocumentDB](https://aws.amazon.com/documentdb/) | Database | TBD | TBD | Service | TBD
-[Amazon DynamoDB](https://aws.amazon.com/dynamodb/) | Database | TBD | TBD | Service | TBD
-[Amazon EC2](https://aws.amazon.com/ec2/) | Compute | TBD | TBD | Service | TBD
-[Amazon ECS Anywhere](https://aws.amazon.com/ecs/? | Compute | TBD | 1-Dec-2020 | Feature | TBD
+[Amazon DocumentDB](https://aws.amazon.com/documentdb/) | Database | Fast, scalable, highly available MongoDB-compatible database service | TBD | Service | TBD
+[Amazon DynamoDB](https://aws.amazon.com/dynamodb/) | Database | Fast and flexible NoSQL database service for any scale | TBD | Service | TBD
+[Amazon EC2](https://aws.amazon.com/ec2/) | Compute | Secure and resizable compute capacity to support virtually any workload | TBD | Service | TBD
+[Amazon ECS Anywhere](https://aws.amazon.com/blogs/containers/introducing-amazon-ecs-anywhere/) | Compute | TBD | 1-Dec-2020 | Feature | TBD
 [Amazon ECS Deployment Circuit Breaker](https://aws.amazon.com/blogs/containers/announcing-amazon-ecs-deployment-circuit-breaker/) | Compute | TBD | 1-Dec-2020 | Feature | TBD
 [Amazon EKS Anywhere (coming in 2021)](https://aws.amazon.com/eks/eks-anywhere/) | Compute | Create and operate Kubernetes clusters on your own infrastructure | 1-Dec-2020 | Feature | TBD
 [Amazon Elastic Block Store (EBS)](https://aws.amazon.com/ebs/) | Storage | TBD | TBD | Service | TBD
