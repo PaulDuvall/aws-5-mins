@@ -30,11 +30,11 @@ Service or Feature | Category | Description | Release Date | Feature or Service?
 [Amazon Elastic File System (EFS)](https://aws.amazon.com/efs/) | Storage | Scalable, elastic, cloud-native NFS file system | TBD | Service | TBD
 [Amazon Elastic Inference](https://aws.amazon.com/elastic-inference/) | Machine Learning | Lower machine learning inference costs by up to 75% | TBD | Service | TBD
 [Amazon Elastic Kubernetes Service (EKS)](https://aws.amazon.com/eks/) | Compute | start, run, and scale Kubernetes applications in the AWS cloud or on-premises | TBD | Service | TBD
-[Amazon Elastic Transcoder](https://aws.amazon.com/elastictranscoder/) | Media Services | TBD | TBD | Service | TBD
-[Amazon ElastiCache](https://aws.amazon.com/elasticache/) | Database | TBD | TBD | Service | TBD
-[Amazon Elasticsearch Service](https://aws.amazon.com/elasticsearch-service/) | Analytics | TBD | TBD | Service | TBD
-[Amazon EMR](https://aws.amazon.com/elasticmapreduce/) | Analytics | TBD | TBD | Service | TBD
-[Amazon EventBridge](https://aws.amazon.com/eventbridge/) | Application Integration | TBD | TBD | Service | TBD
+[Amazon Elastic Transcoder](https://aws.amazon.com/elastictranscoder/) | Media Services | media transcoding in the cloud | TBD | Service | TBD
+[Amazon ElastiCache](https://aws.amazon.com/elasticache/) | Database | Fully managed in-memory data store, compatible with Redis or Memcached. Power real-time applications with sub-millisecond latency | TBD | Service | TBD
+[Amazon Elasticsearch Service](https://aws.amazon.com/elasticsearch-service/) | Analytics | Fully managed, scalable, and secure Elasticsearch service | TBD | Service | TBD
+[Amazon EMR](https://aws.amazon.com/elasticmapreduce/) | Analytics | Easily run and scale Apache Spark, Hive, Presto, and other big data frameworks | TBD | Service | TBD
+[Amazon EventBridge](https://aws.amazon.com/eventbridge/) | Application Integration | Serverless event bus that connects application data from your own apps, SaaS, and AWS services | TBD | Service | TBD
 [Amazon Forecast](https://aws.amazon.com/forecast/) | Machine Learning | TBD | TBD | Service | TBD
 [Amazon Fraud Detector](https://aws.amazon.com/fraud-detector/) | Machine Learning | TBD | TBD | Service | TBD
 [Amazon FSx for Lustre](https://aws.amazon.com/fsx/lustre/) | Storage | TBD | TBD | Service | TBD
