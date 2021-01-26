@@ -44,7 +44,7 @@ Service or Feature | Category | Description | Release Date | Feature or Service?
 [Amazon Honeycode](https://www.honeycode.aws/) | Business Applications | Build mobile & web apps without programming | TBD | Service | TBD
 [Amazon Inspector](https://aws.amazon.com/inspector/) | Security, Identity & Compliance | TBD | TBD | Service | TBD
 [Amazon Kendra](https://aws.amazon.com/kendra/) | Machine Learning | TBD | TBD | Service | TBD
-[Amazon Keyspaces | http://aws.amazon.com/mcs/) | Database | TBD | TBD | Service | TBD
+[Amazon Keyspaces] | (https://aws.amazon.com/mcs/) | Database | A scalable, highly available, and managed Apache Cassandra–compatible database service | TBD | Service | TBD
 [Amazon Kinesis](https://aws.amazon.com/kinesis/) | Analytics | TBD | TBD | Service | TBD
 [Amazon Kinesis Video Streams](https://aws.amazon.com/kinesis/video-streams/) | Media Services | TBD | TBD | Service | TBD
 [Amazon Lex](https://aws.amazon.com/lex/) | Machine Learning | TBD | TBD | Service | TBD
