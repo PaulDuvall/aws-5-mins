@@ -57,11 +57,11 @@ Service or Feature | Category | Description | Release Date | Feature or Service?
 [Amazon Personalize](https://aws.amazon.com/personalize/) | Machine Learning | Create real-time personalized user experiences faster at scale | TBD | Service | TBD
 [Amazon Pinpoint](https://aws.amazon.com/pinpoint/) | Mobile | Multichannel marketing communication service | TBD | Service | TBD
 [Amazon Polly](https://aws.amazon.com/polly/) | Machine Learning | Turn text into lifelike speech using deep learning | TBD | Service | TBD
-[Amazon Quantum Ledger Database (QLDB)](https://aws.amazon.com/qldb/) | Database | TBD | TBD | Service | TBD
-[Amazon QuickSight](https://aws.amazon.com/quicksight/) | Analytics | TBD | TBD | Service | TBD
+[Amazon Quantum Ledger Database (QLDB)](https://aws.amazon.com/qldb/) | Database | Fully managed ledger database that provides a transparent, immutable, and cryptographically verifiable transaction log. Owned by a central trusted authority | TBD | Service | TBD
+[Amazon QuickSight](https://aws.amazon.com/quicksight/) | Analytics | Scalable, serverless, embeddable, ML-powered BI Service built for the cloud | TBD | Service | TBD
 [Amazon QuickSight Q](https://aws.amazon.com/quicksight/q/) | Analytics | Ask questions of your data and receive answers in seconds | TBD | Feature | TBD
-[Amazon RDS](https://aws.amazon.com/rds/) | Database | TBD | TBD | Service | TBD
-[Amazon Redshift](https://aws.amazon.com/redshift/) | Database | TBD | TBD | Service | TBD
+[Amazon RDS](https://aws.amazon.com/rds/) | Database | Set up, operate, and scale a relational database in the cloud | TBD | Service | TBD
+[Amazon Redshift](https://aws.amazon.com/redshift/) | Database | Analyze all of your data with the fastest and most widely used cloud data warehouse | TBD | Service | TBD
 [Amazon Rekognition](https://aws.amazon.com/rekognition/) | Machine Learning | TBD | TBD | Service | TBD
 [Amazon Route 53](https://aws.amazon.com/route53/) | Networking & Content Delivery | TBD | TBD | Service | TBD
 [Amazon S3 Glacier](https://aws.amazon.com/glacier/) | Storage | TBD | TBD | Service | TBD
