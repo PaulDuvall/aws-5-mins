@@ -8,12 +8,12 @@ Service or Feature | Category | Description | Release Date | Feature or Service?
 [Amazon Chime](https://aws.amazon.com/chime/) | Business Applications | Group Chat and Video | TBD | Service | TBD
 [Amazon CloudFront](https://aws.amazon.com/cloudfront/) | Networking & Content Delivery | Fast, highly secure and programmable content delivery network (CDN) | TBD | Service | TBD
 [Amazon CloudSearch](https://aws.amazon.com/cloudsearch/) | Analytics | Set up, manage, and scale a search solution for your website or application | TBD | Service | TBD
-[Amazon CloudWatch](https://aws.amazon.com/cloudwatch/) | Management & Governance | TBD | TBD | Service | TBD
-[Amazon CodeGuru](https://aws.amazon.com/codeguru/) | Machine Learning | TBD | TBD | Service | TBD
+[Amazon CloudWatch](https://aws.amazon.com/cloudwatch/) | Management & Governance | Observability of your AWS resources and applications on AWS and on-premises | TBD | Service | TBD
+[Amazon CodeGuru](https://aws.amazon.com/codeguru/) | Machine Learning | Automate code reviews and optimize application performance with ML-powered recommendations | TBD | Service | TBD
 [Amazon CodeGuru CodeQuality Detector](https://aws.amazon.com/blogs/aws/new-for-amazon-codeguru-python-support-security-detectors-and-memory-profiling/) | Machine Learning | TBD | 1-Dec-2020 | Feature | TBD
 [Amazon CodeGuru Security Detector](https://aws.amazon.com/blogs/devops/incorporating-security-in-code-reviews-using-amazon-codeguru-reviewer/) | Machine Learning | TBD | 1-Dec-2020 | Feature | TBD
-[Amazon Cognito](https://aws.amazon.com/cognito/) | Security, Identity & Compliance | TBD | TBD | Service | TBD
-[Amazon Comprehend](https://aws.amazon.com/comprehend/) | Machine Learning | TBD | TBD | Service | TBD
+[Amazon Cognito](https://aws.amazon.com/cognito/) | Security, Identity & Compliance | Simple and Secure User Sign-Up, Sign-In, and Access Control | TBD | Service | TBD
+[Amazon Comprehend](https://aws.amazon.com/comprehend/) | Machine Learning | Discover insights and relationships in text | TBD | Service | TBD
 [Amazon Connect](https://aws.amazon.com/connect/) | Customer Engagement | TBD | TBD | Service | TBD
 [Amazon Data Pipeline](https://aws.amazon.com/datapipeline/) | Analytics | TBD | TBD | Service | TBD
 [Amazon Detective](https://aws.amazon.com/detective/) | Security, Identity & Compliance | TBD | TBD | Service | TBD
