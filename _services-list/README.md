@@ -60,7 +60,7 @@ Service or Feature | Category | Description | Release Date | Feature or Service?
 [Amazon Polly](https://aws.amazon.com/polly/) | Machine Learning | TBD | TBD | Service | TBD
 [Amazon Quantum Ledger Database (QLDB)](https://aws.amazon.com/qldb/) | Database | TBD | TBD | Service | TBD
 [Amazon QuickSight](https://aws.amazon.com/quicksight/) | Analytics | TBD | TBD | Service | TBD
-[Amazon QuickSight Q |  |  | TBD | TBD | Service | TBD
+[Amazon QuickSight Q](https://aws.amazon.com/quicksight/q/) | Analytics | Ask questions of your data and receive answers in seconds | TBD | Feature | TBD
 [Amazon RDS](https://aws.amazon.com/rds/) | Database | TBD | TBD | Service | TBD
 [Amazon Redshift](https://aws.amazon.com/redshift/) | Database | TBD | TBD | Service | TBD
 [Amazon Rekognition](https://aws.amazon.com/rekognition/) | Machine Learning | TBD | TBD | Service | TBD
