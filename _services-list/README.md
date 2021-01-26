@@ -54,9 +54,9 @@ Service or Feature | Category | Description | Release Date | Feature or Service?
 [Amazon Managed Streaming for Kafka (MSK)](https://aws.amazon.com/msk/) | Analytics | Fully managed, highly available, and secure Apache Kafka service | TBD | Service | TBD
 [Amazon MQ](https://aws.amazon.com/amazon-mq/) | Application Integration | Fully managed service for open source message brokers | TBD | Service | TBD
 [Amazon Neptune](https://aws.amazon.com/neptune/) | Database | Fast, reliable graph database built for the cloud | TBD | Service | TBD
-[Amazon Personalize](https://aws.amazon.com/personalize/) | Machine Learning | TBD | TBD | Service | TBD
-[Amazon Pinpoint](https://aws.amazon.com/pinpoint/) | Mobile | TBD | TBD | Service | TBD
-[Amazon Polly](https://aws.amazon.com/polly/) | Machine Learning | TBD | TBD | Service | TBD
+[Amazon Personalize](https://aws.amazon.com/personalize/) | Machine Learning | Create real-time personalized user experiences faster at scale | TBD | Service | TBD
+[Amazon Pinpoint](https://aws.amazon.com/pinpoint/) | Mobile | Multichannel marketing communication service | TBD | Service | TBD
+[Amazon Polly](https://aws.amazon.com/polly/) | Machine Learning | Turn text into lifelike speech using deep learning | TBD | Service | TBD
 [Amazon Quantum Ledger Database (QLDB)](https://aws.amazon.com/qldb/) | Database | TBD | TBD | Service | TBD
 [Amazon QuickSight](https://aws.amazon.com/quicksight/) | Analytics | TBD | TBD | Service | TBD
 [Amazon QuickSight Q](https://aws.amazon.com/quicksight/q/) | Analytics | Ask questions of your data and receive answers in seconds | TBD | Feature | TBD
