@@ -22,14 +22,14 @@ Service or Feature | Category | Description | Release Date | Feature or Service?
 [Amazon DynamoDB](https://aws.amazon.com/dynamodb/) | Database | Fast and flexible NoSQL database service for any scale | TBD | Service | TBD
 [Amazon EC2](https://aws.amazon.com/ec2/) | Compute | Secure and resizable compute capacity to support virtually any workload | TBD | Service | TBD
 [Amazon ECS Anywhere](https://aws.amazon.com/blogs/containers/introducing-amazon-ecs-anywhere/) | Compute | TBD | 1-Dec-2020 | Feature | TBD
-[Amazon ECS Deployment Circuit Breaker](https://aws.amazon.com/blogs/containers/announcing-amazon-ecs-deployment-circuit-breaker/) | Compute | TBD | 1-Dec-2020 | Feature | TBD
+[Amazon ECS Deployment Circuit Breaker](https://aws.amazon.com/blogs/containers/announcing-amazon-ecs-deployment-circuit-breaker/) | Compute | Automatically roll back unhealthy service deployments without the need for manual intervention | 1-Dec-2020 | Feature | TBD
 [Amazon EKS Anywhere (coming in 2021)](https://aws.amazon.com/eks/eks-anywhere/) | Compute | Create and operate Kubernetes clusters on your own infrastructure | 1-Dec-2020 | Feature | TBD
-[Amazon Elastic Block Store (EBS)](https://aws.amazon.com/ebs/) | Storage | TBD | TBD | Service | TBD
-[Amazon Elastic Container Registry](https://aws.amazon.com/ecr/) | Compute | TBD | TBD | Service | TBD
-[Amazon Elastic Container Service](https://aws.amazon.com/ecs/) | Compute | TBD | TBD | Service | TBD
-[Amazon Elastic File System (EFS)](https://aws.amazon.com/efs/) | Storage | TBD | TBD | Service | TBD
-[Amazon Elastic Inference](https://aws.amazon.com/elastic-inference/) | Machine Learning | TBD | TBD | Service | TBD
-[Amazon Elastic Kubernetes Service (EKS)](https://aws.amazon.com/eks/) | Compute | TBD | TBD | Service | TBD
+[Amazon Elastic Block Store (EBS)](https://aws.amazon.com/ebs/) | Storage | Easy to use, high performance block storage at any scale | TBD | Service | TBD
+[Amazon Elastic Container Registry](https://aws.amazon.com/ecr/) | Compute | Share and deploy container software, publicly or privately | TBD | Service | TBD
+[Amazon Elastic Container Service](https://aws.amazon.com/ecs/) | Compute | Highly secure, reliable, and scalable way to run containers | TBD | Service | TBD
+[Amazon Elastic File System (EFS)](https://aws.amazon.com/efs/) | Storage | Scalable, elastic, cloud-native NFS file system | TBD | Service | TBD
+[Amazon Elastic Inference](https://aws.amazon.com/elastic-inference/) | Machine Learning | Lower machine learning inference costs by up to 75% | TBD | Service | TBD
+[Amazon Elastic Kubernetes Service (EKS)](https://aws.amazon.com/eks/) | Compute | start, run, and scale Kubernetes applications in the AWS cloud or on-premises | TBD | Service | TBD
 [Amazon Elastic Transcoder](https://aws.amazon.com/elastictranscoder/) | Media Services | TBD | TBD | Service | TBD
 [Amazon ElastiCache](https://aws.amazon.com/elasticache/) | Database | TBD | TBD | Service | TBD
 [Amazon Elasticsearch Service](https://aws.amazon.com/elasticsearch-service/) | Analytics | TBD | TBD | Service | TBD
