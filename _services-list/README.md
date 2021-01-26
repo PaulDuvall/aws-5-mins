@@ -50,11 +50,10 @@ Service or Feature | Category | Description | Release Date | Feature or Service?
 [Amazon Lex](https://aws.amazon.com/lex/) | Machine Learning | Conversational AI for Chatbots | TBD | Service | TBD
 [Amazon Lightsail](https://aws.amazon.com/lightsail/) | Compute | Virtual servers, storage, databases, and networking for a low, predictable price | TBD | Service | TBD
 [Amazon Macie](https://aws.amazon.com/macie/) | Security, Identity & Compliance | Discover and protect your sensitive data at scale | TBD | Service | TBD
-[Amazon Managed Blockchain](https://aws.amazon.com/managed-blockchain/) | Blockchain | TBD | TBD | Service | TBD
-[Amazon Managed Streaming for Kafka (MSK)](https://aws.amazon.com/msk/) | Analytics | TBD | TBD | Service | TBD
-[Amazon Mobile Analytics](https://aws.amazon.com/mobileanalytics/) | Mobile | TBD | TBD | Service | TBD
-[Amazon MQ](https://aws.amazon.com/amazon-mq/) | Application Integration | TBD | TBD | Service | TBD
-[Amazon Neptune](https://aws.amazon.com/neptune/) | Database | TBD | TBD | Service | TBD
+[Amazon Managed Blockchain](https://aws.amazon.com/managed-blockchain/) | Blockchain | Easily create and manage scalable blockchain networks | TBD | Service | TBD
+[Amazon Managed Streaming for Kafka (MSK)](https://aws.amazon.com/msk/) | Analytics | Fully managed, highly available, and secure Apache Kafka service | TBD | Service | TBD
+[Amazon MQ](https://aws.amazon.com/amazon-mq/) | Application Integration | Fully managed service for open source message brokers | TBD | Service | TBD
+[Amazon Neptune](https://aws.amazon.com/neptune/) | Database | Fast, reliable graph database built for the cloud | TBD | Service | TBD
 [Amazon Personalize](https://aws.amazon.com/personalize/) | Machine Learning | TBD | TBD | Service | TBD
 [Amazon Pinpoint](https://aws.amazon.com/pinpoint/) | Mobile | TBD | TBD | Service | TBD
 [Amazon Polly](https://aws.amazon.com/polly/) | Machine Learning | TBD | TBD | Service | TBD
