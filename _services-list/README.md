@@ -1,13 +1,17 @@
 Service or Feature | Category | Description | Release Date | Feature or Service? | 5 Min Video
 ---------- | ------------ | ------------ | ---------- | ------------ | ------------
-[Alexa for Business](https://aws.amazon.com/alexaforbusiness/) | Business Applications | TBD | TBD | Service | TBD
-[Amazon API Gateway](https://aws.amazon.com/api-gateway/) | Networking & Content Delivery | TBD | TBD | Service | TBD
-[Amazon Athena](https://aws.amazon.com/athena/) | Analytics | TBD | TBD | Service | TBD
-[Amazon Aurora Serverless v2](https://aws.amazon.com/rds/aurora/) | Database | TBD | TBD | Service | TBD
+[Alexa for Business](https://aws.amazon.com/alexaforbusiness/) | Business Applications | Use Alexa for work | TBD | Service | TBD
+[Amazon API Gateway](https://aws.amazon.com/api-gateway/) | Networking & Content Delivery | Create, maintain, and secure APIs at any scale
+ | TBD | Service | TBD
+[Amazon Athena](https://aws.amazon.com/athena/) | Analytics | Start querying data instantly. Get results in seconds. Pay only for the queries you run.
+ | TBD | Service | TBD
+[Amazon Aurora Serverless v2](https://aws.amazon.com/rds/aurora/) | Database | MySQL and PostgreSQL-compatible relational database built for the cloud. Performance and availability of commercial-grade databases at 1/10th the cost.
+ | TBD | Service | TBD
 [Amazon Braket](https://aws.amazon.com/braket/) | Compute | Explore and experiment with quantum computing | 13-Aug-2020 | Service | TBD
-[Amazon Chime](https://aws.amazon.com/chime/) | Business Applications | TBD | TBD | Service | TBD
-[Amazon CloudFront](https://aws.amazon.com/cloudfront/) | Networking & Content Delivery | TBD | TBD | Service | TBD
-[Amazon CloudSearch](https://aws.amazon.com/cloudsearch/) | Analytics | TBD | TBD | Service | TBD
+[Amazon Chime](https://aws.amazon.com/chime/) | Business Applications | Group Chat and Video | TBD | Service | TBD
+[Amazon CloudFront](https://aws.amazon.com/cloudfront/) | Networking & Content Delivery | Fast, highly secure and programmable content delivery network (CDN)
+ | TBD | Service | TBD
+[Amazon CloudSearch](https://aws.amazon.com/cloudsearch/) | Analytics | Set up, manage, and scale a search solution for your website or application | TBD | Service | TBD
 [Amazon CloudWatch](https://aws.amazon.com/cloudwatch/) | Management & Governance | TBD | TBD | Service | TBD
 [Amazon CodeGuru](https://aws.amazon.com/codeguru/) | Machine Learning | TBD | TBD | Service | TBD
 [Amazon CodeGuru CodeQuality Detector](https://aws.amazon.com/blogs/aws/new-for-amazon-codeguru-python-support-security-detectors-and-memory-profiling/) | Machine Learning | TBD | 1-Dec-2020 | Feature | TBD
