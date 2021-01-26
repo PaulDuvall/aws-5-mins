@@ -35,21 +35,21 @@ Service or Feature | Category | Description | Release Date | Feature or Service?
 [Amazon Elasticsearch Service](https://aws.amazon.com/elasticsearch-service/) | Analytics | Fully managed, scalable, and secure Elasticsearch service | TBD | Service | TBD
 [Amazon EMR](https://aws.amazon.com/elasticmapreduce/) | Analytics | Easily run and scale Apache Spark, Hive, Presto, and other big data frameworks | TBD | Service | TBD
 [Amazon EventBridge](https://aws.amazon.com/eventbridge/) | Application Integration | Serverless event bus that connects application data from your own apps, SaaS, and AWS services | TBD | Service | TBD
-[Amazon Forecast](https://aws.amazon.com/forecast/) | Machine Learning | TBD | TBD | Service | TBD
-[Amazon Fraud Detector](https://aws.amazon.com/fraud-detector/) | Machine Learning | TBD | TBD | Service | TBD
-[Amazon FSx for Lustre](https://aws.amazon.com/fsx/lustre/) | Storage | TBD | TBD | Service | TBD
-[Amazon FSx for Windows File Server](https://aws.amazon.com/fsx/windows/) | Storage | TBD | TBD | Service | TBD
-[Amazon GameLift](https://aws.amazon.com/gamelift/) | Game Tech | TBD | TBD | Service | TBD
-[Amazon GuardDuty](https://aws.amazon.com/guardduty/) | Security, Identity & Compliance | TBD | TBD | Service | TBD
+[Amazon Forecast](https://aws.amazon.com/forecast/) | Machine Learning | Accurate time-series forecasting service, based on the same technology used at Amazon.com, no machine learning experience required | TBD | Service | TBD
+[Amazon Fraud Detector](https://aws.amazon.com/fraud-detector/) | Machine Learning | Detect more online fraud faster | TBD | Service | TBD
+[Amazon FSx for Lustre](https://aws.amazon.com/fsx/lustre/) | Storage | Fast and scalable shared storage to power your compute workloads | TBD | Service | TBD
+[Amazon FSx for Windows File Server](https://aws.amazon.com/fsx/windows/) | Storage | Fully managed file storage built on Windows Server | TBD | Service | TBD
+[Amazon GameLift](https://aws.amazon.com/gamelift/) | Game Tech | Enhance multiplayer experiences with dedicated cloud servers | TBD | Service | TBD
+[Amazon GuardDuty](https://aws.amazon.com/guardduty/) | Security, Identity & Compliance | Protect your AWS accounts, workloads, and data with intelligent threat detection and continuous monitoring | TBD | Service | TBD
 [Amazon Honeycode](https://www.honeycode.aws/) | Business Applications | Build mobile & web apps without programming | TBD | Service | TBD
-[Amazon Inspector](https://aws.amazon.com/inspector/) | Security, Identity & Compliance | TBD | TBD | Service | TBD
-[Amazon Kendra](https://aws.amazon.com/kendra/) | Machine Learning | TBD | TBD | Service | TBD
+[Amazon Inspector](https://aws.amazon.com/inspector/) | Security, Identity & Compliance | Automated security assessment service to help improve the security and compliance of applications deployed on AWS | TBD | Service | TBD
+[Amazon Kendra](https://aws.amazon.com/kendra/) | Machine Learning | Highly accurate intelligent search service powered by machine learning | TBD | Service | TBD
 [Amazon Keyspaces](https://aws.amazon.com/mcs/) | Database | A scalable, highly available, and managed Apache Cassandra–compatible database service | TBD | Service | TBD
-[Amazon Kinesis](https://aws.amazon.com/kinesis/) | Analytics | TBD | TBD | Service | TBD
-[Amazon Kinesis Video Streams](https://aws.amazon.com/kinesis/video-streams/) | Media Services | TBD | TBD | Service | TBD
-[Amazon Lex](https://aws.amazon.com/lex/) | Machine Learning | TBD | TBD | Service | TBD
-[Amazon Lightsail](https://aws.amazon.com/lightsail/) | Compute | TBD | TBD | Service | TBD
-[Amazon Macie](https://aws.amazon.com/macie/) | Security, Identity & Compliance | TBD | TBD | Service | TBD
+[Amazon Kinesis](https://aws.amazon.com/kinesis/) | Analytics | Easily collect, process, and analyze video and data streams in real time | TBD | Service | TBD
+[Amazon Kinesis Video Streams](https://aws.amazon.com/kinesis/video-streams/) | Media Services | Capture, process, and store media streams for playback, analytics, and machine learning | TBD | Service | TBD
+[Amazon Lex](https://aws.amazon.com/lex/) | Machine Learning | Conversational AI for Chatbots | TBD | Service | TBD
+[Amazon Lightsail](https://aws.amazon.com/lightsail/) | Compute | Virtual servers, storage, databases, and networking for a low, predictable price | TBD | Service | TBD
+[Amazon Macie](https://aws.amazon.com/macie/) | Security, Identity & Compliance | Discover and protect your sensitive data at scale | TBD | Service | TBD
 [Amazon Managed Blockchain](https://aws.amazon.com/managed-blockchain/) | Blockchain | TBD | TBD | Service | TBD
 [Amazon Managed Streaming for Kafka (MSK)](https://aws.amazon.com/msk/) | Analytics | TBD | TBD | Service | TBD
 [Amazon Mobile Analytics](https://aws.amazon.com/mobileanalytics/) | Mobile | TBD | TBD | Service | TBD
