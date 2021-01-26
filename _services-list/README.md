@@ -14,9 +14,9 @@ Service or Feature | Category | Description | Release Date | Feature or Service?
 [Amazon CodeGuru Security Detector](https://aws.amazon.com/blogs/devops/incorporating-security-in-code-reviews-using-amazon-codeguru-reviewer/) | Machine Learning | TBD | 1-Dec-2020 | Feature | TBD
 [Amazon Cognito](https://aws.amazon.com/cognito/) | Security, Identity & Compliance | Simple and Secure User Sign-Up, Sign-In, and Access Control | TBD | Service | TBD
 [Amazon Comprehend](https://aws.amazon.com/comprehend/) | Machine Learning | Discover insights and relationships in text | TBD | Service | TBD
-[Amazon Connect](https://aws.amazon.com/connect/) | Customer Engagement | TBD | TBD | Service | TBD
-[Amazon Data Pipeline](https://aws.amazon.com/datapipeline/) | Analytics | TBD | TBD | Service | TBD
-[Amazon Detective](https://aws.amazon.com/detective/) | Security, Identity & Compliance | TBD | TBD | Service | TBD
+[Amazon Connect](https://aws.amazon.com/connect/) | Customer Engagement | Easy to use omnichannel cloud contact center | TBD | Service | TBD
+[Amazon Data Pipeline](https://aws.amazon.com/datapipeline/) | Analytics | Easily automate the movement and transformation of data | TBD | Service | TBD
+[Amazon Detective](https://aws.amazon.com/detective/) | Security, Identity & Compliance | Analyze and visualize security data to rapidly get to the root cause of potential security issues | TBD | Service | TBD
 [Amazon DevOps Guru (Preview)](https://aws.amazon.com/devops-guru/) | Machine Learning | ML-powered cloud operations service to improve application availability | 1-Dec-2020 | Service | TBD
 [Amazon DocumentDB](https://aws.amazon.com/documentdb/) | Database | TBD | TBD | Service | TBD
 [Amazon DynamoDB](https://aws.amazon.com/dynamodb/) | Database | TBD | TBD | Service | TBD
