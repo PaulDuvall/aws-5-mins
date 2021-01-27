@@ -1,5 +1,9 @@
 # AWS Cloud9
 
+[AWS Cloud9](https://aws.amazon.com/cloud9/) is a cloud-based integrated development environment (IDE) that lets you write, run, and debug your code with just a browser. It has a code editor, debugger, and terminal. Comes with support for popular programming languages, including JavaScript, Python, PHP, and more, so you don’t need to install files or configure your development machine to start new projects. Since it is cloud-based, you can work on your projects from anywhere - your office, home, or anywhere using an internet-connected machine. You can collaborate with others in real time. It has AWS CLI, Git, and several package managers come preinstalled. There’s support for languages like Node.js (JavaScript), Python, PHP, Ruby, Go, and C++ (code completion, syntax checking)
+
+You are charged for compute and storage fees the same way as an EC2 instance (different sizes) because that’s what the IDE is running on. It automatically stops the EC2 instance after it hasn’t been used for a certain period of time (default is 30 mins).
+
 ## Launch a Cloud9 Environment
 1. Go to the [AWS Cloud9 console](https://console.aws.amazon.com/cloud9/) and select **Create environment**.
 1. Enter a **Name** and **Description** (such as `#aws-5-mins`).
