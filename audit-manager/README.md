@@ -26,7 +26,7 @@ touch audit-manager.yml
 1. Run this command to launch a CloudFormation stack that generates an Audit Manager assessment. 
 
 ```
-aws cloudformation create-stack --stack-name aws-5-mins-auditmanager --template-body file://audit-manager.yml --capabilities CAPABILITY_IAM
+aws cloudformation create-stack --stack-name aws-5-mins-auditmanager --template-body file://audit-manager.yml --capabilities CAPABILITY_IAM --region us-east-1
 ```
 
 It takes less than 1 minute to launch the [CloudFormation stack](https://console.aws.amazon.com/cloudformation/) and the Audit Manager assessment begins. You will need to wait up to 24 hours to view collected evidence. You can visit the [Audit Manager](https://console.aws.amazon.com/auditmanager/home) Console to see the assessment configuration.
