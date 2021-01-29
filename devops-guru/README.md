@@ -1,6 +1,5 @@
 You can find the [5-minute video](https://youtu.be/Dg-rh17b91Q) that walks through all of the steps described here. 
 
-
 # How it Works
 [Amazon DevOps Guru](https://aws.amazon.com/devops-guru/) is a machine learning (ML) powered cloud operations service to improve application availability. As of January 2021, this service is currently in preview. 
 

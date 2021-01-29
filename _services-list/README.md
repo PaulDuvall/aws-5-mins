@@ -17,7 +17,7 @@ Service or Feature | Category | Description | Release Date | Feature or Service?
 [Amazon Connect](https://aws.amazon.com/connect/) | Customer Engagement | Easy to use omnichannel cloud contact center | TBD | Service | TBD
 [Amazon Data Pipeline](https://aws.amazon.com/datapipeline/) | Analytics | Easily automate the movement and transformation of data | TBD | Service | TBD
 [Amazon Detective](https://aws.amazon.com/detective/) | Security, Identity & Compliance | Analyze and visualize security data to rapidly get to the root cause of potential security issues | TBD | Service | TBD
-[Amazon DevOps Guru (Preview)](https://aws.amazon.com/devops-guru/) | Machine Learning | ML-powered cloud operations service to improve application availability | 1-Dec-2020 | Service | TBD
+[Amazon DevOps Guru](https://aws.amazon.com/devops-guru/) | Machine Learning | ML-powered cloud operations service to improve application availability | 1-Dec-2020 | Service | 9-Feb-2021
 [Amazon DocumentDB](https://aws.amazon.com/documentdb/) | Database | Fast, scalable, highly available MongoDB-compatible database service | TBD | Service | TBD
 [Amazon DynamoDB](https://aws.amazon.com/dynamodb/) | Database | Fast and flexible NoSQL database service for any scale | TBD | Service | TBD
 [Amazon EC2](https://aws.amazon.com/ec2/) | Compute | Secure and resizable compute capacity to support virtually any workload | TBD | Service | TBD
@@ -93,7 +93,7 @@ Service or Feature | Category | Description | Release Date | Feature or Service?
 [AWS Application Discovery Service](https://aws.amazon.com/application-discovery/) | Migration & Transfer | Discover on-premises server inventory and behavior | TBD | Service | TBD
 [AWS AppSync](https://aws.amazon.com/appsync/) | Mobile | TBD | TBD | Service | TBD
 [AWS Artifact](https://aws.amazon.com/artifact/) | Security, Identity & Compliance | "No cost |  self-service portal for on-demand access to AWS’ compliance reports." | TBD | Service | TBD
-[AWS Audit Manager](https://aws.amazon.com/audit-manager/) | Security, Identity & Compliance | TBD | 1-Dec-2020 | Service | TBD
+[AWS Audit Manager](https://aws.amazon.com/audit-manager/) | Security, Identity & Compliance | TBD | 1-Dec-2020 | Service | 4-Feb-2021
 [AWS Auto Scaling](https://aws.amazon.com/autoscaling/) | Management & Governance | TBD | TBD | Service | TBD
 [AWS Backup](https://aws.amazon.com/backup/) | Storage | TBD | TBD | Service | TBD
 [AWS Batch](https://aws.amazon.com/batch/) | Compute | TBD | TBD | Service | TBD
@@ -103,7 +103,7 @@ Service or Feature | Category | Description | Release Date | Feature or Service?
 [AWS CLI](https://aws.amazon.com/cli/) | Developer Tools | Unified Tool to Manage [AWS Services | TBD | Service | TBD
 [AWS Cloud Development Kit (CDK)](https://aws.amazon.com/cdk/) | Developer Tools | Model cloud infrastructure using code | TBD | Service | TBD
 [AWS Cloud Map](https://aws.amazon.com/cloud-map/) | Networking & Content Delivery | TBD | TBD | Service | TBD
-[AWS Cloud9](https://aws.amazon.com/cloud9/) | Developer Tools | TBD | TBD | Service | TBD
+[AWS Cloud9](https://aws.amazon.com/cloud9/) | Developer Tools | TBD | TBD | Service | 2-Feb-2021
 [AWS CloudFormation](https://aws.amazon.com/cloudformation/) | Management & Governance | TBD | TBD | Service | TBD
 [AWS CloudFormation Modules](https://aws.amazon.com/blogs/mt/introducing-aws-cloudformation-modules/) |  | TBD | 1-Dec-2020 | Feature | TBD
 [AWS CloudHSM](https://aws.amazon.com/cloudhsm/) | Security, Identity & Compliance | TBD | TBD | Service | TBD
