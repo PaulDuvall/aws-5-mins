@@ -2,6 +2,7 @@ Service or Feature | Category | Description | Release Date | Feature or Service?
 ---------- | ------------ | ------------ | ---------- | ------------ | ------------
 [Alexa for Business](https://aws.amazon.com/alexaforbusiness/) | Business Applications | Use Alexa for work | TBD | Service | TBD
 [Amazon API Gateway](https://aws.amazon.com/api-gateway/) | Networking & Content Delivery | Create, maintain, and secure APIs at any scale | TBD | Service | TBD
+[Amazon AppFlow](https://aws.amazon.com/appflow/) | Application Integration | Securely integrate apps and automate data flows at any scale, without code | TBD | Service | 2-Mar-2021
 [Amazon Athena](https://aws.amazon.com/athena/) | Analytics | Start querying data instantly. Get results in seconds. Pay only for the queries you run. | TBD | Service | TBD
 [Amazon Aurora Serverless v2](https://aws.amazon.com/rds/aurora/) | Database | MySQL and PostgreSQL-compatible relational database built for the cloud. Performance and availability of commercial-grade databases at 1/10th the cost. | TBD | Service | TBD
 [Amazon Braket](https://aws.amazon.com/braket/) | Compute | Explore and experiment with quantum computing | 13-Aug-2020 | Service | TBD
@@ -22,7 +23,7 @@ Service or Feature | Category | Description | Release Date | Feature or Service?
 [Amazon DynamoDB](https://aws.amazon.com/dynamodb/) | Database | Fast and flexible NoSQL database service for any scale | TBD | Service | TBD
 [Amazon EC2](https://aws.amazon.com/ec2/) | Compute | Secure and resizable compute capacity to support virtually any workload | TBD | Service | TBD
 [Amazon ECS Anywhere](https://aws.amazon.com/blogs/containers/introducing-amazon-ecs-anywhere/) | Compute | Create and operate ECS on your own infrastructure | 1-Dec-2020 | Feature | TBD
-[Amazon ECS Deployment Circuit Breaker](https://aws.amazon.com/blogs/containers/announcing-amazon-ecs-deployment-circuit-breaker/) | Compute | Automatically roll back unhealthy service deployments without the need for manual intervention | 1-Dec-2020 | Feature | TBD
+[Amazon ECS Deployment Circuit Breaker](https://aws.amazon.com/blogs/containers/announcing-amazon-ecs-deployment-circuit-breaker/) | Compute | Automatically roll back unhealthy service deployments without the need for manual intervention | 1-Dec-2020 | Feature | 25-Application IntegrationApplication Integration
 [Amazon EKS Anywhere (coming in 2021)](https://aws.amazon.com/eks/eks-anywhere/) | Compute | Create and operate Kubernetes clusters on your own infrastructure | 1-Dec-2020 | Feature | TBD
 [Amazon Elastic Block Store (EBS)](https://aws.amazon.com/ebs/) | Storage | Easy to use, high performance block storage at any scale | TBD | Service | TBD
 [Amazon Elastic Container Registry](https://aws.amazon.com/ecr/) | Compute | Share and deploy container software, publicly or privately | TBD | Service | TBD
@@ -68,7 +69,7 @@ Service or Feature | Category | Description | Release Date | Feature or Service?
 [Amazon SageMaker](https://aws.amazon.com/sagemaker/) | Machine Learning | TBD | TBD | Service | TBD
 [Amazon Sagemaker Data Wrangler ](https://aws.amazon.com/sagemaker/data-wrangler/) | Machine Learning | TBD | TBD | Service | TBD
 [Amazon Sagemaker Feature Store ](https://aws.amazon.com/sagemaker/feature-store/) | Machine Learning | TBD | TBD | Service | TBD
-[Amazon SageMaker Pipelines](https://aws.amazon.com/sagemaker/pipelines/) | Machine Learning | First purpose-built CI/CD service for machine learning | 1-Dec-2020 | Feature | TBD
+[Amazon SageMaker Pipelines](https://aws.amazon.com/sagemaker/pipelines/) | Machine Learning | First purpose-built CI/CD service for machine learning | 1-Dec-2020 | Feature | 4-Mar-2021
 [Amazon Simple Email Service (SES)](https://aws.amazon.com/ses/) | Customer Engagement | TBD | TBD | Service | TBD
 [Amazon Simple Notification Service (SNS)](https://aws.amazon.com/sns/) | Application Integration | TBD | TBD | Service | TBD
 [Amazon Simple Queue Service (SQS)](https://aws.amazon.com/sqs/) | Application Integration | TBD | TBD | Service | TBD
@@ -82,7 +83,7 @@ Service or Feature | Category | Description | Release Date | Feature or Service?
 [Amazon Transfer for SFTP](https://aws.amazon.com/sftp/) | Migration & Transfer | TBD | TBD | Service | TBD
 [Amazon Translate](https://aws.amazon.com/translate/) | Machine Learning | TBD | TBD | Service | TBD
 [Amazon VPC](https://aws.amazon.com/vpc/) | Networking & Content Delivery | TBD | TBD | Service | TBD
-[Amazon VPC Reachability Analyzer](https://aws.amazon.com/blogs/aws/new-vpc-insights-analyzes-reachability-and-visibility-in-vpcs/) | Networking & Content Delivery | TBD | 1-Dec-2020 | Feature | TBD
+[Amazon VPC Reachability Analyzer](https://aws.amazon.com/blogs/aws/new-vpc-insights-analyzes-reachability-and-visibility-in-vpcs/) | Networking & Content Delivery | TBD | 1-Dec-2020 | Feature | 23-Feb-2021
 [Amazon WorkDocs](https://aws.amazon.com/workdocs/) | End User Computing | TBD | TBD | Service | TBD
 [Amazon WorkLink](https://aws.amazon.com/worklink/) | End User Computing | TBD | TBD | Service | TBD
 [Amazon WorkMail](https://aws.amazon.com/workmail/) | Business Applications | TBD | TBD | Service | TBD
@@ -91,7 +92,7 @@ Service or Feature | Category | Description | Release Date | Feature or Service?
 [AWS Amplify](https://aws.amazon.com/amplify/) | Mobile | TBD | TBD | Service | TBD
 [AWS App Mesh](https://aws.amazon.com/app-mesh/) | Networking & Content Delivery | TBD | TBD | Service | TBD
 [AWS Application Discovery Service](https://aws.amazon.com/application-discovery/) | Migration & Transfer | Discover on-premises server inventory and behavior | TBD | Service | TBD
-[AWS AppSync](https://aws.amazon.com/appsync/) | Mobile | TBD | TBD | Service | TBD
+[AWS AppSync](https://aws.amazon.com/appsync/) | Mobile | TBD | TBD | Service | 18-Feb-2021
 [AWS Artifact](https://aws.amazon.com/artifact/) | Security, Identity & Compliance | "No cost |  self-service portal for on-demand access to AWS’ compliance reports." | TBD | Service | TBD
 [AWS Audit Manager](https://aws.amazon.com/audit-manager/) | Security, Identity & Compliance | TBD | 1-Dec-2020 | Service | [4-Feb-2021](https://youtu.be/mSMlxUJERdg)
 [AWS Auto Scaling](https://aws.amazon.com/autoscaling/) | Management & Governance | TBD | TBD | Service | TBD
@@ -125,7 +126,7 @@ Service or Feature | Category | Description | Release Date | Feature or Service?
 [AWS DeepLens](https://aws.amazon.com/deeplens/) | Machine Learning | TBD | TBD | Service | TBD
 [AWS DeepRacer](https://aws.amazon.com/deepracer/) | Machine Learning | TBD | TBD | Service | TBD
 [AWS Device Farm](https://aws.amazon.com/device-farm/) | Mobile | TBD | TBD | Service | TBD
-[AWS Direct Connect](https://aws.amazon.com/directconnect | Networking & Content Delivery | TBD | TBD | Service | TBD
+[AWS Direct Connect](https://aws.amazon.com/directconnect/) | Networking & Content Delivery | TBD | TBD | Service | TBD
 [AWS Directory Service](https://aws.amazon.com/directoryservice/) | Security, Identity & Compliance | TBD | TBD | Service | TBD
 [AWS Elastic Beanstalk](https://aws.amazon.com/elasticbeanstalk/) | Compute | TBD | TBD | Service | TBD
 [AWS Elemental MediaConnect](https://aws.amazon.com/mediaconnect/) | Media Services | TBD | TBD | Service | TBD
@@ -138,7 +139,7 @@ Service or Feature | Category | Description | Release Date | Feature or Service?
 [AWS Fault Injection Simulator (releasing in 2021)](https://aws.amazon.com/fis/) |  | TBD | 1-Dec-2020 | Service | TBD
 [AWS Global Accelerator](https://aws.amazon.com/global-accelerator/) | Networking & Content Delivery | TBD | TBD | Service | TBD
 [AWS Glue](https://aws.amazon.com/glue/) | Analytics | TBD | TBD | Service | TBD
-[AWS Glue Elastic Views  |  |  | TBD | TBD | Service | TBD
+[AWS Glue Elastic Views](https://aws.amazon.com/glue/features/elastic-views/)  |Combine and replicate data across multiple data stores using SQL  |  | TBD | TBD | Service | TBD
 [AWS Ground Station](https://aws.amazon.com/ground-station/) | Satellite | TBD | TBD | Service | TBD
 [AWS Identity & Access Management](https://aws.amazon.com/iam/) | Security, Identity & Compliance | TBD | TBD | Service | TBD
 [AWS Inferentia](https://aws.amazon.com/inferentia/) | Machine Learning | TBD | TBD | Service | TBD
@@ -170,7 +171,7 @@ Service or Feature | Category | Description | Release Date | Feature or Service?
 [AWS Server Migration Service](https://aws.amazon.com/server-migration-service/) | Migration & Transfer | TBD | TBD | Service | TBD
 [AWS Serverless Application Repository](https://aws.amazon.com/serverlessrepo/) | Compute | TBD | TBD | Service | TBD
 [AWS Service Catalog](https://aws.amazon.com/servicecatalog/) | Management & Governance | TBD | TBD | Service | TBD
-[AWS Service Catalog AppRegistry](https://aws.amazon.com/blogs/mt/increase-application-visibility-governance-using-aws-service-catalog-appregistry/) | Management & Governance | TBD | 1-Dec-2020 | Feature | TBD
+[AWS Service Catalog AppRegistry](https://aws.amazon.com/blogs/mt/increase-application-visibility-governance-using-aws-service-catalog-appregistry/) | Management & Governance | TBD | 1-Dec-2020 | Feature | 16-Feb-2021
 [AWS Shield](https://aws.amazon.com/shield/) | Security, Identity & Compliance | TBD | TBD | Service | TBD
 [AWS Single Sign-On (SSO)](https://aws.amazon.com/single-sign-on/) | Security, Identity & Compliance | TBD | TBD | Service | TBD
 [AWS Snowball Family](https://aws.amazon.com/snow/) | Migration & Transfer | TBD | TBD | Service | TBD
