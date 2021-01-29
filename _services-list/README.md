@@ -103,7 +103,7 @@ Service or Feature | Category | Description | Release Date | Feature or Service?
 [AWS CLI](https://aws.amazon.com/cli/) | Developer Tools | Unified Tool to Manage [AWS Services | TBD | Service | TBD
 [AWS Cloud Development Kit (CDK)](https://aws.amazon.com/cdk/) | Developer Tools | Model cloud infrastructure using code | TBD | Service | TBD
 [AWS Cloud Map](https://aws.amazon.com/cloud-map/) | Networking & Content Delivery | TBD | TBD | Service | TBD
-[AWS Cloud9](https://aws.amazon.com/cloud9/) | Developer Tools | TBD | TBD | Service | 2-Feb-2021
+[AWS Cloud9](https://aws.amazon.com/cloud9/) | Developer Tools | TBD | TBD | Service | [2-Feb-2021](https://youtu.be/ZTPgkD7_0Mk)
 [AWS CloudFormation](https://aws.amazon.com/cloudformation/) | Management & Governance | TBD | TBD | Service | TBD
 [AWS CloudFormation Modules](https://aws.amazon.com/blogs/mt/introducing-aws-cloudformation-modules/) |  | TBD | 1-Dec-2020 | Feature | TBD
 [AWS CloudHSM](https://aws.amazon.com/cloudhsm/) | Security, Identity & Compliance | TBD | TBD | Service | TBD
