@@ -13,11 +13,11 @@ Service or Feature | Category | Description | Release Date | Feature or Service?
 [Amazon CodeGuru](https://aws.amazon.com/codeguru/) | Machine Learning | Automate code reviews and optimize application performance with ML-powered recommendations | TBD | Service | Not Yet Released
 [Amazon CodeGuru CodeQuality Detector](https://aws.amazon.com/blogs/aws/new-for-amazon-codeguru-python-support-security-detectors-and-memory-profiling/) | Machine Learning | TBD | 1-Dec-2020 | Feature | Not Yet Released
 [Amazon CodeGuru Security Detector](https://aws.amazon.com/blogs/devops/incorporating-security-in-code-reviews-using-amazon-codeguru-reviewer/) | Machine Learning | TBD | 1-Dec-2020 | Feature | Not Yet Released
-[Amazon Cognito](https://aws.amazon.com/cognito/) | Security, Identity & Compliance | Simple and Secure User Sign-Up, Sign-In, and Access Control | TBD | Service | Not Yet Released
-[Amazon Comprehend](https://aws.amazon.com/comprehend/) | Machine Learning | Discover insights and relationships in text | TBD | Service | Not Yet Released
+[Amazon Cognito](https://aws.amazon.com/cognito/) | Security, Identity & Compliance | Simple and Secure User Sign-Up, Sign-In, and Access Control | 10-Jul-2014 | Service | Not Yet Released
+[Amazon Comprehend](https://aws.amazon.com/comprehend/) | Machine Learning | Discover insights and relationships in text | 29-Nov-2017 | Service | Not Yet Released
 [Amazon Connect](https://aws.amazon.com/connect/) | Customer Engagement | Easy to use omnichannel cloud contact center | TBD | Service | Not Yet Released
-[Amazon Data Pipeline](https://aws.amazon.com/datapipeline/) | Analytics | Easily automate the movement and transformation of data | TBD | Service | Not Yet Released
-[Amazon Detective](https://aws.amazon.com/detective/) | Security, Identity & Compliance | Analyze and visualize security data to rapidly get to the root cause of potential security issues | TBD | Service | Not Yet Released
+[Amazon Data Pipeline](https://aws.amazon.com/datapipeline/) | Analytics | Easily automate the movement and transformation of data | 20-Dec-2012 | Service | Not Yet Released
+[Amazon Detective](https://aws.amazon.com/detective/) | Security, Identity & Compliance | Analyze and visualize security data to rapidly get to the root cause of potential security issues | 31-Mar-2020 | Service | Not Yet Released
 [Amazon DevOps Guru](https://aws.amazon.com/devops-guru/) | Machine Learning | ML-powered cloud operations service to improve application availability | 1-Dec-2020 | Service | [9-Feb-2021](https://youtu.be/Dg-rh17b91Q)
 [Amazon DocumentDB](https://aws.amazon.com/documentdb/) | Database | Fast, scalable, highly available MongoDB-compatible database service | TBD | Service | Not Yet Released
 [Amazon DynamoDB](https://aws.amazon.com/dynamodb/) | Database | Fast and flexible NoSQL database service for any scale | TBD | Service | Not Yet Released
@@ -110,24 +110,24 @@ Service or Feature | Category | Description | Release Date | Feature or Service?
 [AWS CloudHSM](https://aws.amazon.com/cloudhsm/) | Security, Identity & Compliance | TBD | 26-Mar-2013 | Service | Not Yet Released
 [AWS CloudTrail](https://aws.amazon.com/cloudtrail/) | Management & Governance | TBD | 13-Nov-2013 | Service | Not Yet Released
 [AWS CodeArtifact](https://aws.amazon.com/codeartifact/) | Developer Tools | Secure, scalable, and cost-effective artifact management for software development | 10-Jun-2020 | Service | Not Yet Released
-[AWS CodeBuild](https://aws.amazon.com/codebuild/) | Developer Tools | TBD | TBD | Service | Not Yet Released
-[AWS CodeCommit](https://aws.amazon.com/codecommit/) | Developer Tools | TBD | TBD | Service | Not Yet Released
-[AWS CodeDeploy](https://aws.amazon.com/codedeploy/) | Developer Tools | TBD | TBD | Service | Not Yet Released
-[AWS CodePipeline](https://aws.amazon.com/codepipeline/) | Developer Tools | TBD | TBD | Service | Not Yet Released
-[AWS CodeStar](https://aws.amazon.com/codestar/) | Developer Tools | TBD | TBD | Service | Not Yet Released
-[AWS Config](https://aws.amazon.com/config/) | Management & Governance | TBD | TBD | Service | Not Yet Released
-[AWS Control Tower](https://aws.amazon.com/controltower/) | Management & Governance | TBD | TBD | Service | Not Yet Released
+[AWS CodeBuild](https://aws.amazon.com/codebuild/) | Developer Tools | TBD | 01-Dec-2016 | Service | Not Yet Released
+[AWS CodeCommit](https://aws.amazon.com/codecommit/) | Developer Tools | TBD | 09-Jul-2015 | Service | Not Yet Released
+[AWS CodeDeploy](https://aws.amazon.com/codedeploy/) | Developer Tools | TBD | 12-Nov-2014 | Service | Not Yet Released
+[AWS CodePipeline](https://aws.amazon.com/codepipeline/) | Developer Tools | TBD | 09-Jul-2015 | Service | Not Yet Released
+[AWS CodeStar](https://aws.amazon.com/codestar/) | Developer Tools | TBD | 19-Apr-2017 | Service | Not Yet Released
+[AWS Config](https://aws.amazon.com/config/) | Management & Governance | TBD | 12-Nov-2014 | Service | Not Yet Released
+[AWS Control Tower](https://aws.amazon.com/controltower/) | Management & Governance | TBD | 24-Jun-2019 | Service | Not Yet Released
 [AWS Cost & Usage Report](https://aws.amazon.com/aws-cost-management/aws-cost-and-usage-reporting | Cost Management | Dive deeper into your [AWS costs and usage | TBD | Service | Not Yet Released
 [AWS Cost Explorer](https://aws.amazon.com/aws-cost-management/aws-cost-explorer/) | Cost Management | Visualize, understand, and manage your AWS costs and usage over time | TBD | Service | Not Yet Released
-[AWS Cost Explorer](https://aws.amazon.com/aws-cost-management/aws-cost-explorer/) | Cost Management | TBD | TBD | Service | Not Yet Released
-[AWS Data Exchange](https://aws.amazon.com/data-exchange/) | Analytics | TBD | TBD | Service | Not Yet Released
-[AWS Database Migration Service](https://aws.amazon.com/dms/) | Migration & Transfer | TBD | TBD | Service | Not Yet Released
-[AWS DataSync](https://aws.amazon.com/datasync/) | Migration & Transfer | TBD | TBD | Service | Not Yet Released
-[AWS DeepComposer](https://aws.amazon.com/deepcomposer/) | Machine Learning | TBD | TBD | Service | Not Yet Released
-[AWS DeepLens](https://aws.amazon.com/deeplens/) | Machine Learning | TBD | TBD | Service | Not Yet Released
-[AWS DeepRacer](https://aws.amazon.com/deepracer/) | Machine Learning | TBD | TBD | Service | Not Yet Released
+[AWS Cost Explorer](https://aws.amazon.com/aws-cost-management/aws-cost-explorer/) | Cost Management | TBD | 08-Apr-2014 | Service | Not Yet Released
+[AWS Data Exchange](https://aws.amazon.com/data-exchange/) | Analytics | TBD | 13-Nov-2019 | Service | Not Yet Released
+[AWS Database Migration Service](https://aws.amazon.com/dms/) | Migration & Transfer | TBD | 15-Mar-2016 | Service | Not Yet Released
+[AWS DataSync](https://aws.amazon.com/datasync/) | Migration & Transfer | TBD | 26-Nov-2018 | Service | Not Yet Released
+[AWS DeepComposer](https://aws.amazon.com/deepcomposer/) | Machine Learning | AWS DeepComposer gives developers a creative way to get started with machine learning. Get hands-on, literally, with a musical keyboard and the latest machine learning techniques, designed to expand your ML skills | 02-Apr-2020 | Service | Not Yet Released
+[AWS DeepLens](https://aws.amazon.com/deeplens/) | Machine Learning | TBD | 29-Nov-2017 | Service | Not Yet Released
+[AWS DeepRacer](https://aws.amazon.com/deepracer/) | Machine Learning | TBD | 28-Nov-2018 | Service | Not Yet Released
 [AWS Device Farm](https://aws.amazon.com/device-farm/) | Mobile | TBD | TBD | Service | Not Yet Released
-[AWS Direct Connect](https://aws.amazon.com/directconnect/) | Networking & Content Delivery | TBD | TBD | Service | Not Yet Released
+[AWS Direct Connect](https://aws.amazon.com/directconnect/) | Networking & Content Delivery | TBD | 28-Mar-2017 | Service | Not Yet Released
 [AWS Directory Service](https://aws.amazon.com/directoryservice/) | Security, Identity & Compliance | TBD | TBD | Service | Not Yet Released
 [AWS Elastic Beanstalk](https://aws.amazon.com/elasticbeanstalk/) | Compute | TBD | TBD | Service | Not Yet Released
 [AWS Elemental MediaConnect](https://aws.amazon.com/mediaconnect/) | Media Services | TBD | TBD | Service | Not Yet Released
