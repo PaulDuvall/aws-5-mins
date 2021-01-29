@@ -12,7 +12,7 @@ Service or Feature | Category | Description | Release Date | Feature or Service?
 [Amazon CloudWatch](https://aws.amazon.com/cloudwatch/) | Management & Governance | Observability of your AWS resources and applications on AWS and on-premises | 17-May-2009 | Service | Not Yet Released
 [Amazon CodeGuru](https://aws.amazon.com/codeguru/) | Machine Learning | Automate code reviews and optimize application performance with ML-powered recommendations | TBD | Service | Not Yet Released
 [Amazon CodeGuru CodeQuality Detector](https://aws.amazon.com/blogs/aws/new-for-amazon-codeguru-python-support-security-detectors-and-memory-profiling/) | Machine Learning | TBD | 1-Dec-2020 | Feature | Not Yet Released
-[Amazon CodeGuru Security Detector](https://aws.amazon.com/blogs/devops/incorporating-security-in-code-reviews-using-amazon-codeguru-reviewer/) | Machine Learning | TBD | 1-Dec-2020 | Feature | TBD
+[Amazon CodeGuru Security Detector](https://aws.amazon.com/blogs/devops/incorporating-security-in-code-reviews-using-amazon-codeguru-reviewer/) | Machine Learning | TBD | 1-Dec-2020 | Feature | Not Yet Released
 [Amazon Cognito](https://aws.amazon.com/cognito/) | Security, Identity & Compliance | Simple and Secure User Sign-Up, Sign-In, and Access Control | TBD | Service | Not Yet Released
 [Amazon Comprehend](https://aws.amazon.com/comprehend/) | Machine Learning | Discover insights and relationships in text | TBD | Service | Not Yet Released
 [Amazon Connect](https://aws.amazon.com/connect/) | Customer Engagement | Easy to use omnichannel cloud contact center | TBD | Service | Not Yet Released
@@ -110,85 +110,84 @@ Service or Feature | Category | Description | Release Date | Feature or Service?
 [AWS CloudHSM](https://aws.amazon.com/cloudhsm/) | Security, Identity & Compliance | TBD | 26-Mar-2013 | Service | Not Yet Released
 [AWS CloudTrail](https://aws.amazon.com/cloudtrail/) | Management & Governance | TBD | 13-Nov-2013 | Service | Not Yet Released
 [AWS CodeArtifact](https://aws.amazon.com/codeartifact/) | Developer Tools | Secure, scalable, and cost-effective artifact management for software development | 10-Jun-2020 | Service | Not Yet Released
-
-[AWS CodeBuild](https://aws.amazon.com/codebuild/) | Developer Tools | TBD | TBD | Service | TBD
-[AWS CodeCommit](https://aws.amazon.com/codecommit/) | Developer Tools | TBD | TBD | Service | TBD
-[AWS CodeDeploy](https://aws.amazon.com/codedeploy/) | Developer Tools | TBD | TBD | Service | TBD
-[AWS CodePipeline](https://aws.amazon.com/codepipeline/) | Developer Tools | TBD | TBD | Service | TBD
-[AWS CodeStar](https://aws.amazon.com/codestar/) | Developer Tools | TBD | TBD | Service | TBD
-[AWS Config](https://aws.amazon.com/config/) | Management & Governance | TBD | TBD | Service | TBD
-[AWS Control Tower](https://aws.amazon.com/controltower/) | Management & Governance | TBD | TBD | Service | TBD
-[AWS Cost & Usage Report](https://aws.amazon.com/aws-cost-management/aws-cost-and-usage-reporting | Cost Management | Dive deeper into your [AWS costs and usage | TBD | Service | TBD
-[AWS Cost Explorer](https://aws.amazon.com/aws-cost-management/aws-cost-explorer/) | Cost Management | "Visualize |  understand |  and manage your [AWS costs and usage over time" | TBD | Service | TBD
-[AWS Cost Explorer](https://aws.amazon.com/aws-cost-management/aws-cost-explorer/) | Cost Management | TBD | TBD | Service | TBD
-[AWS Data Exchange](https://aws.amazon.com/data-exchange/) | Analytics | TBD | TBD | Service | TBD
-[AWS Database Migration Service](https://aws.amazon.com/dms/) | Migration & Transfer | TBD | TBD | Service | TBD
-[AWS DataSync](https://aws.amazon.com/datasync/) | Migration & Transfer | TBD | TBD | Service | TBD
-[AWS DeepComposer](https://aws.amazon.com/deepcomposer/) | Machine Learning | TBD | TBD | Service | TBD
-[AWS DeepLens](https://aws.amazon.com/deeplens/) | Machine Learning | TBD | TBD | Service | TBD
-[AWS DeepRacer](https://aws.amazon.com/deepracer/) | Machine Learning | TBD | TBD | Service | TBD
-[AWS Device Farm](https://aws.amazon.com/device-farm/) | Mobile | TBD | TBD | Service | TBD
-[AWS Direct Connect](https://aws.amazon.com/directconnect/) | Networking & Content Delivery | TBD | TBD | Service | TBD
-[AWS Directory Service](https://aws.amazon.com/directoryservice/) | Security, Identity & Compliance | TBD | TBD | Service | TBD
-[AWS Elastic Beanstalk](https://aws.amazon.com/elasticbeanstalk/) | Compute | TBD | TBD | Service | TBD
-[AWS Elemental MediaConnect](https://aws.amazon.com/mediaconnect/) | Media Services | TBD | TBD | Service | TBD
-[AWS Elemental MediaConvert](https://aws.amazon.com/mediaconvert/) | Media Services | TBD | TBD | Service | TBD
-[AWS Elemental MediaLive](https://aws.amazon.com/medialive/) | Media Services | TBD | TBD | Service | TBD
-[AWS Elemental MediaPackage](https://aws.amazon.com/mediapackage/) | Media Services | TBD | TBD | Service | TBD
-[AWS Elemental MediaStore](https://aws.amazon.com/mediastore/) | Media Services | TBD | TBD | Service | TBD
-[AWS Elemental MediaTailor](https://aws.amazon.com/mediatailor/) | Media Services | TBD | TBD | Service | TBD
-[AWS Fargate](https://aws.amazon.com/fargate/) | Compute | TBD | TBD | Service | TBD
-[AWS Fault Injection Simulator (releasing in 2021)](https://aws.amazon.com/fis/) |  | TBD | 1-Dec-2020 | Service | TBD
-[AWS Global Accelerator](https://aws.amazon.com/global-accelerator/) | Networking & Content Delivery | TBD | TBD | Service | TBD
-[AWS Glue](https://aws.amazon.com/glue/) | Analytics | TBD | TBD | Service | TBD
-[AWS Glue Elastic Views](https://aws.amazon.com/glue/features/elastic-views/)  |Combine and replicate data across multiple data stores using SQL  |  | TBD | TBD | Service | TBD
-[AWS Ground Station](https://aws.amazon.com/ground-station/) | Satellite | TBD | TBD | Service | TBD
-[AWS Identity & Access Management](https://aws.amazon.com/iam/) | Security, Identity & Compliance | TBD | TBD | Service | TBD
-[AWS Inferentia](https://aws.amazon.com/inferentia/) | Machine Learning | TBD | TBD | Service | TBD
-[AWS IoT 1-Click](https://aws.amazon.com/iot-1-click/) | Internet of Things | TBD | TBD | Service | TBD
-[AWS IoT Analytics](https://aws.amazon.com/iot-analytics/) | Internet of Things | TBD | TBD | Service | TBD
-[AWS IoT Core](https://aws.amazon.com/iot-core/) | Internet of Things | TBD | TBD | Service | TBD
-[AWS IoT Device Defender](https://aws.amazon.com/iot-device-defender/) | Internet of Things | TBD | TBD | Service | TBD
-[AWS IoT Device Management](https://aws.amazon.com/iot-device-management/) | Internet of Things | TBD | TBD | Service | TBD
-[AWS IoT Events](https://aws.amazon.com/iot-events/) | Internet of Things | TBD | TBD | Service | TBD
-[AWS IoT Greengrass](https://aws.amazon.com/greengrass/) | Internet of Things | TBD | TBD | Service | TBD
-[AWS IoT SiteWise](https://aws.amazon.com/iot-sitewise/) | Internet of Things | TBD | TBD | Service | TBD
-[AWS IoT Things Graph](https://aws.amazon.com/iot-things-graph/) | Internet of Things | TBD | TBD | Service | TBD
-[AWS Key Management Service](https://aws.amazon.com/kms/) | Security, Identity & Compliance | TBD | TBD | Service | TBD
-[AWS Lake Formation](https://aws.amazon.com/lake-formation/) | Analytics | TBD | TBD | Service | TBD
-[AWS Lambda](https://aws.amazon.com/lambda/) | Compute | TBD | TBD | Service | TBD
-[AWS License Manager](https://aws.amazon.com/license-manager/) | Management & Governance | TBD | TBD | Service | TBD
-[AWS Managed Services](https://aws.amazon.com/managed-services/) | Management & Governance | TBD | TBD | Service | TBD
-[AWS Marketplace Professional Services](https://aws.amazon.com/marketplace/features/professional-services/) |  | TBD | 1-Dec-2020 | Service | TBD
-[AWS Migration Hub](https://aws.amazon.com/migration-hub/) | Migration & Transfer | TBD | TBD | Service | TBD
-[AWS Network Firewall](https://aws.amazon.com/network-firewall/) | Networking & Content Delivery | TBD | 1-Dec-2020 | Service | TBD
-[AWS OpsWorks](https://aws.amazon.com/opsworks/) | Management & Governance | TBD | TBD | Service | TBD
-[AWS Organizations](https://aws.amazon.com/organizations/) | Management & Governance | TBD | TBD | Service | TBD
-[AWS Outposts](https://aws.amazon.com/outposts/) | Compute | TBD | TBD | Service | TBD
-[AWS Personal Health Dashboard](https://aws.amazon.com/premiumsupport/phd/) | Management & Governance | TBD | TBD | Service | TBD
+[AWS CodeBuild](https://aws.amazon.com/codebuild/) | Developer Tools | TBD | TBD | Service | Not Yet Released
+[AWS CodeCommit](https://aws.amazon.com/codecommit/) | Developer Tools | TBD | TBD | Service | Not Yet Released
+[AWS CodeDeploy](https://aws.amazon.com/codedeploy/) | Developer Tools | TBD | TBD | Service | Not Yet Released
+[AWS CodePipeline](https://aws.amazon.com/codepipeline/) | Developer Tools | TBD | TBD | Service | Not Yet Released
+[AWS CodeStar](https://aws.amazon.com/codestar/) | Developer Tools | TBD | TBD | Service | Not Yet Released
+[AWS Config](https://aws.amazon.com/config/) | Management & Governance | TBD | TBD | Service | Not Yet Released
+[AWS Control Tower](https://aws.amazon.com/controltower/) | Management & Governance | TBD | TBD | Service | Not Yet Released
+[AWS Cost & Usage Report](https://aws.amazon.com/aws-cost-management/aws-cost-and-usage-reporting | Cost Management | Dive deeper into your [AWS costs and usage | TBD | Service | Not Yet Released
+[AWS Cost Explorer](https://aws.amazon.com/aws-cost-management/aws-cost-explorer/) | Cost Management | "Visualize |  understand |  and manage your [AWS costs and usage over time" | TBD | Service | Not Yet Released
+[AWS Cost Explorer](https://aws.amazon.com/aws-cost-management/aws-cost-explorer/) | Cost Management | TBD | TBD | Service | Not Yet Released
+[AWS Data Exchange](https://aws.amazon.com/data-exchange/) | Analytics | TBD | TBD | Service | Not Yet Released
+[AWS Database Migration Service](https://aws.amazon.com/dms/) | Migration & Transfer | TBD | TBD | Service | Not Yet Released
+[AWS DataSync](https://aws.amazon.com/datasync/) | Migration & Transfer | TBD | TBD | Service | Not Yet Released
+[AWS DeepComposer](https://aws.amazon.com/deepcomposer/) | Machine Learning | TBD | TBD | Service | Not Yet Released
+[AWS DeepLens](https://aws.amazon.com/deeplens/) | Machine Learning | TBD | TBD | Service | Not Yet Released
+[AWS DeepRacer](https://aws.amazon.com/deepracer/) | Machine Learning | TBD | TBD | Service | Not Yet Released
+[AWS Device Farm](https://aws.amazon.com/device-farm/) | Mobile | TBD | TBD | Service | Not Yet Released
+[AWS Direct Connect](https://aws.amazon.com/directconnect/) | Networking & Content Delivery | TBD | TBD | Service | Not Yet Released
+[AWS Directory Service](https://aws.amazon.com/directoryservice/) | Security, Identity & Compliance | TBD | TBD | Service | Not Yet Released
+[AWS Elastic Beanstalk](https://aws.amazon.com/elasticbeanstalk/) | Compute | TBD | TBD | Service | Not Yet Released
+[AWS Elemental MediaConnect](https://aws.amazon.com/mediaconnect/) | Media Services | TBD | TBD | Service | Not Yet Released
+[AWS Elemental MediaConvert](https://aws.amazon.com/mediaconvert/) | Media Services | TBD | TBD | Service | Not Yet Released
+[AWS Elemental MediaLive](https://aws.amazon.com/medialive/) | Media Services | TBD | TBD | Service | Not Yet Released
+[AWS Elemental MediaPackage](https://aws.amazon.com/mediapackage/) | Media Services | TBD | TBD | Service | Not Yet Released
+[AWS Elemental MediaStore](https://aws.amazon.com/mediastore/) | Media Services | TBD | TBD | Service | Not Yet Released
+[AWS Elemental MediaTailor](https://aws.amazon.com/mediatailor/) | Media Services | TBD | TBD | Service | Not Yet Released
+[AWS Fargate](https://aws.amazon.com/fargate/) | Compute | TBD | TBD | Service | Not Yet Released
+[AWS Fault Injection Simulator (releasing in 2021)](https://aws.amazon.com/fis/) |  | TBD | 1-Dec-2020 | Service | Not Yet Released
+[AWS Global Accelerator](https://aws.amazon.com/global-accelerator/) | Networking & Content Delivery | TBD | TBD | Service | Not Yet Released
+[AWS Glue](https://aws.amazon.com/glue/) | Analytics | TBD | TBD | Service | Not Yet Released
+[AWS Glue Elastic Views](https://aws.amazon.com/glue/features/elastic-views/)  |Combine and replicate data across multiple data stores using SQL | TBD | TBD | Service | Not Yet Released
+[AWS Ground Station](https://aws.amazon.com/ground-station/) | Satellite | TBD | TBD | Service | Not Yet Released
+[AWS Identity & Access Management](https://aws.amazon.com/iam/) | Security, Identity & Compliance | TBD | TBD | Service | Not Yet Released
+[AWS Inferentia](https://aws.amazon.com/inferentia/) | Machine Learning | TBD | TBD | Service | Not Yet Released
+[AWS IoT 1-Click](https://aws.amazon.com/iot-1-click/) | Internet of Things | TBD | TBD | Service | Not Yet Released
+[AWS IoT Analytics](https://aws.amazon.com/iot-analytics/) | Internet of Things | TBD | TBD | Service | Not Yet Released
+[AWS IoT Core](https://aws.amazon.com/iot-core/) | Internet of Things | TBD | TBD | Service | Not Yet Released
+[AWS IoT Device Defender](https://aws.amazon.com/iot-device-defender/) | Internet of Things | TBD | TBD | Service | Not Yet Released
+[AWS IoT Device Management](https://aws.amazon.com/iot-device-management/) | Internet of Things | TBD | TBD | Service | Not Yet Released
+[AWS IoT Events](https://aws.amazon.com/iot-events/) | Internet of Things | TBD | TBD | Service | Not Yet Released
+[AWS IoT Greengrass](https://aws.amazon.com/greengrass/) | Internet of Things | TBD | TBD | Service | Not Yet Released
+[AWS IoT SiteWise](https://aws.amazon.com/iot-sitewise/) | Internet of Things | TBD | TBD | Service | Not Yet Released
+[AWS IoT Things Graph](https://aws.amazon.com/iot-things-graph/) | Internet of Things | TBD | TBD | Service | Not Yet Released
+[AWS Key Management Service](https://aws.amazon.com/kms/) | Security, Identity & Compliance | TBD | TBD | Service | Not Yet Released
+[AWS Lake Formation](https://aws.amazon.com/lake-formation/) | Analytics | TBD | TBD | Service | Not Yet Released
+[AWS Lambda](https://aws.amazon.com/lambda/) | Compute | TBD | TBD | Service | Not Yet Released
+[AWS License Manager](https://aws.amazon.com/license-manager/) | Management & Governance | TBD | TBD | Service | Not Yet Released
+[AWS Managed Services](https://aws.amazon.com/managed-services/) | Management & Governance | TBD | TBD | Service | Not Yet Released
+[AWS Marketplace Professional Services](https://aws.amazon.com/marketplace/features/professional-services/) |  | TBD | 1-Dec-2020 | Service | Not Yet Released
+[AWS Migration Hub](https://aws.amazon.com/migration-hub/) | Migration & Transfer | TBD | TBD | Service | Not Yet Released
+[AWS Network Firewall](https://aws.amazon.com/network-firewall/) | Networking & Content Delivery | TBD | 1-Dec-2020 | Service | Not Yet Released
+[AWS OpsWorks](https://aws.amazon.com/opsworks/) | Management & Governance | TBD | TBD | Service | Not Yet Released
+[AWS Organizations](https://aws.amazon.com/organizations/) | Management & Governance | TBD | TBD | Service | Not Yet Released
+[AWS Outposts](https://aws.amazon.com/outposts/) | Compute | TBD | TBD | Service | Not Yet Released
+[AWS Personal Health Dashboard](https://aws.amazon.com/premiumsupport/phd/) | Management & Governance | TBD | TBD | Service | Not Yet Released
 [AWS Proton](https://aws.amazon.com/proton/) |  | TBD | 1-Dec-2020 | Service | 11-Feb-2021
-[AWS RoboMaker](https://aws.amazon.com/robomaker/) | Robotics | TBD | TBD | Service | TBD
-[AWS Secrets Manager](https://aws.amazon.com/secrets-manager/) | Security, Identity & Compliance | TBD | TBD | Service | TBD
-[AWS Security Hub](https://aws.amazon.com/security-hub/) | Security, Identity & Compliance | TBD | TBD | Service | TBD
-[AWS Server Migration Service](https://aws.amazon.com/server-migration-service/) | Migration & Transfer | TBD | TBD | Service | TBD
-[AWS Serverless Application Repository](https://aws.amazon.com/serverlessrepo/) | Compute | TBD | TBD | Service | TBD
-[AWS Service Catalog](https://aws.amazon.com/servicecatalog/) | Management & Governance | TBD | TBD | Service | TBD
+[AWS RoboMaker](https://aws.amazon.com/robomaker/) | Robotics | TBD | TBD | Service | Not Yet Released
+[AWS Secrets Manager](https://aws.amazon.com/secrets-manager/) | Security, Identity & Compliance | TBD | TBD | Service | Not Yet Released
+[AWS Security Hub](https://aws.amazon.com/security-hub/) | Security, Identity & Compliance | TBD | TBD | Service | Not Yet Released
+[AWS Server Migration Service](https://aws.amazon.com/server-migration-service/) | Migration & Transfer | TBD | TBD | Service | Not Yet Released
+[AWS Serverless Application Repository](https://aws.amazon.com/serverlessrepo/) | Compute | TBD | TBD | Service | Not Yet Released
+[AWS Service Catalog](https://aws.amazon.com/servicecatalog/) | Management & Governance | TBD | TBD | Service | Not Yet Released
 [AWS Service Catalog AppRegistry](https://aws.amazon.com/blogs/mt/increase-application-visibility-governance-using-aws-service-catalog-appregistry/) | Management & Governance | TBD | 1-Dec-2020 | Feature | 16-Feb-2021
-[AWS Shield](https://aws.amazon.com/shield/) | Security, Identity & Compliance | TBD | TBD | Service | TBD
-[AWS Single Sign-On (SSO)](https://aws.amazon.com/single-sign-on/) | Security, Identity & Compliance | TBD | TBD | Service | TBD
-[AWS Snowball Family](https://aws.amazon.com/snow/) | Migration & Transfer | TBD | TBD | Service | TBD
-[AWS Step Functions](https://aws.amazon.com/step-functions/) | Application Integration | TBD | TBD | Service | TBD
-[AWS Storage Gateway](https://aws.amazon.com/storagegateway/) | Storage | TBD | TBD | Service | TBD
-[AWS Systems Manager](https://aws.amazon.com/systems-manager/) | Management & Governance | TBD | TBD | Service | TBD
-[AWS Tools and SDKs](https://aws.amazon.com/getting-started/tools-sdks/) | Developer Tools | Tools and SDKs for [AWS | TBD | Service | TBD
-[AWS Trusted Advisor](https://aws.amazon.com/trustedadvisor/) | Management & Governance | TBD | TBD | Service | TBD
-[AWS VPN](https://aws.amazon.com/vpn/) | Networking & Content Delivery | TBD | TBD | Service | TBD
-[AWS Wavelength](https://aws.amazon.com/wavelength/) | Compute | TBD | TBD | Service | TBD
-[AWS Web Application Firewall (WAF)](https://aws.amazon.com/waf/) | Security, Identity & Compliance | Protect your web applications from common web exploits | TBD | Service | TBD
-[AWS Well-Architected Tool](https://aws.amazon.com/well-architected-tool/) | Management & Governance | TBD | TBD | Service | TBD
-[AWS X-Ray](https://aws.amazon.com/xray/) | Developer Tools | TBD | TBD | Service | TBD
-[Elastic Load Balancing (ELB)](https://aws.amazon.com/elasticloadbalancing/) | Networking & Content Delivery | TBD | TBD | Service | TBD
-[FreeRTOS](https://aws.amazon.com/freertos/) | Internet of Things | TBD | TBD | Service | TBD
-[Gateway Load Balancer](https://aws.amazon.com/elasticloadbalancing/gateway-load-balancer/) |  | TBD | TBD | Service | TBD
-[Reserved Instance (RI) Reporting](https://aws.amazon.com/aws-cost-management/reserved-instance-reporting/) | Cost Management | Manage and monitor your instance reservations | TBD | Service | TBD
-[Savings Plans](https://aws.amazon.com/savingsplans/) | Cost Management | TBD | TBD | Service | TBD
+[AWS Shield](https://aws.amazon.com/shield/) | Security, Identity & Compliance | TBD | TBD | Service | Not Yet Released
+[AWS Single Sign-On (SSO)](https://aws.amazon.com/single-sign-on/) | Security, Identity & Compliance | TBD | TBD | Service | Not Yet Released
+[AWS Snowball Family](https://aws.amazon.com/snow/) | Migration & Transfer | TBD | TBD | Service | Not Yet Released
+[AWS Step Functions](https://aws.amazon.com/step-functions/) | Application Integration | TBD | TBD | Service | Not Yet Released
+[AWS Storage Gateway](https://aws.amazon.com/storagegateway/) | Storage | TBD | TBD | Service | Not Yet Released
+[AWS Systems Manager](https://aws.amazon.com/systems-manager/) | Management & Governance | TBD | TBD | Service | Not Yet Released
+[AWS Tools and SDKs](https://aws.amazon.com/getting-started/tools-sdks/) | Developer Tools | Tools and SDKs for [AWS | TBD | Service | Not Yet Released
+[AWS Trusted Advisor](https://aws.amazon.com/trustedadvisor/) | Management & Governance | TBD | TBD | Service | Not Yet Released
+[AWS VPN](https://aws.amazon.com/vpn/) | Networking & Content Delivery | TBD | TBD | Service | Not Yet Released
+[AWS Wavelength](https://aws.amazon.com/wavelength/) | Compute | TBD | TBD | Service | Not Yet Released
+[AWS Web Application Firewall (WAF)](https://aws.amazon.com/waf/) | Security, Identity & Compliance | Protect your web applications from common web exploits | TBD | Service | Not Yet Released
+[AWS Well-Architected Tool](https://aws.amazon.com/well-architected-tool/) | Management & Governance | TBD | TBD | Service | Not Yet Released
+[AWS X-Ray](https://aws.amazon.com/xray/) | Developer Tools | TBD | TBD | Service | Not Yet Released
+[Elastic Load Balancing (ELB)](https://aws.amazon.com/elasticloadbalancing/) | Networking & Content Delivery | TBD | TBD | Service | Not Yet Released
+[FreeRTOS](https://aws.amazon.com/freertos/) | Internet of Things | TBD | TBD | Service | Not Yet Released
+[Gateway Load Balancer](https://aws.amazon.com/elasticloadbalancing/gateway-load-balancer/) |  | TBD | TBD | Service | Not Yet Released
+[Reserved Instance (RI) Reporting](https://aws.amazon.com/aws-cost-management/reserved-instance-reporting/) | Cost Management | Manage and monitor your instance reservations | TBD | Service | Not Yet Released
+[Savings Plans](https://aws.amazon.com/savingsplans/) | Cost Management | TBD | TBD | Service | Not Yet Released
