@@ -163,7 +163,7 @@ Service or Feature | Category | Description | Release Date | Feature or Service?
 [AWS Organizations](https://aws.amazon.com/organizations/) | Management & Governance | TBD | TBD | Service | TBD
 [AWS Outposts](https://aws.amazon.com/outposts/) | Compute | TBD | TBD | Service | TBD
 [AWS Personal Health Dashboard](https://aws.amazon.com/premiumsupport/phd/) | Management & Governance | TBD | TBD | Service | TBD
-[AWS Proton (Preview)](https://aws.amazon.com/proton/) |  | TBD | 1-Dec-2020 | Service | 2-Feb-2021
+[AWS Proton](https://aws.amazon.com/proton/) |  | TBD | 1-Dec-2020 | Service | 11-Feb-2021
 [AWS RoboMaker](https://aws.amazon.com/robomaker/) | Robotics | TBD | TBD | Service | TBD
 [AWS Secrets Manager](https://aws.amazon.com/secrets-manager/) | Security, Identity & Compliance | TBD | TBD | Service | TBD
 [AWS Security Hub](https://aws.amazon.com/security-hub/) | Security, Identity & Compliance | TBD | TBD | Service | TBD
