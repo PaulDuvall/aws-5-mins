@@ -118,7 +118,7 @@ Service or Feature | Category | Description | Release Date | Feature or Service?
 [AWS Config](https://aws.amazon.com/config/) | Management & Governance | TBD | TBD | Service | Not Yet Released
 [AWS Control Tower](https://aws.amazon.com/controltower/) | Management & Governance | TBD | TBD | Service | Not Yet Released
 [AWS Cost & Usage Report](https://aws.amazon.com/aws-cost-management/aws-cost-and-usage-reporting | Cost Management | Dive deeper into your [AWS costs and usage | TBD | Service | Not Yet Released
-[AWS Cost Explorer](https://aws.amazon.com/aws-cost-management/aws-cost-explorer/) | Cost Management | "Visualize |  understand |  and manage your [AWS costs and usage over time" | TBD | Service | Not Yet Released
+[AWS Cost Explorer](https://aws.amazon.com/aws-cost-management/aws-cost-explorer/) | Cost Management | Visualize, understand, and manage your AWS costs and usage over time | TBD | Service | Not Yet Released
 [AWS Cost Explorer](https://aws.amazon.com/aws-cost-management/aws-cost-explorer/) | Cost Management | TBD | TBD | Service | Not Yet Released
 [AWS Data Exchange](https://aws.amazon.com/data-exchange/) | Analytics | TBD | TBD | Service | Not Yet Released
 [AWS Database Migration Service](https://aws.amazon.com/dms/) | Migration & Transfer | TBD | TBD | Service | Not Yet Released
