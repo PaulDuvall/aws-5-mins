@@ -93,7 +93,7 @@ Service or Feature | Category | Description | Release Date | Feature or Service?
 [AWS Application Discovery Service](https://aws.amazon.com/application-discovery/) | Migration & Transfer | Discover on-premises server inventory and behavior | TBD | Service | TBD
 [AWS AppSync](https://aws.amazon.com/appsync/) | Mobile | TBD | TBD | Service | TBD
 [AWS Artifact](https://aws.amazon.com/artifact/) | Security, Identity & Compliance | "No cost |  self-service portal for on-demand access to AWS’ compliance reports." | TBD | Service | TBD
-[AWS Audit Manager](https://aws.amazon.com/audit-manager/) | Security, Identity & Compliance | TBD | 1-Dec-2020 | Service | 4-Feb-2021
+[AWS Audit Manager](https://aws.amazon.com/audit-manager/) | Security, Identity & Compliance | TBD | 1-Dec-2020 | Service | [4-Feb-2021](https://youtu.be/mSMlxUJERdg)
 [AWS Auto Scaling](https://aws.amazon.com/autoscaling/) | Management & Governance | TBD | TBD | Service | TBD
 [AWS Backup](https://aws.amazon.com/backup/) | Storage | TBD | TBD | Service | TBD
 [AWS Batch](https://aws.amazon.com/batch/) | Compute | TBD | TBD | Service | TBD
