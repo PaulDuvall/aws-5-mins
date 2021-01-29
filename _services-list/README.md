@@ -19,9 +19,9 @@ Service or Feature | Category | Description | Release Date | Feature or Service?
 [Amazon Data Pipeline](https://aws.amazon.com/datapipeline/) | Analytics | Easily automate the movement and transformation of data | 20-Dec-2012 | Service | Not Yet Released
 [Amazon Detective](https://aws.amazon.com/detective/) | Security, Identity & Compliance | Analyze and visualize security data to rapidly get to the root cause of potential security issues | 31-Mar-2020 | Service | Not Yet Released
 [Amazon DevOps Guru](https://aws.amazon.com/devops-guru/) | Machine Learning | ML-powered cloud operations service to improve application availability | 1-Dec-2020 | Service | [9-Feb-2021](https://youtu.be/Dg-rh17b91Q)
-[Amazon DocumentDB](https://aws.amazon.com/documentdb/) | Database | Fast, scalable, highly available MongoDB-compatible database service | TBD | Service | Not Yet Released
-[Amazon DynamoDB](https://aws.amazon.com/dynamodb/) | Database | Fast and flexible NoSQL database service for any scale | TBD | Service | Not Yet Released
-[Amazon EC2](https://aws.amazon.com/ec2/) | Compute | Secure and resizable compute capacity to support virtually any workload | TBD | Service | Not Yet Released
+[Amazon DocumentDB](https://aws.amazon.com/documentdb/) | Database | Fast, scalable, highly available MongoDB-compatible database service | 09-Jan-2019 | Service | Not Yet Released
+[Amazon DynamoDB](https://aws.amazon.com/dynamodb/) | Database | Fast and flexible NoSQL database service for any scale | 18-Jan-2012 | Service | Not Yet Released
+[Amazon EC2](https://aws.amazon.com/ec2/) | Compute | Secure and resizable compute capacity to support virtually any workload | 23-Oct-2008 | Service | Not Yet Released
 [Amazon ECS Anywhere](https://aws.amazon.com/blogs/containers/introducing-amazon-ecs-anywhere/) | Compute | Create and operate ECS on your own infrastructure | 1-Dec-2020 | Feature | Not Yet Released
 [Amazon ECS Deployment Circuit Breaker](https://aws.amazon.com/blogs/containers/announcing-amazon-ecs-deployment-circuit-breaker/) | Compute | Automatically roll back unhealthy service deployments without the need for manual intervention | 1-Dec-2020 | Feature | 25-Application IntegrationApplication Integration
 [Amazon EKS Anywhere (coming in 2021)](https://aws.amazon.com/eks/eks-anywhere/) | Compute | Create and operate Kubernetes clusters on your own infrastructure | 1-Dec-2020 | Feature | Not Yet Released
@@ -126,9 +126,9 @@ Service or Feature | Category | Description | Release Date | Feature or Service?
 [AWS DeepComposer](https://aws.amazon.com/deepcomposer/) | Machine Learning | AWS DeepComposer gives developers a creative way to get started with machine learning. Get hands-on, literally, with a musical keyboard and the latest machine learning techniques, designed to expand your ML skills | 02-Apr-2020 | Service | Not Yet Released
 [AWS DeepLens](https://aws.amazon.com/deeplens/) | Machine Learning | TBD | 29-Nov-2017 | Service | Not Yet Released
 [AWS DeepRacer](https://aws.amazon.com/deepracer/) | Machine Learning | TBD | 28-Nov-2018 | Service | Not Yet Released
-[AWS Device Farm](https://aws.amazon.com/device-farm/) | Mobile | TBD | TBD | Service | Not Yet Released
-[AWS Direct Connect](https://aws.amazon.com/directconnect/) | Networking & Content Delivery | TBD | 28-Mar-2017 | Service | Not Yet Released
-[AWS Directory Service](https://aws.amazon.com/directoryservice/) | Security, Identity & Compliance | TBD | TBD | Service | Not Yet Released
+[AWS Device Farm](https://aws.amazon.com/device-farm/) | Mobile | TBD | 09-Jul-2015 | Service | Not Yet Released
+[AWS Direct Connect](https://aws.amazon.com/directconnect/) | Networking & Content Delivery | TBD | 03-Aug-2011 | Service | Not Yet Released
+[AWS Directory Service](https://aws.amazon.com/directoryservice/) | Security, Identity & Compliance | TBD | 21-Oct-2014 | Service | Not Yet Released
 [AWS Elastic Beanstalk](https://aws.amazon.com/elasticbeanstalk/) | Compute | TBD | TBD | Service | Not Yet Released
 [AWS Elemental MediaConnect](https://aws.amazon.com/mediaconnect/) | Media Services | TBD | TBD | Service | Not Yet Released
 [AWS Elemental MediaConvert](https://aws.amazon.com/mediaconvert/) | Media Services | TBD | TBD | Service | Not Yet Released
