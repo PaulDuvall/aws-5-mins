@@ -1,3 +1,6 @@
+You can find the [5-minute video](https://youtu.be/mSMlxUJERdg) that walks through all of the steps described here. 
+
+
 In this episode, we'll be looking at AWS Audit Manager. 
 
 ![How it Works](https://github.com/PaulDuvall/aws-5-mins/blob/main/_img/audit-manager-howitworks.png)
