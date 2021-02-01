@@ -26,7 +26,7 @@ An environment defines a set of shared resources and policies that apply to all 
 # CLI
 Since AWS Proton is still in preview, you need to install the Proton APIs in order to run commands. For this example, I am using the **us-east-2** region. 
 
-1. Launch a Cloud9 Environment in **us-east-1** using these [instructions](https://github.com/PaulDuvall/aws-5-mins/tree/main/cloud9) in the **us-east-2** region.
+1. Launch a Cloud9 Environment in **us-east-2** using these [instructions](https://github.com/PaulDuvall/aws-5-mins/tree/main/cloud9).
 1. Create a [Connection](https://us-east-2.console.aws.amazon.com/codesuite/settings/connections) using AWS Developer Tools. 
 1. Click **Create connection**.
 1. Select **GitHub**.
