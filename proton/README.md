@@ -80,7 +80,7 @@ aws proton-preview \
   --template-name "aws-5-mins-proton-dev-env" \
   --description "Version 1"
  
-tar -zcvf env-template.tar.gz  && aws s3 cp env-template.tar.gz s3://proton-cli-templates-${account_id}/env-template.tar.gz && rm env-template.tar.gz
+tar -zcvf env-template.tar.gz environment/ && aws s3 cp env-template.tar.gz s3://proton-cli-templates-${account_id}/env-template.tar.gz && rm env-template.tar.gz
 
 aws proton-preview \
   --endpoint-url https://proton.us-east-2.amazonaws.com \
