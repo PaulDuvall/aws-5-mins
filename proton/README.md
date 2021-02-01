@@ -43,6 +43,94 @@ cd aws-proton-sample-templates
 2. After completing the commands from the blog post, go to the [AWS Proton](https://console.aws.amazon.com/proton/) Console to configure an Environment and a Service. 
 1. Also, have a look at the [CodePipeline pipeline](https://us-east-2.console.aws.amazon.com/codesuite/codepipeline/pipelines) and [CloudFormation stacks](https://us-east-2.console.aws.amazon.com/cloudformation/home?region=us-east-2#/stacks?filteringText=proton&filteringStatus=active&viewNested=true&hideStacks=false&stackId=) that Proton provisions.  
 
+
+```
+cd ~/environment/
+account_id=$(aws sts get-caller-identity --output text --query Account)
+
+aws s3 cp s3://aws-proton-preview-public-files/model/proton-2020-07-20.normal.json .
+aws s3 cp s3://aws-proton-preview-public-files/model/waiters2.json .
+aws configure add-model --service-model file://proton-2020-07-20.normal.json --service-name proton-preview
+mv waiters2.json ~/.aws/models/proton-preview/2020-07-20/waiters-2.json
+rm proton-2020-07-20.normal.json
+
+aws s3api create-bucket --bucket "proton-cli-templates-${account_id}" --region us-east-1
+
+cd ~/environment/aws-proton-sample-templates/loadbalanced-fargate-svc/
+
+aws iam create-role --role-name aws-5-mins-proton-service-role --assume-role-policy-document file://./policies/proton-service-assume-policy.json
+
+aws iam attach-role-policy --role-name aws-5-mins-proton-service-role --policy-arn arn:aws:iam::aws:policy/AdministratorAccess
+
+aws proton-preview \
+  --endpoint-url https://proton.us-east-2.amazonaws.com \
+  --region us-east-2 \
+  update-account-roles \
+  --account-role-details "pipelineServiceRoleArn=arn:aws:iam::${account_id}:role/aws-5-mins-proton-service-role"
+  
+aws proton-preview \
+  --endpoint-url https://proton.us-east-2.amazonaws.com \
+  --region us-east-2 \
+  create-environment-template \
+  --template-name "aws-5-mins-proton-dev-env" \
+  --display-name "aws-5-mins-proton-dev-vpc" \
+  --description "Proton Example Dev VPC with Public Access and ECS Cluster"
+  
+ aws proton-preview \
+  --endpoint-url https://proton.us-east-2.amazonaws.com \
+  --region us-east-2 \
+  create-environment-template-major-version \
+  --template-name "aws-5-mins-proton-dev-env" \
+  --description "Version 1"
+ 
+tar -zcvf env-template.tar.gz environment/ && aws s3 cp env-template.tar.gz s3://proton-cli-templates-${account_id}/env-template.tar.gz && rm env-template.tar.gz
+
+aws proton-preview \
+  --endpoint-url https://proton.us-east-2.amazonaws.com \
+  --region us-east-2 \
+  create-environment-template-minor-version \
+  --template-name "aws-5-mins-proton-dev-env" \
+  --description "Proton Example Dev Environment Version 1" \
+  --major-version-id "1" \
+  --source-s3-bucket proton-cli-templates-${account_id} \
+  --source-s3-key env-template.tar.gz
+
+aws proton-preview \
+  --endpoint-url https://proton.us-east-2.amazonaws.com \
+  --region us-east-2 \
+  wait environment-template-registration-complete \
+  --template-name "aws-5-mins-proton-dev-env" \
+  --major-version-id "1" \
+  --minor-version-id "0"
+  
+ aws proton-preview \
+  --endpoint-url https://proton.us-east-2.amazonaws.com \
+  --region us-east-2 \
+  update-environment-template-minor-version \
+  --template-name "aws-5-mins-proton-dev-env" \
+  --major-version-id "1" \
+  --minor-version-id "0" \
+  --status "PUBLISHED"
+  
+aws proton-preview \
+  --endpoint-url https://proton.us-east-2.amazonaws.com \
+  --region us-east-2 \
+  create-service-template \
+  --template-name "aws-5-mins-lb-fargate-service" \
+  --display-name "aws-5-mins-lb-fargate-service" \
+  --description "Fargate Service with an Application Load Balancer"
+
+aws proton-preview \
+  --endpoint-url https://proton.us-east-2.amazonaws.com \
+  --region us-east-2 \
+  create-service-template-major-version \
+  --template-name "aws-5-mins-lb-fargate-service" \
+  --description "Version 1" \
+  --compatible-environment-template-major-version-arns arn:aws:proton:us-east-2:${account_id}:environment-template/aws-5-mins-proton-dev-env:1
+
+tar -zcvf svc-template.tar.gz service/ && aws s3 cp svc-template.tar.gz s3://proton-cli-templates-${account_id}/svc-template.tar.gz && rm svc-template.tar.gz
+```
+
 AWS has provided example proton templates at [aws-proton-sample-templates](https://github.com/aws-samples/aws-proton-sample-templates).
 
 There's currently no CloudFormation support but, hopefully, when the service is generally available, it will be included. Once installed, you can run the following command similar to this snippet to create an environment template using Proton.
