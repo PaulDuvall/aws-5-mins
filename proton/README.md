@@ -145,15 +145,8 @@ There is no additional charge for AWS Proton. You pay for AWS resources you crea
 1. Delete the environment you launched based on the `aws-5-mins-proton-dev-env` environment template using this link: [Delete Environment](https://us-east-2.console.aws.amazon.com/proton/home?region=us-east-2#/environments)
 1. Delete the `aws-5-mins-proton-dev-env` environment template: [Delete Environment Template](https://us-east-2.console.aws.amazon.com/proton/home?region=us-east-2#/templates/environments)
 1. Delete the `aws-5-mins-proton-service-role` IAM Role: [Delete IAM Role](https://console.aws.amazon.com/iam/home?region=us-east-1#/roles)
-
-```
-aws proton-preview help
-aws proton-preview list-environments --region us-east-2
-aws proton-preview list-environment-templates --region us-east-2
-aws proton-preview list-services --region us-east-2
-aws proton-preview list-service-templates --region us-east-2
-aws iam get-role --role-name aws-5-mins-proton-service-role
-
-aws iam delete-role --role-name aws-5-mins-proton-service-role
-aws proton-preview delete-account-roles --region us-east-2
-```
+1. Verify there are no *aws-5-mins-* Proton enviroments using this command: `aws proton-preview list-environments --region us-east-2`
+1. Verify there are no *aws-5-mins-* Proton services using this command: `aws proton-preview list-services --region us-east-2`
+1. Verify there are no *aws-5-mins-* Proton enviroment templates using this command: `aws proton-preview list-environment-templates --region us-east-2`
+1. Verify there are no *aws-5-mins-* Proton service templates using this command: `aws proton-preview list-service-templates --region us-east-2`
+1. Verify there is no IAM Role named `aws-5-mins-proton-service-role`using this command: `aws iam delete-role --role-name aws-5-mins-proton-service-role`
