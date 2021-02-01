@@ -34,7 +34,7 @@ Since AWS Proton is still in preview, you need to install the Proton APIs in ord
 1. Go back to [CloudShell](https://us-east-2.console.aws.amazon.com/cloudshell/home?region=us-east-2#) and clone the example template repo from AWS using these commands: 
 
 ```
-cd ~
+cd ~/environment/
 git clone https://github.com/aws-samples/aws-proton-sample-templates.git
 cd aws-proton-sample-templates
 ```
@@ -45,18 +45,18 @@ cd aws-proton-sample-templates
 
 
 ```
-cd ~
+cd ~/environment/
 account_id=$(aws sts get-caller-identity --output text --query Account)
 
 aws s3 cp s3://aws-proton-preview-public-files/model/proton-2020-07-20.normal.json .
 aws s3 cp s3://aws-proton-preview-public-files/model/waiters2.json .
 aws configure add-model --service-model file://proton-2020-07-20.normal.json --service-name proton-preview
-mv waiters2.json ~/.aws/models/proton-preview/2020-07-20/waiters-2.json
+mv waiters2.json ~/environment/.aws/models/proton-preview/2020-07-20/waiters-2.json
 rm proton-2020-07-20.normal.json
 
 aws s3api create-bucket --bucket "proton-cli-templates-${account_id}" --region us-east-1
 
-cd ~/aws-proton-sample-templates/loadbalanced-fargate-svc/
+cd ~/environment/aws-proton-sample-templates/loadbalanced-fargate-svc/
 
 aws iam create-role --role-name aws-5-mins-proton-service-role --assume-role-policy-document file://./policies/proton-service-assume-policy.json
 
