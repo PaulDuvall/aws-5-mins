@@ -2,7 +2,7 @@
 
 You can find the [5-minute video](https://youtu.be/mSMlxUJERdg) that walks through all of the steps described here. 
 
-In this episode, we'll be looking at Amazon AppSync. 
+In this episode, we'll be looking at [Amazon AppSync](https://aws.amazon.com/appsync/). 
 
 @todo: How it Works
 
