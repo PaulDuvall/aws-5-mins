@@ -39,7 +39,7 @@ git clone https://github.com/aws-samples/aws-proton-sample-templates.git
 cd aws-proton-sample-templates
 ```
 
-1. Run through the commands for installing the Proton APIs and launching Proton from the commands listed in the [AWS Proton: A first look](https://aws.amazon.com/blogs/containers/intro-to-aws-proton/) blog post.
+1. Run through the commands below to launch Proton resources. These are based on the blog post from AWS - [AWS Proton: A first look](https://aws.amazon.com/blogs/containers/intro-to-aws-proton/).
 
 ```
 cd ~/environment/
