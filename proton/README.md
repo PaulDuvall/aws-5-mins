@@ -34,7 +34,7 @@ Since AWS Proton is still in preview, you need to install the Proton APIs in ord
 1. Go back to [CloudShell](https://us-east-2.console.aws.amazon.com/cloudshell/home?region=us-east-2#) and clone the example template repo from AWS using these commands: 
 
 ```
-cd ~/environment
+cd ~
 git clone https://github.com/aws-samples/aws-proton-sample-templates.git
 cd aws-proton-sample-templates
 ```
