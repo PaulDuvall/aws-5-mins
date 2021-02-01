@@ -1,4 +1,4 @@
-# aws-5-mins
+# AWS in 5 Minutes
 Example scripts for AWS in 5 Mins Videos. See the [YouTube Channel here](https://www.youtube.com/channel/UCT2APKG-FGwdZU3TNtJWZPw).
 
 Service or Feature | Category | Description | Release Date | Feature or Service? | 5 Min Video
