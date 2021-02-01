@@ -56,7 +56,7 @@ rm proton-2020-07-20.normal.json
 
 aws s3api create-bucket --bucket "proton-cli-templates-${account_id}" --region us-east-1
 
-cd ~/environment/aws-proton-sample-templates/loadbalanced-fargate-svc/
+cd ~/aws-proton-sample-templates/loadbalanced-fargate-svc/
 
 aws iam create-role --role-name aws-5-mins-proton-service-role --assume-role-policy-document file://./policies/proton-service-assume-policy.json
 
@@ -83,7 +83,7 @@ aws proton-preview \
   --template-name "aws-5-mins-proton-dev-env" \
   --description "Version 1"
  
-tar -zcvf env-template.tar.gz environment/ && aws s3 cp env-template.tar.gz s3://proton-cli-templates-${account_id}/env-template.tar.gz && rm env-template.tar.gz
+tar -zcvf env-template.tar.gz  && aws s3 cp env-template.tar.gz s3://proton-cli-templates-${account_id}/env-template.tar.gz && rm env-template.tar.gz
 
 aws proton-preview \
   --endpoint-url https://proton.us-east-2.amazonaws.com \
