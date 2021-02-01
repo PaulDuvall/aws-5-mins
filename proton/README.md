@@ -140,11 +140,11 @@ There is no additional charge for AWS Proton. You pay for AWS resources you crea
 
 # Delete Resources
 
-* [Delete Service](https://us-east-2.console.aws.amazon.com/proton/home?region=us-east-2#/services)
-* [Delete Service Template](https://us-east-2.console.aws.amazon.com/proton/home?region=us-east-2#/templates/services)
-* [Delete Environment](https://us-east-2.console.aws.amazon.com/proton/home?region=us-east-2#/environments)
-* [Delete Environment Template](https://us-east-2.console.aws.amazon.com/proton/home?region=us-east-2#/templates/environments)
-* [Delete IAM Role](https://console.aws.amazon.com/iam/home?region=us-east-1#/roles)
+1. Delete the service you launched based on the `aws-5-mins-lb-fargate-service` service template using this link: [Delete Service](https://us-east-2.console.aws.amazon.com/proton/home?region=us-east-2#/services)
+1. Delete the `aws-5-mins-lb-fargate-service` service template: [Delete Service Template](https://us-east-2.console.aws.amazon.com/proton/home?region=us-east-2#/templates/services)
+1. Delete the environment you launched based on the `aws-5-mins-proton-dev-env` environment template using this link: [Delete Environment](https://us-east-2.console.aws.amazon.com/proton/home?region=us-east-2#/environments)
+1. Delete the `aws-5-mins-proton-dev-env` environment template: [Delete Environment Template](https://us-east-2.console.aws.amazon.com/proton/home?region=us-east-2#/templates/environments)
+1. Delete the `aws-5-mins-proton-service-role` IAM Role: [Delete IAM Role](https://console.aws.amazon.com/iam/home?region=us-east-1#/roles)
 
 ```
 aws proton-preview help
