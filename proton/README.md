@@ -45,7 +45,7 @@ cd aws-proton-sample-templates
 
 
 ```
-cd ~/environment/
+cd ~
 account_id=$(aws sts get-caller-identity --output text --query Account)
 
 aws s3 cp s3://aws-proton-preview-public-files/model/proton-2020-07-20.normal.json .
