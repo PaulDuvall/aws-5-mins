@@ -26,7 +26,6 @@ An environment defines a set of shared resources and policies that apply to all 
 # CLI
 Since AWS Proton is still in preview, you need to install the Proton APIs in order to run commands. For this example, I am using the **us-east-2** region. 
 
-1. Launch a Cloud9 Environment in **us-east-2** using these [instructions](https://github.com/PaulDuvall/aws-5-mins/tree/main/cloud9).
 1. Launch a [CloudShell Environment](https://us-east-2.console.aws.amazon.com/cloudshell/home?region=us-east-2) in **us-east-2**.
 1. Create a [Connection](https://us-east-2.console.aws.amazon.com/codesuite/settings/connections) using AWS Developer Tools. 
 1. Click **Create connection**.
@@ -35,7 +34,7 @@ Since AWS Proton is still in preview, you need to install the Proton APIs in ord
 1. Go back to your Cloud9 environment and clone the example template repo from AWS using these commands: 
 
 ```
-cd ~/environment/
+cd ~/
 git clone https://github.com/aws-samples/aws-proton-sample-templates.git
 cd aws-proton-sample-templates
 ```
@@ -43,18 +42,18 @@ cd aws-proton-sample-templates
 1. Run through the commands below to launch Proton resources. These are based on the blog post from AWS - [AWS Proton: A first look](https://aws.amazon.com/blogs/containers/intro-to-aws-proton/).
 
 ```
-cd ~/environment/
+cd ~/
 account_id=$(aws sts get-caller-identity --output text --query Account)
 
 aws s3 cp s3://aws-proton-preview-public-files/model/proton-2020-07-20.normal.json .
 aws s3 cp s3://aws-proton-preview-public-files/model/waiters2.json .
 aws configure add-model --service-model file://proton-2020-07-20.normal.json --service-name proton-preview
-mv waiters2.json ~/environment/.aws/models/proton-preview/2020-07-20/waiters-2.json
+mv waiters2.json ~/.aws/models/proton-preview/2020-07-20/waiters-2.json
 rm proton-2020-07-20.normal.json
 
 aws s3api create-bucket --bucket "proton-cli-templates-${account_id}" --region us-east-1
 
-cd ~/environment/aws-proton-sample-templates/loadbalanced-fargate-svc/
+cd ~/aws-proton-sample-templates/loadbalanced-fargate-svc/
 
 aws iam create-role --role-name aws-5-mins-proton-service-role --assume-role-policy-document file://./policies/proton-service-assume-policy.json
 
@@ -81,7 +80,7 @@ aws proton-preview \
   --template-name "aws-5-mins-proton-dev-env" \
   --description "Version 1"
  
-tar -zcvf env-template.tar.gz environment/ && aws s3 cp env-template.tar.gz s3://proton-cli-templates-${account_id}/env-template.tar.gz && rm env-template.tar.gz
+tar -zcvf env-template.tar.gz . && aws s3 cp env-template.tar.gz s3://proton-cli-templates-${account_id}/env-template.tar.gz && rm env-template.tar.gz
 
 aws proton-preview \
   --endpoint-url https://proton.us-east-2.amazonaws.com \
