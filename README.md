@@ -10,7 +10,7 @@ Service or Feature | Category | Description | Release Date | Feature or Service?
 [AWS Service Catalog AppRegistry](https://aws.amazon.com/blogs/mt/increase-application-visibility-governance-using-aws-service-catalog-appregistry/) | Management & Governance | Repository of your applications and associated resources. | 1-Dec-2020 | Feature | 16-Feb-2021
 [AWS AppSync](https://aws.amazon.com/appsync/) | Mobile | Accelerate application development with scalable GraphQL APIs | 28-Nov-2017 | Service | 18-Feb-2021
 [Amazon VPC Reachability Analyzer](https://aws.amazon.com/blogs/aws/new-vpc-insights-analyzes-reachability-and-visibility-in-vpcs/) | Networking & Content Delivery | Network diagnostics tool that troubleshoots reachability between two endpoints in a VPC, or within multiple VPCs | 1-Dec-2020 | Feature | 23-Feb-2021
-[Amazon Sumerian](https://aws.amazon.com/sumerian/) | AR & VR | Easily create and run browser-based 3D, augmented reality (AR), and virtual reality (VR) applications | TBD | Service | 25-Feb-2021
+[Amazon Sumerian](https://aws.amazon.com/sumerian/) | AR & VR | Easily create and run browser-based 3D, augmented reality (AR), and virtual reality (VR) applications | 15-May-2018 | Service | 25-Feb-2021
 
 
 
