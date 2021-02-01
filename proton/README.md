@@ -31,7 +31,7 @@ Since AWS Proton is still in preview, you need to install the Proton APIs in ord
 1. Click **Create connection**.
 1. Select **GitHub**.
 1. Enter `https://github.com/brentley/ecsdemo-frontend`. 
-1. Go back to your CloudShell environment and clone the example template repo from AWS using these commands: 
+1. Go back to your [CloudShell Environment](https://us-east-2.console.aws.amazon.com/cloudshell/home?region=us-east-2) and clone the example template repo from AWS using these commands: 
 
 ```
 cd ~/
