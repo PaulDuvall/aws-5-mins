@@ -154,6 +154,7 @@ aws proton-preview list-services --region us-east-2
 aws proton-preview list-service-templates --region us-east-2
 
 
+aws iam delete-role --role-name aws-5-mins-proton-service-role
 aws proton-preview delete-account-roles --region us-east-2
 aws proton-preview delete-environment --environment-name ENVIRONMENTNAME --region us-east-2
 aws proton-preview delete-service --service-name SERVICENAME --region us-east-2
