@@ -126,6 +126,51 @@ aws proton-preview \
   --compatible-environment-template-major-version-arns arn:aws:proton:us-east-2:${account_id}:environment-template/aws-5-mins-proton-dev-env:1
 
 tar -zcvf svc-template.tar.gz service/ && aws s3 cp svc-template.tar.gz s3://proton-cli-templates-${account_id}/svc-template.tar.gz && rm svc-template.tar.gz
+
+
+aws proton-preview create-environment \
+  --region us-east-2 \
+  --environment-name "Beta" \
+  --environment-template-arn arn:aws:proton:us-east-2:${account_id}:environment-template/aws-5-mins-proton-dev-env \
+  --template-major-version-id 1 \
+  --proton-service-role-arn arn:aws:iam::${account_id}:role/aws-5-mins-proton-service-role \
+  --spec file://specs/env-spec.yaml
+
+
+
+aws proton-preview wait environment-deployment-complete \
+  --region us-east-2 \
+  --environment-name "Beta"
+
+# Replace <your-codestar-connection-id> with your connection id
+aws proton-preview create-service \
+  --region us-east-2 \
+  --service-name "front-end" \
+  --repository-connection-arn arn:aws:codestar-connections:us-east-2:${account_id}:connection/<your-codestar-connection-id> \
+  --repository-id "aws-samples/aws-proton-sample-templates" \
+  --branch "main" \
+  --template-major-version-id 1 \
+  --service-template-arn arn:aws:proton:us-east-2:${account_id}:service-template/aws-5-mins-lb-fargate-service \
+  --spec file://specs/svc-spec.yaml
+
+
+aws proton-preview wait service-creation-complete \
+  --region us-east-2 \
+  --service-name "front-end"
+
+
+aws proton-preview get-service \
+  --region us-east-2 \
+  --service-name "front-end" \
+  --query "service.pipeline.outputs" \
+  --output text
+
+aws proton-preview get-service-instance \
+  --region us-east-2 \
+  --service-name "front-end" \
+  --service-instance-name "frontend-dev" \
+  --query "serviceInstance.outputs" \
+  --output text
 ```
 
 1. After completing the commands from the blog post, go to the [AWS Proton](https://console.aws.amazon.com/proton/) Console to configure an Environment and a Service. 
