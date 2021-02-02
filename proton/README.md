@@ -27,11 +27,10 @@ An environment defines a set of shared resources and policies that apply to all 
 Since AWS Proton is still in preview, you need to install the Proton APIs in order to run commands. For this example, I am using the **us-west-2** region. 
 
 1. Launch a [CloudShell Environment](https://us-west-2.console.aws.amazon.com/cloudshell/home?region=us-west-2) in **us-west-2**.
-1. Fork the [https://github.com/aws-samples/aws-proton-sample-templates](https://github.com/aws-samples/aws-proton-sample-templates) GitHib repository.
 ```
 cd ~/
 git clone https://github.com/aws-samples/aws-proton-sample-templates.git
-cd aws-proton-sample-templates
+cd aws-proton-sample-templates/loadbalanced-fargate-svc 
 ```
 1. Follow these [sample instructions](https://github.com/aws-samples/aws-proton-sample-templates/tree/main/loadbalanced-fargate-svc) from AWS to launch a ELB-backed Fargate service using AWS Proton. 
 1. Review the [CodePipeline pipeline](https://us-west-2.console.aws.amazon.com/codesuite/codepipeline/pipelines) and [CloudFormation stacks](https://us-west-2.console.aws.amazon.com/cloudformation/home?region=us-west-2#/stacks?filteringText=proton&filteringStatus=active&viewNested=true&hideStacks=false&stackId=) that Proton provisions. 
@@ -49,3 +48,6 @@ There is no additional charge for AWS Proton. You pay for AWS resources you crea
 1. Delete the `public-vpc` environment template: [Delete Environment Template](https://us-west-2.console.aws.amazon.com/proton/home?region=us-west-2#/templates/environments/detail/public-vpc). Verify the `public-vpc` Proton enviroment template has been removed using this command: `aws proton-preview list-environment-templates --region us-west-2`.
 1. Delete the `aws-5-mins-proton-service-role` IAM Role: [Delete IAM Role](https://console.aws.amazon.com/iam/home?region=us-east-1#/roles/ProtonServiceRole). Verify there is no IAM Role named `ProtonServiceRole`using this command: `aws iam delete-role --role-name ProtonServiceRole`. You should received the following error message: `An error occurred (NoSuchEntity) when calling the DeleteRole operation: The role with name ProtonServiceRole cannot be found.`.
 1. Delete linked Account Roles: `aws proton-preview delete-account-roles --region us-west-2`. You can verify by going to [Proton Account roles](https://us-west-2.console.aws.amazon.com/proton/home?region=us-west-2#/settings/roles).
+
+# Other
+1. Fork the [https://github.com/aws-samples/aws-proton-sample-templates](https://github.com/aws-samples/aws-proton-sample-templates) GitHib repository.
