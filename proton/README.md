@@ -24,9 +24,9 @@ These are the four steps for launching environments and/or services using the [A
 An environment defines a set of shared resources and policies that apply to all of the services deployed to it. A service defines how your application is run within an environment
 
 # CLI
-Since AWS Proton is still in preview, you need to install the Proton APIs in order to run commands. For this example, I am using the **us-east-2** region. 
+Since AWS Proton is still in preview, you need to install the Proton APIs in order to run commands. For this example, I am using the **us-west-2** region. 
 
-1. Launch a [CloudShell Environment](https://us-east-2.console.aws.amazon.com/cloudshell/home?region=us-east-2) in **us-east-2**.
+1. Launch a [CloudShell Environment](https://us-west-2.console.aws.amazon.com/cloudshell/home?region=us-west-2) in **us-west-2**.
 1. Fork the [https://github.com/aws-samples/aws-proton-sample-templates](https://github.com/aws-samples/aws-proton-sample-templates) GitHib repository.
 ```
 cd ~/
@@ -34,7 +34,7 @@ git clone https://github.com/aws-samples/aws-proton-sample-templates.git
 cd aws-proton-sample-templates
 ```
 1. Follow these [sample instructions](https://github.com/aws-samples/aws-proton-sample-templates/tree/main/loadbalanced-fargate-svc) from AWS to launch a ELB-backed Fargate service using AWS Proton. 
-1. Review the [CodePipeline pipeline](https://us-east-2.console.aws.amazon.com/codesuite/codepipeline/pipelines) and [CloudFormation stacks](https://us-east-2.console.aws.amazon.com/cloudformation/home?region=us-east-2#/stacks?filteringText=proton&filteringStatus=active&viewNested=true&hideStacks=false&stackId=) that Proton provisions. 
+1. Review the [CodePipeline pipeline](https://us-west-2.console.aws.amazon.com/codesuite/codepipeline/pipelines) and [CloudFormation stacks](https://us-west-2.console.aws.amazon.com/cloudformation/home?region=us-west-2#/stacks?filteringText=proton&filteringStatus=active&viewNested=true&hideStacks=false&stackId=) that Proton provisions. 
 
 There's currently no CloudFormation support but, presumably, when the service is generally available, it will be included. Once installed, you can run the following command similar to this snippet to create an environment template using Proton.
 
@@ -43,13 +43,13 @@ There is no additional charge for AWS Proton. You pay for AWS resources you crea
 
 # Delete Resources
 
-1. Delete the service you launched based on the `aws-5-mins-lb-fargate-service` service template using this link: [Delete Service](https://us-east-2.console.aws.amazon.com/proton/home?region=us-east-2#/services)
-1. Delete the `aws-5-mins-lb-fargate-service` service template: [Delete Service Template](https://us-east-2.console.aws.amazon.com/proton/home?region=us-east-2#/templates/services)
-1. Delete the environment you launched based on the `aws-5-mins-proton-dev-env` environment template using this link: [Delete Environment](https://us-east-2.console.aws.amazon.com/proton/home?region=us-east-2#/environments)
-1. Delete the `aws-5-mins-proton-dev-env` environment template: [Delete Environment Template](https://us-east-2.console.aws.amazon.com/proton/home?region=us-east-2#/templates/environments)
+1. Delete the service you launched based on the `aws-5-mins-lb-fargate-service` service template using this link: [Delete Service](https://us-west-2.console.aws.amazon.com/proton/home?region=us-west-2#//services)
+1. Delete the `aws-5-mins-lb-fargate-service` service template: [Delete Service Template](https://us-west-2.console.aws.amazon.com/proton/home?region=us-west-2#/templates/services)
+1. Delete the environment you launched based on the `aws-5-mins-proton-dev-env` environment template using this link: [Delete Environment](https://us-west-2.console.aws.amazon.com/proton/home?region=us-west-2#/environments)
+1. Delete the `aws-5-mins-proton-dev-env` environment template: [Delete Environment Template](https://us-west-2.console.aws.amazon.com/proton/home?region=us-west-2#/templates/environments)
 1. Delete the `aws-5-mins-proton-service-role` IAM Role: [Delete IAM Role](https://console.aws.amazon.com/iam/home?region=us-east-1#/roles)
-1. Verify there are no *aws-5-mins-* Proton enviroments using this command: `aws proton-preview list-environments --region us-east-2`
-1. Verify there are no *aws-5-mins-* Proton services using this command: `aws proton-preview list-services --region us-east-2`
-1. Verify there are no *aws-5-mins-* Proton enviroment templates using this command: `aws proton-preview list-environment-templates --region us-east-2`
-1. Verify there are no *aws-5-mins-* Proton service templates using this command: `aws proton-preview list-service-templates --region us-east-2`
+1. Verify there are no *aws-5-mins-* Proton enviroments using this command: `aws proton-preview list-environments --region us-west-2`
+1. Verify there are no *aws-5-mins-* Proton services using this command: `aws proton-preview list-services --region us-west-2`
+1. Verify there are no *aws-5-mins-* Proton enviroment templates using this command: `aws proton-preview list-environment-templates --region us-west-2`
+1. Verify there are no *aws-5-mins-* Proton service templates using this command: `aws proton-preview list-service-templates --region us-west-2`
 1. Verify there is no IAM Role named `aws-5-mins-proton-service-role`using this command: `aws iam delete-role --role-name aws-5-mins-proton-service-role`
