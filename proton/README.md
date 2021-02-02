@@ -36,7 +36,7 @@ cd aws-proton-sample-templates
 1. Follow these [sample instructions](https://github.com/aws-samples/aws-proton-sample-templates/tree/main/loadbalanced-fargate-svc) from AWS to launch a ELB-backed Fargate service using AWS Proton. 
 1. Review the [CodePipeline pipeline](https://us-west-2.console.aws.amazon.com/codesuite/codepipeline/pipelines) and [CloudFormation stacks](https://us-west-2.console.aws.amazon.com/cloudformation/home?region=us-west-2#/stacks?filteringText=proton&filteringStatus=active&viewNested=true&hideStacks=false&stackId=) that Proton provisions. 
 
-There's currently no CloudFormation support but, presumably, when the service is generally available, it will be included. Once installed, you can run the following command similar to this snippet to create an environment template using Proton.
+There's currently no CloudFormation support but, presumably, when the service is generally available, it will be included.
 
 # Pricing
 There is no additional charge for AWS Proton. You pay for AWS resources you create to store and run your application. There are no minimum fees and no upfront commitments. You pay for the resources that are provisioned through Proton such as S3 buckets, EC2 instances, containers, etc. 
