@@ -26,7 +26,7 @@ An environment defines a set of shared resources and policies that apply to all 
 # CLI
 Since AWS Proton is still in preview, you need to install the Proton APIs in order to run commands. For this example, I am using the **us-west-2** region. 
 
-1. Launch a [CloudShell Environment](https://us-west-2.console.aws.amazon.com/cloudshell/home?region=us-west-2) in **us-west-2**.
+1. Launch a [CloudShell Environment](https://us-west-2.console.aws.amazon.com/cloudshell/home?region=us-west-2) in **us-west-2** and run the commands below.
 ```
 cd ~/
 git clone https://github.com/aws-samples/aws-proton-sample-templates.git
