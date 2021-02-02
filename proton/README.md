@@ -43,7 +43,7 @@ There is no additional charge for AWS Proton. You pay for AWS resources you crea
 
 # Delete Resources
 
-1. Delete the `front-end` service you launched using this link: [Delete Service](https://us-west-2.console.aws.amazon.com/proton/home?region=us-west-2#/services/detail/front-end). It can take over 30 minutes to delete the service. 
+1. Delete the `front-end` service you launched using this link: [Delete Service](https://us-west-2.console.aws.amazon.com/proton/home?region=us-west-2#/services/detail/front-end). It can take over 50 minutes to delete the service. 
 1. Delete the `aws-5-mins-lb-fargate-service` service template: [Delete Service Template](https://us-west-2.console.aws.amazon.com/proton/home?region=us-west-2#/templates/services)
 1. Delete the environment you launched based on the `aws-5-mins-proton-dev-env` environment template using this link: [Delete Environment](https://us-west-2.console.aws.amazon.com/proton/home?region=us-west-2#/environments)
 1. Delete the `aws-5-mins-proton-dev-env` environment template: [Delete Environment Template](https://us-west-2.console.aws.amazon.com/proton/home?region=us-west-2#/templates/environments)
