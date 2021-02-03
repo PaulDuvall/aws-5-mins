@@ -1,5 +1,6 @@
-You can find the [5-minute video](https://youtu.be/mSMlxUJERdg) that walks through all of the steps described here. 
+**NOTE: This video has not been released yet.**
 
+You can find the [5-minute video](https://youtu.be/mSMlxUJERdg) that walks through all of the steps described here. 
 
 In this episode, we'll be looking at AWS Audit Manager. 
 

@@ -1,3 +1,5 @@
+**NOTE: This video has not been released yet.**
+
 In this episode, we'll be looking at AWS Proton.
 
 ![How it Works](https://github.com/PaulDuvall/aws-5-mins/blob/main/_img/proton-how-it-works.png) [Source](https://aws.amazon.com/proton/)

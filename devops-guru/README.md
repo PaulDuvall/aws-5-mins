@@ -1,3 +1,5 @@
+**NOTE: This video has not been released yet.**
+
 You can find the [5-minute video](https://youtu.be/Dg-rh17b91Q) that walks through all of the steps described here. 
 
 # How it Works
