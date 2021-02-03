@@ -49,7 +49,7 @@ There is no additional charge for AWS Proton. You pay for AWS resources you crea
 1. Delete the `ProtonServiceRole` IAM Role: [Delete IAM Role](https://console.aws.amazon.com/iam/home?region=us-east-1#/roles/ProtonServiceRole). Verify there is no IAM Role named `ProtonServiceRole`using this command: `aws iam delete-role --role-name ProtonServiceRole`. You should received the following error message: `An error occurred (NoSuchEntity) when calling the DeleteRole operation: The role with name ProtonServiceRole cannot be found.`.
 1. Delete linked Account Roles: `aws proton-preview delete-account-roles --region us-west-2`. You can verify by going to [Proton Account roles](https://us-west-2.console.aws.amazon.com/proton/home?region=us-west-2#/settings/roles).
 1. Delete the [CodeStar Connection](https://us-west-2.console.aws.amazon.com/codesuite/settings/connections?region=us-west-2). 
-1. Delete local directories in CloudShell and S3 bucket used to store Proton files.
+1. Delete local directories and S3 bucket used to store Proton files using your [CloudShell Environment](https://us-west-2.console.aws.amazon.com/cloudshell/home?region=us-west-2) as shown below. 
 ```
 sudo rm -rf ~/aws-proton-sample-templates
 
