@@ -11,5 +11,5 @@ Service or Feature | Category | Description | 5 Min Video
 [AWS AppSync](./appsync) | Mobile | Accelerate application development with scalable GraphQL APIs | 18-Feb-2021
 [Amazon VPC Reachability Analyzer](./vpc-reachability) | Networking & Content Delivery | Network diagnostics tool that troubleshoots reachability between two endpoints in a VPC, or within multiple VPCs | 23-Feb-2021
 [Amazon Sumerian](./sumerian) | AR & VR | Easily create and run browser-based 3D, augmented reality (AR), and virtual reality (VR) applications | 25-Feb-2021
-[Amazon AppFlow](https://aws.amazon.com/appflow/) | Application Integration | Securely integrate apps and automate data flows at any scale, without code | 22-Apr-2020 | Service | 2-Mar-2021
-[Amazon SageMaker Pipelines](https://aws.amazon.com/sagemaker/pipelines/) | Machine Learning | First purpose-built CI/CD service for machine learning | 1-Dec-2020 | Feature | 4-Mar-2021
+[Amazon AppFlow](https://aws.amazon.com/appflow/) | Application Integration | Securely integrate apps and automate data flows at any scale, without code | 2-Mar-2021
+[Amazon SageMaker Pipelines](https://aws.amazon.com/sagemaker/pipelines/) | Machine Learning | First purpose-built CI/CD service for machine learning | 4-Mar-2021
