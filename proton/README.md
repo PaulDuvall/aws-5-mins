@@ -34,7 +34,7 @@ cd ~/
 git clone https://github.com/aws-samples/aws-proton-sample-templates.git
 cd aws-proton-sample-templates/loadbalanced-fargate-svc 
 ```
-1. Follow these [sample instructions](https://github.com/aws-samples/aws-proton-sample-templates/tree/main/loadbalanced-fargate-svc) from AWS to launch a ELB-backed Fargate service using AWS Proton. 
+1. Follow these [instructions](https://github.com/aws-samples/aws-proton-sample-templates/tree/main/loadbalanced-fargate-svc) from AWS to launch a ELB-backed Fargate service using AWS Proton. 
 1. Review the [CodePipeline pipeline](https://us-west-2.console.aws.amazon.com/codesuite/codepipeline/pipelines?region=us-west-2) and [CloudFormation stacks](https://us-west-2.console.aws.amazon.com/cloudformation/home?region=us-west-2#/stacks?filteringText=proton&filteringStatus=active&viewNested=true&hideStacks=false&stackId=) that Proton provisions. 
 
 There's currently no CloudFormation support but, presumably, when the service is generally available, it will be included.
