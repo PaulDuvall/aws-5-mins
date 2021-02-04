@@ -19,7 +19,7 @@ cd ~/environment/my-aws-5-mins
 touch audit-manager.yml
 ```
 
-1. Copy the contents from **[audit-manager.yml](https://raw.githubusercontent.com/PaulDuvall/aws-5-mins/main/audit-manager/audit-manager.yml?token=AAMLKO5GH2LD6I3PY6XY5KLACRYSK)** to your local **audit-manager.yml** file in Cloud9 and save it. 
+1. Copy the contents from **[audit-manager.yml](https://raw.githubusercontent.com/PaulDuvall/aws-5-mins/main/audit-manager/audit-manager.yml)** to your local **audit-manager.yml** file in Cloud9 and save it. 
 1. Run this command to launch a CloudFormation stack that generates an Audit Manager assessment. 
 
 ```
