@@ -127,11 +127,6 @@ There is no additional charge for AWS Proton. You pay for AWS resources you crea
 
 1. Delete the `front-end` service you launched using this link: [Delete Service](https://us-west-2.console.aws.amazon.com/proton/home?region=us-west-2#/services/detail/front-end). The Proton console does not currently show the correct status, so run `aws proton-preview list-services --region us-west-2` to verify that the service has been removed. It can take over 5 minutes before all resources associcated with the service are deleted.  
 1. Delete the `Beta` environment you launched using this link: [Delete Environment](https://us-west-2.console.aws.amazon.com/proton/home?region=us-west-2#/environments/detail/Beta). The Proton console does not currently show the correct status, so run this command: `aws proton-preview list-environments --region us-west-2` to verify it's been removed. 
-1. Delete the `lb-fargate-service` service template: [Delete Service Template](https://us-west-2.console.aws.amazon.com/proton/home?region=us-west-2#/templates/services/detail/lb-fargate-service). Verify the `lb-fargate-service` Proton service templates has been removed using this command: `aws proton-preview list-service-templates --region us-west-2`.
-1. Delete the `public-vpc` environment template: [Delete Environment Template](https://us-west-2.console.aws.amazon.com/proton/home?region=us-west-2#/templates/environments/detail/public-vpc). Verify the `public-vpc` Proton enviroment template has been removed using this command: `aws proton-preview list-environment-templates --region us-west-2`.
-1. Delete the `ProtonServiceRole` IAM Role: [Delete IAM Role](https://console.aws.amazon.com/iam/home?region=us-east-1#/roles/ProtonServiceRole). Verify there is no IAM Role named `ProtonServiceRole`using this command: `aws iam delete-role --role-name ProtonServiceRole`. You should received the following error message: `An error occurred (NoSuchEntity) when calling the DeleteRole operation: The role with name ProtonServiceRole cannot be found.`.
-1. Delete linked Account Roles: `aws proton-preview delete-account-roles --region us-west-2`. You can verify by going to [Proton Account roles](https://us-west-2.console.aws.amazon.com/proton/home?region=us-west-2#/settings/roles).
-1. Delete the [CodeStar Connection](https://us-west-2.console.aws.amazon.com/codesuite/settings/connections?region=us-west-2). 
 1. Delete local directories and S3 bucket used to store Proton files using your [CloudShell Environment](https://us-west-2.console.aws.amazon.com/cloudshell/home?region=us-west-2) as shown below. 
 ```
 sudo rm -rf ~/aws-proton-sample-templates
@@ -142,3 +137,8 @@ aws s3api list-buckets --query 'Buckets[?starts_with(Name, `proton-cli-templates
 proton/delete-everything.sh
 
 ```
+1. Verify the `lb-fargate-service` Proton service template has been removed using this command: `aws proton-preview list-service-templates --region us-west-2`.
+1. Verify the `public-vpc` Proton enviroment template has been removed using this command: `aws proton-preview list-environment-templates --region us-west-2`.
+1. Verify there is no IAM Role named `ProtonServiceRole`using this command: `aws iam delete-role --role-name ProtonServiceRole`. You should received the following error message: `An error occurred (NoSuchEntity) when calling the DeleteRole operation: The role with name ProtonServiceRole cannot be found.`.
+1. Verify that the Linked Account Rolese have been deleted by going to [Proton Account roles](https://us-west-2.console.aws.amazon.com/proton/home?region=us-west-2#/settings/roles).
+1. Delete the [CodeStar Connection](https://us-west-2.console.aws.amazon.com/codesuite/settings/connections?region=us-west-2). 
