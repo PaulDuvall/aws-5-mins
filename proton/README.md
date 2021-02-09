@@ -28,13 +28,7 @@ An environment defines a set of shared resources and policies that apply to all 
 # CLI
 Since AWS Proton is still in preview, you need to install the Proton APIs in order to run commands. For this example, I am using the **us-west-2** region. 
 
-1. Launch a [CloudShell Environment](https://us-west-2.console.aws.amazon.com/cloudshell/home?region=us-west-2) in **us-west-2** and run the commands below.
-```
-cd ~/
-git clone https://github.com/aws-samples/aws-proton-sample-templates.git
-cd aws-proton-sample-templates/loadbalanced-fargate-svc 
-```
-1. Follow these [instructions](https://github.com/aws-samples/aws-proton-sample-templates/tree/main/loadbalanced-fargate-svc) from AWS to launch a ELB-backed Fargate service using AWS Proton. 
+1. Launch a [CloudShell Environment](https://us-west-2.console.aws.amazon.com/cloudshell/home?region=us-west-2) in **us-west-2** and follow these [instructions](https://github.com/PaulDuvall/aws-lab/tree/main/proton).
 1. Review the [CodePipeline pipeline](https://us-west-2.console.aws.amazon.com/codesuite/codepipeline/pipelines?region=us-west-2) and [CloudFormation stacks](https://us-west-2.console.aws.amazon.com/cloudformation/home?region=us-west-2#/stacks?filteringText=proton&filteringStatus=active&viewNested=true&hideStacks=false&stackId=) that Proton provisions. 
 
 There's currently no CloudFormation support but, presumably, when the service is generally available, it will be included.
