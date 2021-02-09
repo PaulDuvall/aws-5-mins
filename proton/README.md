@@ -133,7 +133,7 @@ There is no additional charge for AWS Proton. You pay for AWS resources you crea
 1. Delete local directories and S3 bucket used to store Proton files using your [CloudShell Environment](https://us-west-2.console.aws.amazon.com/cloudshell/home?region=us-west-2) as shown below. 
 ```
 sudo rm -rf ~/aws-proton-sample-templates
-sudo rm -rf /home/cloudshell-user/aws-lab
+sudo rm -rf  ~/aws-lab
 
 aws s3api list-buckets --query 'Buckets[?starts_with(Name, `proton-cli-templates-`) == `true`].[Name]' --output text | xargs -I {} aws s3 rb s3://{} --force
 
