@@ -116,7 +116,7 @@ aws proton-preview get-service-instance \
 1. Review the [CodePipeline pipeline](https://us-west-2.console.aws.amazon.com/codesuite/codepipeline/pipelines?region=us-west-2).
 1. Review the [CloudFormation stacks](https://us-west-2.console.aws.amazon.com/cloudformation/home?region=us-west-2#/stacks?filteringText=proton&filteringStatus=active&viewNested=true&hideStacks=false&stackId=) that Proton provisions. 
 1. Review the [Proton Environment](https://us-west-2.console.aws.amazon.com/proton/home?region=us-west-2#/environments/detail/Beta) and [Environment Template](https://us-west-2.console.aws.amazon.com/proton/home?region=us-west-2#/templates/environments/detail/public-vpc).
-1. Review the [Proton Service](https://us-west-2.console.aws.amazon.com/proton/home?region=us-west-2#/services/detail/front-end) and [Service Template](https://us-west-2.console.aws.amazon.com/proton/home?region=us-west-2#/templates/services).
+1. Review the [Proton Service](https://us-west-2.console.aws.amazon.com/proton/home?region=us-west-2#/services/detail/front-end) and [Service Template](https://us-west-2.console.aws.amazon.com/proton/home?region=us-west-2#/templates/services/detail/lb-fargate-service).
 
 There's currently no CloudFormation support but, presumably, when the service is generally available, it will be included.
 
