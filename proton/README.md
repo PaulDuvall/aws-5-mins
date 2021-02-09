@@ -136,4 +136,7 @@ sudo rm -rf ~/aws-proton-sample-templates
 sudo rm -rf /home/cloudshell-user/aws-lab
 
 aws s3api list-buckets --query 'Buckets[?starts_with(Name, `proton-cli-templates-`) == `true`].[Name]' --output text | xargs -I {} aws s3 rb s3://{} --force
+
+proton/delete-everything.sh
+
 ```
