@@ -43,13 +43,6 @@ proton/create-service-template.sh
 
 Update your [CodeStar Connection](https://us-west-2.console.aws.amazon.com/codesuite/settings/connections).
 
-Run the command below to link the IAM Role provisioned from the CloudFormation Stack to Proton. 
-
-```
-aws proton-preview update-account-roles \
-  --region us-west-2 \
-  --account-role-details "pipelineServiceRoleArn=arn:aws:iam::${account_id}:role/ProtonServiceRole"
-```
 
 Run the commands below to create a Proton Environment.
 
