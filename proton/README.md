@@ -31,8 +31,6 @@ Since AWS Proton is still in preview, you need to install the Proton APIs in ord
 1. Launch a [CloudShell Environment](https://us-west-2.console.aws.amazon.com/cloudshell/home?region=us-west-2) in **us-west-2** and follow the instructions below. These instructions and scripts are based on https://github.com/relaxdiego/aws-lab/tree/main/proton. 
 
 ```
-account_id=`aws sts get-caller-identity|jq -r ".Account"`
-
 git clone https://github.com/PaulDuvall/aws-lab.git
 cd aws-lab
 
