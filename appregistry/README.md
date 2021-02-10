@@ -54,3 +54,7 @@ AppRegistry uses the same per API call pricing model that Service Catalog uses. 
 ```
 aws cloudformation delete-stack --stack-name aws-5-mins-appregistry
 ```
+
+# Additional Resources
+
+* [AWS on Air 2020: AWS What’s Next ft. AWS Service Catalog AppRegistry](https://www.youtube.com/watch?v=Ez3QdO7UjwU)
