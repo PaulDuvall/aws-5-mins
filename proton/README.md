@@ -43,6 +43,8 @@ proton/create-service-template.sh
 Run the commands below to create a Proton Environment.
 
 ```
+account_id=`aws sts get-caller-identity|jq -r ".Account"`
+
 git clone https://github.com/aws-samples/aws-proton-sample-templates
 
 cd aws-proton-sample-templates/loadbalanced-fargate-svc
