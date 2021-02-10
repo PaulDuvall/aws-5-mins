@@ -28,6 +28,7 @@ An environment defines a set of shared resources and policies that apply to all 
 # CLI
 Since AWS Proton is still in preview, you need to install the Proton APIs in order to run commands. For this example, I am using the **us-west-2** region. 
 
+## Setup and Proton Templates
 1. Launch a [CloudShell Environment](https://us-west-2.console.aws.amazon.com/cloudshell/home?region=us-west-2) in **us-west-2** and follow the instructions below. These instructions and scripts are based on https://github.com/relaxdiego/aws-lab/tree/main/proton. 
 
 ```
@@ -39,8 +40,9 @@ proton/create-environment-template.sh
 proton/create-service-template.sh
 
 ```
+## Launch a Proton Environment
 
-Run the commands below to create a Proton Environment.
+1. Run the commands below to create a Proton Environment.
 
 ```
 account_id=`aws sts get-caller-identity|jq -r ".Account"`
@@ -63,8 +65,13 @@ aws proton-preview wait environment-deployment-complete \
 
 ```
 
+## Connect a GitHub Repository to AWS
+
 1. Fork this GitHub repository to your GitHub account: https://github.com/aws-samples/aws-proton-sample-fargate-service and make note the account id and repository name.
 1. Update your AWS CodeStar [Connection](https://us-west-2.console.aws.amazon.com/codesuite/settings/connections?region=us-west-2) to ensure it's connected GitHub to AWS.
+
+## Launch a Proton Service
+
 1. To launch a Proton Service from a Service Template, run the commands below replacing `<your-codestar-connection-id>` with the connection id from the link above. You also need to replace the `<your-source-repo-account>/<your-repository-name>` with the appropriate values for your GitHub account and repository names.
 
 ```
