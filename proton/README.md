@@ -131,6 +131,7 @@ proton/delete-everything.sh
 
 sudo rm -rf ~/aws-proton-sample-templates
 sudo rm -rf  ~/aws-lab
+cd ~
 ```
 Perform the following commands from your [CloudShell Environment](https://us-west-2.console.aws.amazon.com/cloudshell/home?region=us-west-2).
 
