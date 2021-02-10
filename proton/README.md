@@ -65,7 +65,7 @@ aws proton-preview wait environment-deployment-complete \
 
 Update your AWS CodeStar [Connection](https://us-west-2.console.aws.amazon.com/codesuite/settings/connections?region=us-west-2) to ensure it's connected GitHub to AWS.
 
-Run the command below replacing `<your-codestar-connection-id>` with the id from the link above. You also need to replace the `<your-source-repo-account>/<your-repository-name>` with the appropriate values for your GitHub account and repository names.
+To launch a Proton Service from a Service Template, run the commands below replacing `<your-codestar-connection-id>` with the connection id from the link above. You also need to replace the `<your-source-repo-account>/<your-repository-name>` with the appropriate values for your GitHub account and repository names.
 
 ```
 aws proton-preview create-service \
