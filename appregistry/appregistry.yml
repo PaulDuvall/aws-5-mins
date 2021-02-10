@@ -1,0 +1,29 @@
+Description: AWS Audit Manager demo
+Resources:
+  S3Bucket:
+    Type: 'AWS::S3::Bucket'
+    DeletionPolicy: Delete
+    Properties:
+      BucketName: !Sub ${AWS::StackName}-${AWS::AccountId}
+  Assessment:
+    Type: AWS::AuditManager::Assessment
+    Properties:
+      FrameworkId: "2ad0cca9-a1bf-3b4a-9769-ef78c51902ba"
+      AssessmentReportsDestination:
+        Destination: !Sub s3://${S3Bucket}
+        DestinationType: S3
+      AwsAccount:
+        Id: !Ref AWS::AccountId
+      Name: !Ref AWS::StackName
+      Scope:
+        AwsAccounts:
+        - Id: !Ref AWS::AccountId
+        AwsServices:
+        - ServiceName: a4b
+        - ServiceName: acm
+        - ServiceName: acm-pca
+        - ServiceName: amazonmq
+        - ServiceName: amplify
+      Roles:
+      - RoleArn: !Sub arn:aws:iam::${AWS::AccountId}:role/aws-service-role/auditmanager.amazonaws.com/AWSServiceRoleForAuditManager
+        RoleType: PROCESS_OWNER

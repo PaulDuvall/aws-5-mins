@@ -1,12 +1,29 @@
 **NOTE: This video has not been released yet.**
 
-You can find the [5-minute video](https://youtu.be/mSMlxUJERdg) that walks through all of the steps described here. 
+You can find the 5-minute video that walks through all of the steps described here. 
 
 In this episode, we'll be looking at [AWS Service Catalog AppRegistry](https://aws.amazon.com/blogs/mt/increase-application-visibility-governance-using-aws-service-catalog-appregistry/).
 
-@todo: How it Works
+AWS Service Catalog released a feature called the AppRegistry. It’s a repository in which you can associate your applications with its related resources. There are many uses for this capability including making it easier to search for resources, classify data, track costs, identify versions, and meet certain compliance certifications. You can use AppRegistry without needing to use Service Catalog. The key benefit you get from AppRegistry is obtaining context between your application and resources. What’s more, you can automate updates of stack and metadata changes by calling AppRegistry from your deployment pipelines when changes occur. 
+
+There are five primary steps to setting up the AppRegistry in an enterprise: 
+
+1. An Administrator configures company-wide shared attribute groups.
+1. Each development team sets up attribute groups for their team.
+1. Each development team creates applications in the AppRegistry.
+1. Each development team associates attribute groups to their applications.
+1. Each development team associates existing AWS CloudFormation stacks with their applications.
+
+[Source](https://stelligent.com/2021/01/20/aws-reinvent-2020-devsecops-recap/)
 
 # CloudFormation Support
+
+There are four new CloudFormation resources to support the launch of AppRegistry. They are:
+
+* [AWS::ServiceCatalogAppRegistry::Application](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-servicecatalogappregistry-application.html) – Provision a Service Catalog AppRegistry application which is the top-level node in a hierarchy of related cloud resource abstractions.
+* [AWS::ServiceCatalogAppRegistry::AttributeGroup](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-servicecatalogappregistry-attributegroup.html) – Creates a new attribute group as a container for user-defined attributes. This feature enables users to have full control over their cloud application’s metadata in a rich machine-readable format to facilitate integration with automated workflows and third-party tools.
+* [AWS::ServiceCatalogAppRegistry::AttributeGroupAssociation](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-servicecatalogappregistry-attributegroupassociation.html) – Link Applications and Attribute Groups.
+* [AWS::ServiceCatalogAppRegistry::ResourceAssociation](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-servicecatalogappregistry-resourceassociation.html) – Link Resources and Resource Types with Applications. 
 
 ## Launch CloudFormation Stack
 
@@ -16,11 +33,11 @@ In this episode, we'll be looking at [AWS Service Catalog AppRegistry](https://a
 ```
 mkdir ~/environment/my-aws-5-mins
 cd ~/environment/my-aws-5-mins
-touch audit-manager.yml
+touch appregistry.yml
 ```
 
-1. Copy the contents from **[audit-manager.yml](https://raw.githubusercontent.com/PaulDuvall/aws-5-mins/main/audit-manager/audit-manager.yml?token=AAMLKO5GH2LD6I3PY6XY5KLACRYSK)** to your local **audit-manager.yml** file in Cloud9 and save it. 
-1. Run this command to launch a CloudFormation stack that generates an Audit Manager assessment. 
+1. Copy the contents from **[appregistry.yml](https://raw.githubusercontent.com/PaulDuvall/aws-5-mins/main/appregistry/appregistry.yml)** to your local **appregistry.yml** file in Cloud9 and save it. 
+1. Run this command to launch a CloudFormation stack that generates @TODO. 
 
 ```
 aws cloudformation create-stack --stack-name aws-5-mins-auditmanager --template-body file://audit-manager.yml --capabilities CAPABILITY_IAM --region us-east-1
@@ -30,7 +47,7 @@ aws cloudformation create-stack --stack-name aws-5-mins-auditmanager --template-
 TBD
 
 # Pricing
-@todo
+AppRegistry uses the same per API call pricing model that Service Catalog uses. Therefore, after 1,000 API calls in a given month, you’re charged $0.0007 per API call (14 calls for 1 cent). For more information, see AWS Service Catalog Pricing. 
 
 # Delete Resources
 
