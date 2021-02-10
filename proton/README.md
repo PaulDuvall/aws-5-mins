@@ -137,4 +137,4 @@ Perform the following commands from your [CloudShell Environment](https://us-wes
 1. Verify the `public-vpc` Proton enviroment template has been removed using this command: `aws proton-preview list-environment-templates --region us-west-2`.
 1. Verify there is no IAM Role named `ProtonServiceRole`using this command: `aws iam delete-role --role-name ProtonServiceRole`. You should received the following error message: `An error occurred (NoSuchEntity) when calling the DeleteRole operation: The role with name ProtonServiceRole cannot be found.`.
 1. Verify that the Linked Account Roles have been deleted by going to [Proton Account roles](https://us-west-2.console.aws.amazon.com/proton/home?region=us-west-2#/settings/roles).
-1. Delete the [CodeStar Connection](https://us-west-2.console.aws.amazon.com/codesuite/settings/connections?region=us-west-2). 
+1. Verify the [CodeStar Connection](https://us-west-2.console.aws.amazon.com/codesuite/settings/connections?region=us-west-2) has been deleted. 
