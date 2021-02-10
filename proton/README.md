@@ -38,7 +38,6 @@ proton/create-prerequisites.sh
 proton/create-environment-template.sh
 proton/create-service-template.sh
 
-
 ```
 
 Run the commands below to create a Proton Environment.
