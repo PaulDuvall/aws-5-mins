@@ -109,7 +109,7 @@ aws proton-preview get-service-instance \
 1. Review the [Proton Environment](https://us-west-2.console.aws.amazon.com/proton/home?region=us-west-2#/environments/detail/Beta) and [Environment Template](https://us-west-2.console.aws.amazon.com/proton/home?region=us-west-2#/templates/environments/detail/public-vpc).
 1. Review the [Proton Service](https://us-west-2.console.aws.amazon.com/proton/home?region=us-west-2#/services/detail/front-end) and [Service Template](https://us-west-2.console.aws.amazon.com/proton/home?region=us-west-2#/templates/services/detail/lb-fargate-service).
 
-There's currently no CloudFormation support but, presumably, when the service is generally available, it will be included.
+While Proton generates launches CloudFormation stacks based on templates it generates to provision AWS resources, there is currently no CloudFormation support for provisioning Proton resources. Presumably, when the service is generally available, CloudFormation support will be included.
 
 # Pricing
 There is no additional charge for AWS Proton. You pay for AWS resources you create to store and run your application. There are no minimum fees and no upfront commitments. You pay for the resources that are provisioned through Proton such as S3 buckets, EC2 instances, containers, etc. 
