@@ -1,4 +1,4 @@
-**NOTE: This video has not been released yet.**
+You can find the [5-minute video](https://youtu.be/EN41nXwyTGQ) that walks through all of the steps described here. 
 
 In this episode, we'll be looking at AWS Proton.
 
