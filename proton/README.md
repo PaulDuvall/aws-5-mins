@@ -118,12 +118,10 @@ There is no additional charge for AWS Proton. You pay for AWS resources you crea
 
 # Delete Resources
 
-1. Delete the `front-end` service you launched using this link: [Delete Service](https://us-west-2.console.aws.amazon.com/proton/home?region=us-west-2#/services/detail/front-end). The Proton console does not currently show the correct status, so run `aws proton-preview list-services --region us-west-2` to verify that the service has been removed. It can take over 5 minutes before all resources associcated with the service are deleted.  
-1. Delete the `Beta` environment you launched using this link: [Delete Environment](https://us-west-2.console.aws.amazon.com/proton/home?region=us-west-2#/environments/detail/Beta). The Proton console does not currently show the correct status, so run this command: `aws proton-preview list-environments --region us-west-2` to verify it's been removed. 
-1. Delete local directories and S3 bucket used to store Proton files using your [CloudShell Environment](https://us-west-2.console.aws.amazon.com/cloudshell/home?region=us-west-2) as shown below. 
+1. Delete the `front-end` service you launched using this link: [Delete Service](https://us-west-2.console.aws.amazon.com/proton/home?region=us-west-2#/services/detail/front-end). The Proton console does not currently show the correct status, so run `aws proton-preview list-services --region us-west-2` from your [CloudShell Environment](https://us-west-2.console.aws.amazon.com/cloudshell/home?region=us-west-2) to verify that the service has been removed. It can take over 5 minutes before all resources associcated with the service are deleted.  
+1. Delete the `Beta` environment you launched using this link: [Delete Environment](https://us-west-2.console.aws.amazon.com/proton/home?region=us-west-2#/environments/detail/Beta). The Proton console does not currently show the correct status, so run this command: `aws proton-preview list-environments --region us-west-2` from your [CloudShell Environment](https://us-west-2.console.aws.amazon.com/cloudshell/home?region=us-west-2) to verify it's been removed. 
+1. Delete local directories and S3 bucket used to store Proton files from your [CloudShell Environment](https://us-west-2.console.aws.amazon.com/cloudshell/home?region=us-west-2) as shown below. 
 ```
-account_id=`aws sts get-caller-identity|jq -r ".Account"`
-
 git clone https://github.com/PaulDuvall/aws-lab.git
 cd aws-lab
 
@@ -133,9 +131,9 @@ proton/delete-everything.sh
 
 sudo rm -rf ~/aws-proton-sample-templates
 sudo rm -rf  ~/aws-lab
-
-
 ```
+Perform the following commands from your [CloudShell Environment](https://us-west-2.console.aws.amazon.com/cloudshell/home?region=us-west-2).
+
 1. Verify the `lb-fargate-service` Proton service template has been removed using this command: `aws proton-preview list-service-templates --region us-west-2`.
 1. Verify the `public-vpc` Proton enviroment template has been removed using this command: `aws proton-preview list-environment-templates --region us-west-2`.
 1. Verify there is no IAM Role named `ProtonServiceRole`using this command: `aws iam delete-role --role-name ProtonServiceRole`. You should received the following error message: `An error occurred (NoSuchEntity) when calling the DeleteRole operation: The role with name ProtonServiceRole cannot be found.`.
