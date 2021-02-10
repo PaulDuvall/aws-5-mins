@@ -131,7 +131,7 @@ sudo rm -rf ~/aws-proton-sample-templates
 sudo rm -rf  ~/aws-lab
 cd ~
 ```
-Perform the following commands from your [CloudShell Environment](https://us-west-2.console.aws.amazon.com/cloudshell/home?region=us-west-2).
+Perform the following commands from your [CloudShell Environment](https://us-west-2.console.aws.amazon.com/cloudshell/home?region=us-west-2) to verify that all Proton-related resources have been deleted.
 
 1. Verify the `lb-fargate-service` Proton service template has been removed using this command: `aws proton-preview list-service-templates --region us-west-2`.
 1. Verify the `public-vpc` Proton enviroment template has been removed using this command: `aws proton-preview list-environment-templates --region us-west-2`.
