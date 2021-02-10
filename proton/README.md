@@ -37,6 +37,8 @@ cd aws-lab
 proton/create-prerequisites.sh
 proton/create-environment-template.sh
 proton/create-service-template.sh
+
+
 ```
 
 Update your [CodeStar Connection](https://us-west-2.console.aws.amazon.com/codesuite/settings/connections).
