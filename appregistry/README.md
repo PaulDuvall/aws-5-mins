@@ -52,5 +52,5 @@ AppRegistry uses the same per API call pricing model that Service Catalog uses. 
 # Delete Resources
 
 ```
-aws cloudformation delete-stack --stack-name aws-5-mins-auditmanager
+aws cloudformation delete-stack --stack-name aws-5-mins-appregistry
 ```
