@@ -31,18 +31,25 @@ There are four new CloudFormation resources to support the launch of AppRegistry
 1. Create an empty YAML file.
 
 ```
-mkdir ~/environment/my-aws-5-mins
-cd ~/environment/my-aws-5-mins
+sudo rm -rf ~/environment/aws-5-mins-appregistry
+mkdir ~/environment/aws-5-mins-appregistry
+cd ~/environment/aws-5-mins-appregistry
 touch appregistry.yml
+touch sqs.yml
+
 ```
 
+1. Copy the contents from **[sqs.ym.yml](https://raw.githubusercontent.com/PaulDuvall/aws-5-mins/main/appregistry/sqs.ym.yml)** to your local **sqs.ym.yml** file in Cloud9 and save it. 
 1. Copy the contents from **[appregistry.yml](https://raw.githubusercontent.com/PaulDuvall/aws-5-mins/main/appregistry/appregistry.yml)** to your local **appregistry.yml** file in Cloud9 and save it. 
-1. Run this command to launch a CloudFormation stack that generates @TODO. 
+1. Run this command to launch a CloudFormation stack that generates an SQS resource.  
 
 
 ```
 aws cloudformation create-stack --stack-name aws-5-mins-sqs --template-body file://sqs.yml --capabilities CAPABILITY_IAM --region us-east-1
 ```
+
+1. Run this command to launch a CloudFormation stack that generates AppRegistry resources.  
+
 
 ```
 aws cloudformation create-stack --stack-name aws-5-mins-appregistry --template-body file://appregistry.yml --capabilities CAPABILITY_IAM --region us-east-1
@@ -52,7 +59,7 @@ aws cloudformation create-stack --stack-name aws-5-mins-appregistry --template-b
 TBD
 
 # Pricing
-AppRegistry uses the same per API call pricing model that Service Catalog uses. Therefore, after 1,000 API calls in a given month, you’re charged $0.0007 per API call (14 calls for 1 cent). For more information, see AWS Service Catalog Pricing. 
+AppRegistry uses the same per API call pricing model that Service Catalog uses. Therefore, after 1,000 API calls in a given month, you’re charged $0.0007 per API call (14 calls for 1 cent). For more information, see [AWS Service Catalog Pricing](https://aws.amazon.com/servicecatalog/pricing/). 
 
 # Delete Resources
 
