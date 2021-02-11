@@ -40,7 +40,7 @@ touch appregistry.yml
 1. Run this command to launch a CloudFormation stack that generates @TODO. 
 
 ```
-aws cloudformation create-stack --stack-name aws-5-mins-auditmanager --template-body file://audit-manager.yml --capabilities CAPABILITY_IAM --region us-east-1
+aws cloudformation create-stack --stack-name aws-5-mins-appregistry --template-body file://appregistry.yml --capabilities CAPABILITY_IAM --region us-east-1
 ```
 
 # Deployment Pipeline
