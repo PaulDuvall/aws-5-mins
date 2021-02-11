@@ -20,8 +20,8 @@ There are five primary steps to setting up the AppRegistry in an enterprise:
 
 There are four new CloudFormation resources to support the launch of AppRegistry. They are:
 
-* [AWS::ServiceCatalogAppRegistry::Application](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-servicecatalogappregistry-application.html) – Provision a Service Catalog AppRegistry application which is the top-level node in a hierarchy of related cloud resource abstractions.
 * [AWS::ServiceCatalogAppRegistry::AttributeGroup](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-servicecatalogappregistry-attributegroup.html) – Creates a new attribute group as a container for user-defined attributes. This feature enables users to have full control over their cloud application’s metadata in a rich machine-readable format to facilitate integration with automated workflows and third-party tools.
+* [AWS::ServiceCatalogAppRegistry::Application](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-servicecatalogappregistry-application.html) – Provision a Service Catalog AppRegistry application which is the top-level node in a hierarchy of related cloud resource abstractions.
 * [AWS::ServiceCatalogAppRegistry::AttributeGroupAssociation](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-servicecatalogappregistry-attributegroupassociation.html) – Link Applications and Attribute Groups.
 * [AWS::ServiceCatalogAppRegistry::ResourceAssociation](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-servicecatalogappregistry-resourceassociation.html) – Link Resources and Resource Types with Applications. 
 
