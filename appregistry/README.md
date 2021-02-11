@@ -71,4 +71,4 @@ aws cloudformation delete-stack --stack-name aws-5-mins-appregistry --region us-
 
 # Additional Resources
 
-* [AWS on Air 2020: AWS What’s Next ft. AWS Service Catalog AppRegistry](https://www.youtube.com/watch?v=Ez3QdO7UjwU)
+* [AWS on Air 2020: AWS What’s Next ft. AWS Service Catalog AppRegistry](https://youtu.be/Ez3QdO7UjwU)
