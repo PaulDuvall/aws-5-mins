@@ -21,14 +21,14 @@ Resources:
         ApplicationId : AppXYZ
         ProductionLine : PR10
         BusinessUnit : BU1
-  # MyAttributeGroupAssociation:
-  #   Type: AWS::ServiceCatalogAppRegistry::AttributeGroupAssociation
-  #   Properties: 
-  #     Application: String
-  #     AttributeGroup: String
+  MyAttributeGroupAssociation:
+    Type: AWS::ServiceCatalogAppRegistry::AttributeGroupAssociation
+    Properties: 
+      Application: "CC_Recommendation_App"
+      AttributeGroup: "Corp_DataScience_SalesAnalytics"
   # MyResourceAssociation:
   #   Type: AWS::ServiceCatalogAppRegistry::ResourceAssociation
   #   Properties: 
-  #     Application: String
-  #     Resource: String
-  #     ResourceType: String
+  #     Application: "CC_Recommendation_App" 
+  #     Resource: "aws-5-mins-sqs"
+  #     ResourceType: "CFN_STACK"
