@@ -1,0 +1,4 @@
+Description: SQS Template for AppRegistry demo
+Resources:
+  MyQueue:
+    Type: AWS::SQS::Queue
