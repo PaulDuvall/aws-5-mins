@@ -26,9 +26,9 @@ Resources:
     Properties: 
       Application: "CC_Recommendation_App"
       AttributeGroup: "Corp_DataScience_SalesAnalytics"
-  # MyResourceAssociation:
-  #   Type: AWS::ServiceCatalogAppRegistry::ResourceAssociation
-  #   Properties: 
-  #     Application: "CC_Recommendation_App" 
-  #     Resource: "aws-5-mins-sqs"
-  #     ResourceType: "CFN_STACK"
+  MyResourceAssociation:
+    Type: AWS::ServiceCatalogAppRegistry::ResourceAssociation
+    Properties: 
+      Application: "CC_Recommendation_App" 
+      Resource: "aws-5-mins-sqs"
+      ResourceType: "CFN_STACK"

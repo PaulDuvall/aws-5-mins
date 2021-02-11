@@ -39,6 +39,11 @@ touch appregistry.yml
 1. Copy the contents from **[appregistry.yml](https://raw.githubusercontent.com/PaulDuvall/aws-5-mins/main/appregistry/appregistry.yml)** to your local **appregistry.yml** file in Cloud9 and save it. 
 1. Run this command to launch a CloudFormation stack that generates @TODO. 
 
+
+```
+aws cloudformation create-stack --stack-name aws-5-mins-sqs --template-body file://sqs.yml --capabilities CAPABILITY_IAM --region us-east-1
+```
+
 ```
 aws cloudformation create-stack --stack-name aws-5-mins-appregistry --template-body file://appregistry.yml --capabilities CAPABILITY_IAM --region us-east-1
 ```
