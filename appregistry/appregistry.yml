@@ -15,7 +15,7 @@ Resources:
     Type: AWS::ServiceCatalogAppRegistry::Application
     Properties: 
       Description: "Real Time Rec App"
-      Name: "CC_Recommendation_App"
+      Name: CC_Recommendation_App
       Tags: 
         Name : RecommendationEngine
         ApplicationId : AppXYZ
@@ -24,11 +24,11 @@ Resources:
   MyAttributeGroupAssociation:
     Type: AWS::ServiceCatalogAppRegistry::AttributeGroupAssociation
     Properties: 
-      Application: "CC_Recommendation_App"
-      AttributeGroup: "Corp_DataScience_SalesAnalytics"
+      Application: CC_Recommendation_App
+      AttributeGroup: Corp_DataScience_SalesAnalytics
   MyResourceAssociation:
     Type: AWS::ServiceCatalogAppRegistry::ResourceAssociation
     Properties: 
-      Application: "CC_Recommendation_App" 
-      Resource: "aws-5-mins-sqs"
-      ResourceType: "CFN_STACK"
+      Application: CC_Recommendation_App
+      Resource: aws-5-mins-sqs
+      ResourceType: CFN_STACK
