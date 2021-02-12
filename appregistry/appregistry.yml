@@ -10,7 +10,7 @@ Resources:
             Team: "salesanalytics"
         }
       Description: "sales analytics"
-      Name: Corp_DataScience_SalesAnalytics
+      Name: "Corp_DataScience_SalesAnalytics"
   MyApplication:
     Type: AWS::ServiceCatalogAppRegistry::Application
     Properties: 
