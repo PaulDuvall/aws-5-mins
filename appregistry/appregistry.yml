@@ -23,11 +23,13 @@ Resources:
         BusinessUnit : BU1
   MyAttributeGroupAssociation:
     Type: AWS::ServiceCatalogAppRegistry::AttributeGroupAssociation
+    DependsOn: MyApplication
     Properties: 
       Application: CC_Recommendation_App
       AttributeGroup: Corp_DataScience_SalesAnalytics
   MyResourceAssociation:
     Type: AWS::ServiceCatalogAppRegistry::ResourceAssociation
+    DependsOn: MyApplication
     Properties: 
       Application: CC_Recommendation_App
       Resource: aws-5-mins-sqs
