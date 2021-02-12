@@ -41,6 +41,12 @@ touch sqs.yml
 
 1. Copy the contents from **[sqs.yml](https://raw.githubusercontent.com/PaulDuvall/aws-5-mins/main/appregistry/sqs.yml)** to your local **sqs.yml** file in Cloud9 and save it. 
 1. Copy the contents from **[appregistry.yml](https://raw.githubusercontent.com/PaulDuvall/aws-5-mins/main/appregistry/appregistry.yml)** to your local **appregistry.yml** file in Cloud9 and save it. 
+
+```
+git clone https://github.com/PaulDuvall/aws-5-mins.git
+cd aws-5-mins/appregistry
+```
+
 1. Run this command to launch a CloudFormation stack that generates an SQS resource.  
 
 ```
