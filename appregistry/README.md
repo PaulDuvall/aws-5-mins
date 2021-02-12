@@ -31,6 +31,7 @@ There are four new CloudFormation resources to support the launch of AppRegistry
 
 ```
 sudo rm -rf ~/environment/aws-5-mins
+cd ~/environment/
 git clone https://github.com/PaulDuvall/aws-5-mins.git
 cd aws-5-mins/appregistry
 ```
