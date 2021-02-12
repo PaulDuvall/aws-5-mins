@@ -50,7 +50,9 @@ aws cloudformation create-stack --stack-name aws-5-mins-appregistry --template-b
 View the provisioned [CloudFormation Stacks](https://console.aws.amazon.com/cloudformation/home?region=us-east-1#/stacks).
 
 ```
-list-attrib-groups.sh
+sudo chmod +x *.sh
+
+scripts/list-attrib-groups.sh
 ```
 
 # Pricing
