@@ -55,6 +55,7 @@ sudo chmod +x *.sh
 ./list-attrib-groups.sh
 
 ./list-applications.sh
+./list-resources.sh
 ```
 
 # Pricing
