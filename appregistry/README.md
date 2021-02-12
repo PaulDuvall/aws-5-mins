@@ -53,13 +53,12 @@ aws cloudformation create-stack --stack-name aws-5-mins-sqs --template-body file
 aws cloudformation create-stack --stack-name aws-5-mins-appregistry --template-body file://appregistry.yml --capabilities CAPABILITY_IAM --region us-east-1
 ```
 
-# Deployment Pipeline
-TBD
-
 # Pricing
 AppRegistry uses the same per API call pricing model that Service Catalog uses. Therefore, after 1,000 API calls in a given month, you’re charged $0.0007 per API call (14 calls for 1 cent). For more information, see [AWS Service Catalog Pricing](https://aws.amazon.com/servicecatalog/pricing/). 
 
 # Delete Resources
+
+Run these command to delete the CloudFormation Stacks and the resources they provisioned in this demo. 
 
 ```
 aws cloudformation delete-stack --stack-name aws-5-mins-sqs --region us-east-1
