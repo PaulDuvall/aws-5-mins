@@ -28,20 +28,9 @@ There are four new CloudFormation resources to support the launch of AppRegistry
 ## Launch CloudFormation Stack
 
 1. Launch a Cloud9 Environment in **us-east-1** using these [instructions](https://github.com/PaulDuvall/aws-5-mins/tree/main/cloud9).
-1. Create an empty YAML file.
 
 ```
-sudo rm -rf ~/environment/aws-5-mins-appregistry
-mkdir ~/environment/aws-5-mins-appregistry
-cd ~/environment/aws-5-mins-appregistry
-touch appregistry.yml
-touch sqs.yml
-
-```
-
-1. Run these commands.
-
-```
+sudo rm -rf ~/environment/aws-5-mins
 git clone https://github.com/PaulDuvall/aws-5-mins.git
 cd aws-5-mins/appregistry
 ```
