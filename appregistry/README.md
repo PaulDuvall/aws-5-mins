@@ -49,6 +49,10 @@ aws cloudformation create-stack --stack-name aws-5-mins-appregistry --template-b
 
 View the provisioned [CloudFormation Stacks](https://console.aws.amazon.com/cloudformation/home?region=us-east-1#/stacks).
 
+```
+list-attrib-groups.sh
+```
+
 # Pricing
 AppRegistry uses the same per API call pricing model that Service Catalog uses. Therefore, after 1,000 API calls in a given month, you’re charged $0.0007 per API call (14 calls for 1 cent). For more information, see [AWS Service Catalog Pricing](https://aws.amazon.com/servicecatalog/pricing/). 
 
