@@ -53,6 +53,8 @@ View the provisioned [CloudFormation Stacks](https://console.aws.amazon.com/clou
 ```
 sudo chmod +x *.sh
 ./list-attrib-groups.sh
+
+./list-applications.sh
 ```
 
 # Pricing
