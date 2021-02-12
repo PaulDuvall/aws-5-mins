@@ -51,8 +51,7 @@ View the provisioned [CloudFormation Stacks](https://console.aws.amazon.com/clou
 
 ```
 sudo chmod +x *.sh
-
-scripts/list-attrib-groups.sh
+./list-attrib-groups.sh
 ```
 
 # Pricing
