@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
-searchGroupName=Commerce_Payments
+searchGroupName=Corp_DataScience_SalesAnalytics
 listApps=$(aws servicecatalog-appregistry list-applications --query 'applications[*].name' --output text --region us-east-1)
 
 for app in ${listApps[*]}
