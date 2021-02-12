@@ -38,13 +38,13 @@ cd aws-5-mins/appregistry
 1. Run this command to launch a CloudFormation stack that generates an SQS resource.  
 
 ```
-aws cloudformation create-stack --stack-name aws-5-mins-sqs --template-body file://sqs.yml --capabilities CAPABILITY_IAM --region us-east-1
+aws cloudformation create-stack --stack-name aws-5-mins-sqs --template-body file:///home/ec2-user/environment/aws-5-mins/appregistry/sqs.yml --capabilities CAPABILITY_IAM --region us-east-1
 ```
 
 1. Run this command to launch a CloudFormation stack that generates AppRegistry resources.  
 
 ```
-aws cloudformation create-stack --stack-name aws-5-mins-appregistry --template-body file://appregistry.yml --capabilities CAPABILITY_IAM --region us-east-1
+aws cloudformation create-stack --stack-name aws-5-mins-appregistry --template-body file:///home/ec2-user/environment/aws-5-mins/appregistry/appregistry.yml --capabilities CAPABILITY_IAM --region us-east-1
 ```
 
 View the provisioned [CloudFormation Stacks](https://console.aws.amazon.com/cloudformation/home?region=us-east-1#/stacks).
