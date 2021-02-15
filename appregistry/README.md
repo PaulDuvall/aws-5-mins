@@ -77,4 +77,7 @@ aws cloudformation delete-stack --stack-name aws-5-mins-sqs --region us-east-1
 
 # Additional Resources
 
+* [AWS re:Invent 2020: Gaining application-level governance and cost visibility](https://www.youtube.com/watch?v=9rJ_91AtPJ0
+)
+* [Increase application visibility and governance using AWS Service Catalog AppRegistry](https://aws.amazon.com/blogs/mt/increase-application-visibility-governance-using-aws-service-catalog-appregistry/)
 * [AWS on Air 2020: AWS What’s Next ft. AWS Service Catalog AppRegistry](https://youtu.be/Ez3QdO7UjwU)
