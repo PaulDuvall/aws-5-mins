@@ -14,7 +14,7 @@ There are five primary steps to setting up the AppRegistry in an enterprise:
 1. Each development team associates attribute groups to their applications.
 1. Each development team associates existing AWS CloudFormation stacks with their applications.
 
-[Source](https://stelligent.com/2021/01/20/aws-reinvent-2020-devsecops-recap/)
+[Source: Increase application visibility and governance using AWS Service Catalog AppRegistry](https://aws.amazon.com/blogs/mt/increase-application-visibility-governance-using-aws-service-catalog-appregistry/)
 
 # CloudFormation Support
 
@@ -49,6 +49,8 @@ aws cloudformation create-stack --stack-name aws-5-mins-appregistry --template-b
 ```
 
 View the provisioned [CloudFormation Stacks](https://console.aws.amazon.com/cloudformation/home?region=us-east-1#/stacks).
+
+You can run the commands below to see the results of the data that was entered into the AppRegistry when the CloudFormation stacks were launched.
 
 ```
 sudo chmod +x *.sh

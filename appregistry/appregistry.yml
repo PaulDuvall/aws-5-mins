@@ -1,4 +1,17 @@
 Description: AWS Service Catalog AppRegistry demo
+Parameters: 
+  AttributeGroupName: 
+    Description: The attribute group name
+    Type: String
+    Default: "Corp_DataScience_SalesAnalytics"
+  ApplicationName: 
+    Description: The name of the Application
+    Type: String
+    Default: CC_Recommendation_App
+  ResourceName: 
+    Description: CloudFormation stack name
+    Type: String
+    Default: aws-5-mins-sqs
 Resources:
   MyAttributeGroup:
     Type: AWS::ServiceCatalogAppRegistry::AttributeGroup
@@ -10,12 +23,12 @@ Resources:
             Team: "salesanalytics"
         }
       Description: "sales analytics"
-      Name: "Corp_DataScience_SalesAnalytics"
+      Name: !Ref AttributeGroupName
   MyApplication:
     Type: AWS::ServiceCatalogAppRegistry::Application
     Properties: 
       Description: "Real Time Rec App"
-      Name: CC_Recommendation_App
+      Name: !Ref ApplicationName
       Tags: 
         Name : RecommendationEngine
         ApplicationId : AppXYZ
@@ -25,12 +38,12 @@ Resources:
     Type: AWS::ServiceCatalogAppRegistry::AttributeGroupAssociation
     DependsOn: MyApplication
     Properties: 
-      Application: CC_Recommendation_App
+      Application: !Ref ApplicationName
       AttributeGroup: Corp_DataScience_SalesAnalytics
   MyResourceAssociation:
     Type: AWS::ServiceCatalogAppRegistry::ResourceAssociation
     DependsOn: MyApplication
     Properties: 
-      Application: CC_Recommendation_App
-      Resource: aws-5-mins-sqs
+      Application: !Ref ApplicationName
+      Resource: !Ref ResourceName
       ResourceType: CFN_STACK
