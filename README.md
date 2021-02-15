@@ -7,7 +7,7 @@ Service or Feature | Category | Description | 5 Min Video
 [AWS Audit Manager](./audit-manager) | Security, Identity & Compliance | Continuously audit your AWS usage to simplify how you assess risk and compliance | [4-Feb-2021](https://youtu.be/mSMlxUJERdg)
 [Amazon DevOps Guru](./devops-guru) | Machine Learning | ML-powered cloud operations service to improve application availability | [9-Feb-2021](https://youtu.be/Dg-rh17b91Q)
 [AWS Proton](./proton) | Developer Tools | Automated management for container and serverless deployments | [11-Feb-2021](https://youtu.be/EN41nXwyTGQ)
-[AWS Service Catalog AppRegistry](./appregistry) | Management & Governance | Repository of your applications and associated resources. | 16-Feb-2021
+[AWS Service Catalog AppRegistry](./appregistry) | Management & Governance | Repository of your applications and associated resources. | [16-Feb-2021](https://youtu.be/AZT1OGUnTAw)
 [AWS Serverless Application Model (SAM)](./sam) | Compute | Build serverless applications in simple and clean syntax | 18-Feb-2021
 [Amazon VPC Reachability Analyzer](./vpc-reachability) | Networking & Content Delivery | Network diagnostics tool that troubleshoots reachability between two endpoints in a VPC, or within multiple VPCs | 23-Feb-2021
 [Amazon Sumerian](./sumerian) | AR & VR | Easily create and run browser-based 3D, augmented reality (AR), and virtual reality (VR) applications | 25-Feb-2021

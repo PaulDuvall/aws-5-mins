@@ -1,6 +1,6 @@
 **NOTE: This video has not been released yet.**
 
-You can find the 5-minute video that walks through all of the steps described here. 
+You can find the 5-minute video that walks through all of the steps described [here](https://youtu.be/AZT1OGUnTAw). 
 
 In this episode, we'll be looking at [AWS Service Catalog AppRegistry](https://aws.amazon.com/blogs/mt/increase-application-visibility-governance-using-aws-service-catalog-appregistry/).
 
