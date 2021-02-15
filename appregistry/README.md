@@ -27,7 +27,7 @@ There are four new CloudFormation resources to support the launch of AppRegistry
 
 ## Launch CloudFormation Stack
 
-1. Launch a Cloud9 Environment in **us-east-1** using these [instructions](https://github.com/PaulDuvall/aws-5-mins/tree/main/cloud9).
+1. From your [AWS CloudShell Environment](https://us-east-1.console.aws.amazon.com/cloudshell/home?region=us-east-1#) in the **us-east-1** region, run the following commands: 
 
 ```
 sudo rm -rf ~/environment/aws-5-mins
