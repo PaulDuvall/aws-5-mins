@@ -39,7 +39,7 @@ Resources:
     DependsOn: MyApplication
     Properties: 
       Application: !Ref ApplicationName
-      AttributeGroup: Corp_DataScience_SalesAnalytics
+      AttributeGroup: !Ref AttributeGroupName
   MyResourceAssociation:
     Type: AWS::ServiceCatalogAppRegistry::ResourceAssociation
     DependsOn: MyApplication
