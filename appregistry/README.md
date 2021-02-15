@@ -30,8 +30,8 @@ There are four new CloudFormation resources to support the launch of AppRegistry
 1. From your [AWS CloudShell Environment](https://us-east-1.console.aws.amazon.com/cloudshell/home?region=us-east-1#) in the **us-east-1** region, run the following commands: 
 
 ```
-sudo rm -rf ~/environment/aws-5-mins
-cd ~/environment/
+sudo rm -rf ~/aws-5-mins
+cd ~/
 git clone https://github.com/PaulDuvall/aws-5-mins.git
 cd aws-5-mins/appregistry
 ```
