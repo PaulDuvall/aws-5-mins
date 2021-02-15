@@ -30,13 +30,17 @@ Launched in a dedicated VPC. As of now, you can have outbound connections but no
 
 Launching into an existing VPC in on near-term roadmap. Reduce need for bastion host?
 
-No additional charge for CloudShell.
-
 Ensuring consistency because of the ephemeral nature of CloudShell.
 
 Dark and Light Mode, Modify Font Size.
 
 Download and Upload Files.
+
+Multiple tabs, columns.
+
+CloudShell is free. Up to 10 sessions per region (soft limit). Pay for outbound traffic. 
+
+Launched in 5 regions but more to come. 
 
 # CloudFormation Support
 TBD
