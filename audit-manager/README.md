@@ -19,10 +19,8 @@ Audit Manager integrates with [AWS Security Hub](https://aws.amazon.com/about-aw
 1. Create an empty YAML file.
 
 ```
-sudo rm -rf ~/aws-5-mins
-cd ~/
-mkdir ~/aws-5-mins
-cd ~/aws-5-mins
+mkdir my-aws-5-mins
+cd my-aws-5-mins
 touch audit-manager.yml
 ```
 
