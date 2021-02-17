@@ -8,7 +8,7 @@ Resources:
   Assessment:
     Type: AWS::AuditManager::Assessment
     Properties:
-      FrameworkId: "2ad0cca9-a1bf-3b4a-9769-ef78c51902ba"
+      FrameworkId: "067999dd-6933-3707-96c8-e4bce8f1a60b"
       AssessmentReportsDestination:
         Destination: !Sub s3://${S3Bucket}
         DestinationType: S3

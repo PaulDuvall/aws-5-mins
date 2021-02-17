@@ -19,8 +19,10 @@ Audit Manager integrates with [AWS Security Hub](https://aws.amazon.com/about-aw
 1. Create an empty YAML file.
 
 ```
-mkdir ~/environment/my-aws-5-mins
-cd ~/environment/my-aws-5-mins
+sudo rm -rf ~/aws-5-mins
+cd ~/
+mkdir ~/aws-5-mins
+cd ~/aws-5-mins
 touch audit-manager.yml
 ```
 
@@ -28,7 +30,12 @@ touch audit-manager.yml
 1. Run this command to launch a CloudFormation stack that generates an Audit Manager assessment. 
 
 ```
-aws cloudformation create-stack --stack-name aws-5-mins-auditmanager --template-body file://audit-manager.yml --capabilities CAPABILITY_IAM --region us-east-1
+aws cloudformation deploy \
+--stack-name aws-5-mins-auditmanager \
+--template-file audit-manager.yml \
+--capabilities CAPABILITY_NAMED_IAM \
+--no-fail-on-empty-changeset \
+--region us-east-1
 ```
 
 It takes less than 1 minute to launch the [CloudFormation stack](https://console.aws.amazon.com/cloudformation/) and the Audit Manager assessment begins. You will need to wait up to 24 hours to view collected evidence. You can visit the [Audit Manager](https://console.aws.amazon.com/auditmanager/home) Console to see the assessment configuration.
