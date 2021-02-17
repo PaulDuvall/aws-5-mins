@@ -52,6 +52,7 @@ TBD
 
 ```
 cd ~
+mkdir dir1 dir2 dir 3
 ls
 ```
 
