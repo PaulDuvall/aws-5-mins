@@ -29,12 +29,14 @@ There is no extra cost. You only pay for the resources you use or create from Cl
 
 ## Preferences
 
+Modify your environment preferences. 
+
 1. Select the **Gear icon** on the right-hand side of your CloudShell environment.
 1. Choose a different **Font size**.
 1. Choose a different **AWS CloudShell theme**.
 
 ## Actions
-TBD
+Perform the following actions from your CloudShell environment.
 
 ### Open tabs, rows, and columns
 
