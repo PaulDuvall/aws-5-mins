@@ -57,7 +57,7 @@ TBD
 
 ```
 cd ~
-mkdir dir1 dir2 dir3
+mkdir rs-dir1 rs-dir2 rs-dir3
 sudo yum -y install mt-st
 sudo yum list installed | grep mt-st
 ls
@@ -80,7 +80,7 @@ You should see the directories you created along with any of the files in your h
 
 ```
 cd ~
-mkdir dir1 dir2 dir3
+mkdir del-dir1 del-dir2 del-dir3
 ls
 ```
 
