@@ -6,19 +6,17 @@ In this episode, we'll be looking at AWS CloudShell. CloudShell is a fully-manag
 
 ![How it Works](https://github.com/PaulDuvall/aws-5-mins/blob/main/_img/cloudshell-howitworks.png)
 
-It comes preinstalled with the AWS CLI, SAM CLI, Node.js, Git, vim, Powershell, and Python. It run on an Amazon Linux 2 Environment and is always up to date with the latest patches. You don't have to worry about patching the environment. Made some configuration errors. Don't have to keep the packages up to date. 
+It comes preinstalled with tools such as the AWS CLI, the SAM CLI, Node.js, Git, vim, Powershell, and Python. It run on an Amazon Linux 2 environment and is always up to date with the latest patches. 
 
 CloudShell is always available from the console through an one-click icon at the top of every console page. 
 
 There are no extra credentials you need to manage at it uses the credentials of the logged in user to the console.
 
-Your CloudShell environment is terminated after 20 minutes of inactivity but you can keep using it for 12 hour continuously.
-
-Only your home directory is persisted and you can store 1GB in this directory.
+Your CloudShell environment is terminated after 20 minutes of inactivity but you can keep using it for 12 hour continuously. Only your home directory is persisted and you can store 1GB in this directory.
 
 Your CloudShell environment is launched into a dedicated VPC managed by AWS. As of now, you can have outbound connections but not inbound connections. On AWS' near-term roadmap is launching into an existing VPC.
  
-You can customize your shell environment with dark and light mode, modifying font size. You can download and upload files and launch multiple tabs and columns.
+You can customize your shell environment with dark and light mode and by modifying your font size. You can download and upload files and launch multiple tabs and columns.
 
 Because of the ephemeral nature of CloudShell, it can be used to ensure consistency because - other than your home directory - it resets its configuration every time you use it. Therefore, it can be very useful for experimentation. CloudShell is also helpful for establishing context as you switch between AWS accounts as it's easy to determine which account and in which region you are running.
 
