@@ -17,7 +17,7 @@ Only your home directory is persisted and you can store 1GB in this directory.
 
 Your CloudShell environment is launched into a dedicated VPC managed by AWS. As of now, you can have outbound connections but not inbound connections. On AWS' near-term roadmap is launching into an existing VPC.
  
-You can customize your shell environment with dark and lLight mode, modifying font size. You can download and upload files and launch multiple tabs and columns.
+You can customize your shell environment with dark and light mode, modifying font size. You can download and upload files and launch multiple tabs and columns.
 
 Helpful for context - switching between AWS accounts.
 
