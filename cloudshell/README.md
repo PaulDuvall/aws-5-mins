@@ -10,7 +10,7 @@ Comes with the AWS CLI, SAM CLI, Node.js, Python preinstalled.
 
 Helpful for context - switching between AWS accounts.
 
-Uses credentials of the logged in user to the console.
+There are no extra credentials you need to manage at it uses the credentials of the logged in user to the console.
 
 Always available from the console.
 
