@@ -8,7 +8,7 @@ In this episode, we'll be looking at AWS CloudShell. CloudShell is a fully-manag
 
 It comes preinstalled with tools such as the AWS CLI, the SAM CLI, Node.js, Git, vim, Powershell, and Python. It run on an Amazon Linux 2 environment and is always up to date with the latest patches. 
 
-CloudShell is always available from the console through an one-click icon at the top of every console page. 
+CloudShell is always available from the AWS console through a one-click icon at the top of every console page. 
 
 There are no extra credentials you need to manage at it uses the credentials of the logged in user to the console.
 
