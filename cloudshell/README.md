@@ -47,14 +47,14 @@ Perform the following actions from your CloudShell environment.
 
 ### Download File
 
-1. From your CloudShell environment, create a new file.
+1. From your CloudShell environment, create a new file: `vim cloudshell-test.txt`.
 1. Make some changes to the file.
 1. Go to **Actions** and select **Download File**.
 
 ### Upload File
 
-1. On your local computer, create a new file.
-1. Make some changes to the file.
+1. On your local computer, modify the contents of the file.
+1. Change the name of the file to `local-env.txt`.
 1. Go to **Actions** and select **Upload File**.
 
 ### Restart AWS CloudShell
