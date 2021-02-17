@@ -39,15 +39,21 @@ TBD
 ### Open tabs, rows, and columns
 
 
-1. New Tab
-1. Split into rows
-1. Split into columns
-1. Download File
-1. Upload File
+1. Go to **Actions** and select **New Ta*.
+1. Go to **Actions** and select **Split into rows*.
+1. Go to **Actions** and select **Split into columns*.
+
+### Download File
+
+1. Go to **Actions** and select **Download File*.
+
+### Upload File
+
+1. Go to **Actions** and select **Upload File*.
 
 ### Restart AWS CloudShell
 
-1. Run the following commands from your CloudShell environment.
+1. Run the following commands from your CloudShell environment:
 
 ```
 cd ~
