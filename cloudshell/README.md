@@ -39,9 +39,9 @@ TBD
 ### Open tabs, rows, and columns
 
 
-1. Go to **Actions** and select **New Ta*.
-1. Go to **Actions** and select **Split into rows*.
-1. Go to **Actions** and select **Split into columns*.
+1. Go to **Actions** and select **New Tab**.
+1. Go to **Actions** and select **Split into rows**.
+1. Go to **Actions** and select **Split into columns**.
 
 ### Download File
 
