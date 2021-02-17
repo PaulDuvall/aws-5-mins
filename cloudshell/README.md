@@ -44,7 +44,26 @@ TBD
 1. Split into columns
 1. Download File
 1. Upload File
-1. Go to **Actions** and select **Restart AWS CloudShell**.
+
+### Restart AWS CloudShell
+
+1. Run the following commands from your CloudShell environment.
+
+```
+cd ~
+mkdir dir1 dir2 dir3
+ls
+```
+
+1. Go to **Actions** and select **Restart AWS CloudShell*. It will automatically restart your CloudShell environment. Once it's available again, type the following commands: 
+
+```
+cd ~
+ls
+```
+
+You should see the directories you created along with any of the files in your home directory. 
+
 
 ### Delete AWS CloudShell home directory
 
@@ -56,16 +75,14 @@ mkdir dir1 dir2 dir3
 ls
 ```
 
-1. Go to **Actions** and select **Delete AWS CloudShell home directory**.
+1. Go to **Actions** and select **Delete AWS CloudShell home directory**. It will automatically restart your CloudShell environment. Once it's available again, type the following commands: 
 
 ```
 cd ~
 ls
 ```
 
-
-
-
+You should no longer see the directories or any of the files you created in your home directory. 
 
 ## Run Commands
 
