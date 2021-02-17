@@ -45,11 +45,11 @@ TBD
 
 ### Download File
 
-1. Go to **Actions** and select **Download File*.
+1. Go to **Actions** and select **Download File**.
 
 ### Upload File
 
-1. Go to **Actions** and select **Upload File*.
+1. Go to **Actions** and select **Upload File**.
 
 ### Restart AWS CloudShell
 
