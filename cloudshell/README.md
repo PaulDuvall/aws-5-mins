@@ -63,7 +63,7 @@ sudo yum list installed | grep mt-st
 ls
 ```
 
-1. Go to **Actions** and select **Restart AWS CloudShell*. It will automatically restart your CloudShell environment. Once it's available again, type the following commands: 
+1. Go to **Actions** and select **Restart AWS CloudShell**. It will automatically restart your CloudShell environment. Once it's available again, type the following commands: 
 
 ```
 cd ~
