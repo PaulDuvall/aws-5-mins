@@ -77,7 +77,7 @@ sudo yum list installed | grep mt-st
 ls
 ```
 
-You should see the directories you created along with any of the files in your home directory but the **mt-st** package will no longer be installed. This is because it resets everything except for your home directory. 
+You should see the directories you created along with any of the files in your home directory but the **mt-st** package will no longer be installed. This is because CloudShell resets everything except for your home directory. 
 
 
 ### Delete AWS CloudShell home directory
