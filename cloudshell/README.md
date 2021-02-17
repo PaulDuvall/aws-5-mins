@@ -25,6 +25,54 @@ As of February 2020, it has been launched in five AWS regions with more to come.
 # Pricing
 There is no extra cost. You only pay for the resources you use or create from CloudShell. You can run up to 10 sessions per region - which is a soft limit.
 
+# Demo
+
+## Preferences
+
+1. Select the **Gear icon** on the right-hand side of your CloudShell environment.
+1. Choose a different **Font size**.
+1. Choose a different **AWS CloudShell theme**.
+
+## Actions
+TBD
+
+### Open tabs, rows, and columns
+
+
+1. New Tab
+1. Split into rows
+1. Split into columns
+1. Download File
+1. Upload File
+1. Go to **Actions** and select **Restart AWS CloudShell**.
+
+### Delete AWS CloudShell home directory
+
+1. Run the following commands from your CloudShell environment.
+
+```
+cd ~
+ls
+```
+
+1. Go to **Actions** and select **Delete AWS CloudShell home directory**.
+
+```
+cd ~
+ls
+```
+
+
+
+
+
+## Run Commands
+
+pwd
+ls
+
+
+
 # Additional Resources
 
 * [AWS Podcast #416: Introducing AWS CloudShell](https://aws.amazon.com/podcasts/416-introducing-aws-cloudshell/)
