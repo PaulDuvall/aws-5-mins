@@ -86,10 +86,14 @@ You should no longer see the directories or any of the files you created in your
 
 ## Run Commands
 
+```
 pwd
 ls
-
-
+aws
+git
+node --version
+python --version
+```
 
 # Additional Resources
 
