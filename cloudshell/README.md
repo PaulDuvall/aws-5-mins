@@ -2,7 +2,7 @@
 
 You can find the 5-minute video that walks through all of the steps described here. 
 
-In this episode, we'll be looking at AWS CloudShell. CloudShell is a fully-managed service that provides you command line access to AWS resources and tools directly from a browser. 
+In this episode, we'll be looking at [AWS CloudShell](https://aws.amazon.com/cloudshell/). CloudShell is a fully-managed service that provides you command line access to AWS resources and tools directly from a browser. 
 
 ![How it Works](https://github.com/PaulDuvall/aws-5-mins/blob/main/_img/cloudshell-howitworks.png)
 
