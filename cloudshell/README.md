@@ -42,26 +42,10 @@ CloudShell is free. Up to 10 sessions per region (soft limit). Pay for outbound 
 
 Launched in 5 regions but more to come. 
 
-# CloudFormation Support
-TBD
 
-
-## Launch CloudFormation Stack
-
-TBD
-
-
-# Deployment Pipeline
 
 # Pricing
-TBD
-
-# Delete Resources
-
-```
-aws cloudformation delete-stack --stack-name aws-5-mins-SERVICENAME
-```
-
+There is no extra cost. You only pay for the resources you use or create from CloudShell. 
 
 # Additional Resources
 
