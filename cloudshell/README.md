@@ -2,8 +2,11 @@
 
 You can find the 5-minute video that walks through all of the steps described here. 
 
-In this episode, we'll be looking at AWS CloudShell. CloudShell is a fully-managed service that provides you command line access to AWS resources and tools directly from a browser. It can be very useful for experimentation. 
+In this episode, we'll be looking at AWS CloudShell. CloudShell is a fully-managed service that provides you command line access to AWS resources and tools directly from a browser. 
 
+![How it Works](https://github.com/PaulDuvall/aws-5-mins/blob/main/_img/cloudshell-howitworks.png)
+
+It can be very useful for experimentation. 
 
 It comes preinstalled with the AWS CLI, SAM CLI, Node.js, Git, vim, Powershell, and Python. It run on an Amazon Linux 2 Environment and is always up to date with the latest patches. You don't have to worry about patching the environment. Made some configuration errors. Don't have to keep the packages up to date. 
 
@@ -19,11 +22,11 @@ Your CloudShell environment is launched into a dedicated VPC managed by AWS. As 
  
 You can customize your shell environment with dark and light mode, modifying font size. You can download and upload files and launch multiple tabs and columns.
 
-Helpful for context - switching between AWS accounts.
+Because of the ephemeral nature of CloudShell, it can be used to ensure consistency because - other than your home directory - it resets its configuration every time you use it.
 
-Ensuring consistency because of the ephemeral nature of CloudShell.
+CloudShell is helpful for establishing context as you switch between AWS accounts as it's easy to determine which account and region you are in.
 
-It has been launched in five AWS regions with more to come. 
+As of February 2020, it has been launched in five AWS regions with more to come. 
 
 # Pricing
 There is no extra cost. You only pay for the resources you use or create from CloudShell. You can run up to 10 sessions per region - which is a soft limit.
