@@ -2,33 +2,35 @@
 
 You can find the 5-minute video that walks through all of the steps described here. 
 
-In this episode, we'll be looking at AWS CloudShell.
+In this episode, we'll be looking at AWS CloudShell. CloudShell is a fully-managed service that provides you command line access to AWS resources and tools directly from a browser.
 
-Very useful for experimentation. 
+It comes preinstalled with the AWS CLI, SAM CLI, Node.js, Git, vim, Powershell, and Python. It run on an Amazon Linux 2 Environment and is always up to date with the latest patches. You don't have to worry about patching the environment. Made some configuration errors. Don't have to keep the packages up to date. 
 
-Comes with the AWS CLI, SAM CLI, Node.js, Python preinstalled.
-
-Helpful for context - switching between AWS accounts.
+CloudShell is always available from the console through an one-click icon at the top of every console page. 
 
 There are no extra credentials you need to manage at it uses the credentials of the logged in user to the console.
 
-Always available from the console.
+Your CloudShell environment is terminated after 20 minutes of inactivity but you can keep using it for 12 hour continuously.
 
-Git, vim, Powershell. Amazon Linux 2 Environment.
+Only your home directory is persisted and you can store 1GB in this directory.
 
-Only your home directory is persisted.
+Your CloudShell environment is launched into a dedicated VPC managed by AWS. As of now, you can have outbound connections but not inbound connections. 
+
+Launching into an existing VPC in on near-term roadmap.
+
+Very useful for experimentation. 
+
+
+Helpful for context - switching between AWS accounts.
 
 . bashrc
 
-1GB storage for home directory.
 
-CloudShell env is terminated after 20 minutes of inactivity but you can keep using it for 12 hour continuously.
 
-Don't have to worry about patching the environment. Made some configuration errors. Don't have to keep the packages up to date. 
 
-Launched in a dedicated VPC. As of now, you can have outbound connections but not inbound connections. 
 
-Launching into an existing VPC in on near-term roadmap. Reduce need for bastion host?
+
+ Reduce need for bastion host?
 
 Ensuring consistency because of the ephemeral nature of CloudShell.
 
