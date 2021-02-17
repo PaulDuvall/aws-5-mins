@@ -52,6 +52,8 @@ TBD
 ```
 cd ~
 mkdir dir1 dir2 dir3
+sudo yum -y install mt-st
+sudo yum list installed | grep mt-st
 ls
 ```
 
@@ -59,6 +61,7 @@ ls
 
 ```
 cd ~
+sudo yum list installed | grep mt-st
 ls
 ```
 
@@ -86,6 +89,8 @@ You should no longer see the directories or any of the files you created in your
 
 ## Run Commands
 
+1. Run the following commands from your CloudShell environment:
+
 ```
 pwd
 ls
@@ -93,6 +98,8 @@ aws
 git
 node --version
 python --version
+pwsh
+sam
 ```
 
 # Additional Resources
