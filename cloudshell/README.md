@@ -45,10 +45,14 @@ TBD
 
 ### Download File
 
+1. From your CloudShell environment, create a new file.
+1. Make some changes to the file.
 1. Go to **Actions** and select **Download File**.
 
 ### Upload File
 
+1. On your local computer, create a new file.
+1. Make some changes to the file.
 1. Go to **Actions** and select **Upload File**.
 
 ### Restart AWS CloudShell
