@@ -49,7 +49,7 @@ Perform the following actions from your CloudShell environment.
 
 ### Download File
 
-1. From your CloudShell environment, create a new file: `vim cloudshell-test.txt`.
+1. From your CloudShell environment, create a new file: `vim cloudshell.txt`.
 1. Make some changes to the file.
 1. Go to **Actions** and select **Download File**.
 
