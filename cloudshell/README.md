@@ -18,7 +18,7 @@ Your CloudShell environment is launched into a dedicated VPC managed by AWS. As 
  
 You can customize your shell environment with dark and light mode and by modifying your font size. You can download and upload files and launch multiple tabs and columns.
 
-Because of the ephemeral nature of CloudShell, it can be used to ensure consistency because - other than your home directory - it resets its configuration every time you use it. Therefore, it can be very useful for experimentation. CloudShell is also helpful for establishing context as you switch between AWS accounts as it's easy to determine which account and in which region you are running.
+Because of the ephemeral nature of CloudShell, it can be used to ensure consistency since - other than your home directory - it resets its configuration every time you use it. Therefore, it can be very useful for experimentation. CloudShell is also helpful for establishing context as you switch between AWS accounts as it's easy to determine which account and in which region you are running.
 
 As of February 2020, it has been launched in five AWS regions with more to come.
 
