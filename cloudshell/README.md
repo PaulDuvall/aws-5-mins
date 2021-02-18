@@ -29,6 +29,8 @@ There is no extra cost. You only pay for the resources you use or create from Cl
 
 ## Preferences
 
+1. Go to your [AWS Console](https://console.aws.amazon.com/console/) and select the **Ohio/us-east-2** region.
+
 Modify your environment preferences. 
 
 1. Select the **Gear icon** on the right-hand side of your CloudShell environment.
