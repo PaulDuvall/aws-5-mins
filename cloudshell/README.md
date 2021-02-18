@@ -12,7 +12,7 @@ CloudShell is always available from the AWS console through a one-click icon at 
 
 There are no extra credentials you need to manage at it uses the credentials of the logged in user to the console.
 
-Your CloudShell environment is terminated after 20 minutes of inactivity but you can keep using it for 12 hours continuously. Only your home directory is persisted and you can store 1GB in this directory.
+Your CloudShell environment is terminated after 20 minutes of inactivity but you can keep using it for 12 hours continuously. The only directory that persists changes that you make is your home directory. You can store 1GB in this home directory.
 
 Your CloudShell environment is launched into a dedicated VPC managed by AWS. As of now, you can have outbound connections but not inbound connections. On AWS' near-term roadmap is launching into an existing VPC.
  
