@@ -10,7 +10,7 @@ It comes preinstalled with tools including the AWS CLI, the SAM CLI, Node.js, Gi
 
 CloudShell is always available from the AWS console through a one-click icon at the top of every console page. 
 
-There are no extra credentials you need to manage at it uses the credentials of the logged in user to the console.
+There are no extra credentials you need to manage as it uses the credentials of the logged in user to the console.
 
 Your CloudShell environment is terminated after 20 minutes of inactivity but you can keep using it for 12 hours continuously. The only directory that persists changes that you make is your home directory. You can store 1GB in this home directory.
 
@@ -20,7 +20,7 @@ You can customize your shell environment with dark and light mode and by modifyi
 
 Because of the ephemeral nature of CloudShell, it can be used to ensure consistency since - other than your home directory - it resets its configuration every time you use it. Therefore, it can be very useful for experimentation. CloudShell is also helpful for establishing context as you switch between AWS accounts as it's easy to determine which account and in which region you are running.
 
-As of February 2020, it has been launched in five AWS regions with more to come.
+As of February 2021, it has been launched in five AWS regions with more to come.
 
 # Pricing
 There is no extra cost. You only pay for the resources you use or create from CloudShell. You can run up to 10 sessions per region - which is a soft limit.
