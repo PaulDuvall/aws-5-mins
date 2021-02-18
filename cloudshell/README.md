@@ -6,7 +6,7 @@ In this episode, we'll be looking at [AWS CloudShell](https://aws.amazon.com/clo
 
 ![How it Works](https://github.com/PaulDuvall/aws-5-mins/blob/main/_img/cloudshell-howitworks.png)
 
-It comes preinstalled with tools such as the AWS CLI, the SAM CLI, Node.js, Git, vim, Powershell, and Python. It run on an Amazon Linux 2 environment and is always up to date with the latest patches. 
+It comes preinstalled with tools including the AWS CLI, the SAM CLI, Node.js, Git, vim, Powershell, and Python. It run on an Amazon Linux 2 environment and is always up to date with the latest patches. 
 
 CloudShell is always available from the AWS console through a one-click icon at the top of every console page. 
 
