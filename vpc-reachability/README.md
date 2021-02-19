@@ -1,6 +1,6 @@
 **NOTE: This video has not been released yet.**
 
-You can find the [5-minute video](https://youtu.be/mSMlxUJERdg) that walks through all of the steps described here. 
+You can find the 5-minute video that walks through all of the steps described here. 
 
 In this episode, we'll be looking at [Amazon VPC Reachability Analyzer](https://aws.amazon.com/blogs/aws/new-vpc-insights-analyzes-reachability-and-visibility-in-vpcs/).
 
@@ -35,5 +35,11 @@ TBD
 # Delete Resources
 
 ```
-aws cloudformation delete-stack --stack-name aws-5-mins-auditmanager
+aws cloudformation delete-stack --stack-name aws-5-mins-vpc-reachability
 ```
+
+
+# Additional Resources
+
+* [AWS::EC2::NetworkInsightsPath](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ec2-networkinsightspath.html)
+* [AWS::EC2::NetworkInsightsAnalysis](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ec2-networkinsightsanalysis.html)
