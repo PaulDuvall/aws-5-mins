@@ -12,17 +12,25 @@ TBD
 
 ## Launch CloudFormation Stack
 
-TBD
+1. From your [AWS CloudShell Environment](https://us-east-1.console.aws.amazon.com/cloudshell/home?region=us-east-1#) in the **us-east-1** region, run the following commands: 
+
+```
+sudo rm -rf ~/aws-5-mins
+cd ~/
+git clone https://github.com/PaulDuvall/aws-5-mins.git
+cd aws-5-mins/synthetics
+```
+
+1. Run this command to launch a CloudFormation stack that generates an SQS resource.  
 
 ```
 aws cloudformation deploy \
---stack-name aws-5-mins-SERVICENAME \
---template-file service-name.yml \
+--stack-name aws-5-mins-synthetics \
+--template-file synthetics.yml \
 --capabilities CAPABILITY_NAMED_IAM \
 --no-fail-on-empty-changeset \
 --region us-east-1
 ```
-
 
 # Deployment Pipeline
 
