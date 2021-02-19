@@ -117,3 +117,7 @@ Resources:
       - Key: key00AtCreate
         Value: value001AtCreate
       StartCanaryAfterCreation: true
+Outputs:
+  CanaryUrl:
+    Value: !Sub https://console.aws.amazon.com/cloudwatch/home?region=${AWS::Region}#synthetics:canary/list
+    Description: CodePipeline URL
