@@ -8,7 +8,7 @@ TBD
 
 
 # CloudFormation Support
-* [AWS::Synthetics::Canary](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-synthetics-canary.html)
+* [AWS::Synthetics::Canary](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-synthetics-canary.html) - Creates or updates a canary. Canaries are scripts that monitor your endpoints and APIs from the outside-in. 
 
 ## Launch CloudFormation Stack
 
