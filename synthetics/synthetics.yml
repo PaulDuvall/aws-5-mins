@@ -4,7 +4,7 @@ Parameters:
   TestUrl: 
     Description: The URL to test
     Type: String
-    Default: "http://www.integratebutton.com/doesnotexist"
+    Default: "http://www.integratebutton.com/"
 Resources:
   CloudWatchSyntheticsRole:
     Type: AWS::IAM::Role
