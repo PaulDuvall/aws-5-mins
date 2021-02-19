@@ -25,6 +25,7 @@ cd aws-5-mins/synthetics
 aws cloudformation deploy \
 --stack-name aws-5-mins-synthetics \
 --template-file synthetics.yml \
+--parameter-overrides TestUrl=smile.amazon.com
 --capabilities CAPABILITY_NAMED_IAM \
 --no-fail-on-empty-changeset \
 --region us-east-1
@@ -49,3 +50,4 @@ aws cloudformation delete-stack --stack-name aws-5-mins-synthetics
 * [Using synthetic monitoring](https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/CloudWatch_Synthetics_Canaries.html)
 * [Amazon CloudWatch Synthetics Demo](https://www.youtube.com/watch?v=hF3NM9j-u7I)
 * [AWS re:Invent 2019 DevOps and Security re:Cap](https://stelligent.com/2019/12/17/aws-reinvent-2019-devops-and-security-recap/)
+* [Sample code for canary scripts](https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/CloudWatch_Synthetics_Canaries_Samples.html)
