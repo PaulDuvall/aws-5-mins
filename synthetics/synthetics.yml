@@ -91,7 +91,7 @@ Resources:
           const log = require('SyntheticsLogger');
           const pageLoadBlueprint = async function () {
           // INSERT URL here
-          const URL = ${TestUrl};
+          const URL = "${TestUrl}";
 
           let page = await synthetics.getPage();
           const response = await page.goto(URL, {waitUntil: 'domcontentloaded', timeout: 30000});
