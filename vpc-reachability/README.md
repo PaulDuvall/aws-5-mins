@@ -22,7 +22,7 @@ git clone https://github.com/PaulDuvall/aws-5-mins.git
 cd aws-5-mins/vpc-reachability
 ```
 
-1. Run this command to launch a CloudFormation stack that generates an SQS resource.  
+1. Run this command to launch a CloudFormation stack that generates a VPC resource.  
 
 ```
 aws cloudformation deploy \
@@ -32,6 +32,19 @@ aws cloudformation deploy \
 --no-fail-on-empty-changeset \
 --region us-east-1
 ```
+
+```
+aws cloudformation deploy \
+--stack-name aws-5-mins-reachability \
+--template-file reachability.yml \
+--parameter-overrides Source=TBD Destination=TBD \
+--capabilities CAPABILITY_NAMED_IAM \
+--no-fail-on-empty-changeset \
+--region us-east-1
+```
+
+
+
 
 # Deployment Pipeline
 TBD
