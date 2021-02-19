@@ -77,7 +77,7 @@ Resources:
   SyntheticsCanary:
     Type: AWS::Synthetics::Canary
     Properties:
-      Name: !Sub ${AWS::StackName}-canary
+      Name: aws-5-mins-canary
       ExecutionRoleArn: !Sub arn:aws:iam::${AWS::AccountId}:role/${CloudWatchSyntheticsRole}
       Code:
         Handler: pageLoadBlueprint.handler
@@ -107,7 +107,7 @@ Resources:
       ArtifactS3Location: !Sub s3://${ResultsBucket}
       RuntimeVersion: syn-nodejs-puppeteer-3.0
       Schedule:
-        Expression: rate(1 minute)
+        Expression: rate(1 hour)
         DurationInSeconds: 3600
       RunConfig:
         TimeoutInSeconds: 60
