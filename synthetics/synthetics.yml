@@ -1,133 +1,82 @@
 ---
-Description: Amazon CloudWatch Synthetics demo
+Description: Amazon CloudWatch Synthetics demo. Parts from https://github.com/zcapper/aws-snippets/
 Resources:
-  S3Bucket:
-    Type: 'AWS::S3::Bucket'
-    DeletionPolicy: Delete
-    Properties:
-      BucketName: !Sub ${AWS::StackName}-${AWS::AccountId}
-  SyntheticsRole:
+  CloudWatchSyntheticsRole:
     Type: AWS::IAM::Role
     Properties:
-      AssumeRolePolicyDocument:
-        Version: '2012-10-17'
-        Statement:
-        - Effect: Allow
-          Action:
-          - iam:CreateRole
-          - iam:CreatePolicy
-          - iam:AttachRolePolicy
-          Resource:
-          - arn:aws:iam::*:role/service-role/CloudWatchSyntheticsRole*
-          - arn:aws:iam::*:policy/service-role/CloudWatchSyntheticsPolicy*
+      RoleName:
+        Fn::Sub: CloudWatchSyntheticsRole-${AWS::Region}
+      Description: CloudWatch Synthetics lambda execution role for running canaries
       ManagedPolicyArns:
-      - arn:aws:iam::aws:policy/CloudWatchSyntheticsFullAccess
-      Policies:
-      - PolicyName: cloudwatch-synthetics-policy
-        PolicyDocument:
-          Version: '2012-10-17'
-          Statement:
+        - arn:aws:iam::aws:policy/service-role/AWSLambdaBasicExecutionRole
+      AssumeRolePolicyDocument:
+        Version: 2012-10-17
+        Statement:
+          - Effect: Allow
+            Principal:
+              Service: lambda.amazonaws.com
+            Action: sts:AssumeRole
+            Condition: {}
+  RolePermissions:
+    Type: AWS::IAM::Policy
+    Properties:
+      Roles:
+        - Ref: CloudWatchSyntheticsRole
+      PolicyName:
+        Fn::Sub: CloudWatchSyntheticsPolicy-${AWS::Region}
+      PolicyDocument:
+        Version: 2012-10-17
+        Statement:
           - Effect: Allow
             Action:
-            - synthetics:*
-            Resource: "*"
-          - Effect: Allow
-            Action:
-            - s3:CreateBucket
-            - s3:PutBucketEncryption
-            - s3:PutEncryptionConfiguration
+              - s3:PutObject
+              - s3:GetBucketLocation
             Resource:
-            - arn:aws:s3:::cw-syn-results-*
+              - Fn::Sub: arn:aws:s3:::${ResultsBucket}/*
           - Effect: Allow
             Action:
-            - iam:ListRoles
-            - s3:ListAllMyBuckets
-            - s3:GetBucketLocation
-            - xray:GetTraceSummaries
-            - xray:BatchGetTraces
-            - apigateway:GET
-            Resource: "*"
+              - logs:CreateLogStream
+              - logs:PutLogEvents
+              - logs:CreateLogGroup
+            Resource: '*'
           - Effect: Allow
             Action:
-            - s3:GetObject
-            - s3:ListBucket
-            Resource: arn:aws:s3:::cw-syn-*
+              - s3:ListAllMyBuckets
+            Resource: '*'
           - Effect: Allow
-            Action:
-            - s3:GetObjectVersion
-            Resource: arn:aws:s3:::aws-synthetics-library-*
-          - Effect: Allow
-            Action:
-            - iam:PassRole
-            Resource:
-            - arn:aws:iam::*:role/service-role/CloudWatchSyntheticsRole*
+            Resource: '*'
+            Action: cloudwatch:PutMetricData
             Condition:
               StringEquals:
-                iam:PassedToService:
-                - lambda.amazonaws.com
-                - synthetics.amazonaws.com
-          - Effect: Allow
-            Action:
-            - iam:GetRole
-            Resource:
-            - arn:aws:iam::*:role/service-role/CloudWatchSyntheticsRole*
-          - Effect: Allow
-            Action:
-            - cloudwatch:GetMetricData
-            - cloudwatch:GetMetricStatistics
-            Resource: "*"
-          - Effect: Allow
-            Action:
-            - cloudwatch:PutMetricAlarm
-            - cloudwatch:DeleteAlarms
-            Resource:
-            - arn:aws:cloudwatch:*:*:alarm:Synthetics-*
-          - Effect: Allow
-            Action:
-            - cloudwatch:DescribeAlarms
-            Resource:
-            - arn:aws:cloudwatch:*:*:alarm:*
-          - Effect: Allow
-            Action:
-            - lambda:CreateFunction
-            - lambda:AddPermission
-            - lambda:PublishVersion
-            - lambda:UpdateFunctionConfiguration
-            - lambda:GetFunctionConfiguration
-            Resource:
-            - arn:aws:lambda:*:*:function:cwsyn-*
-          - Effect: Allow
-            Action:
-            - lambda:GetLayerVersionByArn
-            - lambda:GetLayerVersion
-            - lambda:PublishLayerVersion
-            Resource:
-            - arn:aws:lambda:*:*:layer:cwsyn-*
-            - arn:aws:lambda:*:*:layer:Synthetics:*
-          - Effect: Allow
-            Action:
-            - ec2:DescribeVpcs
-            - ec2:DescribeSubnets
-            - ec2:DescribeSecurityGroups
-            Resource:
-            - "*"
-          - Effect: Allow
-            Action:
-            - sns:ListTopics
-            Resource:
-            - "*"
-          - Effect: Allow
-            Action:
-            - sns:CreateTopic
-            - sns:Subscribe
-            - sns:ListSubscriptionsByTopic
-            Resource:
-            - arn:*:sns:*:*:Synthetics-*
+                cloudwatch:namespace: CloudWatchSynthetics
+  ResultsBucket:
+    Type: AWS::S3::Bucket
+    Properties:
+      BucketName:
+        Fn::Sub: cw-syn-results-${AWS::AccountId}-${AWS::Region}
+      BucketEncryption:
+        ServerSideEncryptionConfiguration:
+          - ServerSideEncryptionByDefault:
+              SSEAlgorithm: AES256
+
+  CodeBucket:
+    Type: AWS::S3::Bucket
+    Properties:
+      BucketName:
+        Fn::Sub: cw-syn-code-${AWS::AccountId}-${AWS::Region}
+      BucketEncryption:
+        ServerSideEncryptionConfiguration:
+          - ServerSideEncryptionByDefault:
+              SSEAlgorithm: AES256
+      LifecycleConfiguration:
+        Rules:
+          - ExpirationInDays: 180
+            Status: Enabled
   SyntheticsCanary:
     Type: AWS::Synthetics::Canary
     Properties:
       Name: samplecanary
-      ExecutionRoleArn: !Sub arn:aws:iam::${AWS::AccountId}:role/${SyntheticsRole}
+      ExecutionRoleArn: !Sub arn:aws:iam::${AWS::AccountId}:role/${CloudWatchSyntheticsRole}
       Code:
         Handler: pageLoadBlueprint.handler
         Script: |
@@ -153,7 +102,7 @@ Resources:
           exports.handler = async () => {
           return await pageLoadBlueprint();
           };
-      ArtifactS3Location: !Sub s3://${S3Bucket}
+      ArtifactS3Location: !Sub s3://${ResultsBucket}
       RuntimeVersion: syn-1.0
       Schedule:
         Expression: rate(1 minute)
