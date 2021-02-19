@@ -5,7 +5,7 @@ Resources:
     Type: AWS::IAM::Role
     Properties:
       RoleName:
-        Fn::Sub: CloudWatchSyntheticsRole-${AWS::Region}
+        Fn::Sub: ${AWS::StackName}-${AWS::Region}
       Description: CloudWatch Synthetics lambda execution role for running canaries
       ManagedPolicyArns:
         - arn:aws:iam::aws:policy/service-role/AWSLambdaBasicExecutionRole
@@ -54,7 +54,7 @@ Resources:
     Properties:
       DeletionPolicy: Delete
       BucketName:
-        Fn::Sub: cw-syn-results-${AWS::AccountId}-${AWS::Region}
+        Fn::Sub: ${AWS::StackName}-results-${AWS::AccountId}-${AWS::Region}
       BucketEncryption:
         ServerSideEncryptionConfiguration:
           - ServerSideEncryptionByDefault:
@@ -63,8 +63,9 @@ Resources:
   CodeBucket:
     Type: AWS::S3::Bucket
     Properties:
+      DeletionPolicy: Delete
       BucketName:
-        Fn::Sub: cw-syn-code-${AWS::AccountId}-${AWS::Region}
+        Fn::Sub: ${AWS::StackName}-code-${AWS::AccountId}-${AWS::Region}
       BucketEncryption:
         ServerSideEncryptionConfiguration:
           - ServerSideEncryptionByDefault:
