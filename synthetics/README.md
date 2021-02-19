@@ -27,7 +27,7 @@ aws cloudformation deploy \
 # Deployment Pipeline
 
 # Pricing
-TBD
+When running Amazon CloudWatch Synthetics, you are charged $0.0012 per canary run. For example, by running 10,000 canary runs in a given month (or around one every 5 minutes), you will pay $12.
 
 # Delete Resources
 
