@@ -40,7 +40,7 @@ When running Amazon CloudWatch Synthetics, you are charged $0.0012 per canary ru
 # Delete Resources
 
 ```
-aws cloudformation delete-stack --stack-name aws-5-mins-SERVICENAME
+aws cloudformation delete-stack --stack-name aws-5-mins-synthetics
 ```
 
 # Additional Resources
