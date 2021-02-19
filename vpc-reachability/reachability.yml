@@ -13,7 +13,7 @@ Resources:
     Properties: 
       Destination: !Ref Destination
       DestinationPort: 22
-      Protocol: TCP
+      Protocol: tcp
       Source: !Ref Source
   NetworkInsightsAnalysis:
     Type: AWS::EC2::NetworkInsightsAnalysis
