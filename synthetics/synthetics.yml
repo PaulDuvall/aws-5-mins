@@ -51,7 +51,7 @@ Resources:
                 cloudwatch:namespace: CloudWatchSynthetics
   ResultsBucket:
     Type: AWS::S3::Bucket
-    DeletionPolicy: Delete
+    DeletionPolicy: Retain
     Properties:
       BucketName:
         Fn::Sub: ${AWS::StackName}-results-${AWS::AccountId}-${AWS::Region}
