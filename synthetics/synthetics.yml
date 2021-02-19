@@ -77,7 +77,6 @@ Resources:
   SyntheticsCanary:
     Type: AWS::Synthetics::Canary
     Properties:
-      Name: samplecanary
       ExecutionRoleArn: !Sub arn:aws:iam::${AWS::AccountId}:role/${CloudWatchSyntheticsRole}
       Code:
         Handler: pageLoadBlueprint.handler
