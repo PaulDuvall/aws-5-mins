@@ -51,8 +51,8 @@ Resources:
                 cloudwatch:namespace: CloudWatchSynthetics
   ResultsBucket:
     Type: AWS::S3::Bucket
+    DeletionPolicy: Delete
     Properties:
-      DeletionPolicy: Delete
       BucketName:
         Fn::Sub: ${AWS::StackName}-results-${AWS::AccountId}-${AWS::Region}
       BucketEncryption:
@@ -62,8 +62,8 @@ Resources:
 
   CodeBucket:
     Type: AWS::S3::Bucket
+    DeletionPolicy: Delete
     Properties:
-      DeletionPolicy: Delete
       BucketName:
         Fn::Sub: ${AWS::StackName}-code-${AWS::AccountId}-${AWS::Region}
       BucketEncryption:
