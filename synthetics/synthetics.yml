@@ -84,7 +84,7 @@ Resources:
           const log = require('SyntheticsLogger');
           const pageLoadBlueprint = async function () {
           // INSERT URL here
-          const URL = "https://amazon.com";
+          const URL = "http://www.integratebutton.com/";
 
           let page = await synthetics.getPage();
           const response = await page.goto(URL, {waitUntil: 'domcontentloaded', timeout: 30000});
