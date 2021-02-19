@@ -52,6 +52,7 @@ Resources:
   ResultsBucket:
     Type: AWS::S3::Bucket
     Properties:
+      DeletionPolicy: Delete
       BucketName:
         Fn::Sub: cw-syn-results-${AWS::AccountId}-${AWS::Region}
       BucketEncryption:
