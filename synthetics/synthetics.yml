@@ -1,5 +1,10 @@
 ---
 Description: Amazon CloudWatch Synthetics demo. Parts from https://github.com/zcapper/aws-snippets/
+Parameters: 
+  TestUrl: 
+    Description: The URL to test
+    Type: String
+    Default: "http://www.integratebutton.com/doesnotexist"
 Resources:
   CloudWatchSyntheticsRole:
     Type: AWS::IAM::Role
@@ -81,12 +86,12 @@ Resources:
       ExecutionRoleArn: !Sub arn:aws:iam::${AWS::AccountId}:role/${CloudWatchSyntheticsRole}
       Code:
         Handler: pageLoadBlueprint.handler
-        Script: |
+        Script: !Sub |
           var synthetics = require('Synthetics');
           const log = require('SyntheticsLogger');
           const pageLoadBlueprint = async function () {
           // INSERT URL here
-          const URL = "http://www.integratebutton.com/doesnotexist";
+          const URL = ${TestUrl};
 
           let page = await synthetics.getPage();
           const response = await page.goto(URL, {waitUntil: 'domcontentloaded', timeout: 30000});
