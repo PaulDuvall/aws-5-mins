@@ -41,5 +41,8 @@ aws cloudformation delete-stack --stack-name aws-5-mins-vpc-reachability
 
 # Additional Resources
 
+* [New – VPC Reachability Analyzer](https://aws.amazon.com/blogs/aws/new-vpc-insights-analyzes-reachability-and-visibility-in-vpcs/)
+* [What is VPC Reachability Analyzer?](https://docs.aws.amazon.com/vpc/latest/reachability/what-is-reachability-analyzer.html)
 * [AWS::EC2::NetworkInsightsPath](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ec2-networkinsightspath.html)
 * [AWS::EC2::NetworkInsightsAnalysis](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ec2-networkinsightsanalysis.html)
+* [AWS re:Invent 2019: Provable access control: Know who can access your AWS resources (SEC343-R)](https://www.youtube.com/watch?v=6DX7p-OirGU)
