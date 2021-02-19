@@ -5,6 +5,10 @@ Parameters:
     Description: The URL to test
     Type: String
     Default: "http://www.integratebutton.com/"
+  CanaryName: 
+    Description: Name of the canary test
+    Type: String
+    Default: aws-5-mins-canary
 Resources:
   CloudWatchSyntheticsRole:
     Type: AWS::IAM::Role
@@ -82,7 +86,7 @@ Resources:
   SyntheticsCanary:
     Type: AWS::Synthetics::Canary
     Properties:
-      Name: aws-5-mins-canary
+      Name: !Ref CanaryName
       ExecutionRoleArn: !Sub arn:aws:iam::${AWS::AccountId}:role/${CloudWatchSyntheticsRole}
       Code:
         Handler: pageLoadBlueprint.handler
