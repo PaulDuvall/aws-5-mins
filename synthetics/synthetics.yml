@@ -128,5 +128,5 @@ Resources:
       StartCanaryAfterCreation: true
 Outputs:
   CanaryUrl:
-    Value: !Sub https://console.aws.amazon.com/cloudwatch/home?region=${AWS::Region}#synthetics:canary/detail/aws-5-mins-canary
+    Value: !Sub https://console.aws.amazon.com/cloudwatch/home?region=${AWS::Region}#synthetics:canary/detail/${CanaryName}
     Description: CodePipeline URL
