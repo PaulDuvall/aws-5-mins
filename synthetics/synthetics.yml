@@ -1,0 +1,168 @@
+---
+Description: Amazon CloudWatch Synthetics demo
+Resources:
+  S3Bucket:
+    Type: 'AWS::S3::Bucket'
+    DeletionPolicy: Delete
+    Properties:
+      BucketName: !Sub ${AWS::StackName}-${AWS::AccountId}
+  SyntheticsRole:
+    Type: AWS::IAM::Role
+    Properties:
+      AssumeRolePolicyDocument:
+        Version: '2012-10-17'
+        Statement:
+        - Effect: Allow
+          Action:
+          - iam:CreateRole
+          - iam:CreatePolicy
+          - iam:AttachRolePolicy
+          Resource:
+          - arn:aws:iam::*:role/service-role/CloudWatchSyntheticsRole*
+          - arn:aws:iam::*:policy/service-role/CloudWatchSyntheticsPolicy*
+      ManagedPolicyArns:
+      - arn:aws:iam::aws:policy/CloudWatchSyntheticsFullAccess
+      Policies:
+      - PolicyName: cloudwatch-synthetics-policy
+        PolicyDocument:
+          Version: '2012-10-17'
+          Statement:
+          - Effect: Allow
+            Action:
+            - synthetics:*
+            Resource: "*"
+          - Effect: Allow
+            Action:
+            - s3:CreateBucket
+            - s3:PutBucketEncryption
+            - s3:PutEncryptionConfiguration
+            Resource:
+            - arn:aws:s3:::cw-syn-results-*
+          - Effect: Allow
+            Action:
+            - iam:ListRoles
+            - s3:ListAllMyBuckets
+            - s3:GetBucketLocation
+            - xray:GetTraceSummaries
+            - xray:BatchGetTraces
+            - apigateway:GET
+            Resource: "*"
+          - Effect: Allow
+            Action:
+            - s3:GetObject
+            - s3:ListBucket
+            Resource: arn:aws:s3:::cw-syn-*
+          - Effect: Allow
+            Action:
+            - s3:GetObjectVersion
+            Resource: arn:aws:s3:::aws-synthetics-library-*
+          - Effect: Allow
+            Action:
+            - iam:PassRole
+            Resource:
+            - arn:aws:iam::*:role/service-role/CloudWatchSyntheticsRole*
+            Condition:
+              StringEquals:
+                iam:PassedToService:
+                - lambda.amazonaws.com
+                - synthetics.amazonaws.com
+          - Effect: Allow
+            Action:
+            - iam:GetRole
+            Resource:
+            - arn:aws:iam::*:role/service-role/CloudWatchSyntheticsRole*
+          - Effect: Allow
+            Action:
+            - cloudwatch:GetMetricData
+            - cloudwatch:GetMetricStatistics
+            Resource: "*"
+          - Effect: Allow
+            Action:
+            - cloudwatch:PutMetricAlarm
+            - cloudwatch:DeleteAlarms
+            Resource:
+            - arn:aws:cloudwatch:*:*:alarm:Synthetics-*
+          - Effect: Allow
+            Action:
+            - cloudwatch:DescribeAlarms
+            Resource:
+            - arn:aws:cloudwatch:*:*:alarm:*
+          - Effect: Allow
+            Action:
+            - lambda:CreateFunction
+            - lambda:AddPermission
+            - lambda:PublishVersion
+            - lambda:UpdateFunctionConfiguration
+            - lambda:GetFunctionConfiguration
+            Resource:
+            - arn:aws:lambda:*:*:function:cwsyn-*
+          - Effect: Allow
+            Action:
+            - lambda:GetLayerVersionByArn
+            - lambda:GetLayerVersion
+            - lambda:PublishLayerVersion
+            Resource:
+            - arn:aws:lambda:*:*:layer:cwsyn-*
+            - arn:aws:lambda:*:*:layer:Synthetics:*
+          - Effect: Allow
+            Action:
+            - ec2:DescribeVpcs
+            - ec2:DescribeSubnets
+            - ec2:DescribeSecurityGroups
+            Resource:
+            - "*"
+          - Effect: Allow
+            Action:
+            - sns:ListTopics
+            Resource:
+            - "*"
+          - Effect: Allow
+            Action:
+            - sns:CreateTopic
+            - sns:Subscribe
+            - sns:ListSubscriptionsByTopic
+            Resource:
+            - arn:*:sns:*:*:Synthetics-*
+  SyntheticsCanary:
+    Type: AWS::Synthetics::Canary
+    Properties:
+      Name: samplecanary
+      ExecutionRoleArn: !Sub arn:aws:iam::${AWS::AccountId}:role/${SyntheticsRole}
+      Code:
+        Handler: pageLoadBlueprint.handler
+        Script: |
+          var synthetics = require('Synthetics');
+          const log = require('SyntheticsLogger');
+          const pageLoadBlueprint = async function () {
+          // INSERT URL here
+          const URL = "https://amazon.com";
+
+          let page = await synthetics.getPage();
+          const response = await page.goto(URL, {waitUntil: 'domcontentloaded', timeout: 30000});
+          //Wait for page to render.
+          //Increase or decrease wait time based on endpoint being monitored.
+          await page.waitFor(15000);
+          await synthetics.takeScreenshot('loaded', 'loaded');
+          let pageTitle = await page.title();
+          log.info('Page title: ' + pageTitle);
+          if (response.status() !== 200) {
+               throw "Failed to load page!";
+          }
+          };
+
+          exports.handler = async () => {
+          return await pageLoadBlueprint();
+          };
+      ArtifactS3Location: !Sub s3://${S3Bucket}
+      RuntimeVersion: syn-1.0
+      Schedule:
+        Expression: rate(1 minute)
+        DurationInSeconds: 3600
+      RunConfig:
+        TimeoutInSeconds: 60
+      FailureRetentionPeriod: 30
+      SuccessRetentionPeriod: 30
+      Tags:
+      - Key: key00AtCreate
+        Value: value001AtCreate
+      StartCanaryAfterCreation: false
