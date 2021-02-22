@@ -32,7 +32,7 @@ Resources:
       Tags:
         -
           Key: Name
-          Value: !Ref VPC
+          Value: !Sub ${AWS::StackName}
 
   # SGs
   SecurityGroup1:
@@ -46,7 +46,7 @@ Resources:
       Tags:
         -
           Key: Name
-          Value: !Ref VPC
+          Value: !Sub ${AWS::StackName}
 
   SecurityGroup2:
     Type: AWS::EC2::SecurityGroup
@@ -56,7 +56,7 @@ Resources:
       Tags:
         -
           Key: Name
-          Value: !Ref VPC
+          Value: !Sub ${AWS::StackName}
 
   # Instances
   # Instance A and B should have a path between them since they are both in SecurityGroup 1
@@ -76,7 +76,7 @@ Resources:
       Tags:
         -
           Key: Name
-          Value: InstanceA
+          Value: !Sub ${AWS::StackName}-InstanceA
           Key: VPC
           Value: !Ref VPC
 
@@ -97,7 +97,7 @@ Resources:
       Tags:
         -
           Key: Name
-          Value: InstanceB
+          Value: !Sub ${AWS::StackName}-InstanceB
           Key: VPC
           Value: !Ref VPC
 
@@ -118,7 +118,7 @@ Resources:
       Tags:
         -
           Key: Name
-          Value: InstanceC
+          Value: !Sub ${AWS::StackName}-InstanceC
           Key: VPC
           Value: !Ref VPC
 

@@ -6,20 +6,7 @@ In this episode, we'll be looking at [Amazon VPC Reachability Analyzer](https://
 
 @todo: How it Works
 
-# CLI
 
-```
-aws ec2 create-network-insights-path \
-    --source igw-0797cccdc9d73b0e5 \
-    --destination i-0495d385ad28331c7 \
-    --destination-port 22 \
-    --protocol TCP
-```
-
-```
-aws ec2 start-network-insights-analysis \
-    --network-insights-path-id nip-0b26f224f1d131fa8
-```
 
 # CloudFormation Support
 
@@ -48,21 +35,32 @@ aws cloudformation deploy \
 --region us-east-1
 ```
 
+## CLI
+
+
 ```
-aws cloudformation deploy \
---stack-name aws-5-mins-reachability \
---template-file reachability.yml \
---parameter-overrides InstanceA=TBD InstanceB=TBD InstanceC=TBD \
---capabilities CAPABILITY_NAMED_IAM \
---no-fail-on-empty-changeset \
---region us-east-1
+# Assess Path between Instance A and Instance B
+aws ec2 create-network-insights-path \
+    --source VALUE-OF-INSTANCE-A \
+    --destination VALUE-OF-INSTANCE-B \
+    --destination-port 22 \
+    --protocol TCP 
+
+# Analyze whether Instance A can reach Instance B?
+aws ec2 start-network-insights-analysis \
+    --network-insights-path-id NETWORK-PATH-ID-AB
+
+# Assess Path between Instance A and Instance C
+aws ec2 create-network-insights-path \
+    --source VALUE-OF-INSTANCE-A \
+    --destination VALUE-OF-INSTANCE-C \
+    --destination-port 22 \
+    --protocol TCP 
+
+# Analyze whether Instance A can reach Instance C?
+aws ec2 start-network-insights-analysis \
+    --network-insights-path-id NETWORK-PATH-ID-AC
 ```
-
-
-
-
-# Deployment Pipeline
-TBD
 
 # Pricing
 @todo
@@ -71,7 +69,6 @@ TBD
 
 ```
 aws cloudformation delete-stack --stack-name aws-5-mins-vpc
-aws cloudformation delete-stack --stack-name aws-5-mins-vpc-reachability
 ```
 
 
