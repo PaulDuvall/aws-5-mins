@@ -25,6 +25,10 @@ Resources:
       VpcId: !Ref VPC
       CidrBlock: 172.0.0.0/20
       MapPublicIpOnLaunch: false
+      Tags:
+        -
+          Key: VPC
+          Value: !Ref VPC
 
   # SGs
   SecurityGroup1:
@@ -35,12 +39,20 @@ Resources:
       SecurityGroupIngress:
         - CidrIp: 0.0.0.0/0
           IpProtocol: "-1" # -1 specifies all protocols
+      Tags:
+        -
+          Key: VPC
+          Value: !Ref VPC
 
   SecurityGroup2:
     Type: AWS::EC2::SecurityGroup
     Properties:
       GroupDescription: Allow all egress traffic
       VpcId: !Ref VPC
+      Tags:
+        -
+          Key: VPC
+          Value: !Ref VPC
 
   # Instances
   # Instance A and B should have a path between them since they are both in SecurityGroup 1
@@ -57,6 +69,12 @@ Resources:
         Ref: Subnet1
       SecurityGroupIds:
         - Ref: SecurityGroup1
+      Tags:
+        -
+          Key: Name
+          Value: InstanceA
+          Key: VPC
+          Value: !Ref VPC
 
   # Instance A and B should have a path between them since they are both in SecurityGroup 1
   InstanceB:
@@ -72,6 +90,12 @@ Resources:
         Ref: Subnet1
       SecurityGroupIds:
         - Ref: SecurityGroup1
+      Tags:
+        -
+          Key: Name
+          Value: InstanceB
+          Key: VPC
+          Value: !Ref VPC
 
   # This instance should not be reachable from Instance A or B since it is in SecurityGroup 2
   InstanceC:
@@ -87,3 +111,9 @@ Resources:
         Ref: Subnet1
       SecurityGroupIds:
         - Ref: SecurityGroup2
+      Tags:
+        -
+          Key: Name
+          Value: InstanceC
+          Key: VPC
+          Value: !Ref VPC
