@@ -67,6 +67,8 @@ aws ec2 start-network-insights-analysis \
     --network-insights-path-id NETWORK-PATH-ID-AC
 ```
 
+Go to [VPC Reachability Analyzer](https://console.aws.amazon.com/vpc/home?region=us-east-1#ReachabilityAnalyzer:)
+
 # Pricing
 Price per analysis processed by VPC Reachability Analyzer: $0.10. See [VPC Pricing](https://aws.amazon.com/vpc/pricing/) for more information.
 
