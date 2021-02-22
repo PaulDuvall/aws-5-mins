@@ -35,8 +35,7 @@ aws cloudformation deploy \
 --region us-east-1
 ```
 
-Once the [CloudFormation stack](https://console.aws.amazon.com/cloudformation/home?region=us-east-1#/stacks/) is `CREATE_COMPLETE`, go to the [EC2 Console](https://console.aws.amazon.com/ec2/v2/home?region=us-east-1#Instances:sort=instanceState) and select `InstanceA`, `InstanceB`, and `InstanceC` and view the Security Groups.
-
+Once the [CloudFormation stack](https://console.aws.amazon.com/cloudformation/home?region=us-east-1#/stacks/) is `CREATE_COMPLETE`, go to the [EC2 Console](https://console.aws.amazon.com/ec2/v2/home?region=us-east-1#Instances:sort=instanceState) and select `InstanceA`, `InstanceB`, and `InstanceC` and select **Security** and **Inbound rules** & **Outbound rules**.
 
 ## CLI
 
