@@ -35,6 +35,9 @@ aws cloudformation deploy \
 --region us-east-1
 ```
 
+Go to the [EC2 Console](https://console.aws.amazon.com/ec2/v2/home?region=us-east-1#Instances:sort=instanceState) and select InstanceA, InstanceA, and InstanceA and view the Security Groups.
+
+
 ## CLI
 
 ```
