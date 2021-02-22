@@ -52,15 +52,15 @@ aws ec2 start-network-insights-analysis \
 # You can now see the analysis result as Reachable. If you click the URL link of analysis id nip-xxxxxxxxxxxxxxxxx, you can see the route hop by hop.    
 aws ec2 create-tags --resources NETWORK-PATH-ID-AB --tags Key=Name,Value=,Value=A2B-Reachable
 
-# The communication from instance A to instance C is not reachable because the security group attached to instance C does not allow any incoming traffic.
-aws ec2 create-tags --resources NETWORK-PATH-ID-AC --tags Key=Name,Value=A2C-NotReachable
-
 # Assess Path between Instance A and Instance C
 aws ec2 create-network-insights-path \
     --source VALUE-OF-INSTANCE-A \
     --destination VALUE-OF-INSTANCE-C \
     --destination-port 22 \
     --protocol TCP 
+
+# The communication from instance A to instance C is not reachable because the security group attached to instance C does not allow any incoming traffic.
+aws ec2 create-tags --resources NETWORK-PATH-ID-AC --tags Key=Name,Value=A2C-NotReachable
 
 # Analyze whether Instance A can reach Instance C?
 aws ec2 start-network-insights-analysis \
