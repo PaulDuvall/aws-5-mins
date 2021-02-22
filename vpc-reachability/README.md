@@ -37,6 +37,7 @@ aws cloudformation deploy \
 aws cloudformation deploy \
 --stack-name aws-5-mins-reachability \
 --template-file reachability.yml \
+--parameter-overrides InstanceA=TBD InstanceB=TBD InstanceC=TBD \
 --capabilities CAPABILITY_NAMED_IAM \
 --no-fail-on-empty-changeset \
 --region us-east-1
