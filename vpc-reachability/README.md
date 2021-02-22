@@ -68,9 +68,20 @@ aws ec2 start-network-insights-analysis \
 # Delete Resources
 
 ```
+aws ec2 delete-network-insights-analysis \
+    --network-insights-analysis-id NETWORK-INSIGHTS-ANALYSIS-ID
+
+aws ec2 delete-network-insights-analysis \
+    --network-insights-analysis-id NETWORK-INSIGHTS-ANALYSIS-ID
+
+aws ec2 delete-network-insights-path \
+    --network-insights-path-id NETWORK-INSIGHTS-PATH-ID
+    
+aws ec2 delete-network-insights-path \
+    --network-insights-path-id NETWORK-INSIGHTS-PATH-ID
+    
 aws cloudformation delete-stack --stack-name aws-5-mins-vpc
 ```
-
 
 # Additional Resources
 
