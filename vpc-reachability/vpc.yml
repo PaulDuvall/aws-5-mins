@@ -77,8 +77,6 @@ Resources:
         -
           Key: Name
           Value: !Sub ${AWS::StackName}-InstanceA
-          Key: VPC
-          Value: !Ref VPC
 
   # Instance A and B should have a path between them since they are both in SecurityGroup 1
   InstanceB:
@@ -98,8 +96,6 @@ Resources:
         -
           Key: Name
           Value: !Sub ${AWS::StackName}-InstanceB
-          Key: VPC
-          Value: !Ref VPC
 
   # This instance should not be reachable from Instance A or B since it is in SecurityGroup 2
   InstanceC:
@@ -119,9 +115,6 @@ Resources:
         -
           Key: Name
           Value: !Sub ${AWS::StackName}-InstanceC
-          Key: VPC
-          Value: !Ref VPC
-
 
 Outputs:
   InstanceA:
