@@ -20,7 +20,7 @@ Resources:
       Tags:
         -
           Key: Name
-          Value: ${AWS::StackName}
+          Value: !Sub ${AWS::StackName}
 
   # Subnets
   Subnet1:
