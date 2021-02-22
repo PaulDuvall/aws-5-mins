@@ -6,6 +6,21 @@ In this episode, we'll be looking at [Amazon VPC Reachability Analyzer](https://
 
 @todo: How it Works
 
+# CLI
+
+```
+aws ec2 create-network-insights-path \
+    --source igw-0797cccdc9d73b0e5 \
+    --destination i-0495d385ad28331c7 \
+    --destination-port 22 \
+    --protocol TCP
+```
+
+```
+aws ec2 start-network-insights-analysis \
+    --network-insights-path-id nip-0b26f224f1d131fa8
+```
+
 # CloudFormation Support
 
 * [AWS::EC2::NetworkInsightsPath](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ec2-networkinsightspath.html)
