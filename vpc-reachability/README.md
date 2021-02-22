@@ -68,7 +68,7 @@ aws ec2 start-network-insights-analysis \
 ```
 
 # Pricing
-@todo
+Price per analysis processed by VPC Reachability Analyzer: $0.10. See [VPC Pricing](https://aws.amazon.com/vpc/pricing/) for more information.
 
 # Delete Resources
 
