@@ -4,17 +4,19 @@ Resources:
   NetworkInsightsPathAB:
     Type: AWS::EC2::NetworkInsightsPath
     Properties: 
-      Destination: !ImportValue InstanceB-${AWS::Region}
+      Destination: 
+        Fn::ImportValue: !Sub "InstanceB-${AWS::Region}" 
       DestinationPort: 22
       Protocol: tcp
-      Source: !ImportValue InstanceA-${AWS::Region}
+      Source: 
+        Fn::ImportValue: !Sub "InstanceA-${AWS::Region}" 
   NetworkInsightsPathAC:
     Type: AWS::EC2::NetworkInsightsPath
     Properties: 
-      Destination: !ImportValue InstanceC-${AWS::Region}
+        Fn::ImportValue: !Sub "InstanceC-${AWS::Region}" 
       DestinationPort: 22
       Protocol: tcp
-      Source: !ImportValue InstanceA-${AWS::Region}
+        Fn::ImportValue: !Sub "InstanceA-${AWS::Region}" 
   NetworkInsightsAnalysisAB:
     Type: AWS::EC2::NetworkInsightsAnalysis
     Properties: 
