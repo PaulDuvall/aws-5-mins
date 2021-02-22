@@ -52,7 +52,7 @@ aws ec2 start-network-insights-analysis \
 # You can now see the analysis result as Reachable. If you click the URL link of analysis id nip-xxxxxxxxxxxxxxxxx, you can see the route hop by hop.    
 aws ec2 create-tags --resources NETWORK-PATH-ID-AB --tags Key=Name,Value=A2B-Reachable
 
-# Assess Path between Instance A and Instance C
+# Assess Path between Instance A and Instance C. Get the values from VPC CloudFormation stack outputs.
 aws ec2 create-network-insights-path \
     --source VALUE-OF-INSTANCE-A \
     --destination VALUE-OF-INSTANCE-C \
