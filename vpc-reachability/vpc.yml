@@ -117,3 +117,21 @@ Resources:
           Value: InstanceC
           Key: VPC
           Value: !Ref VPC
+
+
+Outputs:
+  InstanceA:
+    Description: Name of InstanceA
+    Value: !Ref InstanceA
+    Export:
+      Name:  !Sub ${AWS::StackName}-InstanceA
+  InstanceB:
+    Description: Name of InstanceB
+    Value: !Ref InstanceB
+    Export:
+      Name:  !Sub ${AWS::StackName}-InstanceB
+  InstanceC:
+    Description: Name of InstanceC
+    Value: !Ref InstanceC
+    Export:
+      Name:  !Sub ${AWS::StackName}-InstanceC
