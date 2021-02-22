@@ -12,14 +12,12 @@ Resources:
     Type: AWS::EC2::NetworkInsightsPath
     Properties: 
       Destination: !Ref InstanceB
-      DestinationPort: 22
       Protocol: tcp
       Source: !Ref InstanceA
   NetworkInsightsPathAC:
     Type: AWS::EC2::NetworkInsightsPath
     Properties: 
       Destination: !Ref InstanceC
-      DestinationPort: 22
       Protocol: tcp
       Source: !Ref InstanceA
   NetworkInsightsAnalysisAB:
