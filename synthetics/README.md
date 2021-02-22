@@ -19,7 +19,7 @@ git clone https://github.com/PaulDuvall/aws-5-mins.git
 cd aws-5-mins/synthetics
 ```
 
-1. Run this command to launch a CloudFormation stack that generates an SQS resource.  
+1. Run this command to launch a CloudFormation stack that generates a Canary test.  
 
 ```
 aws cloudformation deploy \
