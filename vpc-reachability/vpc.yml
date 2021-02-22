@@ -31,7 +31,7 @@ Resources:
       MapPublicIpOnLaunch: false
       Tags:
         -
-          Key: VPC
+          Key: Name
           Value: !Ref VPC
 
   # SGs
@@ -45,7 +45,7 @@ Resources:
           IpProtocol: "-1" # -1 specifies all protocols
       Tags:
         -
-          Key: VPC
+          Key: Name
           Value: !Ref VPC
 
   SecurityGroup2:
@@ -55,7 +55,7 @@ Resources:
       VpcId: !Ref VPC
       Tags:
         -
-          Key: VPC
+          Key: Name
           Value: !Ref VPC
 
   # Instances
