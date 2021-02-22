@@ -17,6 +17,10 @@ Resources:
       EnableDnsSupport: true
       EnableDnsHostnames: true
       InstanceTenancy: default
+      Tags:
+        -
+          Key: Name
+          Value: ${AWS::StackName}
 
   # Subnets
   Subnet1:
@@ -124,14 +128,14 @@ Outputs:
     Description: EC2 Instance ID for InstanceA
     Value: !Ref InstanceA
     Export:
-      Name:  !Sub ${AWS::StackName}-InstanceA
+      Name: !Sub InstanceA-${AWS::Region}
   InstanceB:
     Description: EC2 Instance ID for InstanceB
     Value: !Ref InstanceB
     Export:
-      Name:  !Sub ${AWS::StackName}-InstanceB
+      Name: !Sub InstanceB-${AWS::Region}
   InstanceC:
     Description: EC2 Instance ID for InstanceC
     Value: !Ref InstanceC
     Export:
-      Name:  !Sub ${AWS::StackName}-InstanceC
+      Name: !Sub InstanceC-${AWS::Region}

@@ -1,21 +1,25 @@
 ---
 Description: Amazon VPC Reachability Analyzer demo
-Parameters: 
-  Source: 
-    Description: Source to analyze
-    Type: String
-  Destination: 
-    Description: Destination to analyze
-    Type: String
 Resources:
-  NetworkInsightsPath:
+  NetworkInsightsPathAB:
     Type: AWS::EC2::NetworkInsightsPath
     Properties: 
-      Destination: !Ref Destination
+      Destination: !ImportValue InstanceB-${AWS::Region}
       DestinationPort: 22
       Protocol: tcp
-      Source: !Ref Source
-  NetworkInsightsAnalysis:
+      Source: !ImportValue InstanceA-${AWS::Region}
+  NetworkInsightsPathAC:
+    Type: AWS::EC2::NetworkInsightsPath
+    Properties: 
+      Destination: !ImportValue InstanceC-${AWS::Region}
+      DestinationPort: 22
+      Protocol: tcp
+      Source: !ImportValue InstanceA-${AWS::Region}
+  NetworkInsightsAnalysisAB:
     Type: AWS::EC2::NetworkInsightsAnalysis
     Properties: 
-      NetworkInsightsPathId: !Ref NetworkInsightsPath
+      NetworkInsightsPathId: !Ref NetworkInsightsPathAB
+  NetworkInsightsAnalysisAC:
+    Type: AWS::EC2::NetworkInsightsAnalysis
+    Properties: 
+      NetworkInsightsPathId: !Ref NetworkInsightsPathAC
