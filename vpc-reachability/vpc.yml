@@ -121,17 +121,17 @@ Resources:
 
 Outputs:
   InstanceA:
-    Description: Name of InstanceA
+    Description: EC2 Instance ID for InstanceA
     Value: !Ref InstanceA
     Export:
       Name:  !Sub ${AWS::StackName}-InstanceA
   InstanceB:
-    Description: Name of InstanceB
+    Description: EC2 Instance ID for InstanceB
     Value: !Ref InstanceB
     Export:
       Name:  !Sub ${AWS::StackName}-InstanceB
   InstanceC:
-    Description: Name of InstanceC
+    Description: EC2 Instance ID for InstanceC
     Value: !Ref InstanceC
     Export:
       Name:  !Sub ${AWS::StackName}-InstanceC
