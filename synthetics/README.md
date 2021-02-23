@@ -11,7 +11,6 @@ In this episode, we'll be looking at Amazon CloudWatch Synthetics.
 ## Launch CloudFormation Stack
 
 1. From your [AWS CloudShell Environment](https://us-east-1.console.aws.amazon.com/cloudshell/home?region=us-east-1#) in the **us-east-1** region, run the following commands: 
-
 ```
 sudo rm -rf ~/aws-5-mins
 cd ~/
