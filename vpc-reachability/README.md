@@ -8,7 +8,9 @@ With Amazon VPC, you can create a logically isolated private network in the AWS 
 
 There are many different resources that can communicate inside and outside your VPC including AWS Lambda, Amazon S3, VPC Endpoints, VPC Gateway, VPC Peering, and AWS Transit Gateway - just to name a few.
 
-With all of these ways to communicate between resources, the potential for misconfiguration increases. VPC Reachability Analyzer uses automate reasoning to analyzer all possible paths between a source and destination and informs you whether it's those endpoints are reachable or not.    
+With all of these ways to communicate between resources, the potential for misconfiguration increases. VPC Reachability Analyzer uses automate reasoning to analyzer all possible paths between a source and destination and informs you whether it's those endpoints are reachable or not.
+
+You can specify any of the following endpoint types: VPN Gateways, Instances, Network Interfaces, Internet Gateways, VPC Endpoints, VPC Peering Connections, and Transit Gateways for your source and destination of communication.[Source](https://aws.amazon.com/blogs/aws/new-vpc-insights-analyzes-reachability-and-visibility-in-vpcs/)
 
 # Pricing
 Price per analysis processed by VPC Reachability Analyzer: $0.10. See [VPC Pricing](https://aws.amazon.com/vpc/pricing/) for more information.
