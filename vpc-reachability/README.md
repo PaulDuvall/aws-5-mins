@@ -81,7 +81,7 @@ aws ec2 start-network-insights-analysis \
     
 ```
 
-After running the commands above, go to [VPC Reachability Analyzer](https://console.aws.amazon.com/vpc/home?region=us-east-1#ReachabilityAnalyzer:). It'll take about 30 seconds to analyze the VPC configuration and the paths between instance A and instance C. Once complete, it will show tht this path is not reachable because the security group attached to instance C does not allow any incoming traffic.
+After running the commands above, go to [VPC Reachability Analyzer](https://console.aws.amazon.com/vpc/home?region=us-east-1#ReachabilityAnalyzer:). It'll take about 30 seconds to analyze the VPC configuration and the paths between instance A and instance C. Once complete, it will show that this path is not reachable because the security group attached to instance C does not allow any incoming traffic.
 
 
 # Delete Resources
