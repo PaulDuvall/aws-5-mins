@@ -58,9 +58,13 @@ aws ec2 create-network-insights-path \
 aws ec2 start-network-insights-analysis \
     --network-insights-path-id NETWORK-PATH-ID-AB
     
-# You can now see the analysis result as Reachable. If you click the URL link of analysis id nip-xxxxxxxxxxxxxxxxx, you can see the route hop by hop.    
 aws ec2 create-tags --resources NETWORK-PATH-ID-AB --tags Key=Name,Value=A2B-Reachable
 
+```
+
+After running the commands above, go to [VPC Reachability Analyzer](https://console.aws.amazon.com/vpc/home?region=us-east-1#ReachabilityAnalyzer:). You will see the analysis result as **Reachable**. If you click the URL link of analysis id starting with **nip**, you can see the route hop by hop.
+
+```
 # Assess Path between Instance A and Instance C. Get the values from VPC CloudFormation stack outputs.
 aws ec2 create-network-insights-path \
     --source VALUE-OF-INSTANCE-A \
@@ -68,15 +72,17 @@ aws ec2 create-network-insights-path \
     --destination-port 22 \
     --protocol TCP 
 
-# The communication from instance A to instance C is not reachable because the security group attached to instance C does not allow any incoming traffic.
+
 aws ec2 create-tags --resources NETWORK-PATH-ID-AC --tags Key=Name,Value=A2C-NotReachable
 
-# Analyze whether Instance A can reach Instance C?
+# Analyze whether Instance A can reach Instance C
 aws ec2 start-network-insights-analysis \
     --network-insights-path-id NETWORK-PATH-ID-AC
+    
 ```
 
-Go to [VPC Reachability Analyzer](https://console.aws.amazon.com/vpc/home?region=us-east-1#ReachabilityAnalyzer:).
+After running the commands above, go to [VPC Reachability Analyzer](https://console.aws.amazon.com/vpc/home?region=us-east-1#ReachabilityAnalyzer:). It'll take about 30 seconds to analyze the VPC configuration and the paths between instance A and instance C. Once complete, it will show tht this path is not reachable because the security group attached to instance C does not allow any incoming traffic.
+
 
 # Delete Resources
 
