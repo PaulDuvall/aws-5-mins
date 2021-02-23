@@ -4,9 +4,12 @@ You can find the 5-minute video that walks through all of the steps described he
 
 In this episode, we'll be looking at [Amazon VPC Reachability Analyzer](https://aws.amazon.com/blogs/aws/new-vpc-insights-analyzes-reachability-and-visibility-in-vpcs/).
 
-@todo: How it Works
+With Amazon VPC, you can create a logically isolated private network in the AWS cloud. VPC Reachability Analyzer is a network diagnostics tool that troubleshoots reachability between two endponts in a VPC. With Reachability Analyzer, you can ensure that your network configuration is as intended.
 
+There are many different resources that can communicate inside and outside your VPC including AWS Lambda, Amazon S3, VPC Endpoints, VPC Gateway, VPC Peering, and AWS Transit Gateway - just to name a few.
 
+# Pricing
+Price per analysis processed by VPC Reachability Analyzer: $0.10. See [VPC Pricing](https://aws.amazon.com/vpc/pricing/) for more information.
 
 # CloudFormation Support
 
@@ -69,10 +72,7 @@ aws ec2 start-network-insights-analysis \
     --network-insights-path-id NETWORK-PATH-ID-AC
 ```
 
-Go to [VPC Reachability Analyzer](https://console.aws.amazon.com/vpc/home?region=us-east-1#ReachabilityAnalyzer:)
-
-# Pricing
-Price per analysis processed by VPC Reachability Analyzer: $0.10. See [VPC Pricing](https://aws.amazon.com/vpc/pricing/) for more information.
+Go to [VPC Reachability Analyzer](https://console.aws.amazon.com/vpc/home?region=us-east-1#ReachabilityAnalyzer:).
 
 # Delete Resources
 
