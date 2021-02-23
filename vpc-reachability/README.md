@@ -4,7 +4,7 @@ You can find the 5-minute video that walks through all of the steps described he
 
 In this episode, we'll be looking at [Amazon VPC Reachability Analyzer](https://docs.aws.amazon.com/vpc/latest/reachability/what-is-reachability-analyzer.html).
 
-With Amazon VPC, you can create a logically isolated private network in the AWS cloud. VPC Reachability Analyzer is a network diagnostics tool that troubleshoots reachability between two endponts in a VPC. With VPC Reachability Analyzer, you can ensure that your network configuration is as intended.
+With Amazon VPC, you can create a logically isolated private network in the AWS cloud. VPC Reachability Analyzer is a network diagnostics tool that troubleshoots reachability between two endpoints in a VPC. With VPC Reachability Analyzer, you can ensure that your network configuration is as intended.
 
 There are many different resources that can communicate inside and outside your VPC including AWS Lambda, Amazon S3, VPC Endpoints, VPC Gateway, VPC Peering, and AWS Transit Gateway - just to name a few.
 
