@@ -31,7 +31,7 @@ git clone https://github.com/PaulDuvall/aws-5-mins.git
 cd aws-5-mins/vpc-reachability
 ```
 
-1. Run this command to launch a CloudFormation stack that generates VPC and released resources.  
+1. Run this command to launch a CloudFormation stack that generates a VPC and related resources.  
 
 ```
 aws cloudformation deploy \
