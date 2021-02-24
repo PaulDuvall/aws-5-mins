@@ -8,8 +8,6 @@ Amazon has been using automated synthetic testing for many years. For example, y
 
 Amazon CloudWatch Synthetics makes it possible to run these tests and monitor them through the CloudWatch console. You can use AWS-provided blueprints for heartbeat monitoring, API monitoring, checking for broken links, running tests based on [browser recordings](https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/CloudWatch_Synthetics_Canaries_Recorder.html), or creating a GUI workflow builder. You can get screenshots of behavior, get alerted through Alarms, or by monitoring events. What's more, you can integrate Synthetics with [AWS X-Ray](https://aws.amazon.com/xray/) to accelerate your debugging process.
 
-
-
 # CloudFormation Support
 
 AWS CloudFormation provides native support for Synthetics with the [AWS::Synthetics::Canary](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-synthetics-canary.html) resource. With this, you can creates or update a canary test. Canaries are scripts that monitor your endpoints and APIs from the outside-in. 
