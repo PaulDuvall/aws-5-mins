@@ -4,9 +4,7 @@ You can find the 5-minute video that walks through all of the steps described he
 
 In this episode, we'll be looking at [Amazon CloudWatch Synthetics](https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/CloudWatch_Synthetics_Canaries.html).
 
-Amazon has been using automated synthetic testing for many years. The purpose of this approach is to run tests and analysis against production systems to learn of potential problems before end users do.
-
-For example, you can run these automated tests to ensure a key part of your system (e.g. ordering) continues to work. If there are any errors or degradation, you learn of it as soon as possible and, in many cases, even before your end users.
+Amazon has been using automated synthetic testing for many years. For example, you can run these automated tests to ensure a key part of your production systems (e.g. ordering) continues to work. If there are any errors or degradation, you learn of it as soon as possible and, in many cases, even before your end users do.
 
 Amazon CloudWatch Synthetics makes it possible to run these tests and monitor them through the CloudWatch console. You can use AWS-provided blueprints for heartbeat monitoring, API monitoring, checking for broken links, running tests based on [browser recordings](https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/CloudWatch_Synthetics_Canaries_Recorder.html), or creating a GUI workflow builder. You can get screenshots of behavior, get alerted through Alarms, or by monitoring events. What's more, you can integrate Synthetics with [AWS X-Ray](https://aws.amazon.com/xray/) to accelerate your debugging process.
 
