@@ -45,7 +45,7 @@ aws cloudformation deploy \
 --region us-east-2
 ```
 
-View the status by going to the [AWS CloudFormation](https://console.aws.amazon.com/cloudformation/home?region=us-east-2#) console.
+View the status by going to the [AWS CloudFormation](https://console.aws.amazon.com/cloudformation/home?region=us-east-2#) console. Once the status is **CREATE_COMPLETE**, view the [Synthetics Canary Test](https://us-east-2.console.aws.amazon.com/cloudwatch/home?region=us-east-2#synthetics:canary/detail/aws-5-mins-canary).
 
 # Pricing
 When running Amazon CloudWatch Synthetics, you are charged $0.0012 per canary run. For example, by running 10,000 canary runs in a given month (or around one every 5 minutes), you will pay $12.
