@@ -25,7 +25,7 @@ AWS CloudFormation provides native support for Synthetics with the [AWS::Synthet
 
 Run the following steps to launch resources that run a canary test with Synthetics.
 
-1. From your [AWS CloudShell Environment](https://us-east-1.console.aws.amazon.com/cloudshell/home?region=us-east-1#) in the **us-east-1** region, run the following commands: 
+1. From your [AWS CloudShell Environment](https://us-east-2.console.aws.amazon.com/cloudshell/home?region=us-east-2#) in the **us-east-2** region, run the following commands: 
 ```
 sudo rm -rf ~/aws-5-mins
 cd ~/
@@ -42,8 +42,10 @@ aws cloudformation deploy \
 --parameter-overrides TestUrl=https://www.amazon.com/ \
 --capabilities CAPABILITY_NAMED_IAM \
 --no-fail-on-empty-changeset \
---region us-east-1
+--region us-east-2
 ```
+
+View the status by going to the [AWS CloudFormation](https://console.aws.amazon.com/cloudformation/home?region=us-east-2#) console.
 
 # Pricing
 When running Amazon CloudWatch Synthetics, you are charged $0.0012 per canary run. For example, by running 10,000 canary runs in a given month (or around one every 5 minutes), you will pay $12.
