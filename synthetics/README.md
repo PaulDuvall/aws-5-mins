@@ -4,11 +4,26 @@ You can find the 5-minute video that walks through all of the steps described he
 
 In this episode, we'll be looking at Amazon CloudWatch Synthetics.
 
+Amazon has been using automated synthetic testing for many years. The purpose of this approach is to run tests and analysis against production systems to learn of potential problems before end users do.
+
+For example, you can run these automated tests to ensure a key part of your system (e.g. ordering) continues to work. If there are any errors or degradation, you learn of it as soon as possible and, in many cases, even before your end users.
+
+Amazon CloudWatch Synthetics makes it possible to run these tests and monitor them through the CloudWatch console. What's more, you can integrate Synthetics with [AWS X-Ray](https://aws.amazon.com/xray/) to accelerate your debugging process.
+
+CloudWatch Synthetics makes it easy to:
+
+* Run web tests
+* Monitor APIs
+* Get screenshots of behavior
+* Get alerted through Alarms
 
 # CloudFormation Support
-* [AWS::Synthetics::Canary](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-synthetics-canary.html) - Creates or updates a canary. Canaries are scripts that monitor your endpoints and APIs from the outside-in. 
+
+AWS CloudFormation provides native support for Synthetics with the [AWS::Synthetics::Canary](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-synthetics-canary.html) resource. With this, you can creates or update a canary test. Canaries are scripts that monitor your endpoints and APIs from the outside-in. 
 
 ## Launch CloudFormation Stack
+
+Run the following steps to launch resources that run a canary test with Synthetics.
 
 1. From your [AWS CloudShell Environment](https://us-east-1.console.aws.amazon.com/cloudshell/home?region=us-east-1#) in the **us-east-1** region, run the following commands: 
 ```
@@ -18,7 +33,7 @@ git clone https://github.com/PaulDuvall/aws-5-mins.git
 cd aws-5-mins/synthetics
 ```
 
-1. Run this command to launch a CloudFormation stack that generates a Canary test.  
+1. Run this command to launch a CloudFormation stack that generates a Canary test. In the example, the default parameter value uses Amazon.com but you can change it to a website you own to tweak the behavior.  
 
 ```
 aws cloudformation deploy \
