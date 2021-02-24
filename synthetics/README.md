@@ -39,7 +39,7 @@ cd aws-5-mins/synthetics
 aws cloudformation deploy \
 --stack-name aws-5-mins-synthetics \
 --template-file synthetics.yml \
---parameter-overrides TestUrl=https://www.amazon.com/ \
+--parameter-overrides TestUrl=https://www.amazon.com/broken \
 --capabilities CAPABILITY_NAMED_IAM \
 --no-fail-on-empty-changeset \
 --region us-east-2
