@@ -4,7 +4,7 @@ Parameters:
   TestUrl: 
     Description: The URL to test
     Type: String
-    Default: "http://www.integratebutton.com/"
+    Default: "https://www.amazon.com/"
   CanaryName: 
     Description: Name of the canary test
     Type: String
