@@ -2,7 +2,7 @@
 
 You can find the 5-minute video that walks through all of the steps described here. 
 
-In this episode, we'll be looking at Amazon CloudWatch Synthetics.
+In this episode, we'll be looking at [Amazon CloudWatch Synthetics](https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/CloudWatch_Synthetics_Canaries.html).
 
 Amazon has been using automated synthetic testing for many years. The purpose of this approach is to run tests and analysis against production systems to learn of potential problems before end users do.
 
