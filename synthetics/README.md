@@ -1,6 +1,4 @@
-**NOTE: This video has not been released yet.**
-
-You can find the 5-minute video that walks through all of the steps described here. 
+You can find the [5-minute video](https://youtu.be/8O91EESLGoI) that walks through all of the steps described [here](https://youtu.be/8O91EESLGoI). 
 
 In this episode, we'll be looking at [Amazon CloudWatch Synthetics](https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/CloudWatch_Synthetics_Canaries.html).
 
