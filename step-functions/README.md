@@ -33,7 +33,8 @@ Once the deployment process is completed, 21 new resources are created. This inc
 * An [Amazon API Gateway](https://aws.amazon.com/api-gateway/) REST API with two resources.
 * An AWS Step Functions state machine
 * To receive Amazon SNS notifications as the application administrator, you must confirm the subscription to the SNS topic. To do this, choose the **Confirm subscription** link in the verification email that was sent to you when deploying the application.
-* Once the **serverlessrepo-aws-5-mins-*** [AWS CloudFormation stack](https://console.aws.amazon.com/cloudformation/home?region=us-east-1#/stacks/) is **CREATE_COMPLETE**, from your [AWS CloudShell Environment](https://us-east-1.console.aws.amazon.com/cloudshell/home?region=us-east-1#) in the **us-east-1** region, run the following commands: 
+* Once the **serverlessrepo-aws-5-mins-*** [AWS CloudFormation stack](https://console.aws.amazon.com/cloudformation/home?region=us-east-1#/stacks/) is **CREATE_COMPLETE**, go to the [AWS Step Functions Console](https://console.aws.amazon.com/states/home?region=us-east-1#/statemachines) to see the State machine defined but no executions run yet.
+* From your [AWS CloudShell Environment](https://us-east-1.console.aws.amazon.com/cloudshell/home?region=us-east-1#) in the **us-east-1** region, run the following commands: 
 
 ```
 aws iam create-policy --policy-name my-bad-policy-aws-5-mins --policy-document '{
@@ -54,7 +55,6 @@ aws iam create-policy --policy-name my-bad-policy-aws-5-mins --policy-document '
 ```
 
 * Go to the [IAM policy](https://console.aws.amazon.com/iam/home?region=us-east-1#/policies) you just created to view the definition. 
-* Go to the [AWS Step Functions Console](https://console.aws.amazon.com/states/home?region=us-east-1#/statemachines).
 * Go to [Amazon API Gateway Console](https://console.aws.amazon.com/apigateway/home?region=us-east-1#/apis/). Choose **Stages** and then **Prod**. Copy the **Invoke URL** link and paste to your clipboard. 
 * Go to the [AWS Step Functions Console](https://console.aws.amazon.com/states/home?region=us-east-1#/statemachines/) and choose the State Machine. Then scroll down to the **TaskSubmitted** Type of the **AskUser** step.
 * Copy the **token** value and append it to the URL as shown:
