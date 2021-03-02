@@ -19,8 +19,8 @@ Run the following steps to launch resources that run a canary test with Syntheti
 
 ```
 aws serverlessrepo create-cloud-formation-change-set \
---application-id application-arn \
---stack-name unique-name-for-cloud-formation-stack \
+--application-id arn:aws:serverlessrepo:us-east-1:981723798357:applications/ \
+--stack-name aws-5-mins-security-incident-response \
 --capabilities CAPABILITY_NAMED_IAM CAPABILITY_AUTO_EXPAND --region us-east-2
 
 aws cloudformation execute-change-set \
