@@ -15,16 +15,16 @@ TBD
 
 Run the following steps to launch resources that run a canary test with Synthetics.
 
-1. From your [AWS CloudShell Environment](https://us-east-2.console.aws.amazon.com/cloudshell/home?region=us-east-2#) in the **us-east-2** region, run the following commands: 
+1. From your [AWS CloudShell Environment](https://us-east-1.console.aws.amazon.com/cloudshell/home?region=us-east-1#) in the **us-east-1** region, run the following commands: 
 
 ```
 aws serverlessrepo create-cloud-formation-change-set \
 --application-id arn:aws:serverlessrepo:us-east-1:981723798357:applications/ \
 --stack-name aws-5-mins-security-incident-response \
---capabilities CAPABILITY_NAMED_IAM CAPABILITY_AUTO_EXPAND --region us-east-2
+--capabilities CAPABILITY_NAMED_IAM CAPABILITY_AUTO_EXPAND --region us-east-1
 
 aws cloudformation execute-change-set \
---change-set-name changeset-id-arn --region us-east-2
+--change-set-name changeset-id-arn --region us-east-1
 ```
 
 
