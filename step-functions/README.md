@@ -2,14 +2,16 @@
 
 You can find the 5-minute video that walks through all of the steps described here. 
 
-In this episode, we'll be looking at AWS Step Functions.
+In this episode, we'll be looking at [AWS Step Functions](https://aws.amazon.com/step-functions/). With Step Functions you can orchestratre serverless functions and manual activities into an end-to-end workflow. It provides a "State Machine as a Service". 
 
-TBD
+There is a visual interface and you can define the states using the Amazon States Language (ASL). The ASL is a JSON-based, structured language used to define your state machine, or collection of states, that can do work (Task states), determine which states to transition to next (Choice states), stop an execution with an error (Fail states), and so on. The output of one step acts as an input to the next. Each step in your application executes in order, as defined by your business logic.
 
+For example, without Step Functions, you might have a series of individual serverless applications and manage retries and debugging failures can be challenging. As your distributed applications become more complex, the complexity of managing them also grows. Step Functions automatically manages sequencing, error handling, retry logic, and state. It can remove many of the operational burdens from your team.
 
-# CloudFormation Support
-TBD
+In the demo, I use Step Functions to track and resolve a security incident in which Step Functions identifies the problem and then orchestrates manual and automated actions until it's resolved.
 
+# CloudFormation
+There are two CloudFormation resources for AWS Step Functions. The first is the State Machine Definition - defining the steps in your state machine. The next is the Activity Definition in which you have a task in your state machine where the work is performed by a worker that can be hosted on EC2, ECS, mobile devices, etc
 
 ## Launch CloudFormation Stack
 
@@ -19,7 +21,7 @@ Run the following steps to launch resources that create an AWS Step Function Sta
 Find the [Automated-IAM-policy-alerts-and-approvals](https://console.aws.amazon.com/lambda/home?region=us-east-1#/create/app?applicationId=arn:aws:serverlessrepo:us-east-1:981723798357:applications/Automated-IAM-policy-alerts-and-approvals) app in the Serverless Application Repository.
 1. Complete the required application settings
 * **Application name**: Enter `aws-5-mins-automated-iam-policy-alerts-approvals`.
-* **EmailAddress**: an administrator’s email address for receiving approval requests.
+* **EmailAddress**: an administrator's email address for receiving approval requests.
 * **restrictedActions**: the IAM Policy actions you want to restrict.
 1. Choose Deploy.
 Once the deployment process is completed, 21 new resources are created. This includes:
@@ -32,7 +34,7 @@ Once the deployment process is completed, 21 new resources are created. This inc
 * To receive Amazon SNS notifications as the application administrator, you must confirm the subscription to the SNS topic. To do this, choose the **Confirm subscription** link in the verification email that was sent to you when deploying the application.
 
 # Pricing
-TBD
+For the standard workflow and after 4,000 state transitions per month, you pay $0.025 per 1,000 state transitions. For more information, see [AWS Step Functions] pricing. 
 
 # Delete Resources
 
