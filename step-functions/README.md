@@ -13,7 +13,9 @@ TBD
 
 ## Launch CloudFormation Stack
 
-TBD
+Run the following steps to launch resources that run a canary test with Synthetics.
+
+1. From your [AWS CloudShell Environment](https://us-east-2.console.aws.amazon.com/cloudshell/home?region=us-east-2#) in the **us-east-2** region, run the following commands: 
 
 ```
 aws serverlessrepo create-cloud-formation-change-set \
