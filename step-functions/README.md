@@ -55,6 +55,7 @@ aws iam create-policy --policy-name my-bad-policy1137 --policy-document '{
 
 * Go to the [IAM policy](https://console.aws.amazon.com/iam/home?region=us-east-1#/policies) you just created to view the definition. 
 * Go to the [AWS Step Functions Console](https://console.aws.amazon.com/states/home?region=us-east-1#/statemachines).
+* Go to [Amazon API Gateway Console](https://console.aws.amazon.com/apigateway/home?region=us-east-1#/apis/). Choose **Stages** and then **Prod**. Copy the **Invoke URL** link and paste to your clipboard. 
 
 # Pricing
 For the standard workflow and after 4,000 state transitions per month, you pay $0.025 per 1,000 state transitions. For more information, see [AWS Step Functions Pricing](https://aws.amazon.com/step-functions/pricing/) . 
