@@ -20,11 +20,11 @@ Run the following steps to launch resources that create an AWS Step Function Sta
 
 1. Deploy the application from the Serverless Application Repository
 Find the [Automated-IAM-policy-alerts-and-approvals](https://console.aws.amazon.com/lambda/home?region=us-east-1#/create/app?applicationId=arn:aws:serverlessrepo:us-east-1:981723798357:applications/Automated-IAM-policy-alerts-and-approvals) app in the Serverless Application Repository.
-1. Complete the required application settings
+2. Complete the required application settings
 * **Application name**: Enter `aws-5-mins-automated-iam-policy-alerts-approvals`.
 * **EmailAddress**: an administrator's email address for receiving approval requests.
 * **restrictedActions**: the IAM Policy actions you want to restrict.
-1. Choose **Deploy**.
+3. Choose **Deploy**.
 Once the deployment process is completed, 21 new resources are created. This includes:
 
 * Five Lambda functions that contain the business logic.
