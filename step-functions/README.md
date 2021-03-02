@@ -53,13 +53,8 @@ aws iam create-policy --policy-name my-bad-policy1137 --policy-document '{
 }'
 ```
 
+* Go to the [IAM policy](https://console.aws.amazon.com/iam/home?region=us-east-1#/policies/arn:aws:iam::417764041678:policy/my-bad-policy1137$jsonEditor) you just created to view the definition. 
 * Go to the [AWS Step Functions Console](https://console.aws.amazon.com/states/home?region=us-east-1#/statemachines).
-
-Run this command: 
-
-```
-aws iam get-policy --policy-arn arn:aws:iam::$(aws sts get-caller-identity --output text --query 'Account'):policy/my-bad-policy1234
-```
 
 # Pricing
 For the standard workflow and after 4,000 state transitions per month, you pay $0.025 per 1,000 state transitions. For more information, see [AWS Step Functions Pricing](https://aws.amazon.com/step-functions/pricing/) . 
