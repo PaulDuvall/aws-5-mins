@@ -33,6 +33,7 @@ Once the deployment process is completed, 21 new resources are created. This inc
 * An [Amazon API Gateway](https://aws.amazon.com/api-gateway/) REST API with two resources.
 * An AWS Step Functions state machine
 * To receive Amazon SNS notifications as the application administrator, you must confirm the subscription to the SNS topic. To do this, choose the **Confirm subscription** link in the verification email that was sent to you when deploying the application.
+* Once the [AWS CloudFormation stack](https://console.aws.amazon.com/cloudformation/home?region=us-east-1#/stacks/stackinfo?filteringStatus=active&filteringText=&viewNested=true&hideStacks=false&stackId=arn%3Aaws%3Acloudformation%3Aus-east-1%3A417764041678%3Astack%2Fserverlessrepo-aws-5-mins-automated-iam-policy-alerts-approval%2F2a483490-7b74-11eb-ae97-0e1b8dfea4f7) is **CREATE_COMPLETE**, 
 
 # Pricing
 For the standard workflow and after 4,000 state transitions per month, you pay $0.025 per 1,000 state transitions. For more information, see [AWS Step Functions Pricing](https://aws.amazon.com/step-functions/pricing/) . 
