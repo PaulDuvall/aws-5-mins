@@ -16,7 +16,7 @@ In the demo, I use Step Functions to track and resolve a security incident in wh
 
 ## Launch CloudFormation Stack
 
-Run the following steps to launch resources that create an AWS Step Function State Machine and associated resources. The steps below are taken from this [blog post](https://aws.amazon.com/blogs/compute/orchestrating-a-security-incident-response-with-aws-step-functions/).
+Run the following steps to launch resources that create an AWS Step Function State Machine and associated resources. Some of the steps below are taken from this [blog post](https://aws.amazon.com/blogs/compute/orchestrating-a-security-incident-response-with-aws-step-functions/).
 
 1. Deploy the application from the Serverless Application Repository
 Find the [Automated-IAM-policy-alerts-and-approvals](https://console.aws.amazon.com/lambda/home?region=us-east-1#/create/app?applicationId=arn:aws:serverlessrepo:us-east-1:981723798357:applications/Automated-IAM-policy-alerts-and-approvals) app in the Serverless Application Repository.
