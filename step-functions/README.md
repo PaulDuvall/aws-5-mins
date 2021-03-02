@@ -11,7 +11,8 @@ For example, without Step Functions, you might have a series of individual serve
 In the demo, I use Step Functions to track and resolve a security incident in which Step Functions identifies the problem and then orchestrates manual and automated actions until it's resolved.
 
 # CloudFormation
-There are two CloudFormation resources for AWS Step Functions. The first is the State Machine Definition - defining the steps in your state machine. The next is the Activity Definition in which you have a task in your state machine where the work is performed by a worker that can be hosted on EC2, ECS, mobile devices, etc
+* [AWS::StepFunctions::StateMachine](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-stepfunctions-statemachine.html) - Defines the steps in your state machine.
+* [AWS::StepFunctions::Activity](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-stepfunctions-activity.html) - Defines how the task in your state machine is performed - whether it's EC2, ECS, mobile devices, etc.
 
 ## Launch CloudFormation Stack
 
