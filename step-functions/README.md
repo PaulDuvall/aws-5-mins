@@ -28,9 +28,9 @@ Find the [Automated-IAM-policy-alerts-and-approvals](https://console.aws.amazon.
 Once the deployment process is completed, 21 new resources are created. This includes:
 
 * Five Lambda functions that contain the business logic.
-* An Amazon EventBridge rule.
-* An Amazon SNS topic and subscription.
-* An Amazon API Gateway REST API with two resources.
+* An [Amazon EventBridge](https://aws.amazon.com/eventbridge/) rule.
+* An [Amazon SNS](https://aws.amazon.com/sns/) topic and subscription.
+* An [Amazon API Gateway](https://aws.amazon.com/api-gateway/) REST API with two resources.
 * An AWS Step Functions state machine
 * To receive Amazon SNS notifications as the application administrator, you must confirm the subscription to the SNS topic. To do this, choose the **Confirm subscription** link in the verification email that was sent to you when deploying the application.
 
