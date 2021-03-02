@@ -14,7 +14,7 @@ In the demo, I use Step Functions to track and resolve a security incident in wh
 * [AWS::StepFunctions::StateMachine](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-stepfunctions-statemachine.html) - Defines the steps in your state machine.
 * [AWS::StepFunctions::Activity](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-stepfunctions-activity.html) - Defines how the task in your state machine is performed - whether it's EC2, ECS, mobile devices, etc.
 
-## Launch CloudFormation Stack
+# Launch Step Functions Solution
 
 Run the following steps to launch resources that create an AWS Step Function State Machine and associated resources. Some of the steps below are taken from this [blog post](https://aws.amazon.com/blogs/compute/orchestrating-a-security-incident-response-with-aws-step-functions/).
 
