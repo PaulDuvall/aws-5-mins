@@ -16,12 +16,13 @@ TBD
 TBD
 
 ```
-aws cloudformation deploy \
---stack-name aws-5-mins-SERVICENAME \
---template-file service-name.yml \
---capabilities CAPABILITY_NAMED_IAM \
---no-fail-on-empty-changeset \
---region us-east-1
+aws serverlessrepo create-cloud-formation-change-set \
+--application-id application-arn \
+--stack-name unique-name-for-cloud-formation-stack \
+--capabilities CAPABILITY_NAMED_IAM CAPABILITY_AUTO_EXPAND --region us-east-2
+
+aws cloudformation execute-change-set \
+--change-set-name changeset-id-arn --region us-east-2
 ```
 
 
@@ -37,3 +38,5 @@ aws cloudformation delete-stack --stack-name aws-5-mins-SERVICENAME
 ```
 
 # Additional Resources
+
+* [Orchestrating a security incident response with AWS Step Functions](https://aws.amazon.com/blogs/compute/orchestrating-a-security-incident-response-with-aws-step-functions/)
