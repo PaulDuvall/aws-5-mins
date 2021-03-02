@@ -36,7 +36,7 @@ Once the deployment process is completed, 21 new resources are created. This inc
 * Once the [AWS CloudFormation stack](https://console.aws.amazon.com/cloudformation/home?region=us-east-1#/stacks/stackinfo?filteringStatus=active&filteringText=&viewNested=true&hideStacks=false&stackId=arn%3Aaws%3Acloudformation%3Aus-east-1%3A417764041678%3Astack%2Fserverlessrepo-aws-5-mins-automated-iam-policy-alerts-approval%2F2a483490-7b74-11eb-ae97-0e1b8dfea4f7) is **CREATE_COMPLETE**, from your [AWS CloudShell Environment](https://us-east-1.console.aws.amazon.com/cloudshell/home?region=us-east-1#) in the **us-east-1** region, run the following commands: 
 
 ```
-aws iam create-policy --policy-name my-bad-policy1137 --policy-document '{
+aws iam create-policy --policy-name my-bad-policy-aws-5-mins --policy-document '{
     "Version": "2012-10-17",
     "Statement": [
         {
@@ -70,7 +70,7 @@ For the standard workflow and after 4,000 state transitions per month, you pay $
 1. From your [AWS CloudShell Environment](https://us-east-1.console.aws.amazon.com/cloudshell/home?region=us-east-1#) in the **us-east-1** region, run the following commands: 
 
 ```
-aws iam delete-policy --policy-arn arn:aws:iam::$(aws sts get-caller-identity --output text --query 'Account'):policy/my-bad-policy1137
+aws iam delete-policy --policy-arn arn:aws:iam::$(aws sts get-caller-identity --output text --query 'Account'):policy/my-bad-policy-aws-5-mins
 aws cloudformation delete-stack --stack-name aws-5-mins-automated-iam-policy-alerts-approvals
 ```
 
