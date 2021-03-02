@@ -53,6 +53,8 @@ aws iam create-policy --policy-name my-bad-policy1137 --policy-document '{
 }'
 ```
 
+* Go to the [AWS Step Functions Console](https://console.aws.amazon.com/states/home?region=us-east-1#/statemachines).
+
 Run this command: 
 
 ```
