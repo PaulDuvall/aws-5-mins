@@ -59,7 +59,7 @@ aws iam create-policy --policy-name my-bad-policy-aws-5-mins --policy-document '
 * Go to the [AWS Step Functions Console](https://console.aws.amazon.com/states/home?region=us-east-1#/statemachines/) and choose the State Machine. Then scroll down to the **TaskSubmitted** Type of the **AskUser** step.
 * Copy the **token** value and append it to the URL as shown: `API_GATEWAY_URL/deny?token=TOKEN_FROM_STEP_FUNCTION_STEP`. Open your browser and paste this URL and submit. 
 * Go to the [IAM policy](https://console.aws.amazon.com/iam/home?region=us-east-1#/policies) you just created to view the definition. 
-* Go to the [AWS Step Functions Console](https://console.aws.amazon.com/states/home?region=us-east-1#/statemachines/) to see the status.
+* Go to the [AWS Step Functions Console](https://console.aws.amazon.com/states/home?region=us-east-1#/statemachines/). The status for the state machine should be **Succeeded**.
 
 
 # Pricing
