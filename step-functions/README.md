@@ -24,7 +24,7 @@ Find the [Automated-IAM-policy-alerts-and-approvals](https://console.aws.amazon.
 * **Application name**: Enter `aws-5-mins-automated-iam-policy-alerts-approvals`.
 * **EmailAddress**: an administrator's email address for receiving approval requests.
 * **restrictedActions**: the IAM Policy actions you want to restrict.
-1. Choose Deploy.
+1. Choose **Deploy**.
 Once the deployment process is completed, 21 new resources are created. This includes:
 
 * Five Lambda functions that contain the business logic.
