@@ -35,7 +35,7 @@ Once the deployment process is completed, 21 new resources are created. This inc
 * To receive Amazon SNS notifications as the application administrator, you must confirm the subscription to the SNS topic. To do this, choose the **Confirm subscription** link in the verification email that was sent to you when deploying the application.
 
 # Pricing
-For the standard workflow and after 4,000 state transitions per month, you pay $0.025 per 1,000 state transitions. For more information, see [AWS Step Functions] pricing. 
+For the standard workflow and after 4,000 state transitions per month, you pay $0.025 per 1,000 state transitions. For more information, see [AWS Step Functions Pricing](https://aws.amazon.com/step-functions/pricing/) . 
 
 # Delete Resources
 
