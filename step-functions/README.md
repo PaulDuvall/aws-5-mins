@@ -1,6 +1,4 @@
-**NOTE: This video has not been released yet.**
-
-You can find the 5-minute video that walks through all of the steps described here. 
+You can find the [5-minute video](https://youtu.be/1pxfIQuj2LM) that walks through all of the steps described [here](https://youtu.be/1pxfIQuj2LM). 
 
 In this episode, we'll be looking at [AWS Step Functions](https://aws.amazon.com/step-functions/). With Step Functions you can orchestratre serverless functions and manual activities into an end-to-end workflow. It provides a "State Machine as a Service". 
 
