@@ -72,10 +72,11 @@ For the standard workflow and after 4,000 state transitions per month, you pay $
 
 # Delete Resources
 
-1. From your [AWS CloudShell Environment](https://us-east-1.console.aws.amazon.com/cloudshell/home?region=us-east-1#) in the **us-east-1** region, run the following commands: 
+
+1. Go to the [IAM policy](https://console.aws.amazon.com/iam/home?region=us-east-1#/policies) and delete `my-bad-policy-aws-5-mins`. 
+1. From your [AWS CloudShell Environment](https://us-east-1.console.aws.amazon.com/cloudshell/home?region=us-east-1#) in the **us-east-1** region, run the following command: 
 
 ```
-aws iam delete-policy --policy-arn arn:aws:iam::$(aws sts get-caller-identity --output text --query 'Account'):policy/my-bad-policy-aws-5-mins
 aws cloudformation delete-stack --stack-name serverlessrepo-aws-5-mins-automated-iam-policy-alerts-approval
 ```
 
