@@ -57,9 +57,11 @@ aws iam create-policy --policy-name my-bad-policy-aws-5-mins --policy-document '
 * Go to the [AWS Step Functions Console](https://console.aws.amazon.com/states/home?region=us-east-1#/statemachines).
 * Go to [Amazon API Gateway Console](https://console.aws.amazon.com/apigateway/home?region=us-east-1#/apis/). Choose **Stages** and then **Prod**. Copy the **Invoke URL** link and paste to your clipboard. 
 * Go to the [AWS Step Functions Console](https://console.aws.amazon.com/states/home?region=us-east-1#/statemachines/) and choose the State Machine. Then scroll down to the **TaskSubmitted** Type of the **AskUser** step.
+
 * Copy the **token** value and append it to the URL as shown:
 ** `API_GATEWAY_URL/allow?token=TOKEN_FROM_STEP_FUNCTION_STEP` - To revert to the original IAM policy definition.
 ** `API_GATEWAY_URL/deny?token=TOKEN_FROM_STEP_FUNCTION_STEP` - To keep the automatically remediated IAM policy definition in place.
+
 * Now, open your browser and paste the URL from above and submit.
 * Go to the [IAM policy](https://console.aws.amazon.com/iam/home?region=us-east-1#/policies) view the definition based on your updates.  
 * Go to the [AWS Step Functions Console](https://console.aws.amazon.com/states/home?region=us-east-1#/statemachines/). The status for the state machine should be **Succeeded**.
