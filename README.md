@@ -11,7 +11,7 @@ Service or Feature | Category | Description | 5 Min Video
 [AWS CloudShell](./cloudshell) | Developer Tools | Command line access to AWS resources and tools directly from a browser | [18-Feb-2021](https://youtu.be/Y1-ZMXWujtI)
 [Amazon VPC Reachability Analyzer](./vpc-reachability) | Networking & Content Delivery | Network diagnostics tool that troubleshoots reachability between two endpoints in a VPC, or within multiple VPCs | [23-Feb-2021](https://youtu.be/71bEDGvkQns)
 [Amazon CloudWatch Synthetics](./synthetics) | Management & Governance | Discover issues before your customers do by running canary tests | [25-Feb-2021](https://youtu.be/8O91EESLGoI)
-[AWS CloudFormation](./cloudformation) | Management & Governance | Speed up cloud provisioning with infrastructure as code | 2-Mar-2021
+[AWS Step Functions](./step-functions) | Application Integration | Assemble functions into business-critical applications | 2-Mar-2021
 [AWS Cloud Development Kit (CDK)](./cdk) | Developer Tools | Define cloud infrastructure using familiar programming languages | 4-Mar-2021
 [Amazon AppFlow](./appflow) | Application Integration | Securely integrate apps and automate data flows at any scale, without code | 9-Mar-2021
 [Amazon SageMaker Pipelines](./sagemaker-pipelines) | Machine Learning | First purpose-built CI/CD service for machine learning | 11-Mar-2021
