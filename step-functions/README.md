@@ -53,7 +53,7 @@ aws iam create-policy --policy-name my-bad-policy1137 --policy-document '{
 }'
 ```
 
-* Go to the [IAM policy](https://console.aws.amazon.com/iam/home?region=us-east-1#/policies/arn:aws:iam::417764041678:policy/my-bad-policy1137$jsonEditor) you just created to view the definition. 
+* Go to the [IAM policy](https://console.aws.amazon.com/iam/home?region=us-east-1#/policies/) you just created to view the definition. 
 * Go to the [AWS Step Functions Console](https://console.aws.amazon.com/states/home?region=us-east-1#/statemachines).
 
 # Pricing
