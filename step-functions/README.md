@@ -2,7 +2,7 @@
 
 You can find the 5-minute video that walks through all of the steps described here. 
 
-In this episode, we'll be looking at TBD
+In this episode, we'll be looking at AWS Step Functions.
 
 TBD
 
@@ -13,7 +13,14 @@ TBD
 
 ## Launch CloudFormation Stack
 
-Run the following steps to launch resources that run a canary test with Synthetics.
+Run the following steps to launch resources that create an AWS Step Function State Machine and associated resources.
+
+1. Deploy the application from the Serverless Application Repository
+Find the [Automated-IAM-policy-alerts-and-approvals](https://console.aws.amazon.com/lambda/home?region=us-east-1#/create/app?applicationId=arn:aws:serverlessrepo:us-east-1:981723798357:applications/Automated-IAM-policy-alerts-and-approvals) app in the Serverless Application Repository.
+1. Complete the required application settings
+* **Application name**: an identifiable name for the application.
+* **EmailAddress**: an administrator’s email address for receiving approval requests.
+* **restrictedActions**: the IAM Policy actions you want to restrict.
 
 1. From your [AWS CloudShell Environment](https://us-east-1.console.aws.amazon.com/cloudshell/home?region=us-east-1#) in the **us-east-1** region, run the following commands: 
 
