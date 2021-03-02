@@ -77,7 +77,7 @@ For the standard workflow and after 4,000 state transitions per month, you pay $
 1. From your [AWS CloudShell Environment](https://us-east-1.console.aws.amazon.com/cloudshell/home?region=us-east-1#) in the **us-east-1** region, run the following command: 
 
 ```
-aws cloudformation delete-stack --stack-name serverlessrepo-aws-5-mins-automated-iam-policy-alerts-approval
+aws cloudformation delete-stack --stack-name serverlessrepo-aws-5-mins-automated-iam-policy-alerts-approvals
 ```
 
 # Additional Resources
