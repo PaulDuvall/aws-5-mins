@@ -71,7 +71,7 @@ For the standard workflow and after 4,000 state transitions per month, you pay $
 
 ```
 aws iam delete-policy --policy-arn arn:aws:iam::$(aws sts get-caller-identity --output text --query 'Account'):policy/my-bad-policy-aws-5-mins
-aws cloudformation delete-stack --stack-name aws-5-mins-automated-iam-policy-alerts-approvals
+aws cloudformation delete-stack --stack-name serverlessrepo-aws-5-mins-automated-iam-policy-alerts-approval
 ```
 
 # Additional Resources
