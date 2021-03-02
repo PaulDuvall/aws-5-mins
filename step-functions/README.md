@@ -33,7 +33,7 @@ Once the deployment process is completed, 21 new resources are created. This inc
 * An [Amazon API Gateway](https://aws.amazon.com/api-gateway/) REST API with two resources.
 * An AWS Step Functions state machine
 * To receive Amazon SNS notifications as the application administrator, you must confirm the subscription to the SNS topic. To do this, choose the **Confirm subscription** link in the verification email that was sent to you when deploying the application.
-* Once the [AWS CloudFormation stack](https://console.aws.amazon.com/cloudformation/home?region=us-east-1#/stacks/) is **CREATE_COMPLETE**, from your [AWS CloudShell Environment](https://us-east-1.console.aws.amazon.com/cloudshell/home?region=us-east-1#) in the **us-east-1** region, run the following commands: 
+* Once the **serverlessrepo-aws-5-mins-* ** [AWS CloudFormation stack](https://console.aws.amazon.com/cloudformation/home?region=us-east-1#/stacks/) is **CREATE_COMPLETE**, from your [AWS CloudShell Environment](https://us-east-1.console.aws.amazon.com/cloudshell/home?region=us-east-1#) in the **us-east-1** region, run the following commands: 
 
 ```
 aws iam create-policy --policy-name my-bad-policy-aws-5-mins --policy-document '{
