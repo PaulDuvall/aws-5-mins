@@ -34,8 +34,7 @@ aws cloudformation deploy \
 --region us-east-2
 ```
 
-View the status by going to the [AWS CloudFormation](https://console.aws.amazon.com/cloudformation/home?region=us-east-2#) console. Once the status is **CREATE_COMPLETE**, view the [CodeGuru].
-
+View the status by going to the [AWS CloudFormation](https://console.aws.amazon.com/cloudformation/home?region=us-east-2#) console. Once the status is **CREATE_COMPLETE**, view the [CodeGuru](https://us-east-2.console.aws.amazon.com/codeguru/reviewer/?region=us-east-2#/associations).
 
 # Pricing
 TBD
