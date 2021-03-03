@@ -13,19 +13,30 @@ TBD
 
 ## Launch CloudFormation Stack
 
-TBD
+Run the following steps to launch resources that launch the CloudFormation stack.
+
+1. From your [AWS CloudShell Environment](https://us-east-2.console.aws.amazon.com/cloudshell/home?region=us-east-2#) in the **us-east-2** region, run the following commands: 
+```
+sudo rm -rf ~/aws-5-mins
+cd ~/
+git clone https://github.com/PaulDuvall/aws-5-mins.git
+cd aws-5-mins/codeguru
+```
+
+1. Run this command to launch a CloudFormation stack that creates a CodeCommit repo and associates it to Amazon CodeGuru.
 
 ```
 aws cloudformation deploy \
---stack-name aws-5-mins-SERVICENAME \
---template-file service-name.yml \
+--stack-name aws-5-mins-codeguru \
+--template-file codeguru.yml \
+--parameter-overrides TestUrl=https://www.amazon.com/broken \
 --capabilities CAPABILITY_NAMED_IAM \
 --no-fail-on-empty-changeset \
---region us-east-1
+--region us-east-2
 ```
 
+View the status by going to the [AWS CloudFormation](https://console.aws.amazon.com/cloudformation/home?region=us-east-2#) console. Once the status is **CREATE_COMPLETE**, view the [CodeGuru].
 
-# Deployment Pipeline
 
 # Pricing
 TBD
