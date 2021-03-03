@@ -28,8 +28,7 @@ cd aws-5-mins/codeguru
 ```
 aws cloudformation deploy \
 --stack-name aws-5-mins-codeguru \
---template-file codeguru.yml \
---parameter-overrides TestUrl=https://www.amazon.com/broken \
+--template-file codeguru-security.yml \
 --capabilities CAPABILITY_NAMED_IAM \
 --no-fail-on-empty-changeset \
 --region us-east-2

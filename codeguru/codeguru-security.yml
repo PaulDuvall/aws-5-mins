@@ -1,0 +1,17 @@
+---
+Description: Amazon CodeGuru Security Detector Demo.
+Parameters: 
+  RepoName: 
+    Description: Name of the the repo
+    Type: String
+    Default: aws-5-mins-security-repo
+Resources:
+  MyRepository:
+    Type: AWS::CodeCommit::Repository
+    Properties:
+      RepositoryName: !Ref RepoName
+  MyRepositoryAssociation:
+    Type: AWS::CodeGuruReviewer::RepositoryAssociation
+    Properties:
+      Name: !Ref RepoName
+      Type: CodeCommit
