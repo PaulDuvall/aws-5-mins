@@ -54,3 +54,4 @@ aws cloudformation delete-stack --stack-name aws-5-mins-SERVICENAME
 * [Incorporating security in code-reviews using Amazon CodeGuru Reviewer](https://aws.amazon.com/blogs/devops/incorporating-security-in-code-reviews-using-amazon-codeguru-reviewer)
 * [Raising code quality for Python applications using Amazon CodeGuru](https://aws.amazon.com/blogs/devops/raising-code-quality-for-python-applications-using-amazon-codeguru/)
 * [10 Java security best practices](https://snyk.io/blog/10-java-security-best-practices/)
+* [s3-bucket-loader example](https://github.com/PaulDuvall/s3-bucket-loader)
