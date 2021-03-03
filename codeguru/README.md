@@ -35,7 +35,7 @@ aws cloudformation deploy \
 ```
 
 * View the status by going to the [AWS CloudFormation](https://console.aws.amazon.com/cloudformation/home?region=us-east-2#) console. Once the status is **CREATE_COMPLETE**, view the [CodeGuru](https://us-east-2.console.aws.amazon.com/codeguru/reviewer/?region=us-east-2#/associations).
-* [Create repository analysis](https://us-east-2.console.aws.amazon.com/codeguru/reviewer/?region=us-east-2#/codereviews/create)
+* [Create repository analysis](https://us-east-2.console.aws.amazon.com/codeguru/reviewer/?region=us-east-2#/codereviews/create) and select **Code and security recommendations (Java)**.
 
 # Pricing
 TBD
