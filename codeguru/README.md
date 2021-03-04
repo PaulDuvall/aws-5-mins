@@ -43,7 +43,7 @@ sdk install gradle 6.8.3
 spring init --build=gradle --package-name=com.stelligent --dependencies=web,actuator,hateoas -n Banana banana-service
 gradle bootRun
 cd banana-service/build
-jar cf my-application.jar classes
+jar cf banana.jar classes
 aws s3 sync ~/banana-service/banana-service s3://aws-5-mins-codeguru-$(aws sts get-caller-identity --output text --query 'Account') --region us-east-2
 ```
 
