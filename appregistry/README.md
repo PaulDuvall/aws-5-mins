@@ -31,15 +31,15 @@ There are four new CloudFormation resources to support the launch of AppRegistry
 sudo rm -rf ~/aws-5-mins
 cd ~/
 git clone https://github.com/PaulDuvall/aws-5-mins.git
-cd aws-5-mins/appregistry
+cd aws-5-mins/cloudformation
 ```
 
-1. Run this command to launch a CloudFormation stack that generates an SQS resource.  
+1. Run this command to launch a CloudFormation stack that provisions an EC2 instance.  
 
 ```
 aws cloudformation deploy \
---stack-name aws-5-mins-sqs \
---template-file sqs.yml  \
+--stack-name aws-5-mins-cfn \
+--template-file cfn.yml  \
 --capabilities CAPABILITY_NAMED_IAM \
 --no-fail-on-empty-changeset \
 --region us-east-1
@@ -76,11 +76,7 @@ AppRegistry uses the same per API call pricing model that Service Catalog uses. 
 Run these command to delete the CloudFormation Stacks and the resources they provisioned in this demo. 
 
 ```
-aws cloudformation delete-stack --stack-name aws-5-mins-appregistry --region us-east-1
-
-# Wait until above stack is deleted
-aws cloudformation delete-stack --stack-name aws-5-mins-sqs --region us-east-1
-
+aws cloudformation delete-stack --stack-name aws-5-mins-cfn --region us-east-1
 ```
 
 # Additional Resources
