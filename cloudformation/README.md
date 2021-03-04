@@ -7,9 +7,9 @@ In this episode, we'll be looking at AWS CloudFormation. If you have viewed some
 With a CloudFormation template, you can define your infrastructure as code. 
 
 * These are the [top-level objects](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/template-anatomy.html) of a CloudFormation template: Format Version, Description, Metadata, Parameters, Rules, Mappings, Conditions, Transform, Resources, Outputs. The **Resources** object is the only object that is *required*.
-* **Format Version** - 
-* **Description** - 
-* **Metadata** - 
+* **Format Version** - CloudFormation version that the template conforms to.
+* **Description** - Must always follow the format version.
+* **Metadata** - additional data about the template. 
 * **Parameters** - declare values that can be passed to the template when you create the Stack. A parameter is an effective way to specify anything you want users to customize or store in the template itself.
 * **Rules** - 
 * **Mappings** - declare conditional values that are evaluated in a similar manner as a switch statement. An example mapping might be to select the correct AMI for the Region and the Architecture Type for the instance type.

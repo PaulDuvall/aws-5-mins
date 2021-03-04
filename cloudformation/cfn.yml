@@ -1,10 +1,14 @@
+# CloudFormation version that the template conforms to.
 AWSTemplateFormatVersion: '2010-09-09'
+# Description must always follow the format version.
 Description: Template for CloudFormation demo
+# declare values that can be passed to the template when you create the Stack. A parameter is an effective way to specify anything you want users to customize or store in the template itself.
 Parameters: 
   Environment: 
     Description: Dev, Test, or Prod
     Type: String
     Default: Dev
+# declare conditional values that are evaluated in a similar manner as a switch statement. An example mapping might be to select the correct AMI for the Region and the Architecture Type for the instance type.
 Mappings: 
   RegionMap: 
     us-east-1: 
@@ -22,6 +26,9 @@ Mappings:
     ap-northeast-1: 
       HVM64: "ami-06cd52961ce9f0d85"
       HVMG2: "ami-053cdd503598e4a9d"
+# contain the definitions of the AWS resources you want to create with the template. Each resource is listed separately and specifies the properties necessary for creating that particular resource. The resource declaration begins with a String that specifies the logical name for the resource. The logical name can be used to refer to the resources within the template.
+# Pseudo Parameters are parameters that are predefined by CloudFormation so that you do not declare them in your template (e.g. AWS::Region)
+# Intrinsic Functions are built-in functions that assign values to properties that are not available until runtime (e.g. FindInMap).
 Resources: 
   myEC2Instance: 
     Type: "AWS::EC2::Instance"
@@ -34,6 +41,7 @@ Resources:
         - !Ref 'AWS::Region'
         - HVM64
       InstanceType: m1.small
+# Define custom values that are returned by the describe-stacks command and in the AWS Management Console Outputs tab after the stack is created. You can use Output values to return information from the resources in the stacks such as the URL for a website created in the template.
 Outputs:
   EC2InstanceId:
     Value: !Ref myEC2Instance
