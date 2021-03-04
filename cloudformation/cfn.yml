@@ -1,0 +1,19 @@
+AWSTemplateFormatVersion: '2010-09-09'
+Description: Template for CloudFormation demo
+Parameters: 
+  Environment: 
+    Description: Dev, Test, or Prod
+    Type: String
+    Default: Dev
+Mappings:
+  # The VPC and subnet configuration is passed in via the environment spec.
+  SubnetConfig:
+    VPC:
+      CIDR: '{{ environment.vpc_cidr}}'
+Resources:
+  MyQueue:
+    Type: AWS::SQS::Queue
+Outputs:
+  CanaryUrl:
+    Value: !Sub https://console.aws.amazon.com/cloudwatch/home?region=${AWS::Region}#synthetics:canary/detail/${CanaryName}
+    Description: CodePipeline URL
