@@ -1,6 +1,4 @@
-**NOTE: This video has not been released yet.**
-
-You can find the 5-minute video that walks through all of the steps described here. 
+You can find the [5-minute video](https://youtu.be/lupfVvpTLpU) that walks through all of the steps described [here](https://youtu.be/lupfVvpTLpU). 
 
 In this episode, we'll be looking at AWS CloudFormation. If you have viewed some of the other videos, you have seen and/or launched CloudFormation stacks from templates.
 
