@@ -7,16 +7,6 @@ In this episode, we'll be looking at AWS CloudFormation. If you have viewed some
 With a CloudFormation template, you can define your infrastructure as code. 
 
 * These are the [top-level objects](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/template-anatomy.html) of a CloudFormation template: Format Version, Description, Metadata, Parameters, Rules, Mappings, Conditions, Transform, Resources, Outputs. The **Resources** object is the only object that is *required*.
-* **Format Version** - CloudFormation version that the template conforms to.
-* **Description** - Must always follow the format version.
-* **Metadata** - additional data about the template. 
-* **Parameters** - declare values that can be passed to the template when you create the Stack. A parameter is an effective way to specify anything you want users to customize or store in the template itself.
-* **Rules** - 
-* **Mappings** - declare conditional values that are evaluated in a similar manner as a switch statement. An example mapping might be to select the correct AMI for the Region and the Architecture Type for the instance type.
-* **Conditions** - 
-* **Transform** - 
-* **Resources** - contain the definitions of the AWS resources you want to create with the template. Each resource is listed separately and specifies the properties necessary for creating that particular resource. The resource declaration begins with a String that specifies the logical name for the resource. The logical name can be used to refer to the resources within the template.
-* **Outputs** - define custom values that are returned by the describe-stacks command and in the AWS Management Console Outputs tab after the stack is created. You can use Output values to return information from the resources in the stacks such as the URL for a website created in the template.
 
 There are also:
 * **[Pseudo Parameters](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/pseudo-parameter-reference.html)** - parameters that are predefined by CloudFormation so that you do not declare them in your template.
@@ -39,6 +29,7 @@ cd aws-5-mins/cloudformation
 aws cloudformation deploy \
 --stack-name aws-5-mins-cfn \
 --template-file cfn.yml \
+--parameter-overrides Environment=Prod \
 --capabilities CAPABILITY_NAMED_IAM \
 --no-fail-on-empty-changeset \
 --region us-east-1
