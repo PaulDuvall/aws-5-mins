@@ -35,6 +35,6 @@ Resources:
         - HVM64
       InstanceType: m1.small
 Outputs:
-  CanaryUrl:
+  EC2InstanceId:
     Value: !Ref myEC2Instance
     Description: EC2 Instance ID
