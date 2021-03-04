@@ -34,9 +34,18 @@ aws cloudformation deploy \
 --region us-east-2
 ```
 
+```
+git clone https://github.com/PaulDuvall/s3-bucket-loader.git
+cd s3-bucket-loader
+zip s3-bucket-loader-example.zip *.*
+aws s3 mb s3://aws-5-mins-codeguru-$(aws sts get-caller-identity --output text --query 'Account') --region us-east-2
+aws s3 sync s3-bucket-loader-example.zip s3://aws-5-mins-codeguru-$(aws sts get-caller-identity --output text --query 'Account') --region us-east-2
+```
+
 * View the status by going to the [AWS CloudFormation](https://console.aws.amazon.com/cloudformation/home?region=us-east-2#) console. Once the status is **CREATE_COMPLETE**, view the [CodeGuru](https://us-east-2.console.aws.amazon.com/codeguru/reviewer/?region=us-east-2#/associations).
 * Choose the [Create repository analysis](https://us-east-2.console.aws.amazon.com/codeguru/reviewer/?region=us-east-2#/codereviews/create) button and choose the **Code and security recommendations (Java)** radio button. 
 * Click the **Create repository analysis** button.
+
 
 # Pricing
 TBD
