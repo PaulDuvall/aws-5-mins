@@ -37,7 +37,7 @@ aws cloudformation deploy \
 ```
 git clone https://github.com/PaulDuvall/s3-bucket-loader.git
 cd s3-bucket-loader
-zip s3-bucket-loader-example.zip *.*
+zip -r s3-bucket-loader-example.zip . -j -x '*.git*'
 aws s3 mb s3://aws-5-mins-codeguru-$(aws sts get-caller-identity --output text --query 'Account') --region us-east-2
 aws s3 sync s3-bucket-loader-example.zip s3://aws-5-mins-codeguru-$(aws sts get-caller-identity --output text --query 'Account') --region us-east-2
 ```
