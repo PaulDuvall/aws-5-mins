@@ -26,6 +26,9 @@ Resources:
   myEC2Instance: 
     Type: "AWS::EC2::Instance"
     Properties: 
+      Tags:
+        - Key: Name
+          Value: !Sub "${myEC2Instance}-${Environment}-01"
       ImageId: !FindInMap
         - RegionMap
         - !Ref 'AWS::Region'
