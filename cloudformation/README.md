@@ -30,15 +30,15 @@ There are also:
 sudo rm -rf ~/aws-5-mins
 cd ~/
 git clone https://github.com/PaulDuvall/aws-5-mins.git
-cd aws-5-mins/appregistry
+cd aws-5-mins/cloudformation
 ```
 
-1. Run this command to launch a CloudFormation stack that generates an SQS resource.  
+1. Run this command to launch a CloudFormation stack that provisons an EC2 instance.  
 
 ```
 aws cloudformation deploy \
---stack-name aws-5-mins-SERVICENAME \
---template-file service-name.yml \
+--stack-name aws-5-mins-cfn \
+--template-file cfn.yml \
 --capabilities CAPABILITY_NAMED_IAM \
 --no-fail-on-empty-changeset \
 --region us-east-1
@@ -50,7 +50,7 @@ There is no additional cost for using CloudFormation. You are only charged for t
 # Delete Resources
 
 ```
-aws cloudformation delete-stack --stack-name aws-5-mins-SERVICENAME
+aws cloudformation delete-stack --stack-name aws-5-mins-cfn
 ```
 
 # Additional Resources
