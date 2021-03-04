@@ -35,11 +35,16 @@ aws cloudformation deploy \
 ```
 
 ```
-git clone https://github.com/PaulDuvall/s3-bucket-loader.git
-cd s3-bucket-loader
-zip -r s3-bucket-loader-example.zip . -j -x '*.git*'
-aws s3 mb s3://aws-5-mins-codeguru-$(aws sts get-caller-identity --output text --query 'Account') --region us-east-2
-aws s3 sync s3-bucket-loader-example.zip s3://aws-5-mins-codeguru-$(aws sts get-caller-identity --output text --query 'Account') --region us-east-2
+git clone https://github.com/stelligent/banana-service
+cd banana-service
+curl -s "https://get.sdkman.io" | bash
+sdk install springboot
+sdk install gradle 6.8.3
+spring init --build=gradle --package-name=com.stelligent --dependencies=web,actuator,hateoas -n Banana banana-service
+gradle bootRun
+cd banana-service
+jar cf my-application.jar classes
+aws s3 sync ~/banana-service/banana-service s3://aws-5-mins-codeguru-$(aws sts get-caller-identity --output text --query 'Account') --region us-east-2
 ```
 
 * View the status by going to the [AWS CloudFormation](https://console.aws.amazon.com/cloudformation/home?region=us-east-2#) console. Once the status is **CREATE_COMPLETE**, view the [CodeGuru](https://us-east-2.console.aws.amazon.com/codeguru/reviewer/?region=us-east-2#/associations).
