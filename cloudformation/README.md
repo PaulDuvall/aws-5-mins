@@ -22,13 +22,18 @@ There are also:
 * **[Pseudo Parameters](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/pseudo-parameter-reference.html)** - parameters that are predefined by CloudFormation so that you do not declare them in your template.
 * **[Intrinsic Functions](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/intrinsic-function-reference.html)** - built-in functions that assign values to properties that are not available until runtime.
 
-# CloudFormation Template
-TBD
-
-
 ## Launch CloudFormation Stack
 
-TBD
+1. From your [AWS CloudShell Environment](https://us-east-1.console.aws.amazon.com/cloudshell/home?region=us-east-1#) in the **us-east-1** region, run the following commands: 
+
+```
+sudo rm -rf ~/aws-5-mins
+cd ~/
+git clone https://github.com/PaulDuvall/aws-5-mins.git
+cd aws-5-mins/appregistry
+```
+
+1. Run this command to launch a CloudFormation stack that generates an SQS resource.  
 
 ```
 aws cloudformation deploy \
