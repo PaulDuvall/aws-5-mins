@@ -28,7 +28,7 @@ Resources:
     Properties: 
       Tags:
         - Key: Name
-          Value: !Sub "${myEC2Instance}-${Environment}-01"
+          Value: !Sub "${Environment}-01"
       ImageId: !FindInMap
         - RegionMap
         - !Ref 'AWS::Region'
