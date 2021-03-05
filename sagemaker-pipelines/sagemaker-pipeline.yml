@@ -1,10 +1,39 @@
-# Pipeline definition given as a JSON string 
+AWSTemplateFormatVersion: '2010-09-09'
+Description: Template for SageMaker Pipelines demo
 Resources:
   S3Bucket:
     Type: 'AWS::S3::Bucket'
     DeletionPolicy: Delete
     Properties:
       BucketName: !Sub ${AWS::StackName}-${AWS::AccountId}
+  SageMakerPipelineRole:
+    Type: AWS::IAM::Role
+    Properties:
+      RoleName:
+        Fn::Sub: ${AWS::StackName}-${AWS::Region}
+      Description: SageMakerPipeline role
+      AssumeRolePolicyDocument:
+        Version: 2012-10-17
+        Statement:
+          - Effect: Allow
+            Principal:
+              Service: sagemaker.amazonaws.com
+            Action: sts:AssumeRole
+            Condition: {}
+  RolePermissions:
+    Type: AWS::IAM::Policy
+    Properties:
+      Roles:
+        - Ref: SageMakerPipelineRole
+      PolicyName:
+        Fn::Sub: SageMakerPipelinePolicy-${AWS::Region}
+      PolicyDocument:
+        Version: 2012-10-17
+        Statement:
+          - Effect: Allow
+            Action:
+              - sagemaker:*
+            Resource: '*'
   MyAwesomePipeline:
     Type: AWS::SageMaker::Pipeline
     Properties:
@@ -13,4 +42,4 @@ Resources:
       PipelineDescription: !Ref AWS::StackName
       PipelineDefinition:
         PipelineDefinitionBody: !Sub "{\"Version\":\"2020-12-01\",\"Parameters\":[{\"Name\":\"InputDataSource\",\"DefaultValue\":\"\"},{\"Name\":\"InstanceCount\",\"Type\":\"Integer\",\"DefaultValue\":1}],\"Steps\":[{\"Name\":\"Training1\",\"Type\":\"Training\",\"Arguments\":{\"InputDataConfig\":[{\"DataSource\":{\"S3DataSource\":{\"S3Uri\":{\"Get\":\"Parameters.InputDataSource\"}}}}],\"OutputDataConfig\":{\"S3OutputPath\":\"s3://${AWS::StackName}-${AWS::AccountId}/\"},\"ResourceConfig\":{\"InstanceType\":\"ml.m5.large\",\"InstanceCount\":{\"Get\":\"Parameters.InstanceCount\"},\"VolumeSizeInGB\":1024}}}]}"
-      RoleArn: !Sub arn:aws:iam::${AWS::AccountId}:root
+      RoleArn: !Sub arn:aws:iam::${AWS::AccountId}:role/${SageMakerPipelineRole}
