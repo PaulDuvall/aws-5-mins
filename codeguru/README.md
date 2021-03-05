@@ -69,3 +69,13 @@ aws cloudformation delete-stack --stack-name aws-5-mins-SERVICENAME
 * [Raising code quality for Python applications using Amazon CodeGuru](https://aws.amazon.com/blogs/devops/raising-code-quality-for-python-applications-using-amazon-codeguru/)
 * [10 Java security best practices](https://snyk.io/blog/10-java-security-best-practices/)
 * [s3-bucket-loader example](https://github.com/PaulDuvall/s3-bucket-loader)
+
+
+```
+git clone https://github.com/aws-samples/building-java-apps-using-code-pipeline.git codeGuruDemoApp
+
+aws codeguru-reviewer associate-repository --repository CodeCommit={Name=CdkStackJavaApp-repo} 
+aws codeguru-reviewer list-repository-associations 
+
+aws codeguru-reviewer create-code-review --name mycodereview$TAG --repository-association-arn <ARN> --type RepositoryAnalysis={RepositoryHead={BranchName=master}}
+```
