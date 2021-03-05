@@ -27,7 +27,7 @@ cdk deploy
 ```
 
 # Pricing
-TBD
+There is no additional cost for using the AWS CDK. You are only charged for the use of the resources that the CDK provisions. 
 
 # Delete Resources
 
@@ -36,3 +36,5 @@ cdk destroy
 ```
 
 # Additional Resources
+
+* [CDK Workshop/](https://cdkworkshop.com/)
