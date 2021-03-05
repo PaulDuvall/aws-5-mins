@@ -26,7 +26,7 @@ npm run build
 cdk deploy
 ```
 
-* `Do you wish to deploy these changes (y/n)?` - Type `y`.
+* You will receive this message: **Do you wish to deploy these changes (y/n)?** - Type `y`.
 * [AWS Lambda Applications](https://us-east-2.console.aws.amazon.com/lambda/home?region=us-east-2#/applications)
 * Select the Lambda Function in the Lambda application
 * Select the EventBridge Rule in the Lambda application
@@ -41,7 +41,7 @@ There is no additional cost for using the AWS CDK. You are only charged for the 
 cdk destroy
 ```
 
-`Are you sure you want to delete: LambdaCronExample (y/n)?` - Type `y`.
+You will receive this message: **Are you sure you want to delete: LambdaCronExample (y/n)?** - Type `y`.
 
 # Additional Resources
 
