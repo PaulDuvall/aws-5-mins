@@ -24,5 +24,5 @@ TBD
 # Delete Resources
 
 ```
-aws cloudformation delete-stack --stack-name aws-5-mins-auditmanager
+aws cloudformation delete-stack --stack-name aws-5-mins-appflow
 ```
