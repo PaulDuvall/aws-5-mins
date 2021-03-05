@@ -41,6 +41,8 @@ There is no additional cost for using the AWS CDK. You are only charged for the 
 cdk destroy
 ```
 
+`Are you sure you want to delete: LambdaCronExample (y/n)?` - Type `y`.
+
 # Additional Resources
 
 * [CDK Workshop](https://cdkworkshop.com/)
