@@ -44,3 +44,4 @@ cdk destroy
 # Additional Resources
 
 * [CDK Workshop](https://cdkworkshop.com/)
+* [lambda-cron sample code](https://github.com/aws-samples/aws-cdk-examples/tree/master/typescript/lambda-cron)
