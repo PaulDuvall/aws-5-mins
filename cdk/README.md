@@ -21,6 +21,8 @@ sudo npm install -g aws-cdk
 npm install
 npm run build
 
+cdk synth
+
 cdk deploy
 ```
 
