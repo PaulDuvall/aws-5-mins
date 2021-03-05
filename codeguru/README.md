@@ -71,6 +71,8 @@ aws cloudformation delete-stack --stack-name aws-5-mins-SERVICENAME
 * [s3-bucket-loader example](https://github.com/PaulDuvall/s3-bucket-loader)
 
 
+[https://github.com/aws-samples/building-java-apps-using-code-pipeline/blob/dc6faeb2b59b11071f9a70ecaa91fa3b8042df9f/README.md](https://github.com/aws-samples/building-java-apps-using-code-pipeline/blob/dc6faeb2b59b11071f9a70ecaa91fa3b8042df9f/README.md)
+
 ```
 git clone https://github.com/aws-samples/building-java-apps-using-code-pipeline.git codeGuruDemoApp
 
