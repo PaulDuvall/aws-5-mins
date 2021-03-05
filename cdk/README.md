@@ -7,6 +7,7 @@ In this episode, we'll be looking at AWS Cloud Development Kit (CDK).
 * Core Framework
 * AWS Construct Library - Level 1, 2, and 3 Constructs
 * AWS CDK CLI - diff, synth, destroy
+* CDK Pipelines
 
 ## Launch CDK Solution
 
@@ -45,3 +46,4 @@ You will receive this message: **Are you sure you want to delete: LambdaCronExam
 * [CDK Workshop](https://cdkworkshop.com/)
 * [lambda-cron sample code](https://github.com/aws-samples/aws-cdk-examples/tree/master/typescript/lambda-cron)
 * [Enhanced CI/CD with AWS CDK - AWS Online Tech Talks](https://www.youtube.com/watch?v=1ps0Wh19MHQ)
+* [CDK Pipelines: Continuous delivery for AWS CDK applications](https://aws.amazon.com/blogs/developer/cdk-pipelines-continuous-delivery-for-aws-cdk-applications/)
