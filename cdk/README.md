@@ -37,4 +37,4 @@ cdk destroy
 
 # Additional Resources
 
-* [CDK Workshop/](https://cdkworkshop.com/)
+* [CDK Workshop](https://cdkworkshop.com/)
