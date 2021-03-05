@@ -4,7 +4,9 @@ You can find the 5-minute video that walks through all of the steps described he
 
 In this episode, we'll be looking at AWS Cloud Development Kit (CDK).
 
-TBD
+* Core Framework
+* AWS Construct Library - Level 1, 2, and 3 Constructs
+* AWS CDK CLI - diff, synth, destroy
 
 ## Launch CDK Solution
 
