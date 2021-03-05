@@ -32,7 +32,7 @@ TBD
 # Delete Resources
 
 ```
-aws cloudformation delete-stack --stack-name aws-5-mins-SERVICENAME
+cdk destroy
 ```
 
 # Additional Resources
