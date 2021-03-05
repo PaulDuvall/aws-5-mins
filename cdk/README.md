@@ -42,3 +42,4 @@ You will receive this message: **Are you sure you want to delete: LambdaCronExam
 
 * [CDK Workshop](https://cdkworkshop.com/)
 * [lambda-cron sample code](https://github.com/aws-samples/aws-cdk-examples/tree/master/typescript/lambda-cron)
+* [Enhanced CI/CD with AWS CDK - AWS Online Tech Talks](https://www.youtube.com/watch?v=1ps0Wh19MHQ)
