@@ -13,4 +13,4 @@ Resources:
       PipelineDescription: !Ref AWS::StackName
       PipelineDefinition:
         PipelineDefinitionBody: !Sub "{\"Version\":\"2020-12-01\",\"Parameters\":[{\"Name\":\"InputDataSource\",\"DefaultValue\":\"\"},{\"Name\":\"InstanceCount\",\"Type\":\"Integer\",\"DefaultValue\":1}],\"Steps\":[{\"Name\":\"Training1\",\"Type\":\"Training\",\"Arguments\":{\"InputDataConfig\":[{\"DataSource\":{\"S3DataSource\":{\"S3Uri\":{\"Get\":\"Parameters.InputDataSource\"}}}}],\"OutputDataConfig\":{\"S3OutputPath\":\"s3://${AWS::StackName}-${AWS::AccountId}/\"},\"ResourceConfig\":{\"InstanceType\":\"ml.m5.large\",\"InstanceCount\":{\"Get\":\"Parameters.InstanceCount\"},\"VolumeSizeInGB\":1024}}}]}"
-      RoleArn: !Sub "arn:aws:iam::${AWS::AccountId}:root"
+      RoleArn: !Sub arn:aws:iam::${AWS::AccountId}:root
