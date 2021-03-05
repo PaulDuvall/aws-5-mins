@@ -26,6 +26,10 @@ npm run build
 cdk deploy
 ```
 
+* `Do you wish to deploy these changes (y/n)?` - Type `y`.
+* [AWS Lambda Applications](https://us-east-2.console.aws.amazon.com/lambda/home?region=us-east-2#/applications)
+
+
 # Pricing
 There is no additional cost for using the AWS CDK. You are only charged for the use of the resources that the CDK provisions. 
 
