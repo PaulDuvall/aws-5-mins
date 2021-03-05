@@ -11,21 +11,20 @@ TBD
 TBD
 
 
-## Launch CloudFormation Stack
+## Launch CDK Solution
 
 TBD
 
 ```
-aws cloudformation deploy \
---stack-name aws-5-mins-SERVICENAME \
---template-file service-name.yml \
---capabilities CAPABILITY_NAMED_IAM \
---no-fail-on-empty-changeset \
---region us-east-1
+git clone https://github.com/aws-samples/aws-cdk-examples.git
+cd aws-cdk-examples/typescript/lambda-cron
+
+sudo npm install -g aws-cdk
+npm install
+npm run build
+
+cdk deploy
 ```
-
-
-# Deployment Pipeline
 
 # Pricing
 TBD
