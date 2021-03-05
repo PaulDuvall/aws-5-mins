@@ -28,7 +28,8 @@ cdk deploy
 
 * `Do you wish to deploy these changes (y/n)?` - Type `y`.
 * [AWS Lambda Applications](https://us-east-2.console.aws.amazon.com/lambda/home?region=us-east-2#/applications)
-
+* Select the Lambda Function in the Lambda application
+* Select the EventBridge Rule in the Lambda application
 
 # Pricing
 There is no additional cost for using the AWS CDK. You are only charged for the use of the resources that the CDK provisions. 
