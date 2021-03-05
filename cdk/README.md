@@ -6,11 +6,6 @@ In this episode, we'll be looking at AWS Cloud Development Kit (CDK).
 
 TBD
 
-
-# CloudFormation Support
-TBD
-
-
 ## Launch CDK Solution
 
 1. From your [AWS CloudShell Environment](https://us-east-2.console.aws.amazon.com/cloudshell/home?region=us-east-2#) in the **us-east-2** region, run the following commands: 
