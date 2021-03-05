@@ -14,6 +14,8 @@ In this episode, we'll be looking at AWS Cloud Development Kit (CDK).
 1. From your [AWS CloudShell Environment](https://us-east-2.console.aws.amazon.com/cloudshell/home?region=us-east-2#) in the **us-east-2** region, run the following commands: 
 
 ```
+sudo rm -rf ~/aws-cdk-examples
+
 git clone https://github.com/aws-samples/aws-cdk-examples.git
 cd aws-cdk-examples/typescript/lambda-cron
 
