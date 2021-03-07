@@ -19,4 +19,4 @@ Service or Feature | Category | Description | 5 Min Video
 [Amazon CodeGuru](./codeguru) | Developer Tools | Automate code reviews and optimize application performance with ML-powered recommendations | 18-Mar-2021
 [Amazon AppFlow](./appflow) | Application Integration | Securely integrate apps and automate data flows at any scale, without code | 23-Mar-2021
 [Amazon SageMaker Pipelines](./sagemaker-pipelines) | Machine Learning | First purpose-built CI/CD service for machine learning | 25-Mar-2021
-[AWS AppSync](./appsync) | Mobile | Accelerate application development with scalable GraphQL APIs | 30-Mar-2021
+[AWS Network Firewall](./network-firewall) | Networking & Content Delivery | Deploy network security across your Amazon VPCs with just a few clicks | 30-Mar-2021
