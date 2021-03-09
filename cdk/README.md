@@ -2,14 +2,19 @@
 
 You can find the 5-minute video that walks through all of the steps described here. 
 
-In this episode, we'll be looking at AWS Cloud Development Kit (CDK).
+In this episode, we'll be looking at AWS Cloud Development Kit (CDK). With the CDK, you can define your cloud infrastructure using familiar programming languages such as TypeScript, Python, and Java. The CDK synthesizes your high-level programming language code into CloudFormation template that it manages in your AWS account.  
 
-* Core Framework
-* AWS Construct Library - Level 1, 2, and 3 Constructs
-* AWS CDK CLI - diff, synth, destroy
-* CDK Pipelines
+## Core Framework
+## AWS Construct Library
+* Level 1 - Map directly to CloudFormation resources
+* Level 2 - Are curated by the AWS CDK team
+* Level 3 - These are paterns that use multiple CloudFormation resources
 
-## Launch CDK Solution
+
+## AWS CDK Toolkit/CLI 
+* diff, synth, destroy
+
+# Launch CDK Solution
 
 1. From your [AWS CloudShell Environment](https://us-east-2.console.aws.amazon.com/cloudshell/home?region=us-east-2#) in the **us-east-2** region, run the following commands: 
 
@@ -47,6 +52,8 @@ You will receive this message: **Are you sure you want to delete: LambdaCronExam
 
 # Additional Resources
 
+* [AWS CDK Toolkit (cdk command)](https://docs.aws.amazon.com/cdk/latest/guide/cli.html)
+* [Getting Started](https://docs.aws.amazon.com/cdk/latest/guide/getting_started.html)
 * [CDK Workshop](https://cdkworkshop.com/)
 * [lambda-cron sample code](https://github.com/aws-samples/aws-cdk-examples/tree/master/typescript/lambda-cron)
 * [Enhanced CI/CD with AWS CDK - AWS Online Tech Talks](https://www.youtube.com/watch?v=1ps0Wh19MHQ)
