@@ -10,9 +10,6 @@ From the as part of the AWS Construct Library, you can use Level 1, Level 2, and
 * Level 2 - Are curated by the AWS CDK team. 
 * Level 3 - These are paterns that use multiple CloudFormation resources.
 
-## AWS CDK Toolkit/CLI 
-* diff, synth, destroy
-
 # Launch CDK Solution
 
 From your [AWS CloudShell Environment](https://us-east-2.console.aws.amazon.com/cloudshell/home?region=us-east-2#) in the **us-east-2** region, run the following commands: 
