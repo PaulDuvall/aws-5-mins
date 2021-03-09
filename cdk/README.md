@@ -15,7 +15,7 @@ From the as part of the AWS Construct Library, you can use Level 1, Level 2, and
 
 # Launch CDK Solution
 
-1. From your [AWS CloudShell Environment](https://us-east-2.console.aws.amazon.com/cloudshell/home?region=us-east-2#) in the **us-east-2** region, run the following commands: 
+From your [AWS CloudShell Environment](https://us-east-2.console.aws.amazon.com/cloudshell/home?region=us-east-2#) in the **us-east-2** region, run the following commands: 
 
 ```
 sudo rm -rf ~/aws-cdk-examples
