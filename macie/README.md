@@ -47,7 +47,8 @@ aws cloudformation deploy \
 --region us-east-2
 ```
 
-It takes about 4 minutes to launch the [CloudFormation stack](https://us-east-2.console.aws.amazon.com/cloudformation/home?region=us-east-2#/stacks) and provision the Macie resources.
+* It takes about 4 minutes to launch the [CloudFormation stack](https://us-east-2.console.aws.amazon.com/cloudformation/home?region=us-east-2#/stacks) and provision the Macie resources.
+* Go to the [Macie Dashboard](https://us-east-2.console.aws.amazon.com/macie/) and click on [Findings](https://us-east-2.console.aws.amazon.com/macie/home?region=us-east-2#findings).
 
 # Pricing
 TBD. For more information, see [Amazon Macie Pricing](https://aws.amazon.com/macie/pricing/).
