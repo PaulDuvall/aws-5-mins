@@ -74,4 +74,5 @@ You will receive this message: **Are you sure you want to delete: LambdaCronExam
 * [Enhanced CI/CD with AWS CDK - AWS Online Tech Talks](https://www.youtube.com/watch?v=1ps0Wh19MHQ)
 * [AWS Construct Library](https://docs.aws.amazon.com/cdk/latest/guide/constructs.html)
 * [CDK Pipelines: Continuous delivery for AWS CDK applications](https://aws.amazon.com/blogs/developer/cdk-pipelines-continuous-delivery-for-aws-cdk-applications/)
+* [Boost your infrastructure with the AWS CDK](https://aws.amazon.com/blogs/aws/boost-your-infrastructure-with-cdk/)
 * `sudo npm install -g aws-cdk@latest`
