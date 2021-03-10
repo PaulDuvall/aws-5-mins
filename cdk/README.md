@@ -10,6 +10,24 @@ As part of the [AWS Construct Library](https://docs.aws.amazon.com/cdk/latest/gu
 * **Level 2** - Are curated by the AWS CDK team. 
 * **Level 3** - These are paterns that use multiple CloudFormation resources.
 
+Provision an S3 bucket using a CDK Level 1 Construct in TypeScript as shown below. 
+```
+const bucket = new s3.CfnBucket(this, "MyBucket", {
+  bucketName: "MyBucket"
+});
+```
+
+Here is the same resource as defined in an AWS CloudFormation template.
+```
+Resources:
+  S3Bucket:
+    Type: 'AWS::S3::Bucket'
+    DeletionPolicy: Retain
+    Properties:
+      BucketName: MyBucket
+```
+
+
 # Launch CDK Solution
 
 From your [AWS CloudShell Environment](https://us-east-2.console.aws.amazon.com/cloudshell/home?region=us-east-2#) in the **us-east-2** region, run the following commands: 
