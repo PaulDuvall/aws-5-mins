@@ -7,7 +7,7 @@ In this episode, we'll be looking at AWS Cloud Development Kit (CDK). With the C
 As part of the [AWS Construct Library](https://docs.aws.amazon.com/cdk/latest/guide/constructs.html), you can use Level 1, Level 2, and Level 3 constructs to build your CDK applications - as described below. 
 
 * **Level 1** - Map directly to CloudFormation resources. This is the core CDK framework. 
-* **Level 2** - Are curated by the AWS CDK team. 
+* **Level 2** - Are [curated](https://docs.aws.amazon.com/cdk/api/latest/docs/aws-construct-library.html) by the AWS CDK team. 
 * **Level 3** - These are paterns that use multiple CloudFormation resources.
 
 Provision an S3 bucket using a CDK Level 1 Construct in TypeScript as shown below. 
