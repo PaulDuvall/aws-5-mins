@@ -29,17 +29,23 @@ Macie helps classify and identify sensitive data that is not encrypted. You can 
 
 ## Launch CloudFormation Stack
 
-TBD
+1. From your [AWS CloudShell Environment](https://us-east-2.console.aws.amazon.com/cloudshell/home?region=us-east-2#) in the **us-east-2** region, run the following commands: 
+
+```
+git clone https://github.com/aws-samples/amazon-macie-demo-with-sample-data.git
+cd amazon-macie-demo-with-sample-data
+```
+
+1. Run this command to launch a CloudFormation stack that generates Macie and related resources.  
 
 ```
 aws cloudformation deploy \
---stack-name aws-5-mins-SERVICENAME \
---template-file service-name.yml \
+--stack-name aws-5-mins-macie \
+--template-file macie.yaml \
 --capabilities CAPABILITY_NAMED_IAM \
 --no-fail-on-empty-changeset \
---region us-east-1
+--region us-east-2
 ```
-
 
 # Pricing
 TBD. For more information, see [Amazon Macie Pricing](https://aws.amazon.com/macie/pricing/).
@@ -47,7 +53,7 @@ TBD. For more information, see [Amazon Macie Pricing](https://aws.amazon.com/mac
 # Delete Resources
 
 ```
-aws cloudformation delete-stack --stack-name aws-5-mins-SERVICENAME
+aws cloudformation delete-stack --stack-name aws-5-mins-macie
 ```
 
 # Additional Resources
