@@ -4,11 +4,11 @@ You can find the 5-minute video that walks through all of the steps described he
 
 In this episode, we'll be looking at AWS Cloud Development Kit (CDK). With the CDK, you can define your cloud infrastructure using familiar programming languages such as TypeScript, Python, and Java. The CDK synthesizes your high-level programming language code into CloudFormation templates that it manages in your AWS account.
 
-From the as part of the AWS Construct Library, you can use Level 1, Level 2, and Level 3 constructs to build your CDK applications. 
+As part of the AWS Construct Library, you can use Level 1, Level 2, and Level 3 constructs to build your CDK applications - as described below. 
 
-* Level 1 - Map directly to CloudFormation resources. This is the core CDK framework. 
-* Level 2 - Are curated by the AWS CDK team. 
-* Level 3 - These are paterns that use multiple CloudFormation resources.
+* **Level 1** - Map directly to CloudFormation resources. This is the core CDK framework. 
+* **Level 2** - Are curated by the AWS CDK team. 
+* **Level 3** - These are paterns that use multiple CloudFormation resources.
 
 # Launch CDK Solution
 
