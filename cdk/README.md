@@ -1,6 +1,4 @@
-**NOTE: This video has not been released yet.**
-
-You can find the 5-minute video that walks through all of the steps described here. 
+You can find the [5-minute video](https://youtu.be/ftFIIrrV-IA) that walks through all of the steps described [here](https://youtu.be/ftFIIrrV-IA). 
 
 In this episode, we'll be looking at AWS Cloud Development Kit (CDK). With the CDK, you can define your cloud infrastructure using familiar programming languages such as TypeScript, Python, and Java. The CDK synthesizes your high-level programming language code into CloudFormation templates that it manages in your AWS account.
 

@@ -13,7 +13,7 @@ Service or Feature | Category | Description | 5 Min Video
 [Amazon CloudWatch Synthetics](./synthetics) | Management & Governance | Discover issues before your customers do by running canary tests | [25-Feb-2021](https://youtu.be/8O91EESLGoI)
 [AWS Step Functions](./step-functions) | Application Integration | Assemble functions into business-critical applications | [2-Mar-2021](https://youtu.be/1pxfIQuj2LM)
 [AWS CloudFormation](./cloudformation) | Management & Governance | Speed up cloud provisioning with infrastructure as code | [4-Mar-2021](https://youtu.be/lupfVvpTLpU)
-[AWS Cloud Development Kit (CDK)](./cdk) | Developer Tools | Define cloud infrastructure using familiar programming languages | 9-Mar-2021
+[AWS Cloud Development Kit (CDK)](./cdk) | Developer Tools | Define cloud infrastructure using familiar programming languages | [9-Mar-2021](https://youtu.be/ftFIIrrV-IA)
 [Amazon Macie](./macie) | Security, Identity, & Compliance | Discover and protect your sensitive data at scale | 11-Mar-2021
 [Amazon GuardDuty](./guard-duty) | Security, Identity, & Compliance | Protect your AWS accounts, workloads, and data with intelligent threat detection and continuous monitoring | 16-Mar-2021
 [AWS Serverless Application Model (SAM)](./sam) | Developer Tools | Build serverless applications in simple and clean syntax | 23-Mar-2021
