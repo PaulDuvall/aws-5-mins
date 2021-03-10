@@ -21,7 +21,7 @@ aws cloudformation deploy \
 --template-file service-name.yml \
 --capabilities CAPABILITY_NAMED_IAM \
 --no-fail-on-empty-changeset \
---region us-east-1
+--region us-east-2
 ```
 
 
@@ -33,7 +33,7 @@ TBD
 # Delete Resources
 
 ```
-aws cloudformation delete-stack --stack-name aws-5-mins-SERVICENAME
+aws cloudformation delete-stack --stack-name aws-5-mins-SERVICENAME --region us-east-2
 ```
 
 # Additional Resources

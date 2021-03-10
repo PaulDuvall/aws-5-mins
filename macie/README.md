@@ -56,7 +56,7 @@ TBD. For more information, see [Amazon Macie Pricing](https://aws.amazon.com/mac
 # Delete Resources
 
 ```
-aws cloudformation delete-stack --stack-name aws-5-mins-macie
+aws cloudformation delete-stack --stack-name aws-5-mins-macie --region us-east-2
 ```
 
 # Additional Resources
