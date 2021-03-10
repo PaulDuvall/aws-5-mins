@@ -4,7 +4,7 @@ You can find the 5-minute video that walks through all of the steps described he
 
 In this episode, we'll be looking at AWS Cloud Development Kit (CDK). With the CDK, you can define your cloud infrastructure using familiar programming languages such as TypeScript, Python, and Java. The CDK synthesizes your high-level programming language code into CloudFormation templates that it manages in your AWS account.
 
-As part of the AWS Construct Library, you can use Level 1, Level 2, and Level 3 constructs to build your CDK applications - as described below. 
+As part of the [AWS Construct Library](https://docs.aws.amazon.com/cdk/latest/guide/constructs.html), you can use Level 1, Level 2, and Level 3 constructs to build your CDK applications - as described below. 
 
 * **Level 1** - Map directly to CloudFormation resources. This is the core CDK framework. 
 * **Level 2** - Are curated by the AWS CDK team. 
@@ -55,4 +55,5 @@ You will receive this message: **Are you sure you want to delete: LambdaCronExam
 * [CDK Workshop](https://cdkworkshop.com/)
 * [lambda-cron sample code](https://github.com/aws-samples/aws-cdk-examples/tree/master/typescript/lambda-cron)
 * [Enhanced CI/CD with AWS CDK - AWS Online Tech Talks](https://www.youtube.com/watch?v=1ps0Wh19MHQ)
+* [AWS Construct Library](https://docs.aws.amazon.com/cdk/latest/guide/constructs.html)
 * [CDK Pipelines: Continuous delivery for AWS CDK applications](https://aws.amazon.com/blogs/developer/cdk-pipelines-continuous-delivery-for-aws-cdk-applications/)
