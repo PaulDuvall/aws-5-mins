@@ -2,9 +2,9 @@
 
 You can find the 5-minute video that walks through all of the steps described here. 
 
-In this episode, we'll be looking at Amazon Macie. Macie uses established rules and machine learning to identify and secure sensitive data. You can configure Macie to continually monitor your S3 buckets so that you can track and secure data as it enters your environment. Using the Macie dashboard, you can view business-sensitive data and set up alerts for incident response.
+In this episode, we'll be looking at Amazon Macie. Macie uses established rules and machine learning to identify and protect sensitive data. You can configure Macie to continually monitor your S3 buckets so that you can track and secure data as it enters your environment. Using the Macie dashboard, you can view business-sensitive data and set up alerts for incident response.
 
-When Macie discovers, classifies, and protects sensitive data by producing [findings](https://docs.aws.amazon.com/macie/latest/user/findings-types.html) of the files it analyzes. It supports over 25 supported [file types](https://docs.aws.amazon.com/macie/latest/user/discovery-supported-formats.html) including zip, .doc(x), .csv, and many other types. 
+Macie discovers, classifies, and protects sensitive data by producing [findings](https://docs.aws.amazon.com/macie/latest/user/findings-types.html) of the files it analyzes. It supports over 25 supported [file types](https://docs.aws.amazon.com/macie/latest/user/discovery-supported-formats.html) including zip, .doc(x), .csv, and many other types. 
 
 It analyzes data in these files by searching for data identifiers and using machine learning. There are a number of [managed data identifiers](https://docs.aws.amazon.com/macie/latest/user/managed-data-identifiers.html) provided by Macie - such as AWS secret keys, bank account numbers, and medical identification numbers.
 
