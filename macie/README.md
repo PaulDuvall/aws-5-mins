@@ -1,6 +1,4 @@
-**NOTE: This video has not been released yet.**
-
-You can find the 5-minute video that walks through all of the steps described here. 
+You can find the [5-minute video](https://youtu.be/v6JTkeex08A) that walks through all of the steps described [here](https://youtu.be/v6JTkeex08A). 
 
 In this episode, we'll be looking at Amazon Macie. Macie uses established rules and machine learning to identify and protect sensitive data. You can configure Macie to continually monitor your S3 buckets so that you can track and secure data as it enters your environment. Using the Macie dashboard, you can view business-sensitive data and set up alerts for incident response.
 
