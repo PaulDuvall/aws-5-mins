@@ -51,7 +51,7 @@ aws cloudformation deploy \
 * Go to the [Macie Dashboard](https://us-east-2.console.aws.amazon.com/macie/) and click on [Findings](https://us-east-2.console.aws.amazon.com/macie/home?region=us-east-2#findings).
 
 # Pricing
-Macie charges you $0.10 per S3 bucket that it analyzes per month. For the data processed for sensitive data discovery and after the first 1 GB per month, Macie charges $1.00 per GB for the next 50,000 GB/month, $0.50 per GB for the next 450,000 GB/month, and $0.25 per GB when it's over 500,000 GB/month. For more information, see [Amazon Macie Pricing](https://aws.amazon.com/macie/pricing/).
+Macie charges $0.10 per S3 bucket that it analyzes per month. For the data processed for sensitive data discovery and after the first 1 GB per month, Macie charges $1.00 per GB for the next 50,000 GB/month, $0.50 per GB for the next 450,000 GB/month, and $0.25 per GB when it's over 500,000 GB/month. For more information, see [Amazon Macie Pricing](https://aws.amazon.com/macie/pricing/).
 
 # Delete Resources
 
