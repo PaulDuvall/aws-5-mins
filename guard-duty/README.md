@@ -37,3 +37,5 @@ aws cloudformation delete-stack --stack-name aws-5-mins-SERVICENAME
 ```
 
 # Additional Resources
+
+* [Automatically block suspicious traffic with AWS Network Firewall and Amazon GuardDuty](https://aws.amazon.com/blogs/security/automatically-block-suspicious-traffic-with-aws-network-firewall-and-amazon-guardduty/)
