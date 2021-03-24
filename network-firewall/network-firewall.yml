@@ -1,7 +1,5 @@
 ---
-Description: An AWS VPC configuration with 1 subnet, 2 security groups and 3 instances.
-  When testing ReachabilityAnalyzer, this provides both a path found and path not
-  found scenario. From https://aws.amazon.com/blogs/aws/new-vpc-insights-analyzes-reachability-and-visibility-in-vpcs/
+Description: Demo of provisioning AWS Network Firewall
 AWSTemplateFormatVersion: '2010-09-09'
 Mappings:
   RegionMap:
