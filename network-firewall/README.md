@@ -27,7 +27,7 @@ cd aws-5-mins/network-firewall
 
 aws cloudformation deploy \
 --stack-name aws-5-mins-networkfirewall \
---template-file network-firewall.ymle \
+--template-file network-firewall.yml \
 --capabilities CAPABILITY_NAMED_IAM \
 --no-fail-on-empty-changeset \
 --region us-east-2
