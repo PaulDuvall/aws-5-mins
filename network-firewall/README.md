@@ -2,7 +2,7 @@
 
 You can find the 5-minute video that walks through all of the steps described here. 
 
-In this episode, we'll be looking at TBD
+In this episode, we'll be looking at AWS Network Firewall.
 
 TBD
 
@@ -13,15 +13,19 @@ TBD
 
 ## Launch CloudFormation Stack
 
-TBD
+1. From your [AWS CloudShell Environment](https://us-east-2.console.aws.amazon.com/cloudshell/home?region=us-east-2#) in the **us-east-2** region, run the following commands: 
 
 ```
+git clone https://github.com/aws-samples/aws-networkfirewall-guardduty.git
+cd aws-networkfirewall-guardduty/templates
+
+
 aws cloudformation deploy \
---stack-name aws-5-mins-SERVICENAME \
---template-file service-name.yml \
+--stack-name aws-5-mins-networkfirewall-guardduty \
+--template-file aws-networkfirewall-guardduty.template \
 --capabilities CAPABILITY_NAMED_IAM \
 --no-fail-on-empty-changeset \
---region us-east-1
+--region us-east-2
 ```
 
 
