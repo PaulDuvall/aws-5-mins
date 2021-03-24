@@ -40,7 +40,7 @@ aws cloudformation deploy \
 1. Check your email to find a message about traffic that was automatically blocked.
 
 ### Review Provisioned Resources
-* [AWS Lambda](https://us-east-2.console.aws.amazon.com/lambda/home?region=us-east-2#/functions/)
+* [AWS Lambda Application](https://us-east-2.console.aws.amazon.com/lambda/home?region=us-east-2#/applications)
 * [Amazon EventBridge](https://us-east-2.console.aws.amazon.com/events/home?region=us-east-2#/rules)
 * [AWS Step Functions](https://us-east-2.console.aws.amazon.com/states/home?region=us-east-2#/statemachines)
 
