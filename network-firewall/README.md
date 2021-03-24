@@ -4,7 +4,7 @@ You can find the 5-minute video that walks through all of the steps described he
 
 In this episode, we'll be looking at AWS Network Firewall.
 
-TBD
+The demo is based on the [Automatically block suspicious traffic with AWS Network Firewall and Amazon GuardDuty](https://aws.amazon.com/blogs/security/automatically-block-suspicious-traffic-with-aws-network-firewall-and-amazon-guardduty/) blog post from AWS. The solution is 
 
 # CloudFormation Support
 * [AWS::NetworkFirewall::Firewall](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-networkfirewall-firewall.html) - Define stateful, managed, network firewall and intrusion detection and prevention filtering for your VPCs in Amazon VPC.
@@ -57,3 +57,4 @@ aws cloudformation delete-stack --stack-name aws-5-mins-networkfirewall-guarddut
 # Additional Resources
 
 * [Automatically block suspicious traffic with AWS Network Firewall and Amazon GuardDuty](https://aws.amazon.com/blogs/security/automatically-block-suspicious-traffic-with-aws-network-firewall-and-amazon-guardduty/)
+* [Example code](https://github.com/aws-samples/aws-networkfirewall-guardduty)
