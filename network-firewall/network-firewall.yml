@@ -188,16 +188,16 @@ Resources:
 Outputs:
   InstanceA:
     Description: EC2 Instance ID for InstanceA
-    Value: InstanceA
+    Value: !Ref InstanceA
     Export:
       Name: InstanceA-${AWS::Region}
   InstanceB:
     Description: EC2 Instance ID for InstanceB
-    Value: InstanceB
+    Value: !Ref InstanceB
     Export:
       Name: InstanceB-${AWS::Region}
   InstanceC:
     Description: EC2 Instance ID for InstanceC
-    Value: InstanceC
+    Value: !Ref InstanceC
     Export:
       Name: InstanceC-${AWS::Region}
