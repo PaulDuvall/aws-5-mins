@@ -1,57 +1,148 @@
-Description: AWS Network Firewall demo
-SampleFirewall:
-  Type: AWS::NetworkFirewall::Firewall
-  Properties:
-    FirewallName: SampleFirewallName
-    FirewallPolicyArn: !Ref SampleFirewallPolicy
-    VpcId: !Ref SampleVPC
-    SubnetMappings:
-      - SubnetId: !Ref SampleSubnet1
-      - SubnetId: !Ref SampleSubnet2
-    Description: Firewall description goes here
-
- SampleFirewallPolicy:
-  Type: 'AWS::NetworkFirewall::FirewallPolicy'
-  Properties:
-    FirewallPolicyName: SampleFirewallPolicyName
-    FirewallPolicy:
-      StatelessDefaultActions:
-        - 'aws:pass'
-      StatelessFragmentDefaultActions:
-        - 'aws:drop'
-      StatefulRuleGroupReferences:
-        - ResourceArn: !Ref SampleStatefulRuleGroup
-      StatelessRuleGroupReferences:
-        - ResourceArn: !Ref SampleStatelessRuleGroup
-          Priority: 100
-    Description: FirewallPolicy description goes here
-    Tags:
-      - Key: Foo
-        Value: Bar
- 
-
-SampleFirewallPolicy:
-  Type: 'AWS::NetworkFirewall::FirewallPolicy'
-  Properties:
-    FirewallPolicyName: SampleFirewallPolicyName
-    FirewallPolicy:
-      StatelessDefaultActions:
-        - 'aws:pass'
-      StatelessFragmentDefaultActions:
-        - 'aws:drop'
-      StatefulRuleGroupReferences:
-        - ResourceArn: !Ref SampleStatefulRuleGroup
-      StatelessRuleGroupReferences:
-        - ResourceArn: !Ref SampleStatelessRuleGroup
-          Priority: 100
-    Description: FirewallPolicy description goes here
-    Tags:
-      - Key: Foo
-        Value: Bar
-
-
- SampleStatelessRulegroup:
-    Type: 'AWS::NetworkFirewall::RuleGroup'
+---
+Description: An AWS VPC configuration with 1 subnet, 2 security groups and 3 instances.
+  When testing ReachabilityAnalyzer, this provides both a path found and path not
+  found scenario. From https://aws.amazon.com/blogs/aws/new-vpc-insights-analyzes-reachability-and-visibility-in-vpcs/
+AWSTemplateFormatVersion: '2010-09-09'
+Mappings:
+  RegionMap:
+    us-east-1:
+      execution: ami-0915e09cc7ceee3ab
+      ecs: ami-08087103f9850bddd
+Resources:
+  SampleVPC:
+    Type: AWS::EC2::VPC
+    Properties:
+      CidrBlock: 172.0.0.0/16
+      EnableDnsSupport: true
+      EnableDnsHostnames: true
+      InstanceTenancy: default
+      Tags:
+      - Key: Name
+        Value: "${AWS::StackName}"
+  Subnet1:
+    Type: AWS::EC2::Subnet
+    Properties:
+      VpcId: !Ref SampleVPC
+      CidrBlock: 172.0.0.0/20
+      MapPublicIpOnLaunch: false
+      Tags:
+      - Key: Name
+        Value: "${AWS::StackName}"
+  SecurityGroup1:
+    Type: AWS::EC2::SecurityGroup
+    Properties:
+      GroupDescription: Allow all ingress and egress traffic
+      VpcId: !Ref SampleVPC
+      SecurityGroupIngress:
+      - CidrIp: 0.0.0.0/0
+        IpProtocol: "-1"
+      Tags:
+      - Key: Name
+        Value: "${AWS::StackName}"
+  SecurityGroup2:
+    Type: AWS::EC2::SecurityGroup
+    Properties:
+      GroupDescription: Allow all egress traffic
+      VpcId: !Ref SampleVPC
+      Tags:
+      - Key: Name
+        Value: "${AWS::StackName}"
+  InstanceA:
+    Type: AWS::EC2::Instance
+    Properties:
+      ImageId:
+        Fn::FindInMap:
+        - RegionMap
+        - Ref: AWS::Region
+        - execution
+      InstanceType: t3.nano
+      SubnetId:
+        Ref: Subnet1
+      SecurityGroupIds:
+      - Ref: SecurityGroup1
+      Tags:
+      - Key: Name
+        Value: "${AWS::StackName}-InstanceA"
+  InstanceB:
+    Type: AWS::EC2::Instance
+    Properties:
+      ImageId:
+        Fn::FindInMap:
+        - RegionMap
+        - Ref: AWS::Region
+        - execution
+      InstanceType: t3.nano
+      SubnetId:
+        Ref: Subnet1
+      SecurityGroupIds:
+      - Ref: SecurityGroup1
+      Tags:
+      - Key: Name
+        Value: "${AWS::StackName}-InstanceB"
+  InstanceC:
+    Type: AWS::EC2::Instance
+    Properties:
+      ImageId:
+        Fn::FindInMap:
+        - RegionMap
+        - Ref: AWS::Region
+        - execution
+      InstanceType: t3.nano
+      SubnetId:
+        Ref: Subnet1
+      SecurityGroupIds:
+      - Ref: SecurityGroup2
+      Tags:
+      - Key: Name
+        Value: "${AWS::StackName}-InstanceC"
+  SampleFirewall:
+    Type: AWS::NetworkFirewall::Firewall
+    Properties:
+      FirewallName: SampleFirewallName
+      FirewallPolicyArn: !Ref SampleFirewallPolicy
+      VpcId: !Ref SampleVPC
+      SubnetMappings:
+        - SubnetId: !Ref Subnet1
+        - SubnetId: !Ref Subnet2
+      Description: Firewall description goes here
+  SampleFirewallPolicy:
+    Type: 'AWS::NetworkFirewall::FirewallPolicy'
+    Properties:
+      FirewallPolicyName: SampleFirewallPolicyName
+      FirewallPolicy:
+        StatelessDefaultActions:
+          - 'aws:pass'
+        StatelessFragmentDefaultActions:
+          - 'aws:drop'
+        StatefulRuleGroupReferences:
+          - ResourceArn: !Ref SampleStatefulRuleGroup
+        StatelessRuleGroupReferences:
+          - ResourceArn: !Ref SampleStatelessRuleGroup
+            Priority: 100
+      Description: FirewallPolicy description goes here
+      Tags:
+        - Key: Foo
+          Value: Bar
+  SampleFirewallPolicy:
+    Type: 'AWS::NetworkFirewall::FirewallPolicy'
+    Properties:
+      FirewallPolicyName: SampleFirewallPolicyName
+      FirewallPolicy:
+        StatelessDefaultActions:
+          - 'aws:pass'
+        StatelessFragmentDefaultActions:
+          - 'aws:drop'
+        StatefulRuleGroupReferences:
+          - ResourceArn: !Ref SampleStatefulRuleGroup
+        StatelessRuleGroupReferences:
+          - ResourceArn: !Ref SampleStatelessRuleGroup
+            Priority: 100
+      Description: FirewallPolicy description goes here
+      Tags:
+        - Key: Foo
+          Value: Bar
+  SampleStatelessRulegroup:
+    Type: AWS::NetworkFirewall::RuleGroup
     Properties:
       RuleGroupName: SampleStatelessRulegroupName
       Type: STATELESS
@@ -59,42 +150,55 @@ SampleFirewallPolicy:
         RulesSource:
           StatelessRulesAndCustomActions:
             StatelessRules:
-              - RuleDefinition:
-                  MatchAttributes:
-                    Sources:
-                      - AddressDefinition: 0.0.0.0/0
-                    Destinations:
-                      - AddressDefinition: 10.0.0.0/8
-                    SourcePorts:
-                      - FromPort: 15000
-                        ToPort: 30000
-                    DestinationPorts:
-                      - FromPort: 443
-                        ToPort: 443
-                    Protocols:
-                      - 6
-                  Actions:
-                    - 'aws:pass'
-                Priority: 1
+            - RuleDefinition:
+                MatchAttributes:
+                  Sources:
+                  - AddressDefinition: 0.0.0.0/0
+                  Destinations:
+                  - AddressDefinition: 10.0.0.0/8
+                  SourcePorts:
+                  - FromPort: 15000
+                    ToPort: 30000
+                  DestinationPorts:
+                  - FromPort: 443
+                    ToPort: 443
+                  Protocols:
+                  - 6
+                Actions:
+                - aws:pass
+              Priority: 1
       Capacity: 100
       Description: Rulegroup description goes here
       Tags:
-        - Key: Foo
-          Value: Bar
-          
-SampleStatefulRulegroup:
-  Type: 'AWS::NetworkFirewall::RuleGroup'
-  Properties:
-    RuleGroupName: SampleStatefulRulegroupName
-    Type: STATEFUL
-    RuleGroup:
-      RulesSource:
-        RulesString: >-
-          pass tcp 10.20.20.0/24 45400:45500 <> 10.10.10.0/24 5203
-          (msg:"test";sid:1;rev:1;)
-    Capacity: 100
-    Description: Rulegroup description goes here
-    Tags:
       - Key: Foo
         Value: Bar
-                              
+  SampleStatefulRulegroup:
+    Type: AWS::NetworkFirewall::RuleGroup
+    Properties:
+      RuleGroupName: SampleStatefulRulegroupName
+      Type: STATEFUL
+      RuleGroup:
+        RulesSource:
+          RulesString: pass tcp 10.20.20.0/24 45400:45500 <> 10.10.10.0/24 5203 (msg:"test";sid:1;rev:1;)
+      Capacity: 100
+      Description: Rulegroup description goes here
+      Tags:
+      - Key: Foo
+        Value: Bar
+
+Outputs:
+  InstanceA:
+    Description: EC2 Instance ID for InstanceA
+    Value: InstanceA
+    Export:
+      Name: InstanceA-${AWS::Region}
+  InstanceB:
+    Description: EC2 Instance ID for InstanceB
+    Value: InstanceB
+    Export:
+      Name: InstanceB-${AWS::Region}
+  InstanceC:
+    Description: EC2 Instance ID for InstanceC
+    Value: InstanceC
+    Export:
+      Name: InstanceC-${AWS::Region}
