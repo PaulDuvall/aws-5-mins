@@ -42,6 +42,8 @@ aws cloudformation deploy \
 * [Amazon EventBridge](https://us-east-2.console.aws.amazon.com/events/home?region=us-east-2#/rules)
 * [AWS Step Functions](https://us-east-2.console.aws.amazon.com/states/home?region=us-east-2#/statemachines)
 
+### Pruning of Old Records
+1. After 5 minutes and from the [Step Functions Console](https://us-east-2.console.aws.amazon.com/states/home?region=us-east-2#/statemachines/), choose the **PruningStateMachine** and view the graph.
 
 # Delete Resources
 
