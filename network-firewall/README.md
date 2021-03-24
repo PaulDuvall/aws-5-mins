@@ -40,6 +40,7 @@ aws cloudformation deploy \
 1. Check your email to find a message about traffic that was automatically blocked.
 
 ### Review Provisioned Resources
+* [AWS Network Firewall Rule Groups](https://console.aws.amazon.com/vpc/home?region=us-east-1#NetworkFirewallRuleGroups:)
 * [AWS Lambda Application](https://us-east-1.console.aws.amazon.com/lambda/home?region=us-east-1#/applications/aws-5-mins-networkfirewall-guardduty)
 * [Amazon EventBridge](https://us-east-1.console.aws.amazon.com/events/home?region=us-east-1#/rules)
 * [AWS Step Functions](https://us-east-1.console.aws.amazon.com/states/home?region=us-east-1#/statemachines)
