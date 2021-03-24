@@ -56,7 +56,7 @@ aws cloudformation deploy \
 # Delete Resources
 
 ```
-aws cloudformation delete-stack --stack-name aws-5-mins-networkfirewall-guardduty
+aws cloudformation delete-stack --stack-name aws-5-mins-networkfirewall-guardduty --region us-east-2
 ```
 
 # Additional Resources
