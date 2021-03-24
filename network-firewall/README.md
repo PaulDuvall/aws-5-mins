@@ -33,7 +33,7 @@ aws cloudformation deploy \
 --region us-east-1
 ```
 
-1. Go to the [CloudFormation Console](https://us-east-1.console.aws.amazon.com/cloudformation/home?region=us-east-1#/stacks). It'll take about 5 minutes for the stack to launch.
+1. Go to the [CloudFormation Console](https://us-east-1.console.aws.amazon.com/cloudformation/home?region=us-east-1#/stacks). It'll take about 7 minutes for the stack to launch.
 
 # Pricing
 TBD
