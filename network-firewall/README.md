@@ -14,7 +14,7 @@ The demo is based on the [Automatically block suspicious traffic with AWS Networ
 
 ## Launch CloudFormation Stack
 
-1. From your [AWS CloudShell Environment](https://us-east-2.console.aws.amazon.com/cloudshell/home?region=us-east-2#) in the **us-east-2** region, run the following commands: 
+1. From your [AWS CloudShell Environment](https://us-east-1.console.aws.amazon.com/cloudshell/home?region=us-east-1#) in the **us-east-1** region, run the following commands: 
 
 ```
 sudo rm -rf ~/aws-networkfirewall-guardduty
@@ -28,10 +28,10 @@ aws cloudformation deploy \
 --capabilities CAPABILITY_NAMED_IAM \
 --parameter-overrides AdminEmail=CHANGE-EMAIL-ADDRESS \
 --no-fail-on-empty-changeset \
---region us-east-2
+--region us-east-1
 ```
 
-1. Go to the [CloudFormation Console](https://us-east-2.console.aws.amazon.com/cloudformation/home?region=us-east-2#/stacks). It'll take about three minutes for the stack to launch.
+1. Go to the [CloudFormation Console](https://us-east-1.console.aws.amazon.com/cloudformation/home?region=us-east-1#/stacks). It'll take about three minutes for the stack to launch.
 1. While the stack is being created, be sure to confirm the email that's been sent to you from Amazon SNS. 
 1. One the stack is **CREATE_COMPLETE**, go to the **Outputs** tab for the CloudFormation stack and click on the link for the **GuardDutytoFirewallStateMachine** value.
 1. Click on **Start execution**.
@@ -40,9 +40,9 @@ aws cloudformation deploy \
 1. Check your email to find a message about traffic that was automatically blocked.
 
 ### Review Provisioned Resources
-* [AWS Lambda Application](https://us-east-2.console.aws.amazon.com/lambda/home?region=us-east-2#/applications/aws-5-mins-networkfirewall-guardduty)
-* [Amazon EventBridge](https://us-east-2.console.aws.amazon.com/events/home?region=us-east-2#/rules)
-* [AWS Step Functions](https://us-east-2.console.aws.amazon.com/states/home?region=us-east-2#/statemachines)
+* [AWS Lambda Application](https://us-east-1.console.aws.amazon.com/lambda/home?region=us-east-1#/applications/aws-5-mins-networkfirewall-guardduty)
+* [Amazon EventBridge](https://us-east-1.console.aws.amazon.com/events/home?region=us-east-1#/rules)
+* [AWS Step Functions](https://us-east-1.console.aws.amazon.com/states/home?region=us-east-1#/statemachines)
 
 # Pricing
 
