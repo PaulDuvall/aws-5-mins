@@ -67,3 +67,4 @@ aws cloudformation delete-stack --stack-name aws-5-mins-networkfirewall-guarddut
 
 * [Automatically block suspicious traffic with AWS Network Firewall and Amazon GuardDuty](https://aws.amazon.com/blogs/security/automatically-block-suspicious-traffic-with-aws-network-firewall-and-amazon-guardduty/)
 * [Example code](https://github.com/aws-samples/aws-networkfirewall-guardduty)
+* [Deployment models for AWS Network Firewall](https://aws.amazon.com/blogs/networking-and-content-delivery/deployment-models-for-aws-network-firewall/)
