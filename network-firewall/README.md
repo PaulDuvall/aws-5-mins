@@ -2,7 +2,7 @@
 
 You can find the 5-minute video that walks through all of the steps described here. 
 
-In this episode, we'll be looking at AWS Network Firewall.
+In this episode, we'll be looking at AWS Network Firewall. With Network Firewall, you can deploy network security across your Amazon VPCs.
 
 The demo is based on the [Automatically block suspicious traffic with AWS Network Firewall and Amazon GuardDuty](https://aws.amazon.com/blogs/security/automatically-block-suspicious-traffic-with-aws-network-firewall-and-amazon-guardduty/) blog post from AWS. The solution is 
 
