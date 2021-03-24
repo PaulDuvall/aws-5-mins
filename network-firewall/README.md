@@ -17,7 +17,7 @@ TBD
 
 ## Launch CloudFormation Stack
 
-1. From your [AWS CloudShell Environment](https://us-east-2.console.aws.amazon.com/cloudshell/home?region=us-east-2#) in the **us-east-2** region, run the following commands: 
+1. From your [AWS CloudShell Environment](https://us-east-1.console.aws.amazon.com/cloudshell/home?region=us-east-1#) in the **us-east-1** region, run the following commands: 
 
 ```
 cd ~
@@ -31,10 +31,10 @@ aws cloudformation deploy \
 --template-file network-firewall.yml \
 --capabilities CAPABILITY_NAMED_IAM \
 --no-fail-on-empty-changeset \
---region us-east-2
+--region us-east-1
 ```
 
-1. Go to the [CloudFormation Console](https://us-east-2.console.aws.amazon.com/cloudformation/home?region=us-east-2#/stacks). It'll take about three minutes for the stack to launch.
+1. Go to the [CloudFormation Console](https://us-east-1.console.aws.amazon.com/cloudformation/home?region=us-east-1#/stacks). It'll take about three minutes for the stack to launch.
 
 # Pricing
 TBD
@@ -42,7 +42,7 @@ TBD
 # Delete Resources
 
 ```
-aws cloudformation delete-stack --stack-name aws-5-mins-SERVICENAME --region us-east-2
+aws cloudformation delete-stack --stack-name aws-5-mins-SERVICENAME --region us-east-1
 ```
 
 # Additional Resources
