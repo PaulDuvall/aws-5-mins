@@ -21,7 +21,7 @@ aws cloudformation deploy \
 --stack-name aws-5-mins-networkfirewall-guardduty \
 --template-file aws-networkfirewall-guardduty.template \
 --capabilities CAPABILITY_NAMED_IAM \
---parameter-overrides AdminEmail=CHANGE-EMAIL-ADDRESS \
+--parameter-overrides AdminEmail=CHANGE-EMAIL-ADDRESS Retention=5 \
 --no-fail-on-empty-changeset \
 --region us-east-2
 ```
