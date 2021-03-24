@@ -44,4 +44,6 @@ TBD
 aws cloudformation delete-stack --stack-name aws-5-mins-networkfirewall --region us-east-1
 ```
 
+It'll take about 5 minutes to delete all the resources in the stack.
+
 # Additional Resources
