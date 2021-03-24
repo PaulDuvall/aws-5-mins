@@ -29,7 +29,7 @@ aws cloudformation deploy \
 1. Go to the [CloudFormation Console](https://us-east-1.console.aws.amazon.com/cloudformation/home?region=us-east-1#/stacks). It'll take about three minutes for the stack to launch.
 1. While the stack is being created, be sure to confirm the email that's been sent to you from Amazon SNS. 
 1. From your Cloud9 environment, open the file located at **aws-networkfirewall-guardduty/tests/securityhub-testevent.json**.
-1. Around line 55, find the **eventLastSeen** field and edit the timestamp to the current time in the UTC+0 time zone. For example: `2021-03-24T12:00:01.549Z`. Save the changes.
+1. Around line 55, find the **eventLastSeen** field and edit the timestamp to the current time in the UTC+0 time zone. For example: `2021-03-24T12:00:01.549Z`.
 1. Once the stack is **CREATE_COMPLETE**, go to the **Outputs** tab for the CloudFormation stack and click on the link for the **GuardDutytoFirewallStateMachine** value.
 1. Click on **Start execution**.
 1. In the **Input** field, replace with the contents from your local **aws-networkfirewall-guardduty/tests/securityhub-testevent.json** file.
