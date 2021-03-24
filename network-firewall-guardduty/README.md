@@ -33,7 +33,7 @@ aws cloudformation deploy \
 1. Once the stack is **CREATE_COMPLETE**, review the [AWS Network Firewall Rule Groups](https://console.aws.amazon.com/vpc/home?region=us-east-2#NetworkFirewallRuleGroups:) configuration.
 1. Then, go to the **Outputs** tab for the CloudFormation stack and click on the link for the **GuardDutytoFirewallStateMachine** value to open the state machine in the AWS Step Functions console.
 1. Click on **Start execution**.
-1. replace with the contents from your local **aws-networkfirewall-guardduty/tests/securityhub-testevent.json** file to the **Input** field in the Step Function execution pane.
+1. Replace the contents in the **Input** field of the Step Function execution pane with the contents from your local **aws-networkfirewall-guardduty/tests/securityhub-testevent.json** file.
 1. Check your email to find a message about traffic that was automatically blocked.
 1. Review the [AWS Network Firewall Rule Groups](https://console.aws.amazon.com/vpc/home?region=us-east-2#NetworkFirewallRuleGroups:) configuration again to see the changes made to the rule group.
 
