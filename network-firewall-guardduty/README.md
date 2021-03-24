@@ -35,6 +35,7 @@ aws cloudformation deploy \
 1. Click on **Start execution**.
 1. In the **Input** field, replace with the contents from your local **aws-networkfirewall-guardduty/tests/securityhub-testevent.json** file.
 1. Check your email to find a message about traffic that was automatically blocked.
+1. Review the [AWS Network Firewall Rule Groups](https://console.aws.amazon.com/vpc/home?region=us-east-2#NetworkFirewallRuleGroups:) configuration again to see the changes made to the rule group.
 
 ### Review Other Provisioned Resources
 
