@@ -20,6 +20,7 @@ TBD
 1. From your [AWS CloudShell Environment](https://us-east-2.console.aws.amazon.com/cloudshell/home?region=us-east-2#) in the **us-east-2** region, run the following commands: 
 
 ```
+cd ~
 sudo rm -rf ~/aws-5-mins
 git clone https://github.com/PaulDuvall/aws-5-mins.git
 cd aws-5-mins/network-firewall
