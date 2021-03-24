@@ -31,7 +31,8 @@ aws cloudformation deploy \
 --region us-east-2
 ```
 
-1. Go to the [CloudFormation Console](https://us-east-2.console.aws.amazon.com/cloudformation/home?region=us-east-2#/stacks). It'll take about three minutes for the stack to launch. 
+1. Go to the [CloudFormation Console](https://us-east-2.console.aws.amazon.com/cloudformation/home?region=us-east-2#/stacks). It'll take about three minutes for the stack to launch.
+1. Once the stack is **CREATE_COMPLETE**, be sure to confirm the email that's been sent to you from Amazon SNS. 
 1. In the **Outputs** tab for the CloudFormation stack, click on the link for the **GuardDutytoFirewallStateMachine** value.
 1. Click on **Start execution**.
 1. In the **Input** field, replace the contents with the contents from the AWS provided [test event JSON file](https://awsiammedia.s3.amazonaws.com/public/sample/606-Automatically-block-suspicious-traffic/securityhub-testevent.json).
