@@ -39,14 +39,10 @@ aws cloudformation deploy \
 1. Around line 55, find the **eventLastSeen** field and edit the timestamp to the current time in the UTC+0 time zone. For example: `2021-03-24T12:00:01.549Z`.
 1. Check your email to find a message about traffic that was automatically blocked.
 
-
 ### Review Provisioned Resources
-* [Amazon GuardDuty](https://aws.amazon.com/guardduty/)
-* [AWS Lambda](https://aws.amazon.com/lambda/)
-* [AWS Security Hub](https://aws.amazon.com/security-hub/)
-* [Amazon EventBridge](https://aws.amazon.com/eventbridge/)
-* [AWS Step Functions](https://aws.amazon.com/step-functions/)
-* [Amazon VPC](https://aws.amazon.com/vpc/)
+* [AWS Lambda](https://us-east-2.console.aws.amazon.com/lambda/home?region=us-east-2#/functions/)
+* [Amazon EventBridge](https://us-east-2.console.aws.amazon.com/events/home?region=us-east-2#/rules)
+* [AWS Step Functions](https://us-east-2.console.aws.amazon.com/states/home?region=us-east-2#/statemachines)
 
 # Pricing
 
