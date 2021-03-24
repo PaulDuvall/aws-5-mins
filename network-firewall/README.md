@@ -16,6 +16,7 @@ TBD
 1. From your [AWS CloudShell Environment](https://us-east-2.console.aws.amazon.com/cloudshell/home?region=us-east-2#) in the **us-east-2** region, run the following commands: 
 
 ```
+sudo rm -rf ~/aws-networkfirewall-guardduty
 git clone https://github.com/aws-samples/aws-networkfirewall-guardduty.git
 cd aws-networkfirewall-guardduty/templates
 
