@@ -24,9 +24,12 @@ aws cloudformation deploy \
 --stack-name aws-5-mins-networkfirewall-guardduty \
 --template-file aws-networkfirewall-guardduty.template \
 --capabilities CAPABILITY_NAMED_IAM \
+--parameter-overrides AdminEmail=CHANGE-EMAIL-ADDRESS \
 --no-fail-on-empty-changeset \
 --region us-east-2
 ```
+
+Go to the [CloudFormation Console](https://us-east-2.console.aws.amazon.com/cloudformation/home?region=us-east-2#/stacks).
 
 
 # Pricing
