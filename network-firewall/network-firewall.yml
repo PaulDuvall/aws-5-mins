@@ -103,7 +103,6 @@ Resources:
       VpcId: !Ref SampleVPC
       SubnetMappings:
         - SubnetId: !Ref Subnet1
-        - SubnetId: !Ref Subnet2
       Description: Firewall description goes here
   SampleFirewallPolicy:
     Type: 'AWS::NetworkFirewall::FirewallPolicy'
