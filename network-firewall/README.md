@@ -34,7 +34,7 @@ aws cloudformation deploy \
 1. In the **Outputs** tab for the CloudFormation stack, click on the link for the **GuardDutytoFirewallStateMachine** value.
 1. Click on **Start execution**.
 1. In the **Input** field, replace the contents with the contents from the AWS provided [test event JSON file](https://awsiammedia.s3.amazonaws.com/public/sample/606-Automatically-block-suspicious-traffic/securityhub-testevent.json).
-1. Around line 55, find the **eventLastSeen field** and edit the timestamp to the current time in the UTC+0 time zone. For example: `2021-03-24T12:00:01.549Z`
+1. Around line 55, find the **eventLastSeen** field and edit the timestamp to the current time in the UTC+0 time zone. For example: `2021-03-24T12:00:01.549Z`
 
 # Pricing
 * AWS CloudTrail Management Event Analysis $4.00 per 1 million events per month
