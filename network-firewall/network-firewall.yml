@@ -140,7 +140,7 @@ Resources:
       Tags:
         - Key: Foo
           Value: Bar
-  SampleStatelessRulegroup:
+  SampleStatelessRuleGroup:
     Type: AWS::NetworkFirewall::RuleGroup
     Properties:
       RuleGroupName: SampleStatelessRulegroupName
@@ -171,7 +171,7 @@ Resources:
       Tags:
       - Key: Foo
         Value: Bar
-  SampleStatefulRulegroup:
+  SampleStatefulRuleGroup:
     Type: AWS::NetworkFirewall::RuleGroup
     Properties:
       RuleGroupName: SampleStatefulRulegroupName
