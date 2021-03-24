@@ -41,10 +41,12 @@ aws cloudformation deploy \
 # Pricing
 
 ## Network Firewall
-* TBD
+* Network Firewall Endpoint	$0.395/hr.
+* Network Firewall Traffic Processing $0.065/GB.
+* Some NAT Gateway charges are waived when using AWS Network Firewall.
 
 ## GuardDuty
-* AWS CloudTrail Management Event Analysis $4.00 per 1 million events per month
+* AWS CloudTrail Management Event Analysis $4.00 per 1 million events per month.
 * AWS CloudTrail S3 Data Event Analysis	$0.80 per 1 million events. Past 500 million events per month, this price reduces. 
 * VPC Flow Log and DNS Log Analysis	$1.00 per GB. Past 500 GB per month, this price reduces.
 
