@@ -32,10 +32,10 @@ aws cloudformation deploy \
 ```
 
 1. Go to the [CloudFormation Console](https://us-east-2.console.aws.amazon.com/cloudformation/home?region=us-east-2#/stacks). It'll take about three minutes for the stack to launch.
-1. Once the stack is **CREATE_COMPLETE**, be sure to confirm the email that's been sent to you from Amazon SNS. 
-1. In the **Outputs** tab for the CloudFormation stack, click on the link for the **GuardDutytoFirewallStateMachine** value.
+1. While the stack is being created, be sure to confirm the email that's been sent to you from Amazon SNS. 
+1. One the stack is **CREATE_COMPLETE**, go to the **Outputs** tab for the CloudFormation stack and click on the link for the **GuardDutytoFirewallStateMachine** value.
 1. Click on **Start execution**.
-1. In the **Input** field, replace the contents with the contents from the AWS provided [test event JSON file](https://awsiammedia.s3.amazonaws.com/public/sample/606-Automatically-block-suspicious-traffic/securityhub-testevent.json).
+1. In the **Input** field, replace with the contents from the AWS provided [test event JSON file](https://awsiammedia.s3.amazonaws.com/public/sample/606-Automatically-block-suspicious-traffic/securityhub-testevent.json).
 1. Around line 55, find the **eventLastSeen** field and edit the timestamp to the current time in the UTC+0 time zone. For example: `2021-03-24T12:00:01.549Z`.
 1. Check your email to find a message about traffic that was automatically blocked. 
 
