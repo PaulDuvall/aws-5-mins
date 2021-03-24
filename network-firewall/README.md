@@ -33,6 +33,8 @@ aws cloudformation deploy \
 --region us-east-2
 ```
 
+1. Go to the [CloudFormation Console](https://us-east-2.console.aws.amazon.com/cloudformation/home?region=us-east-2#/stacks). It'll take about three minutes for the stack to launch.
+
 # Pricing
 TBD
 
