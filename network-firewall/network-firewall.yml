@@ -1,0 +1,100 @@
+Description: AWS Network Firewall demo
+SampleFirewall:
+  Type: AWS::NetworkFirewall::Firewall
+  Properties:
+    FirewallName: SampleFirewallName
+    FirewallPolicyArn: !Ref SampleFirewallPolicy
+    VpcId: !Ref SampleVPC
+    SubnetMappings:
+      - SubnetId: !Ref SampleSubnet1
+      - SubnetId: !Ref SampleSubnet2
+    Description: Firewall description goes here
+
+ SampleFirewallPolicy:
+  Type: 'AWS::NetworkFirewall::FirewallPolicy'
+  Properties:
+    FirewallPolicyName: SampleFirewallPolicyName
+    FirewallPolicy:
+      StatelessDefaultActions:
+        - 'aws:pass'
+      StatelessFragmentDefaultActions:
+        - 'aws:drop'
+      StatefulRuleGroupReferences:
+        - ResourceArn: !Ref SampleStatefulRuleGroup
+      StatelessRuleGroupReferences:
+        - ResourceArn: !Ref SampleStatelessRuleGroup
+          Priority: 100
+    Description: FirewallPolicy description goes here
+    Tags:
+      - Key: Foo
+        Value: Bar
+ 
+
+SampleFirewallPolicy:
+  Type: 'AWS::NetworkFirewall::FirewallPolicy'
+  Properties:
+    FirewallPolicyName: SampleFirewallPolicyName
+    FirewallPolicy:
+      StatelessDefaultActions:
+        - 'aws:pass'
+      StatelessFragmentDefaultActions:
+        - 'aws:drop'
+      StatefulRuleGroupReferences:
+        - ResourceArn: !Ref SampleStatefulRuleGroup
+      StatelessRuleGroupReferences:
+        - ResourceArn: !Ref SampleStatelessRuleGroup
+          Priority: 100
+    Description: FirewallPolicy description goes here
+    Tags:
+      - Key: Foo
+        Value: Bar
+
+
+ SampleStatelessRulegroup:
+    Type: 'AWS::NetworkFirewall::RuleGroup'
+    Properties:
+      RuleGroupName: SampleStatelessRulegroupName
+      Type: STATELESS
+      RuleGroup:
+        RulesSource:
+          StatelessRulesAndCustomActions:
+            StatelessRules:
+              - RuleDefinition:
+                  MatchAttributes:
+                    Sources:
+                      - AddressDefinition: 0.0.0.0/0
+                    Destinations:
+                      - AddressDefinition: 10.0.0.0/8
+                    SourcePorts:
+                      - FromPort: 15000
+                        ToPort: 30000
+                    DestinationPorts:
+                      - FromPort: 443
+                        ToPort: 443
+                    Protocols:
+                      - 6
+                  Actions:
+                    - 'aws:pass'
+                Priority: 1
+      Capacity: 100
+      Description: Rulegroup description goes here
+      Tags:
+        - Key: Foo
+          Value: Bar
+          
+SampleStatefulRulegroup:
+  Type: 'AWS::NetworkFirewall::RuleGroup'
+  Properties:
+    RuleGroupName: SampleStatefulRulegroupName
+    Type: STATEFUL
+    RuleGroup:
+      RulesSource:
+        RulesString: >-
+          pass tcp 10.20.20.0/24 45400:45500 <> 10.10.10.0/24 5203
+          (msg:"test";sid:1;rev:1;)
+    Capacity: 100
+    Description: Rulegroup description goes here
+    Tags:
+      - Key: Foo
+        Value: Bar
+                              
