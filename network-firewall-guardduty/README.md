@@ -9,7 +9,7 @@ The demo is based on the [Automatically block suspicious traffic with AWS Networ
 
 ## Launch CloudFormation Stack
 
-1. From your [AWS CloudShell Environment](https://us-east-1.console.aws.amazon.com/cloudshell/home?region=us-east-1#) in the **us-east-1** region, run the following commands: 
+1. From your [AWS CloudShell Environment](https://us-east-1.console.aws.amazon.com/cloudshell/home?region=us-east-1#) in the **us-east-1** region, run the following commands. Be sure to change the `CHANGE-EMAIL-ADDRESS` token to your email address.
 
 ```
 sudo rm -rf ~/aws-networkfirewall-guardduty
