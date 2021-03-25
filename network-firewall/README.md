@@ -50,3 +50,4 @@ aws cloudformation delete-stack --stack-name aws-5-mins-networkfirewall --region
 It'll take about 5 minutes to delete all the resources in the stack.
 
 # Additional Resources
+* [AWS Network Firewall – New Managed Firewall Service in VPC](https://aws.amazon.com/blogs/aws/aws-network-firewall-new-managed-firewall-service-in-vpc/)
