@@ -51,3 +51,4 @@ It'll take about 5 minutes to delete all the resources in the stack.
 
 # Additional Resources
 * [AWS Network Firewall – New Managed Firewall Service in VPC](https://aws.amazon.com/blogs/aws/aws-network-firewall-new-managed-firewall-service-in-vpc/)
+* [Enforce your AWS Network Firewall protections at scale with AWS Firewall Manager](https://aws.amazon.com/blogs/security/enforce-your-aws-network-firewall-protections-at-scale-with-aws-firewall-manager/)
