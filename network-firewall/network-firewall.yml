@@ -96,7 +96,7 @@ Resources:
   SampleFirewall:
     Type: AWS::NetworkFirewall::Firewall
     Properties:
-      FirewallName: network-firewall
+      FirewallName: aws-5-mins-network-firewall
       FirewallPolicyArn: !Ref SampleFirewallPolicy
       VpcId: !Ref SampleVPC
       SubnetMappings:
