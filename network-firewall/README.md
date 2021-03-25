@@ -2,9 +2,9 @@
 
 You can find the 5-minute video that walks through all of the steps described here. 
 
-In this episode, we'll be looking at AWS Network Firewall. With Network Firewall, you can apply firewall rules across multiple VPCs so that they you only need to define the rules in one place. As a fully managed service, it also scales with your network so you don't need to modify your infrastructure as your needs grow.  
+In this episode, we'll be looking at [AWS Network Firewall](https://aws.amazon.com/network-firewall/). With Network Firewall, you can apply firewall rules across multiple VPCs so that they you only need to define the rules in one place. As a fully managed service, it also scales with your network so you don't need to modify your infrastructure as your needs grow.  
 
-You can integrate AWS Network Firewall with AWS Firewall Manager so that it can be used with AWS Organizations and apply rules across multiple AWS accounts.
+You can integrate AWS Network Firewall with [AWS Firewall Manager](https://aws.amazon.com/firewall-manager/) so that it can be used with AWS Organizations and apply rules across multiple AWS accounts.
 
 Can run stateless and stateful rules engines that inspects network traffic. For example, with stateless rules, you can filter traffic based on source IPs,  domains, or pattern matching and then pass, drop, or forward traffic to stateful rules. 
 
@@ -37,8 +37,8 @@ aws cloudformation deploy \
 1. Go to the [CloudFormation Console](https://us-east-1.console.aws.amazon.com/cloudformation/home?region=us-east-1#/stacks). It'll take about 7 minutes for the stack to launch.
 
 # Pricing
-* Network Firewall Endpoint $0.395/hr.
-* Network Firewall Traffic Processing $0.065/GB.
+* Network Firewall Endpoint is $0.395/hr.
+* Network Firewall Traffic Processing is $0.065/GB.
 * Some NAT Gateway charges are waived when using AWS Network Firewall.
 * For more information, see [AWS Network Firewall Pricing](https://aws.amazon.com/network-firewall/pricing/).
 
