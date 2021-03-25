@@ -2,10 +2,11 @@
 
 You can find the 5-minute video that walks through all of the steps described here. 
 
-In this episode, we'll be looking at TBD
+In this episode, we'll be looking at AWS Network Firewall. With Network Firewall, you can apply firewall rules across multiple VPCs so that they you only need to define the rules in one place. As a fully managed service, it also scales with your network so you don't need to modify your infrastructure as your needs grow.  
 
-TBD
+You can integrate AWS Network Firewall with AWS Firewall Manager so that it can be used with AWS Organizations and apply rules across multiple AWS accounts.
 
+Can run stateless and stateful rules engines that inspects network traffic. For example, with stateless rules, you can filter traffic based on source IPs,  domains, or pattern matching and then pass, drop, or forward traffic to stateful rules. 
 
 # CloudFormation Support
 * [AWS::NetworkFirewall::Firewall](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-networkfirewall-firewall.html) - Define stateful, managed, network firewall and intrusion detection and prevention filtering for your VPCs in Amazon VPC.
