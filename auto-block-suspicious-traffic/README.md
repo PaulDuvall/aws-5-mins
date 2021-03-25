@@ -6,7 +6,9 @@ In this episode, we'll be looking at automated security response automation. Wit
 
 In the demo, I will walkthrough a solution from the AWS blog post called [Automatically block suspicious traffic with AWS Network Firewall and Amazon GuardDuty](https://aws.amazon.com/blogs/security/automatically-block-suspicious-traffic-with-aws-network-firewall-and-amazon-guardduty/) that uses [AWS Network Firewall](https://aws.amazon.com/network-firewall/), [Amazon GuardDuty](https://aws.amazon.com/guardduty/), [AWS Lambda](https://aws.amazon.com/lambda/), [AWS Security Hub](https://aws.amazon.com/security-hub/), [Amazon EventBridge](https://aws.amazon.com/eventbridge/), [AWS Step Functions](https://aws.amazon.com/step-functions/), and [Amazon VPC](https://aws.amazon.com/vpc/). It's launched via an [AWS CloudFormation](https://aws.amazon.com/cloudformation/) stack. The CloudFormation template defines resources that are automatically provisioned for the services I just listed.
 
+In this scenario, Amazon GuardDuty is automatically running behavior checks like backdoors. It sends this event data to AWS Security Hub. These events are sent to Amazon EventBridge which filters this data and runs a Step Function state machine if it meets the pattern criteria. In this step function, it's entering data into a DynamoDB table and running a Lambda function that sends notifications and uses AWS Network Firewall to block traffic. In the demo, you'll be using a test event to mimic GuardDuty and Security Hub events to be detected by EventBridge.
 
+With this approach, it can automatically detect and block suspicious network traffic without human intervention.
 
 ## Launch CloudFormation Stack
 
