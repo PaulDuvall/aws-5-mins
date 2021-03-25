@@ -119,7 +119,7 @@ Resources:
       Description: FirewallPolicy for aws-5-mins example
       Tags:
       - Key: Name
-        Value: "${AWS::StackName}-firewall-policy"
+        Value: !Sub "${AWS::StackName}-firewall-policy"
   SampleStatelessRuleGroup:
     Type: AWS::NetworkFirewall::RuleGroup
     Properties:
@@ -150,7 +150,7 @@ Resources:
       Description: Rulegroup description goes here
       Tags:
       - Key: Name
-        Value: "${AWS::StackName}-stateless-rulegroup"
+        Value: !Sub "${AWS::StackName}-stateless-rulegroup"
   SampleStatefulRuleGroup:
     Type: AWS::NetworkFirewall::RuleGroup
     Properties:
@@ -163,7 +163,7 @@ Resources:
       Description: Rulegroup description goes here
       Tags:
       - Key: Name
-        Value: "${AWS::StackName}-stateful-rulegroup"
+        Value: !Sub "${AWS::StackName}-stateful-rulegroup"
 
 Outputs:
   InstanceA:
