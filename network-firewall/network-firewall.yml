@@ -96,7 +96,7 @@ Resources:
   SampleFirewall:
     Type: AWS::NetworkFirewall::Firewall
     Properties:
-      FirewallName: aws-5-mins-firewall
+      FirewallName: network-firewall
       FirewallPolicyArn: !Ref SampleFirewallPolicy
       VpcId: !Ref SampleVPC
       SubnetMappings:
@@ -105,7 +105,7 @@ Resources:
   SampleFirewallPolicy:
     Type: 'AWS::NetworkFirewall::FirewallPolicy'
     Properties:
-      FirewallPolicyName: aws-5-mins-firewall-policy
+      FirewallPolicyName: firewall-policy
       FirewallPolicy:
         StatelessDefaultActions:
           - 'aws:pass'
