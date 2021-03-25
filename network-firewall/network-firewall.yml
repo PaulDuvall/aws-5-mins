@@ -134,7 +134,7 @@ Resources:
                   Sources:
                   - AddressDefinition: 0.0.0.0/0
                   Destinations:
-                  - AddressDefinition: 10.0.0.0/8
+                  - AddressDefinition: 172.0.0.0/16
                   SourcePorts:
                   - FromPort: 15000
                     ToPort: 30000
