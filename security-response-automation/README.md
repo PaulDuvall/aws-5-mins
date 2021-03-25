@@ -2,7 +2,7 @@
 
 You can find the 5-minute video that walks through all of the steps described here. 
 
-In this episode, we'll be looking at automated security response automation. With it, you can proactively detect and respond to errors using automation rather than human intervention. This way you can spend more time on strenghting the layers of your security protection.
+In this episode, we'll be looking at security response automation. With it, you can proactively detect and respond to errors using automation rather than human intervention. This way you can spend more time on strenghting the layers of your security protection.
 
 In the demo, I will walkthrough a solution from the AWS blog post called [Automatically block suspicious traffic with AWS Network Firewall and Amazon GuardDuty](https://aws.amazon.com/blogs/security/automatically-block-suspicious-traffic-with-aws-network-firewall-and-amazon-guardduty/) that uses [AWS Network Firewall](https://aws.amazon.com/network-firewall/), [Amazon GuardDuty](https://aws.amazon.com/guardduty/), [AWS Lambda](https://aws.amazon.com/lambda/), [AWS Security Hub](https://aws.amazon.com/security-hub/), [Amazon EventBridge](https://aws.amazon.com/eventbridge/), [AWS Step Functions](https://aws.amazon.com/step-functions/), and [Amazon VPC](https://aws.amazon.com/vpc/). It's launched via an [AWS CloudFormation](https://aws.amazon.com/cloudformation/) stack. The CloudFormation template defines resources that are automatically provisioned for the services I just listed.
 
