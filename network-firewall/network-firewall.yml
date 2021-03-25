@@ -16,7 +16,7 @@ Resources:
       InstanceTenancy: default
       Tags:
       - Key: Name
-        Value: !Sub "${AWS::StackName}"
+        Value: !Sub "${AWS::StackName}-vpc"
   Subnet1:
     Type: AWS::EC2::Subnet
     Properties:
@@ -25,7 +25,7 @@ Resources:
       MapPublicIpOnLaunch: false
       Tags:
       - Key: Name
-        Value: !Sub "${AWS::StackName}"
+        Value: !Sub "${AWS::StackName}-subnet1"
   SecurityGroup1:
     Type: AWS::EC2::SecurityGroup
     Properties:
@@ -36,7 +36,7 @@ Resources:
         IpProtocol: "-1"
       Tags:
       - Key: Name
-        Value: !Sub "${AWS::StackName}"
+        Value: !Sub "${AWS::StackName}-SecurityGroup1"
   SecurityGroup2:
     Type: AWS::EC2::SecurityGroup
     Properties:
@@ -44,7 +44,7 @@ Resources:
       VpcId: !Ref SampleVPC
       Tags:
       - Key: Name
-        Value: !Sub "${AWS::StackName}"
+        Value: !Sub "${AWS::StackName}-SecurityGroup2"
   InstanceA:
     Type: AWS::EC2::Instance
     Properties:
