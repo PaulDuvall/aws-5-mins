@@ -96,7 +96,7 @@ Resources:
   SampleFirewall:
     Type: AWS::NetworkFirewall::Firewall
     Properties:
-      FirewallName: SampleFirewallName
+      FirewallName: aws-5-mins-firewall
       FirewallPolicyArn: !Ref SampleFirewallPolicy
       VpcId: !Ref SampleVPC
       SubnetMappings:
@@ -105,7 +105,7 @@ Resources:
   SampleFirewallPolicy:
     Type: 'AWS::NetworkFirewall::FirewallPolicy'
     Properties:
-      FirewallPolicyName: SampleFirewallPolicyName
+      FirewallPolicyName: aws-5-mins-firewall-policy
       FirewallPolicy:
         StatelessDefaultActions:
           - 'aws:pass'
@@ -116,32 +116,14 @@ Resources:
         StatelessRuleGroupReferences:
           - ResourceArn: !Ref SampleStatelessRuleGroup
             Priority: 100
-      Description: FirewallPolicy description goes here
+      Description: FirewallPolicy for aws-5-mins example
       Tags:
-        - Key: Foo
-          Value: Bar
-  SampleFirewallPolicy:
-    Type: 'AWS::NetworkFirewall::FirewallPolicy'
-    Properties:
-      FirewallPolicyName: SampleFirewallPolicyName
-      FirewallPolicy:
-        StatelessDefaultActions:
-          - 'aws:pass'
-        StatelessFragmentDefaultActions:
-          - 'aws:drop'
-        StatefulRuleGroupReferences:
-          - ResourceArn: !Ref SampleStatefulRuleGroup
-        StatelessRuleGroupReferences:
-          - ResourceArn: !Ref SampleStatelessRuleGroup
-            Priority: 100
-      Description: FirewallPolicy description goes here
-      Tags:
-        - Key: Foo
-          Value: Bar
+      - Key: Name
+        Value: "${AWS::StackName}-firewall-policy"
   SampleStatelessRuleGroup:
     Type: AWS::NetworkFirewall::RuleGroup
     Properties:
-      RuleGroupName: SampleStatelessRulegroupName
+      RuleGroupName: aws-5-mins-stateless-rule-group
       Type: STATELESS
       RuleGroup:
         RulesSource:
@@ -167,12 +149,12 @@ Resources:
       Capacity: 100
       Description: Rulegroup description goes here
       Tags:
-      - Key: Foo
-        Value: Bar
+      - Key: Name
+        Value: "${AWS::StackName}-stateless-rulegroup"
   SampleStatefulRuleGroup:
     Type: AWS::NetworkFirewall::RuleGroup
     Properties:
-      RuleGroupName: SampleStatefulRulegroupName
+      RuleGroupName: aws-5-mins-stateful-rule-group
       Type: STATEFUL
       RuleGroup:
         RulesSource:
@@ -180,8 +162,8 @@ Resources:
       Capacity: 100
       Description: Rulegroup description goes here
       Tags:
-      - Key: Foo
-        Value: Bar
+      - Key: Name
+        Value: "${AWS::StackName}-stateful-rulegroup"
 
 Outputs:
   InstanceA:

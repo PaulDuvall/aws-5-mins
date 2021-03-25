@@ -35,6 +35,7 @@ aws cloudformation deploy \
 ```
 
 1. Go to the [CloudFormation Console](https://us-east-1.console.aws.amazon.com/cloudformation/home?region=us-east-1#/stacks). It'll take about 7 minutes for the stack to launch.
+1. Go to [Network Firewalls](https://console.aws.amazon.com/vpc/home?region=us-east-1#NetworkFirewalls:).
 
 # Pricing
 * Network Firewall Endpoint is $0.395/hr.
