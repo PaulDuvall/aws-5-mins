@@ -96,7 +96,7 @@ Resources:
   SampleFirewall:
     Type: AWS::NetworkFirewall::Firewall
     Properties:
-      FirewallName: aws-5-mins-network-firewall
+      FirewallName: !Sub ${AWS::StackName}-network-firewall
       FirewallPolicyArn: !Ref SampleFirewallPolicy
       VpcId: !Ref SampleVPC
       SubnetMappings:
@@ -105,7 +105,7 @@ Resources:
   SampleFirewallPolicy:
     Type: 'AWS::NetworkFirewall::FirewallPolicy'
     Properties:
-      FirewallPolicyName: firewall-policy
+      FirewallPolicyName: !Sub ${AWS::StackName}-firewall-policy
       FirewallPolicy:
         StatelessDefaultActions:
           - 'aws:pass'
@@ -123,7 +123,7 @@ Resources:
   SampleStatelessRuleGroup:
     Type: AWS::NetworkFirewall::RuleGroup
     Properties:
-      RuleGroupName: aws-5-mins-stateless-rule-group
+      RuleGroupName: !Sub ${AWS::StackName}-stateless-rule-group
       Type: STATELESS
       RuleGroup:
         RulesSource:
@@ -154,7 +154,7 @@ Resources:
   SampleStatefulRuleGroup:
     Type: AWS::NetworkFirewall::RuleGroup
     Properties:
-      RuleGroupName: aws-5-mins-stateful-rule-group
+      RuleGroupName: !Sub ${AWS::StackName}-stateful-rule-group
       Type: STATEFUL
       RuleGroup:
         RulesSource:
