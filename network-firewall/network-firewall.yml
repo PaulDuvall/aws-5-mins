@@ -16,7 +16,7 @@ Resources:
       InstanceTenancy: default
       Tags:
       - Key: Name
-        Value: "${AWS::StackName}"
+        Value: !Sub "${AWS::StackName}"
   Subnet1:
     Type: AWS::EC2::Subnet
     Properties:
@@ -25,7 +25,7 @@ Resources:
       MapPublicIpOnLaunch: false
       Tags:
       - Key: Name
-        Value: "${AWS::StackName}"
+        Value: !Sub "${AWS::StackName}"
   SecurityGroup1:
     Type: AWS::EC2::SecurityGroup
     Properties:
@@ -36,7 +36,7 @@ Resources:
         IpProtocol: "-1"
       Tags:
       - Key: Name
-        Value: "${AWS::StackName}"
+        Value: !Sub "${AWS::StackName}"
   SecurityGroup2:
     Type: AWS::EC2::SecurityGroup
     Properties:
@@ -44,7 +44,7 @@ Resources:
       VpcId: !Ref SampleVPC
       Tags:
       - Key: Name
-        Value: "${AWS::StackName}"
+        Value: !Sub "${AWS::StackName}"
   InstanceA:
     Type: AWS::EC2::Instance
     Properties:
@@ -60,7 +60,7 @@ Resources:
       - Ref: SecurityGroup1
       Tags:
       - Key: Name
-        Value: "${AWS::StackName}-InstanceA"
+        Value: !Sub "${AWS::StackName}-InstanceA"
   InstanceB:
     Type: AWS::EC2::Instance
     Properties:
@@ -76,7 +76,7 @@ Resources:
       - Ref: SecurityGroup1
       Tags:
       - Key: Name
-        Value: "${AWS::StackName}-InstanceB"
+        Value: !Sub "${AWS::StackName}-InstanceB"
   InstanceC:
     Type: AWS::EC2::Instance
     Properties:
@@ -92,7 +92,7 @@ Resources:
       - Ref: SecurityGroup2
       Tags:
       - Key: Name
-        Value: "${AWS::StackName}-InstanceC"
+        Value: !Sub "${AWS::StackName}-InstanceC"
   SampleFirewall:
     Type: AWS::NetworkFirewall::Firewall
     Properties:
@@ -101,7 +101,7 @@ Resources:
       VpcId: !Ref SampleVPC
       SubnetMappings:
         - SubnetId: !Ref Subnet1
-      Description: Firewall description goes here
+      Description: Network Firewall definition
   SampleFirewallPolicy:
     Type: 'AWS::NetworkFirewall::FirewallPolicy'
     Properties:
@@ -147,7 +147,7 @@ Resources:
                 - aws:pass
               Priority: 1
       Capacity: 100
-      Description: Rulegroup description goes here
+      Description: Stateless Rulegroup Definition for aws-5-mins example
       Tags:
       - Key: Name
         Value: !Sub "${AWS::StackName}-stateless-rulegroup"
@@ -160,7 +160,7 @@ Resources:
         RulesSource:
           RulesString: pass tcp 10.20.20.0/24 45400:45500 <> 10.10.10.0/24 5203 (msg:"test";sid:1;rev:1;)
       Capacity: 100
-      Description: Rulegroup description goes here
+      Description: Stateful Rulegroup Definition for aws-5-mins example
       Tags:
       - Key: Name
         Value: !Sub "${AWS::StackName}-stateful-rulegroup"
