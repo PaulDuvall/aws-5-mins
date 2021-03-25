@@ -4,7 +4,7 @@ You can find the 5-minute video that walks through all of the steps described he
 
 In this episode, we'll be looking at [AWS Network Firewall](https://aws.amazon.com/network-firewall/). With Network Firewall, you can apply firewall rules across multiple VPCs so that they you only need to define the rules in one place. As a fully managed service, it also scales with your network so you don't need to modify your infrastructure as your needs grow.  
 
-You can integrate AWS Network Firewall with [AWS Firewall Manager](https://aws.amazon.com/firewall-manager/) so that it can be used with AWS Organizations and apply rules across multiple AWS accounts.
+You can integrate AWS Network Firewall with [AWS Firewall Manager](https://aws.amazon.com/firewall-manager/) so that it can be used with [AWS Organizations](https://aws.amazon.com/organizations/) and apply rules across multiple AWS accounts.
 
 Can run stateless and stateful rules engines that inspects network traffic. For example, with stateless rules, you can filter traffic based on source IPs,  domains, or pattern matching and then pass, drop, or forward traffic to stateful rules. 
 
