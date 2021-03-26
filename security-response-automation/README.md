@@ -21,7 +21,7 @@ cd aws-networkfirewall-guardduty/templates
 
 
 aws cloudformation deploy \
---stack-name aws-5-mins-networkfirewall-guardduty \
+--stack-name aws-5-mins-security-response-automation \
 --template-file aws-networkfirewall-guardduty.template \
 --capabilities CAPABILITY_NAMED_IAM \
 --parameter-overrides AdminEmail=CHANGE-EMAIL-ADDRESS Retention=5 PruningFrequency=5 \
@@ -51,7 +51,7 @@ aws cloudformation deploy \
 # Delete Resources
 
 ```
-aws cloudformation delete-stack --stack-name aws-5-mins-networkfirewall-guardduty --region us-east-2
+aws cloudformation delete-stack --stack-name aws-5-mins-security-response-automation --region us-east-2
 ```
 
 # Additional Resources
