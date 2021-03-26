@@ -1,6 +1,4 @@
-**NOTE: This video has not been released yet.**
-
-You can find the 5-minute video that walks through all of the steps described here. 
+You can find the [5-minute video](https://youtu.be/uz4OZqRGCgM) that walks through all of the steps described [here](https://youtu.be/uz4OZqRGCgM). 
 
 In this episode, we'll be looking at [AWS Network Firewall](https://aws.amazon.com/network-firewall/). With Network Firewall, you can apply firewall rules across multiple VPCs so that they you only need to define the rules in one place. As a fully managed service, it also scales with your network so you don't need to modify your infrastructure as your needs grow.  
 
