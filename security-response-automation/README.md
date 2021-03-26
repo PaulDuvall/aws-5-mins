@@ -42,7 +42,7 @@ aws cloudformation deploy \
 
 ### Review Other Provisioned Resources
 
-* [AWS Lambda Application](https://us-east-2.console.aws.amazon.com/lambda/home?region=us-east-2#/applications/aws-5-mins-networkfirewall-guardduty)
+* [AWS Lambda Application](https://us-east-2.console.aws.amazon.com/lambda/home?region=us-east-2#/applications/aws-5-mins-security-response-automation)
 * [Amazon EventBridge](https://us-east-2.console.aws.amazon.com/events/home?region=us-east-2#/rules)
 
 ### Pruning of Old Records
