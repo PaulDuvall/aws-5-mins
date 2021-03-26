@@ -19,7 +19,7 @@ Service or Feature | Category | Description | 5 Min Video
 [AWS Network Firewall](./network-firewall) | Networking & Content Delivery | Deploy network security across your Amazon VPCs | 26-Mar-2021
 [Amazon GuardDuty](./guard-duty) | Security, Identity, & Compliance | Protect your AWS accounts, workloads, and data with intelligent threat detection and continuous monitoring | 16-Mar-2021
 [AWS Serverless Application Model (SAM)](./sam) | Developer Tools | Build serverless applications in simple and clean syntax | 23-Mar-2021
-[Amazon ECS deployment circuit breaker](./ecs-circuit) | Developer Tools | Automatically roll back unhealthy service deployments without the need for manual intervention | 25-Mar-2021
+[Amazon ECS deployment circuitt breaker](./ecs-circuit) | Developer Tools | Automatically roll back unhealthy service deployments without the need for manual intervention | 25-Mar-2021
 [Amazon CodeGuru](./codeguru) | Developer Tools | Automate code reviews and optimize application performance with ML-powered recommendations | 30-Mar-2021
 [Amazon AppFlow](./appflow) | Application Integration | Securely integrate apps and automate data flows at any scale, without code | 1-Apr-2021
 [Amazon SageMaker Pipelines](./sagemaker-pipelines) | Machine Learning | First purpose-built CI/CD service for machine learning | 6-Apr-2021
