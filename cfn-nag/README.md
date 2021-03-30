@@ -34,10 +34,6 @@ aws cloudformation deploy \
 --parameter-overrides EmailAddress=you@example.com CodeCommitS3Bucket=csoa-1-$(aws sts get-caller-identity --output text --query 'Account') CodeCommitS3Key=csoa-1-examples.zip \
 --no-fail-on-empty-changeset \
 --region us-east-1
-
-
-aws cloudformation create-stack --stack-name csoa-1-cfn-nag-pipeline --template-body file:///home/ec2-user/environment/csoa-1/csoa-1-cfn-nag-pipeline.yml --parameters ParameterKey=EmailAddress,ParameterValue=you@example.com ParameterKey=CodeCommitS3Bucket,ParameterValue=csoa-1-$(aws sts get-caller-identity --output text --query 'Account') ParameterKey=CodeCommitS3Key,ParameterValue=csoa-1-examples.zip --capabilities CAPABILITY_NAMED_IAM --disable-rollback
-
 ```
 
 
