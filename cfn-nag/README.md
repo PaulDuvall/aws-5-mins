@@ -36,7 +36,6 @@ aws cloudformation deploy \
 --region us-east-1
 ```
 
-
 # Deployment Pipeline
 
 # Pricing
@@ -45,7 +44,10 @@ TBD
 # Delete Resources
 
 ```
-aws s3api list-buckets --query 'Buckets[?starts_with(Name, `csoa-1-`) == `true`].[Name]' --output text | xargs -I {} aws s3 rb s3://{} --force
+aws s3api list-buckets --query 'Buckets[?starts_with(Name, `ccoa-`) == `true`].[Name]' --output text | xargs -I {} aws s3 rb s3://{} --force
+
+aws s3api list-buckets --query 'Buckets[?starts_with(Name, `csoa-`) == `true`].[Name]' --output text | xargs -I {} aws s3 rb s3://{} --force
+
 aws cloudformation delete-stack --stack-name aws-5-mins-SERVICENAME --region us-east-2
 ```
 
