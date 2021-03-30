@@ -23,9 +23,9 @@ cd ~/csoa-1
 
 cd ~/csoa-1
 git clone https://github.com/PaulDuvall/aws-compliance-workshop.git
-cd aws-compliance-workshop/lesson2-preventive
+cd ~/csoa-1/aws-compliance-workshop/lesson2-preventive
 zip csoa-1-examples.zip *.*
-aws s3 sync ~/csoa-1 s3://csoa-1-$(aws sts get-caller-identity --output text --query 'Account')
+aws s3 sync ~/csoa-1/aws-compliance-workshop/lesson2-preventive s3://csoa-1-$(aws sts get-caller-identity --output text --query 'Account')
 
 aws cloudformation deploy \
 --stack-name ccoa-2-cfn-nag-pipeline \
@@ -45,6 +45,7 @@ TBD
 # Delete Resources
 
 ```
+aws s3api list-buckets --query 'Buckets[?starts_with(Name, `csoa-1-`) == `true`].[Name]' --output text | xargs -I {} aws s3 rb s3://{} --force
 aws cloudformation delete-stack --stack-name aws-5-mins-SERVICENAME --region us-east-2
 ```
 
