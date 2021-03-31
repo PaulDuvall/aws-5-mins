@@ -30,6 +30,8 @@ aws cloudformation deploy \
 --stack-name aws-5-mins-codepipeline \
 --template-file ceoa-6-mcr-pipeline.yml \
 --capabilities CAPABILITY_NAMED_IAM \
+--parameter-overrides EmailAddress=CHANGE-EMAIL-ADDRESS CodeCommitS3Bucket=aws-5-mins-codepipeline-$(aws sts get-caller-identity --output text --query 'Account') CodeCommitS3Key=aws-5-mins-codepipeline.zip \
+
 --no-fail-on-empty-changeset \
 --region us-east-2
 ```
