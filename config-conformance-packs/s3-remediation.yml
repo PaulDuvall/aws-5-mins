@@ -28,7 +28,7 @@ Resources:
         AutomationAssumeRole:
           StaticValue:
             Values:
-              - arn:aws:iam::<ACCOUNT_ID>:role/S3OperationsAutomationsExecutionRole
+              - !Sub arn:aws:iam::${AWS::AccountId}:role/S3OperationsAutomationsExecutionRole
         S3BucketName:
           ResourceValue:
             Value: "RESOURCE_ID"
@@ -65,7 +65,7 @@ Resources:
         AutomationAssumeRole:
           StaticValue:
             Values:
-              - arn:aws:iam::<ACCOUNT_ID>:role/S3OperationsAutomationsExecutionRole
+              - !Sub arn:aws:iam::${AWS::AccountId}:role/S3OperationsAutomationsExecutionRole
         S3BucketName:
           ResourceValue:
             Value: "RESOURCE_ID"
@@ -124,7 +124,7 @@ Resources:
         AutomationAssumeRole:
           StaticValue:
             Values:
-              - arn:aws:iam::<ACCOUNT_ID>:role/S3OperationsAutomationsExecutionRole
+              - !Sub arn:aws:iam::${AWS::AccountId}:role/S3OperationsAutomationsExecutionRole
         BucketName:
           ResourceValue:
             Value: "RESOURCE_ID"
@@ -164,7 +164,7 @@ Resources:
         AutomationAssumeRole:
           StaticValue:
             Values:
-              - arn:aws:iam::<ACCOUNT_ID>:role/S3OperationsAutomationsExecutionRole
+              - !Sub arn:aws:iam::${AWS::AccountId}:role/S3OperationsAutomationsExecutionRole
         BucketName:
           ResourceValue:
             Value: "RESOURCE_ID"
