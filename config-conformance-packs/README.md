@@ -27,8 +27,8 @@ cd aws-5-mins/config-conformance-packs
 
 ```
 aws cloudformation deploy \
---stack-name aws-5-mins-ddb \
---template-file ddb.yml \
+--stack-name aws-5-mins-s3-permissons \
+--template-file s3-permissons.yml \
 --capabilities CAPABILITY_NAMED_IAM \
 --no-fail-on-empty-changeset \
 --region us-east-2
@@ -36,10 +36,9 @@ aws cloudformation deploy \
 
 ```
 aws cloudformation deploy \
---stack-name aws-5-mins-config-conformance \
---template-file conformance-pack-ddb-remediation.yml \
+--stack-name aws-5-mins-s3-remediation \
+--template-file s3-remediationn.yml \
 --capabilities CAPABILITY_NAMED_IAM \
---parameter-overrides EmailAddress=CHANGE-EMAIL-ADDRESS \
 --no-fail-on-empty-changeset \
 --region us-east-2
 ```
