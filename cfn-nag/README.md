@@ -16,22 +16,22 @@ TBD
 TBD
 
 ```
-sudo rm -rf ~/csoa-1
-mkdir ~/csoa-1
-aws s3 mb s3://csoa-1-$(aws sts get-caller-identity --output text --query 'Account')
-cd ~/csoa-1
+sudo rm -rf ~/aws-5-mins-cfn-nag
+mkdir ~/aws-5-mins-cfn-nag
+aws s3 mb s3://aws-5-mins-cfn-nag-$(aws sts get-caller-identity --output text --query 'Account')
+cd ~/aws-5-mins-cfn-nag
 
-cd ~/csoa-1
+cd ~/aws-5-mins-cfn-nag
 git clone https://github.com/PaulDuvall/aws-compliance-workshop.git
-cd ~/csoa-1/aws-compliance-workshop/lesson2-preventive
-zip csoa-1-examples.zip *.*
-aws s3 sync ~/csoa-1/aws-compliance-workshop/lesson2-preventive s3://csoa-1-$(aws sts get-caller-identity --output text --query 'Account')
+cd ~/aws-5-mins-cfn-nag/aws-compliance-workshop/lesson2-preventive
+zip aws-5-mins-cfn-nag-examples.zip *.*
+aws s3 sync ~/aws-5-mins-cfn-nag/aws-compliance-workshop/lesson2-preventive s3://aws-5-mins-cfn-nag-$(aws sts get-caller-identity --output text --query 'Account')
 
 aws cloudformation deploy \
 --stack-name ccoa-2-cfn-nag-pipeline \
 --template-file ccoa-2-cfn-nag-pipeline.yml \
 --capabilities CAPABILITY_NAMED_IAM \
---parameter-overrides EmailAddress=you@example.com CodeCommitS3Bucket=csoa-1-$(aws sts get-caller-identity --output text --query 'Account') CodeCommitS3Key=csoa-1-examples.zip \
+--parameter-overrides CodeCommitS3Bucket=aws-5-mins-cfn-nag-$(aws sts get-caller-identity --output text --query 'Account') CodeCommitS3Key=aws-5-mins-cfn-nag-examples.zip \
 --no-fail-on-empty-changeset \
 --region us-east-1
 ```
