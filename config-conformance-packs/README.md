@@ -59,9 +59,7 @@ aws s3api list-buckets --query 'Buckets[?starts_with(Name, `s3serversideloggingb
 
 aws cloudformation delete-stack --stack-name aws-5-mins-s3-remediation --region us-east-2
 aws cloudformation delete-stack --stack-name aws-5-mins-s3-permissions --region us-east-2
-
 ```
-
 
 # Additional Resources
 * [Deploy Conformance Packs across an Organization with Automatic Remediation](https://aws.amazon.com/blogs/mt/deploying-conformance-packs-across-an-organization-with-automatic-remediation/)
