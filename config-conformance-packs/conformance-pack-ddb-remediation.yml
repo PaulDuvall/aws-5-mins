@@ -50,8 +50,7 @@ Resources:
       Parameters:
         AutomationAssumeRole:
           StaticValue:
-            Values: !Sub   
-              - "arn:aws:iam::${AWS::AccountId}:role/PublishSnsAutomationExecutionRole"
+            Values: !Sub "arn:aws:iam::${AWS::AccountId}:role/PublishSnsAutomationExecutionRole"
         Message:
           StaticValue:
             Values:
