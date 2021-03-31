@@ -47,7 +47,7 @@ aws cloudformation deploy \
 
 It takes about 1 minute to launch the [CloudFormation stack](https://us-east-2.console.aws.amazon.com/cloudformation/home?region=us-east-2#/stacks) and provision the Config and related resources.
 
-1. Create a new S3 bucket by running this command: `aws s3 mb s3://aws-5-mins-config-$(aws sts get-caller-identity --output text --query 'Account')`
+1. Create a new S3 bucket by running this command: `aws s3 mb s3://aws-5-mins-config-$(aws sts get-caller-identity --output text --query 'Account') --region us-east-2`
 1. Go back to the [AWS Config Dashboard](https://us-east-2.console.aws.amazon.com/config/home?region=us-east-2#/rules) to review the Config Rules.
 1. Select **S3BucketServerSideEncryptionEnabled**. Click **Re-evaluate** from the **Actions** button. 
 
