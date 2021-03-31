@@ -57,7 +57,7 @@ TBD
 ```
 
 aws cloudformation delete-stack --stack-name aws-5-mins-s3-remediation --region us-east-2
-aws cloudformation delete-stack --stack-name aws-5-mins-s3-remediation --region us-east-2
+aws cloudformation delete-stack --stack-name aws-5-mins-s3-permissions --region us-east-2
 
 ```
 
