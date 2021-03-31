@@ -16,16 +16,19 @@ TBD
 1. From your [AWS CloudShell Environment](https://us-east-2.console.aws.amazon.com/cloudshell/home?region=us-east-2#) in the **us-east-2** region, run the following commands: 
 
 ```
-git clone https://github.com/aws-samples/amazon-macie-demo-with-sample-data.git
-cd amazon-macie-demo-with-sample-data
+git clone https://github.com/PaulDuvall/aws-encryption-workshop.git
+cd aws-encryption-workshop/lesson6-detect
+aws s3 mb s3://aws-5-mins-codepipeline-$(aws sts get-caller-identity --output text --query 'Account')
+zip aws-5-mins-codepipeline.zip *.*
+aws s3 sync ~/aws-encryption-workshop/lesson6-detect s3://aws-5-mins-codepipeline-$(aws sts get-caller-identity --output text --query 'Account')
 ```
 
 1. Run this command to launch a CloudFormation stack that generates CodePipeline and related resources.  
 
 ```
 aws cloudformation deploy \
---stack-name aws-5-mins-macie \
---template-file macie.yaml \
+--stack-name aws-5-mins-codepipeline \
+--template-file ceoa-6-mcr-pipeline.yml \
 --capabilities CAPABILITY_NAMED_IAM \
 --no-fail-on-empty-changeset \
 --region us-east-2
@@ -43,7 +46,7 @@ TBD
 # Delete Resources
 
 ```
-aws cloudformation delete-stack --stack-name aws-5-mins-SERVICENAME --region us-east-2
+aws cloudformation delete-stack --stack-name aws-5-mins-codepipeline --region us-east-2
 ```
 
 # Additional Resources
