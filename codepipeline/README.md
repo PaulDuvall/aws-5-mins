@@ -32,7 +32,7 @@ aws cloudformation deploy \
 --stack-name aws-5-mins-codepipeline \
 --template-file ceoa-6-mcr-pipeline.yml \
 --capabilities CAPABILITY_NAMED_IAM \
---parameter-overrides EmailAddress=CHANGE-EMAIL-ADDRESS CodeCommitS3Bucket=aws-5-mins-codepipeline-$(aws sts get-caller-identity --output text --query 'Account') CodeCommitS3Key=aws-5-mins-codepipeline.zip \
+--parameter-overrides CodeCommitS3Bucket=aws-5-mins-codepipeline-$(aws sts get-caller-identity --output text --query 'Account') CodeCommitS3Key=aws-5-mins-codepipeline.zip \
 
 --no-fail-on-empty-changeset \
 --region us-east-2
@@ -50,7 +50,7 @@ TBD
 # Delete Resources
 
 ```
-aws s3api list-buckets --query 'Buckets[?starts_with(Name, `aws-5-mins-`) == `true`].[Name]' --output text | xargs -I {} aws s3 rb s3://{} --force
+aws s3api list-buckets --query 'Buckets[?starts_with(Name, `aws-5-mins-codepipeline`) == `true`].[Name]' --output text | xargs -I {} aws s3 rb s3://{} --force
 aws cloudformation delete-stack --stack-name aws-5-mins-codepipeline --region us-east-2
 ```
 

@@ -31,7 +31,7 @@ aws cloudformation deploy \
 --stack-name ccoa-2-cfn-nag-pipeline \
 --template-file ccoa-2-cfn-nag-pipeline.yml \
 --capabilities CAPABILITY_NAMED_IAM \
---parameter-overrides CodeCommitS3Bucket=csoa-1-$(aws sts get-caller-identity --output text --query 'Account') CodeCommitS3Key=csoa-1-examples.zip \
+--parameter-overrides EmailAddress=you@example.com CodeCommitS3Bucket=csoa-1-$(aws sts get-caller-identity --output text --query 'Account') CodeCommitS3Key=csoa-1-examples.zip \
 --no-fail-on-empty-changeset \
 --region us-east-1
 ```
