@@ -27,8 +27,8 @@ cd aws-5-mins/config-conformance-packs
 
 ```
 aws cloudformation deploy \
---stack-name aws-5-mins-s3-permissons \
---template-file s3-permissons.yml \
+--stack-name aws-5-mins-s3-permissions \
+--template-file s3-permissions.yml \
 --capabilities CAPABILITY_NAMED_IAM \
 --no-fail-on-empty-changeset \
 --region us-east-2
@@ -56,7 +56,9 @@ TBD
 
 ```
 
-aws cloudformation delete-stack --stack-name aws-5-mins-SERVICENAME --region us-east-2
+aws cloudformation delete-stack --stack-name aws-5-mins-s3-remediation --region us-east-2
+aws cloudformation delete-stack --stack-name aws-5-mins-s3-remediation --region us-east-2
+
 ```
 
 
