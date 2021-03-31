@@ -47,9 +47,7 @@ TBD
 # Delete Resources
 
 ```
-aws s3api list-buckets --query 'Buckets[?starts_with(Name, `ccoa-`) == `true`].[Name]' --output text | xargs -I {} aws s3 rb s3://{} --force
-
-aws s3api list-buckets --query 'Buckets[?starts_with(Name, `csoa-`) == `true`].[Name]' --output text | xargs -I {} aws s3 rb s3://{} --force
+aws s3api list-buckets --query 'Buckets[?starts_with(Name, `aws-5-mins-cfn-nag-`) == `true`].[Name]' --output text | xargs -I {} aws s3 rb s3://{} --force
 
 aws cloudformation delete-stack --stack-name aws-5-mins-cfn-nag-pipeline --region us-east-2
 ```
