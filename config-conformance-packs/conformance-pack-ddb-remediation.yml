@@ -1,0 +1,73 @@
+################################################################################
+#
+#   Conformance Pack:
+#     Operational Best Practices for Amazon DynamoDB, with Remediation
+# Based on https://raw.githubusercontent.com/awslabs/aws-config-rules/master/aws-config-conformance-packs/Operational-Best-Practices-for-Amazon-DynamoDB-with-Remediation.yaml
+#   See Parameters section for names and descriptions of required parameters. 
+#
+################################################################################
+
+Parameters:
+#   SnsTopicForPublishNotificationArn:
+#     Description: The ARN of the SNS topic to which the notification about the auto-remediation status should be published.
+#     Type: String
+
+Parameters:
+  EmailAddress:
+    Description: Email Address for sending SNS notifications
+    Type: String
+    Default: fake-email@fake-fake-fake-email.com 
+
+Resources:
+  MySNSTopic:
+    Type: AWS::SNS::Topic
+    Properties:
+      Subscription:
+      - Endpoint:
+          Ref: EmailAddress
+        Protocol: email
+  DynamoDbAutoscalingEnabled:
+    Properties:
+      ConfigRuleName: DynamoDbAutoscalingEnabled
+      Description: "This rule checks whether Auto Scaling is enabled on your DynamoDB tables. Optionally you can set the read and write capacity units for the table."
+      MaximumExecutionFrequency: Six_Hours
+      Scope:
+        ComplianceResourceTypes:
+          - "AWS::DynamoDB::Table"
+      Source:
+        Owner: AWS
+        SourceIdentifier: DYNAMODB_AUTOSCALING_ENABLED
+    Type: "AWS::Config::ConfigRule"
+  DynamoDbAutoscalingEnabledManualRemediation:
+    DependsOn: DynamoDbAutoscalingEnabled
+    Type: 'AWS::Config::RemediationConfiguration'
+    Properties:
+      ConfigRuleName: DynamoDbAutoscalingEnabled
+      ResourceType: "AWS::DynamoDB::Table"
+      TargetId: "AWS-PublishSNSNotification"
+      TargetType: "SSM_DOCUMENT"
+      TargetVersion: "1"
+      Parameters:
+        AutomationAssumeRole:
+          StaticValue:
+            Values: 
+              Fn::Sub:
+              - "arn:aws:iam::${AWS::AccountId}:role/PublishSnsAutomationExecutionRole"
+        Message:
+          StaticValue:
+            Values:
+              - "A table with no autoscaling configuration found"
+        TopicArn:
+          StaticValue:
+            Values:
+              - Ref: MySNSTopic
+
+  DynamoDbThroughputLimitCheck:
+    Properties:
+      ConfigRuleName: DynamoDbThroughputLimitCheck
+      Description: "Checks whether provisioned DynamoDB throughput is approaching the maximum limit for your account."
+      MaximumExecutionFrequency: Six_Hours
+      Source:
+        Owner: AWS
+        SourceIdentifier: DYNAMODB_THROUGHPUT_LIMIT_CHECK
+    Type: "AWS::Config::ConfigRule"
