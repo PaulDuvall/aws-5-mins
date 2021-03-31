@@ -33,7 +33,7 @@ aws cloudformation deploy \
 --capabilities CAPABILITY_NAMED_IAM \
 --parameter-overrides CodeCommitS3Bucket=aws-5-mins-cfn-nag-$(aws sts get-caller-identity --output text --query 'Account') CodeCommitS3Key=aws-5-mins-cfn-nag-examples.zip \
 --no-fail-on-empty-changeset \
---region us-east-1
+--region us-east-2
 ```
 
 * It takes about 1 minute to launch the [CloudFormation stack](https://us-east-2.console.aws.amazon.com/cloudformation/home?region=us-east-2#/stacks) and provision the CodePipeline resources.
