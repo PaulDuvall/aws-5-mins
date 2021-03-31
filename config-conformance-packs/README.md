@@ -19,7 +19,7 @@ TBD
 sudo rm -rf ~/aws-5-mins
 cd ~
 git clone https://github.com/PaulDuvall/aws-5-mins.git
-cd config-conformance-packs
+cd aws-5-mins/config-conformance-packs
 ```
 
 1. Run this command to launch a CloudFormation stack that generates Config Conformance Packs and related resources.  
