@@ -16,6 +16,7 @@ TBD
 1. From your [AWS CloudShell Environment](https://us-east-2.console.aws.amazon.com/cloudshell/home?region=us-east-2#) in the **us-east-2** region, run the following commands: 
 
 ```
+sudo rm -rf ~/aws-encryption-workshop
 git clone https://github.com/PaulDuvall/aws-encryption-workshop.git
 cd aws-encryption-workshop/lesson6-detect
 aws s3 mb s3://aws-5-mins-codepipeline-$(aws sts get-caller-identity --output text --query 'Account')
