@@ -16,17 +16,30 @@ TBD
 1. From your [AWS CloudShell Environment](https://us-east-2.console.aws.amazon.com/cloudshell/home?region=us-east-2#) in the **us-east-2** region, run the following commands: 
 
 ```
-git clone https://github.com/aws-samples/amazon-macie-demo-with-sample-data.git
-cd amazon-macie-demo-with-sample-data
+sudo rm -rf ~/aws-5-mins
+cd ~
+git clone https://github.com/PaulDuvall/aws-5-mins.git
+cd config-conformance-packs
 ```
 
 1. Run this command to launch a CloudFormation stack that generates Config Conformance Packs and related resources.  
 
+
+```
+aws cloudformation deploy \
+--stack-name aws-5-mins-ddb \
+--template-file ddb.yml \
+--capabilities CAPABILITY_NAMED_IAM \
+--no-fail-on-empty-changeset \
+--region us-east-2
+```
+
 ```
 aws cloudformation deploy \
 --stack-name aws-5-mins-config-conformance \
---template-file macie.yaml \
+--template-file conformance-pack-ddb-remediation.yml \
 --capabilities CAPABILITY_NAMED_IAM \
+--parameter-overrides EmailAddress=CHANGE-EMAIL-ADDRESS \
 --no-fail-on-empty-changeset \
 --region us-east-2
 ```
