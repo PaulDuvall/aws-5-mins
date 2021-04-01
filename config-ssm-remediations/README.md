@@ -2,8 +2,17 @@
 
 You can find the 5-minute video that walks through all of the steps described here. 
 
-In this episode, we'll be looking at AWS Config Rules and SSM Remediations.
+In this episode, we'll be looking at [AWS Config Rules](https://docs.aws.amazon.com/config/latest/developerguide/evaluate-config_use-managed-rules.html) and remediations with [AWS Systems Manager Documents](https://docs.aws.amazon.com/systems-manager/latest/userguide/sysman-ssm-docs.html).
 
+AWS Config helps assess, audit, and evaluate the configurations of resources. With Config, you can see changes to resources and their relationships with other AWS resources. 
+
+You can write Config Rules that compare current resource state to desired state. These rules can integrate with other services for alerting and remediation. 
+
+You can create [Conformance Packs](https://docs.aws.amazon.com/config/latest/developerguide/conformance-packs.html) which couple rules with remediation across an AWS Organization.
+
+Config helps with compliance auditing, security analysis, change management, and operational troubleshooting.
+
+[Amazon EventBridge](https://aws.amazon.com/eventbridge/) delivers a stream of real-time events. To process these events, you can define an event rule with event patterns that define how to filter these events. It it matches the event pattern, the event is sent to a target (or targets) you define in the rule. You can configure these event rules to filter on certain Config Rule events and run remediations via Systems Manager Documents. 
 
 # CloudFormation Support
 * [AWS::Config::ConfigRule](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-config-configrule.html) - TBD
