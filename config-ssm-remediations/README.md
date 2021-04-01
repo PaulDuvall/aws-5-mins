@@ -2,7 +2,7 @@
 
 You can find the 5-minute video that walks through all of the steps described here. 
 
-In this episode, we'll be looking at AWS Config Conformance Packs.
+In this episode, we'll be looking at AWS Config Rules and SSM Remediations.
 
 TBD
 
