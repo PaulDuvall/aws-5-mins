@@ -46,7 +46,7 @@ aws cloudformation deploy \
 * It takes about 1 minute to launch the [CloudFormation stack](https://us-east-2.console.aws.amazon.com/cloudformation/home?region=us-east-2#/stacks) and provision the CodePipeline resources.
 * Go to the [CodePipeline Dashboard](https://us-east-2.console.aws.amazon.com/codepipeline/).
 * View the [buildspec.yml](https://github.com/PaulDuvall/aws-compliance-workshop/blob/master/lesson2-preventive/buildspec.yml) file that runs cfn_nag.
-* Fix the CloudFormation template in [CodeCommit](https://us-east-2.console.aws.amazon.com/codesuite/codecommit/repositories?region=us-east-2) and view [CodePipeline Dashboard](https://us-east-2.console.aws.amazon.com/codepipeline/).
+* Fix the CloudFormation template in [CodeCommit](https://us-east-2.console.aws.amazon.com/codesuite/codecommit/repositories?region=us-east-2) and view the results in the [CodePipeline Dashboard](https://us-east-2.console.aws.amazon.com/codepipeline/).
 
 # Delete Resources
 
