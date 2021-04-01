@@ -27,7 +27,7 @@ Config helps with compliance auditing, security analysis, change management, and
 sudo rm -rf ~/aws-5-mins
 cd ~
 git clone https://github.com/PaulDuvall/aws-5-mins.git
-cd aws-5-mins/config-conformance-packs
+cd aws-5-mins/config-ssm-remediations
 ```
 
 1. Run this command to launch a CloudFormation stack that generates Config Conformance Packs and related resources.  
@@ -79,4 +79,4 @@ aws cloudformation delete-stack --stack-name aws-5-mins-s3-permissions --region 
 
 # Additional Resources
 * [Deploy Conformance Packs across an Organization with Automatic Remediation](https://aws.amazon.com/blogs/mt/deploying-conformance-packs-across-an-organization-with-automatic-remediation/)
-* [Operational-Best-Practices-for-Amazon-DynamoDB-with-Remediation.yaml](https://github.com/awslabs/aws-config-rules/blob/master/aws-config-conformance-packs/Operational-Best-Practices-for-Amazon-DynamoDB-with-Remediation.yaml)
+* [Operational-Best-Practices-for-Amazon-DynamoDB-with-Remediation.yaml](https://github.com/awslabs/aws-config-rules/blob/master/aws-config-ssm-remediations/Operational-Best-Practices-for-Amazon-DynamoDB-with-Remediation.yaml)
