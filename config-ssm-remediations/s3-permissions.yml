@@ -1,5 +1,5 @@
 ---
-Description: Permissions for Automated Remediation of NonCompliant S3 Resources
+Description: Permissions for Automated Remediation of NonCompliant S3 Resources. Based on https://github.com/awslabs/aws-config-rules/blob/master/aws-config-conformance-packs/Operational-Best-Practices-for-Amazon-S3-with-Remediation.yaml
 Resources: 
   S3OperationsAutomationsExecutionRole: 
     Type: "AWS::IAM::Role"
