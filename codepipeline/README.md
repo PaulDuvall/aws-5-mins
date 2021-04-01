@@ -2,7 +2,7 @@
 
 You can find the 5-minute video that walks through all of the steps described here. 
 
-In this episode, we'll be looking at AWS CodePipeline. CodePipeline is a fully-managed Continuous Delivery service which provides an automated workflow for releasing software to end users. It integrates many AWS services and 3rd-party tools and you can create your own custom integrations as well. Every time there's a code change, it gets the latest code from source control, builds it, tests it, deploys, and releases it to end users. At any point, you can see a visualized workflow of the state of a release for any revision.
+In this episode, we'll be looking at [AWS CodePipeline](https://aws.amazon.com/codepipeline/). CodePipeline is a fully-managed Continuous Delivery service which provides an automated workflow for releasing software to end users. It integrates many AWS services and 3rd-party tools and you can create your own custom integrations as well. Every time there's a code change, it gets the latest code from source control, builds it, tests it, deploys, and releases it to end users. At any point, you can see a visualized workflow of the state of a release for any revision.
 
 CodePipeline is composed of a series of stages. Stages are composed of a collection of actions. Actions perform the work in a pipeline. Within actions, you will see integrations with other tools, running commands to build, test, deploy, and release your service.
 
@@ -43,7 +43,7 @@ aws cloudformation deploy \
 * Go to the [CodePipeline Dashboard](https://us-east-2.console.aws.amazon.com/codepipeline/).
 
 # Pricing
-You a charged $1.00 per active pipeline per month. An active pipeline is one that has been running for at least 30 days. For more information, see [CodePipeline Pricing](https://aws.amazon.com/codepipeline/pricing/).
+You a charged $1.00 per active pipeline per month. An active pipeline is one that has been running for at least 30 days and has at least one code change. For more information, see [CodePipeline Pricing](https://aws.amazon.com/codepipeline/pricing/).
 
 # Delete Resources
 
