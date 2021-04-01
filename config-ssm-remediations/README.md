@@ -64,7 +64,7 @@ It takes about 1 minute to launch the [CloudFormation stack](https://us-east-2.c
 1. Get bucket encryption again by running this command: `aws s3api get-bucket-encryption --bucket aws-5-mins-config-$(aws sts get-caller-identity --output text --query 'Account') --region us-east-2`. You should received no errors.
 
 # Pricing
-TBD
+AWS Config charges $0.001 per rule evaluation per region for the first 100,000 rule evaluations. See [AWS Config Pricing](https://aws.amazon.com/config/pricing/) for more information. The rate goes down after the first 100,000 rule evaluations.
 
 # Delete Resources
 
