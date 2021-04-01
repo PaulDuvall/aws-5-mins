@@ -8,7 +8,7 @@ With cfn_nag, you can perform static code analysis of AWS CloudFormation templat
 
 Here are some examples of the types of checks cfn_nag can perform:
 * Identify EC2 Instance Security Groups with wide-open ingress of 0.0.0.0/0
-* Identify IAM Permissions that employ wildcards to all (*) resources or all (*) actions
+* Identify IAM Permissions that employ wildcards to all `(*)` resources or all `(*)` actions
 * Verify that EBS volumes are encrypted
 * Verify that access logging is enabled
 
