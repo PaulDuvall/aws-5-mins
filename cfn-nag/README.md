@@ -2,14 +2,19 @@
 
 You can find the 5-minute video that walks through all of the steps described here. 
 
-In this episode, we'll be looking at TBD
+In this episode, we'll be looking at Stelligent's [cfn_nag](https://github.com/stelligent/cfn_nag) open source framework. cfn_nag is a static analysis tool for finding security vulnerabilities in CloudFormation templates.
 
-TBD
+With cfn_nag, you can perform static code analysis of AWS CloudFormation templates to prevent undesirable resource specifications, perform proactive preventative controls such as preventng AWS resource provisioning. You can also integrate cfn_nag into a deployment pipeline.
 
+Here are some examples of the types of checks cfn_nag can perform:
+* Identify EC2 Instance Security Groups with wide-open ingress of 0.0.0.0/0
+* Identify IAM Permissions that employ wildcards to all (*) resources or all (*) actions
+* Verify that EBS volumes are encrypted
+* Verify that access logging is enabled
 
-# CloudFormation Support
-TBD
+cfn_nag includes rules that apply universally across environments and enterprises. It also supports the development of custom rules to allow organization-specific rules for compliance and security controls.
 
+One of the key benefits of cfn_nag is that you can learn about security vulnerabilities prior to provisioning AWS resources which can help reduce costs and risk.
 
 ## Launch CloudFormation Stack
 
@@ -38,11 +43,6 @@ aws cloudformation deploy \
 
 * It takes about 1 minute to launch the [CloudFormation stack](https://us-east-2.console.aws.amazon.com/cloudformation/home?region=us-east-2#/stacks) and provision the CodePipeline resources.
 * Go to the [CodePipeline Dashboard](https://us-east-2.console.aws.amazon.com/codepipeline/).
-
-# Deployment Pipeline
-
-# Pricing
-TBD
 
 # Delete Resources
 
