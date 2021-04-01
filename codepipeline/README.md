@@ -45,6 +45,9 @@ aws cloudformation deploy \
 # Pricing
 You a charged $1.00 per active pipeline per month. An active pipeline is one that has been running for at least 30 days and has at least one code change. For more information, see [CodePipeline Pricing](https://aws.amazon.com/codepipeline/pricing/).
 
+## View Code
+1. View [ceoa-6-mcr-pipeline.yml](https://github.com/PaulDuvall/aws-encryption-workshop/blob/master/lesson6-detect/ceoa-6-mcr-pipeline.yml).
+
 # Delete Resources
 
 ```
