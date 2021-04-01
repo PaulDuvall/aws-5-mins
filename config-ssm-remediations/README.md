@@ -21,7 +21,7 @@ Config helps with compliance auditing, security analysis, change management, and
 
 ## Launch CloudFormation Stack
 1. Enable the AWS Config Recorder from the [AWS Config Console](https://us-east-2.console.aws.amazon.com/config/home?region=us-east-2#/dashboard).
-1. From your [AWS CloudShell Environment](https://us-east-2.console.aws.amazon.com/cloudshell/home?region=us-east-2#) in the **us-east-2** region, run the following commands: 
+1. From your [AWS CloudShell Environment](https://us-east-2.console.aws.amazon.com/cloudshell/home?region=us-east-2#) in the **us-east-2** region, run this command to get the latest code: 
 
 ```
 sudo rm -rf ~/aws-5-mins
@@ -30,7 +30,7 @@ git clone https://github.com/PaulDuvall/aws-5-mins.git
 cd aws-5-mins/config-ssm-remediations
 ```
 
-1. Run this command to launch a CloudFormation stack that generates Config Conformance Packs and related resources.  
+Then, run this command to launch a CloudFormation stack that generates the necessary IAM permissions for the Config Rules and remediations.
 
 ```
 aws cloudformation deploy \
@@ -41,7 +41,9 @@ aws cloudformation deploy \
 --region us-east-2
 ```
 
-* It takes about 1 minute to launch the [CloudFormation stack](https://us-east-2.console.aws.amazon.com/cloudformation/home?region=us-east-2#/stacks) and provision the IAM permissions for this solution.
+It takes about 1 minute to launch the [CloudFormation stack](https://us-east-2.console.aws.amazon.com/cloudformation/home?region=us-east-2#/stacks) and provision the IAM permissions for this solution.
+
+Next, run the command below to launch a CloudFormation stack that generates the Config Rules and remediation resources.
 
 ```
 aws cloudformation deploy \
@@ -60,8 +62,6 @@ It takes about 1 minute to launch the [CloudFormation stack](https://us-east-2.c
 1. Select **S3BucketServerSideEncryptionEnabled**. Click **Re-evaluate** from the **Actions** button. 
 1. Wait about 10 minutes and go back to the [AWS Config Dashboard](https://us-east-2.console.aws.amazon.com/config/home?region=us-east-2#/rules).
 1. Get bucket encryption again by running this command: `aws s3api get-bucket-encryption --bucket aws-5-mins-config-$(aws sts get-caller-identity --output text --query 'Account') --region us-east-2`. You should received no errors.
-
-# Deployment Pipeline
 
 # Pricing
 TBD
