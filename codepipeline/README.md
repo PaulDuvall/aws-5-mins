@@ -53,6 +53,7 @@ You a charged $1.00 per active pipeline per month. An active pipeline is one tha
 ```
 aws s3api list-buckets --query 'Buckets[?starts_with(Name, `aws-5-mins-codepipeline`) == `true`].[Name]' --output text | xargs -I {} aws s3 rb s3://{} --force
 aws cloudformation delete-stack --stack-name aws-5-mins-codepipeline-us-east-2 --region us-east-2
+aws cloudformation wait stack-delete-complete --stack-name aws-5-mins-codepipeline-us-east-2 --region us-east-2
 aws cloudformation delete-stack --stack-name aws-5-mins-codepipeline --region us-east-2
 ```
 
