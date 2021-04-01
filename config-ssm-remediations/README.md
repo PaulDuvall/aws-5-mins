@@ -4,12 +4,11 @@ You can find the 5-minute video that walks through all of the steps described he
 
 In this episode, we'll be looking at AWS Config Rules and SSM Remediations.
 
-TBD
-
 
 # CloudFormation Support
-TBD
-
+* [AWS::Config::ConfigRule](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-config-configrule.html) - TBD
+* [AWS::Config::RemediationConfiguration](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-config-remediationconfiguration.html) - TBD
+* [AWS::Config::ConformancePack](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-config-conformancepack.html)
 
 ## Launch CloudFormation Stack
 1. Enable the AWS Config Recorder from the [AWS Config Console](https://us-east-2.console.aws.amazon.com/config/home?region=us-east-2#/dashboard).
@@ -23,7 +22,6 @@ cd aws-5-mins/config-conformance-packs
 ```
 
 1. Run this command to launch a CloudFormation stack that generates Config Conformance Packs and related resources.  
-
 
 ```
 aws cloudformation deploy \
