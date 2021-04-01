@@ -1,4 +1,5 @@
-
+---
+Description: Perform Automated Remediation of NonCompliant S3 Resources
 Resources:
   S3BucketPublicReadProhibited:
     Type: AWS::Config::ConfigRule

@@ -1,3 +1,5 @@
+---
+Description: Permissions for Automated Remediation of NonCompliant S3 Resources
 Resources: 
   S3OperationsAutomationsExecutionRole: 
     Type: "AWS::IAM::Role"
