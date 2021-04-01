@@ -2,14 +2,16 @@
 
 You can find the 5-minute video that walks through all of the steps described here. 
 
-In this episode, we'll be looking at AWS CodePipeline. 
+In this episode, we'll be looking at AWS CodePipeline. CodePipeline is a fully-managed Continuous Delivery service which provides an automated workflow for releasing software to end users. It integrates many AWS services and 3rd-party tools and you can create your own custom integrations as well. Every time there's a code change, it gets the latest code from source control, builds it, tests it, deploys, and releases it to end users. At any point, you can see a visualized workflow of the state of a release for any revision.
 
-TBD
+CodePipeline is composed of a series of stages. Stages are composed of a collection of actions. Actions perform the work in a pipeline. Within actions, you will see integrations with other tools, running commands to build, test, deploy, and release your service.
 
+Currently, there are six action types. They are: Source, Build, Test, Deploy, Invoke, and Approval. You can run actions in parallel. A stage is not complete until all actions are successful.
 
 # CloudFormation Support
-TBD
-
+* [AWS::CodePipeline::CustomActionType](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-codepipeline-customactiontype.html) - Creates a custom action within a pipeline for a non-supported resource.
+* [AWS::CodePipeline::Pipeline](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-codepipeline-pipeline.html) - Provisions the pipeline workflow itself that defines the series of stages and actions that makeup the pipeline.
+* [AWS::CodePipeline::Webhook](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-codepipeline-webhook.html) - Provisons the webhook that triggers your pipeline to start every time an external event occurs.
 
 ## Launch CloudFormation Stack
 
@@ -40,11 +42,8 @@ aws cloudformation deploy \
 * It takes about 1 minute to launch the [CloudFormation stack](https://us-east-2.console.aws.amazon.com/cloudformation/home?region=us-east-2#/stacks) and provision the CodePipeline resources.
 * Go to the [CodePipeline Dashboard](https://us-east-2.console.aws.amazon.com/codepipeline/).
 
-
-# Deployment Pipeline
-
 # Pricing
-TBD
+You a charged $1.00 per active pipeline per month. An active pipeline is one that has been running for at least 30 days. For more information, see [CodePipeline Pricing](https://aws.amazon.com/codepipeline/pricing/).
 
 # Delete Resources
 
