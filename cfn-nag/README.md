@@ -7,10 +7,10 @@ In this episode, we'll be looking at Stelligent's [cfn_nag](https://github.com/s
 With cfn_nag, you can perform static code analysis of AWS CloudFormation templates to prevent undesirable resource specifications, perform proactive preventative controls such as preventng AWS resource provisioning. You can also integrate cfn_nag into a deployment pipeline.
 
 Here are some examples of the types of checks cfn_nag can perform:
-* Identify EC2 Instance Security Groups with wide-open ingress of `0.0.0.0/0`
-* Identify IAM Permissions that employ wildcards to all `(*)` resources or all `(*)` actions
-* Verify that EBS volumes are encrypted
-* Verify that access logging is enabled
+* Identify EC2 Instance Security Groups with wide-open ingress of `0.0.0.0/0`.
+* Identify IAM Permissions that employ wildcards to all `(*)` resources or all `(*)` actions.
+* Verify that EBS volumes are encrypted.
+* Verify that access logging is enabled.
 
 cfn_nag includes rules that apply universally across environments and enterprises. It also supports the development of custom rules to allow organization-specific rules for compliance and security controls.
 
