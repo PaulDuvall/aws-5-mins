@@ -15,9 +15,9 @@ Config helps with compliance auditing, security analysis, change management, and
 [Amazon EventBridge](https://aws.amazon.com/eventbridge/) delivers a stream of real-time events. To process these events, you can define an event rule with event patterns that define how to filter these events. It it matches the event pattern, the event is sent to a target (or targets) you define in the rule. You can configure these event rules to filter on certain Config Rule events and run remediations via Systems Manager Documents. 
 
 # CloudFormation Support
-* [AWS::Config::ConfigRule](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-config-configrule.html) - TBD
-* [AWS::Config::RemediationConfiguration](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-config-remediationconfiguration.html) - TBD
-* [AWS::Config::ConformancePack](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-config-conformancepack.html)
+* [AWS::Config::ConfigRule](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-config-configrule.html) - Specifies an AWS Config rule for evaluating whether your AWS resources comply with your desired configurations. 
+* [AWS::Config::RemediationConfiguration](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-config-remediationconfiguration.html) - Represents the details about the remediation configuration that includes the remediation action, parameters, and data to execute the action.
+* [AWS::Config::ConformancePack](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-config-conformancepack.html) - A conformance pack is a collection of AWS Config rules and remediation actions that can be easily deployed in an account and a region.
 
 ## Launch CloudFormation Stack
 1. Enable the AWS Config Recorder from the [AWS Config Console](https://us-east-2.console.aws.amazon.com/config/home?region=us-east-2#/dashboard).
