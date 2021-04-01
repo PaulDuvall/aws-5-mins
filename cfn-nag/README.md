@@ -12,6 +12,8 @@ Here are some examples of the types of checks cfn_nag can perform:
 * Verify that EBS volumes are encrypted.
 * Verify that access logging is enabled.
 
+For a complete list of built-in rules, you can run `cfn_nag_rules` from the command line once the tool is installed. 
+
 cfn_nag includes rules that apply universally across environments and enterprises. It also supports the development of custom rules to allow organization-specific rules for compliance and security controls.
 
 One of the key benefits of cfn_nag is that you can learn about security vulnerabilities prior to provisioning AWS resources which can help reduce costs and risk.
