@@ -72,12 +72,8 @@ AWS Config charges $0.001 per rule evaluation per region for the first 100,000 r
 aws s3api list-buckets --query 'Buckets[?starts_with(Name, `s3serversideloggingbucket-`) == `true`].[Name]' --output text | xargs -I {} aws s3 rb s3://{} --force
 aws s3api list-buckets --query 'Buckets[?starts_with(Name, `aws-5-mins-`) == `true`].[Name]' --output text | xargs -I {} aws s3 rb s3://{} --force
 
-sleep 15
-
 aws cloudformation delete-stack --stack-name aws-5-mins-s3-remediation --region us-east-2
-
-sleep 45
-
+aws cloudformation wait stack-delete-complete --stack-name aws-5-mins-s3-remediation --region us-east-2
 aws cloudformation delete-stack --stack-name aws-5-mins-s3-permissions --region us-east-2
 ```
 
