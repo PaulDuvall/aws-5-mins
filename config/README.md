@@ -12,7 +12,7 @@ You can create [Conformance Packs](https://docs.aws.amazon.com/config/latest/dev
 
 Config helps with compliance auditing, security analysis, change management, and operational troubleshooting.
 
-[Amazon EventBridge](https://aws.amazon.com/eventbridge/) delivers a stream of real-time events. To process these events, you can define an event rule with event patterns that define how to filter these events. It it matches the event pattern, the event is sent to a target (or targets) you define in the rule. You can configure these event rules to filter on certain Config Rule events and run remediations via Systems Manager Documents. 
+An AWS Systems Manager document (SSM document) defines the actions that Systems Manager performs on your managed instances. Systems Manager includes more than 100 pre-configured documents that you can use by specifying parameters at runtime.
 
 # CloudFormation Support
 * [AWS::Config::ConfigRule](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-config-configrule.html) - Specifies an AWS Config rule for evaluating whether your AWS resources comply with your desired configurations. 
