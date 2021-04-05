@@ -120,6 +120,10 @@ aws cloudformation wait stack-delete-complete --stack-name aws-5-mins-s3-remedia
 aws cloudformation delete-stack --stack-name aws-5-mins-s3-permissions --region us-east-2
 aws cloudformation wait stack-delete-complete --stack-name aws-5-mins-s3-permissions --region us-east-2
 
+
+aws cloudformation delete-stack --stack-name aws-5-mins-eb-config-lambda-us-east-2 --region us-east-2
+aws cloudformation wait stack-delete-complete --stack-name aws-5-mins-eb-config-lambda-us-east-2 --region us-east-2
+
 aws cloudformation delete-stack --stack-name aws-5-mins-eb-config-lambda --region us-east-2
 aws cloudformation wait stack-delete-complete --stack-name aws-5-mins-eb-config-lambda --region us-east-2
 
