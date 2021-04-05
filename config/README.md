@@ -19,6 +19,8 @@ An AWS Systems Manager document (SSM document) defines the actions that Systems 
 * [AWS::Config::RemediationConfiguration](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-config-remediationconfiguration.html) - Represents the details about the remediation configuration that includes the remediation action, parameters, and data to execute the action.
 * [AWS::Config::ConformancePack](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-config-conformancepack.html) - A conformance pack is a collection of AWS Config rules and remediation actions that can be easily deployed in an account and a region.
 
+# Example 1
+
 ## Launch CloudFormation Stack
 1. Enable the AWS Config Recorder from the [AWS Config Console](https://us-east-2.console.aws.amazon.com/config/home?region=us-east-2#/dashboard).
 1. From your [AWS CloudShell Environment](https://us-east-2.console.aws.amazon.com/cloudshell/home?region=us-east-2#) in the **us-east-2** region, run this command to get the latest code: 
@@ -27,7 +29,7 @@ An AWS Systems Manager document (SSM document) defines the actions that Systems 
 sudo rm -rf ~/aws-5-mins
 cd ~
 git clone https://github.com/PaulDuvall/aws-5-mins.git
-cd aws-5-mins/config-ssm-remediations
+cd aws-5-mins/config
 ```
 
 Then, run this command to launch a CloudFormation stack that generates the necessary IAM permissions for the Config Rules and remediations.
@@ -63,9 +65,46 @@ It takes about 1 minute to launch the [CloudFormation stack](https://us-east-2.c
 1. Wait about 10 minutes and go back to the [AWS Config Dashboard](https://us-east-2.console.aws.amazon.com/config/home?region=us-east-2#/rules).
 1. Get bucket encryption again by running this command: `aws s3api get-bucket-encryption --bucket aws-5-mins-config-$(aws sts get-caller-identity --output text --query 'Account') --region us-east-2`. You should received no errors.
 
+
+# Example 2
+
+## Launch CloudFormation Stack
+1. Enable the AWS Config Recorder from the [AWS Config Console](https://us-east-2.console.aws.amazon.com/config/home?region=us-east-2#/dashboard).
+1. From your [AWS CloudShell Environment](https://us-east-2.console.aws.amazon.com/cloudshell/home?region=us-east-2#) in the **us-east-2** region, run this command to get the latest code: 
+
+```
+sudo rm -rf ~/aws-5-mins
+cd ~
+aws s3 mb s3://aws-5-mins-eb-config-lambda-$(aws sts get-caller-identity --output text --query 'Account')
+git clone https://github.com/PaulDuvall/aws-encryption-workshop.git
+cd aws-encryption-workshop/lesson8-continuous
+zip aws-5-mins-eb-config-lambda.zip *.*
+aws s3 sync ~/aws-encryption-workshop/lesson8-continuous s3://ceoa-8-$(aws sts get-caller-identity --output text --query 'Account')
+```
+
+Next, run the command below to launch a CloudFormation stack that generates the Config Rules and remediation resources.
+
+```
+aws cloudformation deploy \
+--stack-name aws-5-mins-eb-config-lambda \
+--template-file ceoa-8-pipeline.yml \
+--capabilities CAPABILITY_NAMED_IAM \
+--parameter-overrides S3ComplianceResourceId=aws-5-mins-unencrypted-$(aws sts get-caller-identity --output text --query 'Account') CodeCommitS3Bucket=aws-5-mins-eb-config-lambda-$(aws sts get-caller-identity --output text --query 'Account') CodeCommitS3Key=aws-5-mins-eb-config-lambda.zip \
+--no-fail-on-empty-changeset \
+--region us-east-2
+```
+
+It takes about 1 minute to launch the [CloudFormation stack](https://us-east-2.console.aws.amazon.com/cloudformation/home?region=us-east-2#/stacks) and provision the Config and related resources.
+
+1. Wait about 15 minutes and then get the encryption for a specific S3 bucket by running this command: `aws s3api get-bucket-encryption --bucket s3serversideloggingbucket-$(aws sts get-caller-identity --output text --query 'Account') --region us-east-2`. You should received an error like this: `An error occurred (ServerSideEncryptionConfigurationNotFoundError) when calling the GetBucketEncryption operation: The server side encryption configuration was not found`.
+1. Go back to the [AWS Config Dashboard](https://us-east-2.console.aws.amazon.com/config/home?region=us-east-2#/rules) to review the Config Rules.
+1. Select **S3BucketServerSideEncryptionEnabled**. Click **Re-evaluate** from the **Actions** button. 
+1. Wait about 10 minutes and go back to the [AWS Config Dashboard](https://us-east-2.console.aws.amazon.com/config/home?region=us-east-2#/rules).
+1. Get bucket encryption again by running this command: `aws s3api get-bucket-encryption --bucket aws-5-mins-eb-config-lambda-$(aws sts get-caller-identity --output text --query 'Account') --region us-east-2`. You should received no errors.
+
 ## View Code
-1. View [s3-remediation.yml](https://github.com/PaulDuvall/aws-5-mins/blob/main/config-ssm-remediations/s3-remediation.yml).
-1. View [s3-permissions.yml](https://github.com/PaulDuvall/aws-5-mins/blob/main/config-ssm-remediations/s3-permissions.yml).
+1. View [s3-remediation.yml](https://github.com/PaulDuvall/aws-5-mins/blob/main/config/s3-remediation.yml).
+1. View [s3-permissions.yml](https://github.com/PaulDuvall/aws-5-mins/blob/main/config/s3-permissions.yml).
 
 # Pricing
 AWS Config charges $0.001 per rule evaluation per region for the first 100,000 rule evaluations. See [AWS Config Pricing](https://aws.amazon.com/config/pricing/) for more information. The rate goes down after the first 100,000 rule evaluations.
@@ -83,4 +122,4 @@ aws cloudformation delete-stack --stack-name aws-5-mins-s3-permissions --region 
 
 # Additional Resources
 * [Deploy Conformance Packs across an Organization with Automatic Remediation](https://aws.amazon.com/blogs/mt/deploying-conformance-packs-across-an-organization-with-automatic-remediation/)
-* [Operational-Best-Practices-for-Amazon-DynamoDB-with-Remediation.yaml](https://github.com/awslabs/aws-config-rules/blob/master/aws-config-ssm-remediations/Operational-Best-Practices-for-Amazon-DynamoDB-with-Remediation.yaml)
+* [Operational-Best-Practices-for-Amazon-DynamoDB-with-Remediation.yaml](https://github.com/awslabs/aws-config-rules/blob/master/aws-config/Operational-Best-Practices-for-Amazon-DynamoDB-with-Remediation.yaml)
