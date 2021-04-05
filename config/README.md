@@ -73,7 +73,7 @@ It takes about 1 minute to launch the [CloudFormation stack](https://us-east-2.c
 1. From your [AWS CloudShell Environment](https://us-east-2.console.aws.amazon.com/cloudshell/home?region=us-east-2#) in the **us-east-2** region, run this command to get the latest code: 
 
 ```
-sudo rm -rf ~/aws-5-mins
+sudo rm -rf ~/aws-encryption-workshop
 cd ~
 aws s3 mb s3://aws-5-mins-eb-config-lambda-$(aws sts get-caller-identity --output text --query 'Account')
 git clone https://github.com/PaulDuvall/aws-encryption-workshop.git
