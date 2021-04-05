@@ -69,13 +69,13 @@ It takes about 1 minute to launch the [CloudFormation stack](https://us-east-2.c
 # Example 2
 
 ## Launch CloudFormation Stack
-1. Enable the AWS Config Recorder from the [AWS Config Console](https://us-east-2.console.aws.amazon.com/config/home?region=us-east-2#/dashboard).
 1. From your [AWS CloudShell Environment](https://us-east-2.console.aws.amazon.com/cloudshell/home?region=us-east-2#) in the **us-east-2** region, run this command to get the latest code: 
 
 ```
 cd ~
 sudo rm -rf ~/aws-encryption-workshop
 aws s3 mb s3://aws-5-mins-eb-config-lambda-$(aws sts get-caller-identity --output text --query 'Account')
+aws s3 mb s3://aws-5-mins-unencrypted-$(aws sts get-caller-identity --output text --query 'Account')
 git clone https://github.com/PaulDuvall/aws-encryption-workshop.git
 cd aws-encryption-workshop/lesson8-continuous
 zip aws-5-mins-eb-config-lambda.zip *.*
