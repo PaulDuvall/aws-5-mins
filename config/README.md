@@ -74,7 +74,7 @@ It takes about 1 minute to launch the [CloudFormation stack](https://us-east-2.c
 ```
 cd ~
 aws configservice describe-configuration-recorders --query 'ConfigurationRecorders[?starts_with(name, `aws-5-mins-`) == `true`].[name]' --output text | xargs -I {} aws configservice delete-configuration-recorder --configuration-recorder-name {}
-aws configservice describe-delivery-channels --query 'ConfigurationRecorders[?starts_with(name, `aws-5-mins-`) == `true`].[name]' --output text | xargs -I {} aws configservice delete-delivery-channel --delivery-channel-name {}
+aws configservice describe-delivery-channels --query 'DeliveryChannels[?starts_with(name, `aws-5-mins-`) == `true`].[name]' --output text | xargs -I {} aws configservice delete-delivery-channel --delivery-channel-name {}
 sudo rm -rf ~/aws-encryption-workshop
 aws s3 mb s3://aws-5-mins-eb-config-lambda-$(aws sts get-caller-identity --output text --query 'Account')
 aws s3 mb s3://aws-5-mins-unencrypted-$(aws sts get-caller-identity --output text --query 'Account')
