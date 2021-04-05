@@ -59,7 +59,7 @@ aws cloudformation deploy \
 It takes about 1 minute to launch the [CloudFormation stack](https://us-east-2.console.aws.amazon.com/cloudformation/home?region=us-east-2#/stacks) and provision the Config and related resources.
 
 <!--1. Create a new S3 bucket by running this command: `aws s3 mb s3://aws-5-mins-config-$(aws sts get-caller-identity --output text --query 'Account') --region us-east-2`.-->
-1. Wait about 15 minutes and then get the encryption for a specific S3 bucket by running this command: `aws s3api get-bucket-encryption --bucket s3serversideloggingbucket-$(aws sts get-caller-identity --output text --query 'Account') --region us-east-2`. You should received an error like this: `An error occurred (ServerSideEncryptionConfigurationNotFoundError) when calling the GetBucketEncryption operation: The server side encryption configuration was not found`.
+1. Wait about 15 minutes and then get the encryption for a specific S3 bucket by running this command: `aws s3api get-bucket-encryption --bucket s3serversideloggingbucket-$(aws sts get-caller-identity --output text --query 'Account') --region us-east-2`. You should received an error like this: **An error occurred (ServerSideEncryptionConfigurationNotFoundError) when calling the GetBucketEncryption operation: The server side encryption configuration was not found**.
 1. Go back to the [AWS Config Dashboard](https://us-east-2.console.aws.amazon.com/config/home?region=us-east-2#/rules) to review the Config Rules.
 1. Select **S3BucketServerSideEncryptionEnabled**. Click **Re-evaluate** from the **Actions** button. 
 1. Wait about 10 minutes and go back to the [AWS Config Dashboard](https://us-east-2.console.aws.amazon.com/config/home?region=us-east-2#/rules).
@@ -100,7 +100,7 @@ aws cloudformation deploy \
 
 It takes about 4 minutes to launch the [CloudFormation stacks](https://us-east-2.console.aws.amazon.com/cloudformation/home?region=us-east-2#/stacks) and provision the EventBridge, Config, Lambda, and related resources.
 
-1. Once both CloudFormation stacks are **CREATE_COMPLETE**, wait about 5 minutes and then get the encryption for a specific S3 bucket by running this command: `aws s3api get-bucket-encryption --bucket aws-5-mins-unencrypted-$(aws sts get-caller-identity --output text --query 'Account') --region us-east-2`. You should received an error like this: `An error occurred (ServerSideEncryptionConfigurationNotFoundError) when calling the GetBucketEncryption operation: The server side encryption configuration was not found`.
+1. Once both CloudFormation stacks are **CREATE_COMPLETE**, wait about 5 minutes and then get the encryption for a specific S3 bucket by running this command: `aws s3api get-bucket-encryption --bucket aws-5-mins-unencrypted-$(aws sts get-caller-identity --output text --query 'Account') --region us-east-2`. You should received an error like this: **An error occurred (ServerSideEncryptionConfigurationNotFoundError) when calling the GetBucketEncryption operation: The server side encryption configuration was not found**.
 1. Go back to the [AWS Config Dashboard](https://us-east-2.console.aws.amazon.com/config/home?region=us-east-2#/rules) to review the Config Rules.
 1. Select **s3-bucket-server-side-encryption-enabled**. Click **Re-evaluate** from the **Actions** button. 
 1. Wait about 10 minutes and go back to the [AWS Config Dashboard](https://us-east-2.console.aws.amazon.com/config/home?region=us-east-2#/rules).
