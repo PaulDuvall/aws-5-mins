@@ -73,6 +73,8 @@ It takes about 1 minute to launch the [CloudFormation stack](https://us-east-2.c
 
 ```
 cd ~
+aws configservice describe-configuration-recorders --query 'ConfigurationRecorders[?starts_with(name, `aws-5-mins-`) == `true`].[name]' --output text | xargs -I {} aws configservice delete-configuration-recorder --configuration-recorder-name {}
+aws configservice describe-delivery-channels --query 'ConfigurationRecorders[?starts_with(name, `aws-5-mins-`) == `true`].[name]' --output text | xargs -I {} aws configservice delete-delivery-channel --delivery-channel-name {}
 sudo rm -rf ~/aws-encryption-workshop
 aws s3 mb s3://aws-5-mins-eb-config-lambda-$(aws sts get-caller-identity --output text --query 'Account')
 aws s3 mb s3://aws-5-mins-unencrypted-$(aws sts get-caller-identity --output text --query 'Account')
@@ -114,6 +116,8 @@ AWS Config charges $0.001 per rule evaluation per region for the first 100,000 r
 ```
 aws s3api list-buckets --query 'Buckets[?starts_with(Name, `s3serversideloggingbucket-`) == `true`].[Name]' --output text | xargs -I {} aws s3 rb s3://{} --force
 aws s3api list-buckets --query 'Buckets[?starts_with(Name, `aws-5-mins-`) == `true`].[Name]' --output text | xargs -I {} aws s3 rb s3://{} --force
+
+
 
 aws cloudformation delete-stack --stack-name aws-5-mins-s3-remediation --region us-east-2
 aws cloudformation wait stack-delete-complete --stack-name aws-5-mins-s3-remediation --region us-east-2
