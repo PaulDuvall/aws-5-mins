@@ -79,7 +79,7 @@ aws s3 mb s3://aws-5-mins-eb-config-lambda-$(aws sts get-caller-identity --outpu
 git clone https://github.com/PaulDuvall/aws-encryption-workshop.git
 cd aws-encryption-workshop/lesson8-continuous
 zip aws-5-mins-eb-config-lambda.zip *.*
-aws s3 sync ~/aws-encryption-workshop/lesson8-continuous s3://ceoa-8-$(aws sts get-caller-identity --output text --query 'Account')
+aws s3 sync ~/aws-encryption-workshop/lesson8-continuous s3://aws-5-mins-eb-config-lambda-$(aws sts get-caller-identity --output text --query 'Account')
 ```
 
 Next, run the command below to launch a CloudFormation stack that generates the Config Rules and remediation resources.
@@ -118,6 +118,11 @@ aws s3api list-buckets --query 'Buckets[?starts_with(Name, `aws-5-mins-`) == `tr
 aws cloudformation delete-stack --stack-name aws-5-mins-s3-remediation --region us-east-2
 aws cloudformation wait stack-delete-complete --stack-name aws-5-mins-s3-remediation --region us-east-2
 aws cloudformation delete-stack --stack-name aws-5-mins-s3-permissions --region us-east-2
+aws cloudformation wait stack-delete-complete --stack-name aws-5-mins-s3-permissions --region us-east-2
+
+aws cloudformation delete-stack --stack-name aws-5-mins-eb-config-lambda --region us-east-2
+aws cloudformation wait stack-delete-complete --stack-name aws-5-mins-eb-config-lambda --region us-east-2
+
 ```
 
 # Additional Resources
