@@ -92,7 +92,7 @@ aws cloudformation deploy \
 --stack-name aws-5-mins-eb-config-lambda \
 --template-file ceoa-8-pipeline.yml \
 --capabilities CAPABILITY_NAMED_IAM \
---parameter-overrides S3ComplianceResourceId=aws-5-mins-encrypt-test-$(aws sts get-caller-identity --output text --query 'Account') CodeCommitS3Bucket=aws-5-mins-eb-config-lambda-$(aws sts get-caller-identity --output text --query 'Account') CodeCommitS3Key=aws-5-mins-eb-config-lambda.zip \
+--parameter-overrides S3ComplianceResourceId=aws-5-mins-encrypt-test-$(aws secretsmanager get-random-password --include-space --password-length 6 --no-exclude-numbers --exclude-uppercase --exclude-lowercase --exclude-punctuation --no-include-space --output text) CodeCommitS3Bucket=aws-5-mins-eb-config-lambda-$(aws sts get-caller-identity --output text --query 'Account') CodeCommitS3Key=aws-5-mins-eb-config-lambda.zip \
 --no-fail-on-empty-changeset \
 --region us-east-2
 ```
