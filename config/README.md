@@ -79,7 +79,6 @@ aws configservice describe-configuration-recorders --query 'ConfigurationRecorde
 aws configservice describe-delivery-channels --query 'DeliveryChannels[?starts_with(name, `default`) == `true`].[name]' --output text | xargs -I {} aws configservice delete-delivery-channel --delivery-channel-name {}
 sudo rm -rf ~/aws-encryption-workshop
 aws s3 mb s3://aws-5-mins-eb-config-lambda-$(aws sts get-caller-identity --output text --query 'Account')
-aws s3 mb s3://aws-5-mins-encrypt-test-$(aws sts get-caller-identity --output text --query 'Account')
 git clone https://github.com/PaulDuvall/aws-encryption-workshop.git
 cd aws-encryption-workshop/lesson8-continuous
 zip aws-5-mins-eb-config-lambda.zip *.*
@@ -101,6 +100,7 @@ aws cloudformation deploy \
 It takes about 4 minutes to launch the [CloudFormation stacks](https://us-east-2.console.aws.amazon.com/cloudformation/home?region=us-east-2#/stacks) and provision the EventBridge, Config, Lambda, and related resources.
 
 1. Once both CloudFormation stacks are **CREATE_COMPLETE**, get the encryption for a specific S3 bucket by running this command: `aws s3api get-bucket-encryption --bucket aws-5-mins-encrypt-test-$(aws sts get-caller-identity --output text --query 'Account') --region us-east-2`. You should received an error like this: **An error occurred (ServerSideEncryptionConfigurationNotFoundError) when calling the GetBucketEncryption operation: The server side encryption configuration was not found**.
+1. `aws s3 mb s3://aws-5-mins-encrypt-test-$(aws sts get-caller-identity --output text --query 'Account')`.
 1. Go to the [Amazon EventBridge Console](https://us-east-2.console.aws.amazon.com/events/home?region=us-east-2#/rules) and view the rule beginning with **aws-5-mins-eb-config-lambda**.
 1. Go to the [AWS Lambda Functions Console](https://us-east-2.console.aws.amazon.com/lambda/home?region=us-east-2#/functions/) and view the function beginning with **aws-5-mins-eb-config-lambda-us-east-2-**.
 1. Wait about 10 minutes and go to the [AWS Config Console](https://us-east-2.console.aws.amazon.com/config/home?region=us-east-2#/rules) and select the  **s3-bucket-server-side-encryption-enabled** Config Rule. Click **Re-evaluate** from the **Actions** button.
