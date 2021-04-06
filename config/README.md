@@ -145,3 +145,4 @@ aws cloudformation wait stack-delete-complete --stack-name aws-5-mins-eb-config-
 # Additional Resources
 * [Deploy Conformance Packs across an Organization with Automatic Remediation](https://aws.amazon.com/blogs/mt/deploying-conformance-packs-across-an-organization-with-automatic-remediation/)
 * [Operational-Best-Practices-for-Amazon-DynamoDB-with-Remediation.yaml](https://github.com/awslabs/aws-config-rules/blob/master/aws-config/Operational-Best-Practices-for-Amazon-DynamoDB-with-Remediation.yaml)
+* ` aws secretsmanager get-random-password --include-space --password-length 6  --no-exclude-numbers --exclude-uppercase --exclude-lowercase --exclude-punctuation --no-include-space --output text`
