@@ -1,0 +1,16 @@
+{
+  "source": [
+    "aws.config"
+  ],
+  "detail": {
+    "configurationItem": {
+      "configuration": {
+        "configRuleList": {
+          "configRuleName": [
+            "s3-bucket-server-side-encryption-enabled"
+          ]
+        }
+      }
+    }
+  }
+}
