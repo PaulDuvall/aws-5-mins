@@ -107,8 +107,10 @@ It takes about 4 minutes to launch the [CloudFormation stacks](https://us-east-2
 1. Get bucket encryption again by running this command: `aws s3api get-bucket-encryption --bucket aws-5-mins-unencrypted-$(aws sts get-caller-identity --output text --query 'Account') --region us-east-2`. You should received no errors.
 
 ## View Code
-1. View [s3-remediation.yml](https://github.com/PaulDuvall/aws-5-mins/blob/main/config/s3-remediation.yml).
-1. View [s3-permissions.yml](https://github.com/PaulDuvall/aws-5-mins/blob/main/config/s3-permissions.yml).
+* View [s3-remediation.yml](https://github.com/PaulDuvall/aws-5-mins/blob/main/config/s3-remediation.yml).
+* View [s3-permissions.yml](https://github.com/PaulDuvall/aws-5-mins/blob/main/config/s3-permissions.yml).
+* View [config-example.json](https://github.com/PaulDuvall/aws-5-mins/blob/main/config/config-example.json).
+* View [event-pattern.json](https://github.com/PaulDuvall/aws-5-mins/blob/main/config/event-pattern.json).
 
 # Pricing
 AWS Config charges $0.001 per rule evaluation per region for the first 100,000 rule evaluations. See [AWS Config Pricing](https://aws.amazon.com/config/pricing/) for more information. The rate goes down after the first 100,000 rule evaluations.
