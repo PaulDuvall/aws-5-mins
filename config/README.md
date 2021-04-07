@@ -123,7 +123,8 @@ aws s3api get-bucket-encryption --bucket $(aws cloudformation describe-stacks --
 
 ```
 aws s3api get-bucket-encryption --bucket $(aws cloudformation describe-stacks --stack-name aws-5-mins-eb-config-lambda \
---query "Stacks[0].Outputs[?OutputKey=='S3ComplianceResourceId'].OutputValue" --region us-east-2  --output text) --region us-east-2
+--query "Stacks[0].Outputs[?OutputKey=='S3ComplianceResourceId'].OutputValue" \
+--region us-east-2  --output text) --region us-east-2
 ``` 
 
 ## View Code
