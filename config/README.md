@@ -66,7 +66,7 @@ It takes about 1 minute to launch the [CloudFormation stack](https://us-east-2.c
 1. Get bucket encryption again by running this command: `aws s3api get-bucket-encryption --bucket aws-5-mins-config-$(aws sts get-caller-identity --output text --query 'Account') --region us-east-2`. You should received no errors.
 
 
-# Example 2
+# Example 2 - Deplloyment Pipeline with EventBridge Rule, Config Rules, and Lambda Remediation
 
 ## Launch CloudFormation Stack
 1. From your [AWS CloudShell Environment](https://us-east-2.console.aws.amazon.com/cloudshell/home?region=us-east-2#) in the **us-east-2** region, run this command to get the latest code: 
