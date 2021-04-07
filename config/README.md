@@ -134,7 +134,7 @@ aws s3api get-bucket-encryption --bucket $(aws cloudformation describe-stacks --
 * View [config-example.json](https://github.com/PaulDuvall/aws-5-mins/blob/main/config/config-example.json).
 * View [event-pattern.json](https://github.com/PaulDuvall/aws-5-mins/blob/main/config/event-pattern.json).
 ```
-aws events list-rules --name-prefix "aws-5-mins-eb-config-lambda" --query 'Rules[?starts_with(Name, `aws-5-mins-`) == `true`].[Name]' --output text | xargs -I {} aws events list-targets-by-rule --rule {}
+aws events list-rules --name-prefix "aws-5-mins-eb-config-lambda" --query 'Rules[?starts_with(Name, `aws-5-mins-`) == `true`].[Name]' --output text | xargs -I {} aws events list-targets-by-rule --rule {} --region us-east-2
 ```
 * View [index.js](https://github.com/PaulDuvall/aws-encryption-workshop/blob/master/lesson8-continuous/index.js).
 
@@ -145,8 +145,8 @@ AWS Config charges $0.001 per rule evaluation per region for the first 100,000 r
 # Delete Resources
 
 ```
-aws s3api list-buckets --query 'Buckets[?starts_with(Name, `s3serversideloggingbucket-`) == `true`].[Name]' --output text | xargs -I {} aws s3 rb s3://{} --force
-aws s3api list-buckets --query 'Buckets[?starts_with(Name, `aws-5-mins-`) == `true`].[Name]' --output text | xargs -I {} aws s3 rb s3://{} --force
+aws s3api list-buckets --query 'Buckets[?starts_with(Name, `s3serversideloggingbucket-`) == `true`].[Name]' --output text | xargs -I {} aws s3 rb s3://{} --force --region us-east-2
+aws s3api list-buckets --query 'Buckets[?starts_with(Name, `aws-5-mins-`) == `true`].[Name]' --output text | xargs -I {} aws s3 rb s3://{} --force --region us-east-2
 
 aws cloudformation delete-stack --stack-name aws-5-mins-s3-remediation --region us-east-2
 aws cloudformation wait stack-delete-complete --stack-name aws-5-mins-s3-remediation --region us-east-2
