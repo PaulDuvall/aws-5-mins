@@ -99,7 +99,7 @@ aws cloudformation deploy \
 
 It takes about 4 minutes to launch the [CloudFormation stacks](https://us-east-2.console.aws.amazon.com/cloudformation/home?region=us-east-2#/stacks) and provision the EventBridge, Config, Lambda, and related resources.
 
-1. Once both CloudFormation stacks are **CREATE_COMPLETE**, run this command to create an unencrypted S3 bucket: 
+1. About 10 minutes **after** your CloudFormation stacks are **CREATE_COMPLETE**, run this command to create an unencrypted S3 bucket: 
 
 ```
 aws s3 mb s3://$(aws cloudformation describe-stacks --stack-name aws-5-mins-eb-config-lambda \
@@ -117,9 +117,8 @@ aws s3api get-bucket-encryption --bucket $(aws cloudformation describe-stacks --
 
 3. Go to the [Amazon EventBridge Console](https://us-east-2.console.aws.amazon.com/events/) and view the rule beginning with **aws-5-mins-eb-config-lambda**.
 4. Go to the [AWS Lambda Functions Console](https://us-east-2.console.aws.amazon.com/lambda/home?region=us-east-2#/functions/) and view the function beginning with **aws-5-mins-eb-config-lambda-us-east-2-**.
-5. Wait about 10 minutes and go to the [AWS Config Console](https://us-east-2.console.aws.amazon.com/config/home?region=us-east-2#/rules) and select the  **s3-bucket-server-side-encryption-enabled** Config Rule. Click **Re-evaluate** from the **Actions** button.
-6. Wait another 10 minutes and go back to the [AWS Config Dashboard](https://us-east-2.console.aws.amazon.com/config/home?region=us-east-2#/rules).
-7. Get bucket encryption again by running this command (You should received no errors):
+5. Wait another 10 minutes and go back to the [AWS Config Dashboard](https://us-east-2.console.aws.amazon.com/config/home?region=us-east-2#/rules).
+6. Get bucket encryption again by running this command (You should received no errors):
 
 ```
 aws s3api get-bucket-encryption --bucket $(aws cloudformation describe-stacks --stack-name aws-5-mins-eb-config-lambda \
