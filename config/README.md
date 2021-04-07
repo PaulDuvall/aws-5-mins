@@ -103,14 +103,16 @@ It takes about 4 minutes to launch the [CloudFormation stacks](https://us-east-2
 
 ```
 aws s3 mb s3://$(aws cloudformation describe-stacks --stack-name aws-5-mins-eb-config-lambda \
---query "Stacks[0].Outputs[?OutputKey=='S3ComplianceResourceId'].OutputValue" --region us-east-2  --output text)
+--query "Stacks[0].Outputs[?OutputKey=='S3ComplianceResourceId'].OutputValue" \
+--region us-east-2  --output text)
 ```
 
 2. Get the encryption for a specific S3 bucket by running this command (You should received an error like this: **An error occurred (ServerSideEncryptionConfigurationNotFoundError) when calling the GetBucketEncryption operation: The server side encryption configuration was not found**): 
 
 ```
 aws s3api get-bucket-encryption --bucket $(aws cloudformation describe-stacks --stack-name aws-5-mins-eb-config-lambda \
---query "Stacks[0].Outputs[?OutputKey=='S3ComplianceResourceId'].OutputValue" --region us-east-2  --output text) --region us-east-2
+--query "Stacks[0].Outputs[?OutputKey=='S3ComplianceResourceId'].OutputValue" \
+--region us-east-2  --output text) --region us-east-2
 ``` 
 
 3. Go to the [Amazon EventBridge Console](https://us-east-2.console.aws.amazon.com/events/) and view the rule beginning with **aws-5-mins-eb-config-lambda**.
