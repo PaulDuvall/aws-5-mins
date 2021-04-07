@@ -113,7 +113,7 @@ aws s3api get-bucket-encryption --bucket $(aws cloudformation describe-stacks --
 --query "Stacks[0].Outputs[?OutputKey=='S3ComplianceResourceId'].OutputValue" --region us-east-2  --output text) --region us-east-2
 ``` 
 
-3. Go to the [Amazon EventBridge Console](https://us-east-2.console.aws.amazon.com/events/home?region=us-east-2#/rules) and view the rule beginning with **aws-5-mins-eb-config-lambda**.
+3. Go to the [Amazon EventBridge Console](https://us-east-2.console.aws.amazon.com/events/) and view the rule beginning with **aws-5-mins-eb-config-lambda**.
 4. Go to the [AWS Lambda Functions Console](https://us-east-2.console.aws.amazon.com/lambda/home?region=us-east-2#/functions/) and view the function beginning with **aws-5-mins-eb-config-lambda-us-east-2-**.
 5. Wait about 10 minutes and go to the [AWS Config Console](https://us-east-2.console.aws.amazon.com/config/home?region=us-east-2#/rules) and select the  **s3-bucket-server-side-encryption-enabled** Config Rule. Click **Re-evaluate** from the **Actions** button.
 6. Wait another 10 minutes and go back to the [AWS Config Dashboard](https://us-east-2.console.aws.amazon.com/config/home?region=us-east-2#/rules).
