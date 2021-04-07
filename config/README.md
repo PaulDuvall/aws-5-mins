@@ -118,7 +118,7 @@ aws s3api get-bucket-encryption --bucket $(aws cloudformation describe-stacks --
 3. Go to the [Amazon EventBridge Console](https://us-east-2.console.aws.amazon.com/events/) and view the rule beginning with **aws-5-mins-eb-config-lambda**.
 4. Go to the [AWS Lambda Functions Console](https://us-east-2.console.aws.amazon.com/lambda/home?region=us-east-2#/functions/) and view the function beginning with **aws-5-mins-eb-config-lambda-us-east-2-**.
 5. Wait another 10 minutes and go back to the [AWS Config Dashboard](https://us-east-2.console.aws.amazon.com/config/home?region=us-east-2#/rules).
-6. Get bucket encryption again by running this command (You should received no errors):
+6. Get bucket encryption again by running this command (It should indicate that `SSEAlgorithm` is `AES256`. You should received no errors):
 
 ```
 aws s3api get-bucket-encryption --bucket $(aws cloudformation describe-stacks --stack-name aws-5-mins-eb-config-lambda \
