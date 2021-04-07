@@ -66,6 +66,10 @@ It takes about 1 minute to launch the [CloudFormation stack](https://us-east-2.c
 1. Get bucket encryption again by running this command: `aws s3api get-bucket-encryption --bucket aws-5-mins-config-$(aws sts get-caller-identity --output text --query 'Account') --region us-east-2`. You should received no errors.
 
 
+## View Code
+* View [s3-remediation.yml](https://github.com/PaulDuvall/aws-5-mins/blob/main/config/s3-remediation.yml).
+* View [s3-permissions.yml](https://github.com/PaulDuvall/aws-5-mins/blob/main/config/s3-permissions.yml).
+
 # Example 2 - CodePipeline with EventBridge Rule, Config Rules, and Lambda Remediation
 
 ## Launch CloudFormation Stack
@@ -127,8 +131,6 @@ aws s3api get-bucket-encryption --bucket $(aws cloudformation describe-stacks --
 ``` 
 
 ## View Code
-* View [s3-remediation.yml](https://github.com/PaulDuvall/aws-5-mins/blob/main/config/s3-remediation.yml).
-* View [s3-permissions.yml](https://github.com/PaulDuvall/aws-5-mins/blob/main/config/s3-permissions.yml).
 * View [config-example.json](https://github.com/PaulDuvall/aws-5-mins/blob/main/config/config-example.json).
 * View [event-pattern.json](https://github.com/PaulDuvall/aws-5-mins/blob/main/config/event-pattern.json).
 ```
