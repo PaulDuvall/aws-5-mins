@@ -107,16 +107,20 @@ aws s3 mb s3://$(aws cloudformation describe-stacks --stack-name aws-5-mins-eb-c
 ```
 
 2. Get the encryption for a specific S3 bucket by running this command (You should received an error like this: **An error occurred (ServerSideEncryptionConfigurationNotFoundError) when calling the GetBucketEncryption operation: The server side encryption configuration was not found**): 
-```aws s3api get-bucket-encryption --bucket $(aws cloudformation describe-stacks --stack-name aws-5-mins-eb-config-lambda \
+
+```
+aws s3api get-bucket-encryption --bucket $(aws cloudformation describe-stacks --stack-name aws-5-mins-eb-config-lambda \
 --query "Stacks[0].Outputs[?OutputKey=='S3ComplianceResourceId'].OutputValue" --region us-east-2  --output text) --region us-east-2
 ``` 
+
 3. Go to the [Amazon EventBridge Console](https://us-east-2.console.aws.amazon.com/events/home?region=us-east-2#/rules) and view the rule beginning with **aws-5-mins-eb-config-lambda**.
 4. Go to the [AWS Lambda Functions Console](https://us-east-2.console.aws.amazon.com/lambda/home?region=us-east-2#/functions/) and view the function beginning with **aws-5-mins-eb-config-lambda-us-east-2-**.
 5. Wait about 10 minutes and go to the [AWS Config Console](https://us-east-2.console.aws.amazon.com/config/home?region=us-east-2#/rules) and select the  **s3-bucket-server-side-encryption-enabled** Config Rule. Click **Re-evaluate** from the **Actions** button.
 6. Wait another 10 minutes and go back to the [AWS Config Dashboard](https://us-east-2.console.aws.amazon.com/config/home?region=us-east-2#/rules).
 7. Get bucket encryption again by running this command (You should received no errors):
 
-```aws s3api get-bucket-encryption --bucket $(aws cloudformation describe-stacks --stack-name aws-5-mins-eb-config-lambda \
+```
+aws s3api get-bucket-encryption --bucket $(aws cloudformation describe-stacks --stack-name aws-5-mins-eb-config-lambda \
 --query "Stacks[0].Outputs[?OutputKey=='S3ComplianceResourceId'].OutputValue" --region us-east-2  --output text) --region us-east-2
 ``` 
 
