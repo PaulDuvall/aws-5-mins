@@ -63,7 +63,7 @@ It takes about 1 minute to launch the [CloudFormation stack](https://us-east-2.c
 1. Go back to the [AWS Config Dashboard](https://us-east-2.console.aws.amazon.com/config/home?region=us-east-2#/rules) to review the Config Rules.
 1. Select **S3BucketServerSideEncryptionEnabled**. Click **Re-evaluate** from the **Actions** button. 
 1. Wait about 17 minutes and go back to the [AWS Config Dashboard](https://us-east-2.console.aws.amazon.com/config/home?region=us-east-2#/rules).
-1. Get bucket encryption again by running this command: `aws s3api get-bucket-encryption --bucket aws-5-mins-config-$(aws sts get-caller-identity --output text --query 'Account') --region us-east-2`. You should received no errors.
+1. Get bucket encryption again by running this command: `aws s3api get-bucket-encryption --bucket aws-5-mins-config-$(aws sts get-caller-identity --output text --query 'Account') --region us-east-2`. You should receive no errors.
 
 
 ## View Code
@@ -122,7 +122,7 @@ aws s3api get-bucket-encryption --bucket $(aws cloudformation describe-stacks --
 3. Go to the [Amazon EventBridge Console](https://us-east-2.console.aws.amazon.com/events/) and view the rule beginning with **aws-5-mins-eb-config-lambda**.
 4. Go to the [AWS Lambda Functions Console](https://us-east-2.console.aws.amazon.com/lambda/home?region=us-east-2#/functions/) and view the function beginning with **aws-5-mins-eb-config-lambda-us-east-2-**.
 5. Wait another 10 minutes and go back to the [AWS Config Dashboard](https://us-east-2.console.aws.amazon.com/config/home?region=us-east-2#/rules).
-6. Get bucket encryption again by running this command (It should indicate that `SSEAlgorithm` is `AES256`. You should received no errors):
+6. Get bucket encryption again by running this command (It should indicate that `SSEAlgorithm` is `AES256` and you should receive no errors):
 
 ```
 aws s3api get-bucket-encryption --bucket $(aws cloudformation describe-stacks --stack-name aws-5-mins-eb-config-lambda \
