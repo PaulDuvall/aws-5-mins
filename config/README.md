@@ -73,7 +73,7 @@ It takes about 1 minute to launch the [CloudFormation stack](https://us-east-2.c
 # Example 2 - CodePipeline with EventBridge Rule, Config Rules, and Lambda Remediation
 
 ## Launch CloudFormation Stack
-1. From your [AWS CloudShell Environment](https://us-east-2.console.aws.amazon.com/cloudshell/home?region=us-east-2#) in the **us-east-2** region, run this command to get the latest code: 
+1. From your [AWS CloudShell Environment](https://us-east-2.console.aws.amazon.com/cloudshell/home?region=us-east-2#) in the **us-east-2** region, run this command to get the latest code (it assumes that you have a Config Recorder and Delivery Channel named **default** or beginning with **aws-5-mins**): 
 
 ```
 cd ~
