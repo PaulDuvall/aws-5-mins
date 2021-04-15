@@ -11,7 +11,7 @@ You can integrate Config Rules with other services for comprehensive security re
 You can also create AWS Config [Conformance Packs](https://docs.aws.amazon.com/config/latest/developerguide/conformance-packs.html) which couple rules with remediation across an AWS Organization.
 
 # CloudFormation Support
-To enable AWS Config, you must create a [onfiguration recorder](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-config-configurationrecorder.html) and a [delivery channel](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-config-deliverychannel.html).
+To enable AWS Config, you must create a [configuration recorder](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-config-configurationrecorder.html) and a [delivery channel](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-config-deliverychannel.html).
 
 * [AWS::Config::ConfigRule](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-config-configrule.html) - Specifies an AWS Config rule for evaluating whether your AWS resources comply with your desired configurations. 
 * [AWS::Config::RemediationConfiguration](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-config-remediationconfiguration.html) - Represents the details about the remediation configuration that includes the remediation action, parameters, and data to execute the action.
