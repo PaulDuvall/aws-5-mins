@@ -2,11 +2,9 @@
 
 You can find the 5-minute video that walks through all of the steps described here. 
 
-In this episode, we'll be looking at [AWS Config Rules](https://docs.aws.amazon.com/config/latest/developerguide/evaluate-config_use-managed-rules.html) and remediations with [AWS Systems Manager Documents](https://docs.aws.amazon.com/systems-manager/latest/userguide/sysman-ssm-docs.html).
+In this episode, we'll be looking at [AWS Config Rules](https://docs.aws.amazon.com/config/latest/developerguide/evaluate-config_use-managed-rules.html) and and integrating with other AWS services to perform automated remediations.
 
-AWS Config helps assess, audit, and evaluate the configurations of resources. With Config, you can see changes to resources and their relationships with other AWS resources. 
-
-You can write Config Rules that compare current resource state to desired state via Lambda code. These rules can integrate with other services for alerting and remediation.
+AWS Config helps assess, audit, and evaluate the configurations of resources. With Config, you can see changes to resources and their relationships with other AWS resources. You can write Config Rules that compare current resource state to desired state via Lambda code. These rules can integrate with other services for alerting and remediation.
 
 You can integrate Config Rules with other services for comprehensive security response automation. For example, Amazon EventBridge Rules can filter on noncompliant Config Rule events and run targets that perform initiate automated responsive controls. These targets might to run code in services such as AWS Systems Manager, AWS Lambda, or AWS Step Functions. An AWS Systems Manager document (SSM document) defines the actions that Systems Manager performs on your managed instances. Systems Manager includes more than 100 pre-configured documents that you can use by specifying parameters at runtime. Lambda can run code that remediates noncompliant resources that do not require direct access to the compute resources. AWS Step Functions enables you to run automated and manual workflows as part of a state machine.    
 
