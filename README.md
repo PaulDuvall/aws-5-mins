@@ -18,6 +18,7 @@ Service or Feature | Category | Description | 5 Min Video
 [Security Response Automation](./security-response-automation) | Security, Identity, & Compliance | Automatically block suspicious traffic with AWS Network Firewall and Amazon GuardDuty | [26-Mar-2021](https://youtu.be/wWewVior4t0)
 [AWS Network Firewall](./network-firewall) | Networking & Content Delivery | Deploy network security across your Amazon VPCs | [26-Mar-2021](https://youtu.be/uz4OZqRGCgM)
 [cfn_nag](./cfn-nag) | Security, Identity, & Compliance | Static Analysis Tool for finding security vulnerabilities in CloudFormation templates. | [2-Apr-2021](https://youtu.be/GkXIXjR6-wY)
+[AWS CodePipeline](codepipeline) | Developer Tools | Automate continuous delivery pipelines for fast and reliable updates. | [6-Apr-2021](https://youtu.be/itbr0LXrwTY)
 [AWS Config Rules](./config) | Security, Identity, & Compliance | Detect noncompliant AWS resources and perform automated remediation. | [16-Apr-2021](https://youtu.be/VNFhXtMP87w)
 [Amazon GuardDuty](./guard-duty) | Security, Identity, & Compliance | Protect your AWS accounts, workloads, and data with intelligent threat detection and continuous monitoring | 23-Apr-2021
 [AWS Serverless Application Model (SAM)](./sam) | Developer Tools | Build serverless applications in simple and clean syntax | 23-Apr-2021
