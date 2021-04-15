@@ -1,6 +1,4 @@
-**NOTE: This video has not been released yet.**
-
-You can find the 5-minute video that walks through all of the steps described here. 
+You can find the [5-minute video](https://youtu.be/VNFhXtMP87w) that walks through all of the steps described [here](https://youtu.be/VNFhXtMP87w). 
 
 In this episode, we'll be looking at [AWS Config Rules](https://docs.aws.amazon.com/config/latest/developerguide/evaluate-config_use-managed-rules.html) and integrating with other AWS services to perform automated remediations.
 
