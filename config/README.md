@@ -7,12 +7,11 @@ In this episode, we'll be looking at [AWS Config Rules](https://docs.aws.amazon.
 AWS Config helps assess, audit, and evaluate the configurations of resources. With Config, you can see changes to resources and their relationships with other AWS resources. 
 
 You can write Config Rules that compare current resource state to desired state. These rules can integrate with other services for alerting and remediation. 
-
-You can create [Conformance Packs](https://docs.aws.amazon.com/config/latest/developerguide/conformance-packs.html) which couple rules with remediation across an AWS Organization.
-
 Config helps with compliance auditing, security analysis, change management, and operational troubleshooting.
 
 An AWS Systems Manager document (SSM document) defines the actions that Systems Manager performs on your managed instances. Systems Manager includes more than 100 pre-configured documents that you can use by specifying parameters at runtime.
+
+You can create [Conformance Packs](https://docs.aws.amazon.com/config/latest/developerguide/conformance-packs.html) which couple rules with remediation across an AWS Organization.
 
 # CloudFormation Support
 * [AWS::Config::ConfigRule](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-config-configrule.html) - Specifies an AWS Config rule for evaluating whether your AWS resources comply with your desired configurations. 
