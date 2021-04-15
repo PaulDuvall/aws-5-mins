@@ -2,7 +2,7 @@
 
 You can find the 5-minute video that walks through all of the steps described here. 
 
-In this episode, we'll be looking at [AWS Config Rules](https://docs.aws.amazon.com/config/latest/developerguide/evaluate-config_use-managed-rules.html) and and integrating with other AWS services to perform automated remediations.
+In this episode, we'll be looking at [AWS Config Rules](https://docs.aws.amazon.com/config/latest/developerguide/evaluate-config_use-managed-rules.html) and integrating with other AWS services to perform automated remediations.
 
 AWS Config helps assess, audit, and evaluate the configurations of resources. With Config, you can see changes to resources and their relationships with other AWS resources. You can write Config Rules that compare current resource state to desired state via Lambda code. These rules can integrate with other services for alerting and remediation.
 
