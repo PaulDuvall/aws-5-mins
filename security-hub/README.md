@@ -48,7 +48,7 @@ TBD
 # Delete Resources
 
 ```
-aws cloudformation delete-stack --stack-name aws-5-mins-SERVICENAME --region us-west-2
+aws cloudformation delete-stack --stack-name aws-5-mins-security-hub --region us-west-2
 ```
 
 # Additional Resources
