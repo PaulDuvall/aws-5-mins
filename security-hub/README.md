@@ -8,7 +8,7 @@ Security Hub presents findings and insights. Findings are based on security chec
 
 Security Hub integrates with AWS Audit Manager, Amazon Detective, AWS Firewall Manager, Amazon GuardDuty, IAM Access Analyzer, Amazon Inspector, Amazon Macie, and AWS Systems Manager Patch Manager. It also integrates with [3rd party providers](https://docs.aws.amazon.com/securityhub/latest/userguide/securityhub-partner-providers.html) using the AWS Security Finding Format [ASFF](https://docs.aws.amazon.com/securityhub/latest/userguide/securityhub-findings-format.html). 
 
-Some customers might use Security Hub as a lightweight Security information and event management (SIEM) tool for their AWS workloads while others might integrate it with existing SIEMs such as Splunk or Datadog. For example, an enterprise customer might use Security Hub to run AWS security controls and route nonremediated issues to Splunk and manage the workflow via something like PagerDuty. 
+Some customers might use Security Hub as a lightweight Security information and event management (SIEM) tool for their AWS workloads while others might integrate it with existing SIEMs such as Splunk or Datadog. For example, an enterprise customer might use Security Hub to run AWS security controls and route nonremediated issues to Splunk in which the remediation workflow via something like PagerDuty. 
 
 # CloudFormation Support
 * [AWS::SecurityHub::Hub](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-securityhub-hub.html)
