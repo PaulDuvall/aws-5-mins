@@ -10,6 +10,7 @@ In this episode, we'll be looking at [AWS Secrets Manager](https://aws.amazon.co
 1. From your [AWS CloudShell Environment](https://us-east-2.console.aws.amazon.com/cloudshell/home?region=us-east-2#) in the **us-east-2** region, run the commands below to launch the main CloudFormation Stack:
 
 ```
+cd ~
 S3_BUCKET_NAME=aws-5-mins-secretsmanager-$(aws secretsmanager get-random-password --include-space --password-length 6 --no-exclude-numbers --exclude-uppercase --exclude-lowercase --exclude-punctuation --no-include-space --output text)
 aws s3 mb s3://$S3_BUCKET_NAME
 sudo rm -rf ~/aws-encryption-workshop
