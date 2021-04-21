@@ -31,6 +31,14 @@ EnableSecurityHub="Yes-Enable Security Hub" EnableConfig="Yes-Enable Config" \
 --region us-east-2
 ```
 
+After the CloudFormation stacks (main and nested stacks) are complete, go to the web consoles for Security Hub, Config, GuardDuty, Inspector, and Secrets Manager to see the resources that were created when launching the stack. 
+
+* Go to the [AWS CloudFormation Console](https://us-east-2.console.aws.amazon.com/cloudformation/home?region=us-east-2#/stacks/) (search for the stacks beginning with `aws-5-mins-security-hub`). There is one main stack and five nested stacks. These nested stacks provision the Security Hub, Config, GuardDuty, Inspector, and Secrets Manager resources.
+* Go to the [AWS Security Hub Console](https://us-east-2.console.aws.amazon.com/securityhub/) and click on the **Summary**, **Security standards**, **Insights**, **Findings**, and **Integrations** links.
+* Go to the [AWS Config Console](https://us-east-2.console.aws.amazon.com/config/home?region=us-east-2) and click on the Conformance packs, Rules, Resources, Aggregators, Rules, Resources, Authorizations, Advanced queries, and Settings links.
+* Go to the [Amazon GuardDuty Console](https://us-east-2.console.aws.amazon.com/guardduty/home?region=us-east-2#/).
+* Go to the [Amazon Inspector Console](https://us-east-2.console.aws.amazon.com/inspector/home?region=us-east-2#/).
+* Go to the [AWS Secrets Manager Console](https://us-east-2.console.aws.amazon.com/secretsmanager/home?region=us-east-2#).
 
 # Deployment Pipeline
 
