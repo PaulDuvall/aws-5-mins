@@ -52,6 +52,8 @@ aws s3api list-buckets --query 'Buckets[?starts_with(Name, `aws-5-mins-`) == `tr
 
 
 aws cloudformation delete-stack --stack-name aws-5-mins-security-hub --region us-west-2
+aws cloudformation wait stack-delete-complete --stack-name aws-5-mins-security-hub --region us-west-2
+
 ```
 
 # Additional Resources
