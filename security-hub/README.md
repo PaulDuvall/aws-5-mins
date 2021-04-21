@@ -48,7 +48,6 @@ There are two pricing dimensions for Security Hub - security checks and finding 
 # Delete Resources
 
 ```
-
 aws s3api list-buckets --query 'Buckets[?starts_with(Name, `aws-5-mins-`) == `true`].[Name]' --output text | xargs -I {} aws s3 rb s3://{} --force
 
 
