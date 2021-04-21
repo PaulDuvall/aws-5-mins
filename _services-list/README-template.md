@@ -34,6 +34,7 @@ TBD
 
 ```
 aws cloudformation delete-stack --stack-name aws-5-mins-SERVICENAME --region us-east-2
+aws cloudformation wait stack-delete-complete --stack-name aws-5-mins-SERVICENAME --region us-east-2
 ```
 
 # Additional Resources
