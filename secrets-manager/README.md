@@ -2,8 +2,7 @@
 
 You can find the 5-minute video that walks through all of the steps described here. 
 
-In this episode, we'll be looking at [AWS Secrets Manager](https://aws.amazon.com/secrets-manager/). 
-
+In this episode, we'll be looking at [AWS Secrets Manager](https://aws.amazon.com/secrets-manager/). With Secrets Manager you can rotate, manage, and retrieve database credentials, API keys, and other secrets through their lifecycle.
 
 # CloudFormation Support
 
@@ -31,7 +30,7 @@ S3KeyLambdaAutoRotate=lambda-auto-rotate.zip S3KeyPyMySQL=pymysql.zip \
 --region us-east-2
 ```
 
-TBD
+It takes about 4 minutes for the CloudFormation stack to launch.
 
 * Go to the [AWS CloudFormation Console](https://us-east-2.console.aws.amazon.com/cloudformation/home?region=us-east-2#/stacks/) (search for the stacks beginning with `aws-5-mins-secretsmanager`). 
 * Go to the [AWS Secrets Manager Console](https://us-east-2.console.aws.amazon.com/secretsmanager/home?region=us-east-2#!/listSecrets). 
