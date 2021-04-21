@@ -23,7 +23,7 @@ cd ~/aws-encryption-workshop/lesson3-develop
 aws cloudformation deploy \
 --stack-name aws-5-mins-secretsmanager \
 --template-file ceoa-3-sm-vpc-nat-gateway.yml  \
---capabilities CAPABILITY_IAM CAPABILITY_AUTO_EXPAND \
+--capabilities CAPABILITY_IAM CAPABILITY_AUTO_EXPAND CAPABILITY_NAMED_IAM \
 --parameter-overrides S3BucketLambda=$S3_BUCKET_NAME \
 S3KeyLambdaAutoRotate=lambda-auto-rotate.zip S3KeyPyMySQL=pymysql.zip \
 --no-fail-on-empty-changeset \
