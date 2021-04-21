@@ -2,10 +2,13 @@
 
 You can find the 5-minute video that walks through all of the steps described here. 
 
-In this episode, we'll be looking at AWS Security Hub.
+In this episode, we'll be looking at [AWS Security Hub](https://aws.amazon.com/security-hub/). AWS Security Hub integrates, aggregates, and distill controls from other AWS security services and 3rd party providers. It presents this information through a dashboard and can emit events that can be consumed by external providers.
 
-TBD
+Security Hub presents findings and insights. Findings are based on security checks that verify security compliance by running services such as AWS Config Rules and 3rd party providers. These security checks are based on controls defined by security standards. AWS Security Hub provides built-in security standards from AWS, CIS, and PCI-DSS. There are managed and custom security checks. Security Hub aggregates security checks into Managed Insights that help identify trends. You can also create custom Insights based on your requirements.
 
+Security Hub integrates with @todo (Config, Macie, GuardDuty, Inspector, Secrets Manager, and others). Some customers might use Security Hub as a lightweight Security information and event management (SIEM) tool for their AWS workloads or integrate it with existing SIEMs such as Splunk or Datadog. For example, an enterprise customer might use Securuty Hub to run AWS security controls and route nonremediated issues to Splunk and manage the workflow via something like PagerDuty. 
+
+[ASFF](https://docs.aws.amazon.com/securityhub/latest/userguide/securityhub-findings-format.html) Format. Integrate with SIEMs. Routing to Splunk and PagerDuty
 
 # CloudFormation Support
 * [AWS::SecurityHub::Hub](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-securityhub-hub.html)
@@ -49,3 +52,4 @@ aws cloudformation delete-stack --stack-name aws-5-mins-security-hub --region us
 ```
 
 # Additional Resources
+[AWS Podcast #408: AWS Foundational Security Best Practices using AWS Security Hub](https://www.amazon.com/408-Foundational-Security-Practices-using/dp/B08KN2LXCJ)
