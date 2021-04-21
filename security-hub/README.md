@@ -40,10 +40,8 @@ There is one main CloudFormations stack and five nested stacks that get lauched.
 * Go to the [Amazon Inspector Console](https://us-west-2.console.aws.amazon.com/inspector/home?region=us-west-2#/).
 * Go to the [AWS Secrets Manager Console](https://us-west-2.console.aws.amazon.com/secretsmanager/home?region=us-west-2#).
 
-# Deployment Pipeline
-
 # Pricing
-TBD
+There are two pricing dimensions for Security Hub - security checks and finding ingestion events. For security checks, AWS charges $0.0010 for the first 100,000 checks per account/region/month. For finding ingestion events, there is no charge until there are over 10,000 events/account/region/month and then it's $0.00003 per event. For more information, see the [AWS Security Hub Pricing](https://aws.amazon.com/security-hub/pricing/) page.
 
 # Delete Resources
 
