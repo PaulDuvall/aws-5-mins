@@ -19,6 +19,7 @@ git clone https://github.com/PaulDuvall/aws-encryption-workshop.git
 cp ~/aws-encryption-workshop/lesson3-develop/lambda-auto-rotate.zip ~/aws-encryption-workshop
 cp ~/aws-encryption-workshop/lesson3-develop/lambda-auto-rotate.zip ~/aws-encryption-workshop
 cd ~/aws-encryption-workshop/lesson3-develop
+aws s3 sync ~/aws-encryption-workshop/lesson3-develop s3://$S3_BUCKET_NAME
 
 aws cloudformation deploy \
 --stack-name aws-5-mins-secretsmanager \
