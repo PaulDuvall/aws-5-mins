@@ -6,7 +6,6 @@ In this episode, we'll be looking at [AWS Secrets Manager](https://aws.amazon.co
 
 # CloudFormation Support
 
-
 ## Launch CloudFormation Stack
 1. From your [AWS CloudShell Environment](https://us-east-2.console.aws.amazon.com/cloudshell/home?region=us-east-2#) in the **us-east-2** region, run the commands below to launch the main CloudFormation Stack:
 
@@ -18,14 +17,15 @@ git clone https://github.com/PaulDuvall/aws-encryption-workshop.git
 cp ~/aws-encryption-workshop/lesson3-develop/lambda-auto-rotate.zip ~/aws-encryption-workshop
 cp ~/aws-encryption-workshop/lesson3-develop/lambda-auto-rotate.zip ~/aws-encryption-workshop
 cd ~/aws-encryption-workshop/lesson3-develop
+zip aws-5-mins-secretsmanager.zip *.*
 aws s3 sync ~/aws-encryption-workshop/lesson3-develop s3://$S3_BUCKET_NAME
 
 aws cloudformation deploy \
 --stack-name aws-5-mins-secretsmanager \
---template-file ceoa-3-sm-vpc-nat-gateway.yml  \
+--template-file ceoa-3-rotation-1-pipeline.yml  \
 --capabilities CAPABILITY_IAM CAPABILITY_AUTO_EXPAND CAPABILITY_NAMED_IAM \
---parameter-overrides S3BucketLambda=$S3_BUCKET_NAME \
-S3KeyLambdaAutoRotate=lambda-auto-rotate.zip S3KeyPyMySQL=pymysql.zip \
+--parameter-overrides EmailAddress=fake-email@fake-fake-fake-email.com \
+CodeCommitS3Bucket=$S3_BUCKET_NAME  CodeCommitS3Key=aws-5-mins-secretsmanager.zip \
 --no-fail-on-empty-changeset \
 --region us-east-2
 ```
