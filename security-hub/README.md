@@ -8,11 +8,10 @@ TBD
 
 
 # CloudFormation Support
-TBD
-
+* [AWS::SecurityHub::Hub](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-securityhub-hub.html)
 
 ## Launch CloudFormation Stack
-1. From your [AWS CloudShell Environment](https://us-west-2.console.aws.amazon.com/cloudshell/home?region=us-west-2#) in the **us-west-2** region, run this command to launch the CloudFormation Stack:
+1. From your [AWS CloudShell Environment](https://us-west-2.console.aws.amazon.com/cloudshell/home?region=us-west-2#) in the **us-west-2** region, run the commands below to launch the main CloudFormation Stack:
 
 ```
 sudo rm -rf ~/aws-security-hub-workshop
