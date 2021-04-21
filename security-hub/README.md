@@ -6,7 +6,7 @@ In this episode, we'll be looking at [AWS Security Hub](https://aws.amazon.com/s
 
 Security Hub presents findings and insights. Findings are based on security checks that verify security compliance by running services such as AWS Config Rules and 3rd party providers. These security checks are based on controls defined by security standards. AWS Security Hub provides built-in security standards from AWS, CIS, and PCI-DSS. There are managed and custom security checks. Security Hub aggregates security checks into Managed Insights that help identify trends. You can also create custom Insights based on your requirements.
 
-Security Hub integrates with @todo (Config, Macie, GuardDuty, Inspector, Secrets Manager, and others). Some customers might use Security Hub as a lightweight Security information and event management (SIEM) tool for their AWS workloads or integrate it with existing SIEMs such as Splunk or Datadog. For example, an enterprise customer might use Securuty Hub to run AWS security controls and route nonremediated issues to Splunk and manage the workflow via something like PagerDuty. 
+Security Hub integrates with @todo (Config, Macie, GuardDuty, Inspector, Secrets Manager, and others). Some customers might use Security Hub as a lightweight Security information and event management (SIEM) tool for their AWS workloads while others might integrate it with existing SIEMs such as Splunk or Datadog. For example, an enterprise customer might use Securuty Hub to run AWS security controls and route nonremediated issues to Splunk and manage the workflow via something like PagerDuty. 
 
 [ASFF](https://docs.aws.amazon.com/securityhub/latest/userguide/securityhub-findings-format.html) Format. Integrate with SIEMs. Routing to Splunk and PagerDuty
 
