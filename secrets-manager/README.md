@@ -11,7 +11,8 @@ In this episode, we'll be looking at [AWS Secrets Manager](https://aws.amazon.co
 
 ```
 cd ~
-S3_BUCKET_NAME=aws-5-mins-secretsmanager-$(aws secretsmanager get-random-password --include-space --password-length 6 --no-exclude-numbers --exclude-uppercase --exclude-lowercase --exclude-punctuation --no-include-space --output text)
+RANDOM_ID=$(aws secretsmanager get-random-password --include-space --password-length 6 --no-exclude-numbers --exclude-uppercase --exclude-lowercase --exclude-punctuation --no-include-space --output text)
+S3_BUCKET_NAME=aws-5-mins-secretsmanager-$RANDOM_ID
 aws s3 mb s3://$S3_BUCKET_NAME
 sudo rm -rf ~/aws-encryption-workshop
 git clone https://github.com/PaulDuvall/aws-encryption-workshop.git
@@ -22,7 +23,7 @@ zip aws-5-mins-secretsmanager.zip *.*
 aws s3 sync ~/aws-encryption-workshop/lesson3-develop s3://$S3_BUCKET_NAME
 
 aws cloudformation deploy \
---stack-name aws-5-mins-secretsmanager \
+--stack-name aws-5-mins-secretsmanager-$RANDOM_ID \
 --template-file ceoa-3-rotation-1-pipeline.yml  \
 --capabilities CAPABILITY_IAM CAPABILITY_AUTO_EXPAND CAPABILITY_NAMED_IAM \
 --parameter-overrides EmailAddress=fake-email@fake-fake-fake-email.com \
