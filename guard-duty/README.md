@@ -36,7 +36,7 @@ EnableSecurityHub="Yes-Enable Security Hub" EnableConfig="Yes-Enable Config" \
 There is one main CloudFormations stack and five nested stacks that get launched. These nested stacks provision the Security Hub, Config, GuardDuty, Inspector, and Secrets Manager resources. It takes about 4 minutes for all of the CloudFormations stacks to be created. After all the CloudFormation stacks are complete, go to the web consoles for Security Hub, Config, GuardDuty, Inspector, and Secrets Manager to see the resources that were created when launching the stacks as shown below. 
 
 * Go to the [AWS CloudFormation Console](https://us-west-2.console.aws.amazon.com/cloudformation/home?region=us-west-2#/stacks/) (search for the stacks beginning with `aws-5-mins-sh-guardduty`). 
-* Go to the [Amazon GuardDuty Console](https://us-west-2.console.aws.amazon.com/guardduty/home?region=us-west-2#/).
+* Go to the [Amazon GuardDuty Console](https://us-west-2.console.aws.amazon.com/guardduty/home?region=us-west-2#/). Select [Findings](https://us-west-2.console.aws.amazon.com/guardduty/home?region=us-west-2#/findings), [Settings](https://us-west-2.console.aws.amazon.com/guardduty/home?region=us-west-2#/settings), [Lists](https://us-west-2.console.aws.amazon.com/guardduty/home?region=us-west-2#/lists), [Usage](https://us-west-2.console.aws.amazon.com/guardduty/home?region=us-west-2#/usage), and [Accounts](https://us-west-2.console.aws.amazon.com/guardduty/home?region=us-west-2#/linked-accounts).
 
 # Pricing
 * AWS CloudTrail Management Event Analysis $4.00 per 1 million events per month
