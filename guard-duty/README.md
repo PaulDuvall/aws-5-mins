@@ -2,8 +2,11 @@
 
 You can find the 5-minute video that walks through all of the steps described here. 
 
-In this episode, we'll be looking at [Amazon GuardDuty](https://aws.amazon.com/guardduty/). GuardDuty produces Findings based on input lists and machine learning threat models. There are currently [17 types of findings](https://docs.aws.amazon.com/guardduty/latest/ug/guardduty_finding-types-active.html#findings-table). They include Backdoor, Behavior, CredentialAccess, CryptoCurrency, DefenseEvasion, Discovery, Exfiltration, Impact, InitialAccess, PenTest, Persistence, Policy, PrivilegeEscalation, Recon, Stealth, Trojan, and UnauthorizedAccess across EC2, IAM, and S3 resources. 
+In this episode, we'll be looking at [Amazon GuardDuty](https://aws.amazon.com/guardduty/). GuardDuty helps protect your AWS accounts, workloads, and data with intelligent threat detection and continuous monitoring.
 
+GuardDuty continuously analyzes events for potential threats across multiple sources includes VPC Flow Logs, DNS Logs, and CloudTrail event logs. It uses this data to produces findings based on input lists and machine learning threat models. There are currently [17 types of findings](https://docs.aws.amazon.com/guardduty/latest/ug/guardduty_finding-types-active.html#findings-table). They include Backdoor, Behavior, CredentialAccess, CryptoCurrency, DefenseEvasion, Discovery, Exfiltration, Impact, InitialAccess, PenTest, Persistence, Policy, PrivilegeEscalation, Recon, Stealth, Trojan, and UnauthorizedAccess across EC2, IAM, and S3 resources. 
+ 
+GuardDuty alerts can be integrated into event-based remediation controls using services such as Amazon EventBridge Rules, AWS Lambda, AWS Systems Manager, and AWS Step Functions.
 
 # CloudFormation Support
 * AWS::GuardDuty::Detector
