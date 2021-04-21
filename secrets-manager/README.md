@@ -48,6 +48,16 @@ For more information, see [AWS Secrets Manager Pricing](https://aws.amazon.com/s
 ```
 aws s3api list-buckets --query 'Buckets[?starts_with(Name, `aws-5-mins-`) == `true`].[Name]' --output text | xargs -I {} aws s3 rb s3://{} --force
 
+aws cloudformation delete-stack --stack-name aws-5-mins-secretsmanager-us-east-2-rds --region us-east-2
+aws cloudformation wait stack-delete-complete --stack-name aws-5-mins-secretsmanager-us-east-2-rds --region us-east-2
+
+aws cloudformation delete-stack --stack-name aws-5-mins-secretsmanager-us-east-2-lambda --region us-east-2
+aws cloudformation wait stack-delete-complete --stack-name aws-5-mins-secretsmanager-us-east-2-lambda --region us-east-2
+
+aws cloudformation delete-stack --stack-name aws-5-mins-secretsmanager-us-east-2-vpc --region us-east-2
+aws cloudformation wait stack-delete-complete --stack-nameaws-5-mins-secretsmanager-us-east-2-vpc --region us-east-2
+
+
 aws cloudformation delete-stack --stack-name aws-5-mins-secretsmanager --region us-east-2
 aws cloudformation wait stack-delete-complete --stack-name aws-5-mins-secretsmanager --region us-east-2
 
