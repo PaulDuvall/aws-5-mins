@@ -11,7 +11,7 @@ Security Hub integrates with AWS Audit Manager, Amazon Detective, AWS Firewall M
 Some customers might use Security Hub as a lightweight Security information and event management (SIEM) tool for their AWS workloads while others might integrate it with existing SIEMs such as Splunk or Datadog. For example, an enterprise customer might use Security Hub to run AWS security controls and route nonremediated issues to Splunk in which the remediation workflow via something like PagerDuty. 
 
 # CloudFormation Support
-* [AWS::SecurityHub::Hub](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-securityhub-hub.html)
+* [AWS::SecurityHub::Hub](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-securityhub-hub.html) - Enables the AWS Security Hub service for an AWS Region in your AWS account. 
 
 ## Launch CloudFormation Stack
 1. From your [AWS CloudShell Environment](https://us-west-2.console.aws.amazon.com/cloudshell/home?region=us-west-2#) in the **us-west-2** region, run the commands below to launch the main CloudFormation Stack:
