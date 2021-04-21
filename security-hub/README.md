@@ -33,7 +33,7 @@ EnableSecurityHub="Yes-Enable Security Hub" EnableConfig="Yes-Enable Config" \
 --region us-west-2
 ```
 
-There is one main CloudFormations stack and five nested stacks that get lauched. These nested stacks provision the Security Hub, Config, GuardDuty, Inspector, and Secrets Manager resources. It takes about 4 minutes for all of the CloudFormations stacks to be created. After all the CloudFormation stacks are complete, go to the web consoles for Security Hub, Config, GuardDuty, Inspector, and Secrets Manager to see the resources that were created when launching the stacks as shown below. 
+There is one main CloudFormations stack and five nested stacks that get launched. These nested stacks provision the Security Hub, Config, GuardDuty, Inspector, and Secrets Manager resources. It takes about 4 minutes for all of the CloudFormations stacks to be created. After all the CloudFormation stacks are complete, go to the web consoles for Security Hub, Config, GuardDuty, Inspector, and Secrets Manager to see the resources that were created when launching the stacks as shown below. 
 
 * Go to the [AWS CloudFormation Console](https://us-west-2.console.aws.amazon.com/cloudformation/home?region=us-west-2#/stacks/) (search for the stacks beginning with `aws-5-mins-security-hub`). 
 * Go to the [AWS Security Hub Console](https://us-west-2.console.aws.amazon.com/securityhub/) and click on the **Summary**, **Security standards**, **Insights**, **Findings**, and **Integrations** links.
