@@ -2,7 +2,7 @@
 
 You can find the 5-minute video that walks through all of the steps described here. 
 
-In this episode, we'll be looking at [Amazon GuardDuty](https://aws.amazon.com/guardduty/). GuardDuty @todo
+In this episode, we'll be looking at [Amazon GuardDuty](https://aws.amazon.com/guardduty/). GuardDuty produces Findings based on input lists and machine learning threat models. There are currently [17 types of findings](https://docs.aws.amazon.com/guardduty/latest/ug/guardduty_finding-types-active.html#findings-table). They include Backdoor, Behavior, CredentialAccess, CryptoCurrency, DefenseEvasion, Discovery, Exfiltration, Impact, InitialAccess, PenTest, Persistence, Policy, PrivilegeEscalation, Recon, Stealth, Trojan, and UnauthorizedAccess across EC2, IAM, and S3 resources. 
 
 
 # CloudFormation Support
@@ -33,7 +33,7 @@ EnableSecurityHub="Yes-Enable Security Hub" EnableConfig="Yes-Enable Config" \
 --region us-west-2
 ```
 
-There is one main CloudFormations stack and five nested stacks that get launched. These nested stacks provision the Security Hub, Config, GuardDuty, Inspector, and Secrets Manager resources. It takes about 4 minutes for all of the CloudFormations stacks to be created. After all the CloudFormation stacks are complete, go to the web consoles for Security Hub, Config, GuardDuty, Inspector, and Secrets Manager to see the resources that were created when launching the stacks as shown below. 
+There is one main CloudFormation stack and five nested stacks that get launched. These nested stacks provision the Security Hub, Config, GuardDuty, Inspector, and Secrets Manager resources. It takes about 4 minutes for all of the CloudFormation stacks to be created. After all the CloudFormation stacks are complete, go to the web consoles for Security Hub, Config, GuardDuty, Inspector, and Secrets Manager to see the resources that were created when launching the stacks as shown below. 
 
 * Go to the [AWS CloudFormation Console](https://us-west-2.console.aws.amazon.com/cloudformation/home?region=us-west-2#/stacks/) (search for the stacks beginning with `aws-5-mins-sh-guardduty`). 
 * Go to the [Amazon GuardDuty Console](https://us-west-2.console.aws.amazon.com/guardduty/home?region=us-west-2#/). Select [Findings](https://us-west-2.console.aws.amazon.com/guardduty/home?region=us-west-2#/findings), [Settings](https://us-west-2.console.aws.amazon.com/guardduty/home?region=us-west-2#/settings), [Lists](https://us-west-2.console.aws.amazon.com/guardduty/home?region=us-west-2#/lists), [Usage](https://us-west-2.console.aws.amazon.com/guardduty/home?region=us-west-2#/usage), and [Accounts](https://us-west-2.console.aws.amazon.com/guardduty/home?region=us-west-2#/linked-accounts).
