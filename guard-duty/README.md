@@ -9,12 +9,12 @@ GuardDuty continuously analyzes events for potential threats across multiple sou
 GuardDuty alerts can be integrated into event-based remediation controls using services such as Amazon EventBridge Rules, AWS Lambda, AWS Systems Manager, and AWS Step Functions.
 
 # CloudFormation Support
-* AWS::GuardDuty::Detector
-* AWS::GuardDuty::Filter
-* AWS::GuardDuty::IPSet
-* AWS::GuardDuty::Master
-* AWS::GuardDuty::Member
-* AWS::GuardDuty::ThreatIntelSet
+* [AWS::GuardDuty::Detector](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-guardduty-detector.html)
+* [AWS::GuardDuty::Filter](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-guardduty-filter.html)
+* [AWS::GuardDuty::IPSet](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-guardduty-ipset.html)
+* [AWS::GuardDuty::Master](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-guardduty-master.html)
+* [AWS::GuardDuty::Member](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-guardduty-member.html)
+* [AWS::GuardDuty::ThreatIntelSet](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-guardduty-threatintelset.html)
 
 ## Launch CloudFormation Stack
 1. From your [AWS CloudShell Environment](https://us-west-2.console.aws.amazon.com/cloudshell/home?region=us-west-2#) in the **us-west-2** region, run the commands below to launch the main CloudFormation Stack:
