@@ -23,7 +23,7 @@ zip aws-5-mins-secretsmanager.zip *.*
 aws s3 sync ~/aws-encryption-workshop/lesson3-develop s3://$S3_BUCKET_NAME
 
 aws cloudformation deploy \
---stack-name aws-5-mins-secretsmanager-$RANDOM_ID \
+--stack-name aws-5-mins-secretsmanager \
 --template-file ceoa-3-rotation-1-pipeline.yml  \
 --capabilities CAPABILITY_IAM CAPABILITY_AUTO_EXPAND CAPABILITY_NAMED_IAM \
 --parameter-overrides EmailAddress=fake-email@fake-fake-fake-email.com \
