@@ -32,9 +32,8 @@ CodeCommitS3Bucket=$S3_BUCKET_NAME  CodeCommitS3Key=aws-5-mins-secretsmanager.zi
 --region us-east-2
 ```
 
-It takes about 4 minutes for the CloudFormation stack to launch.
+It will take about one minute to launch the CloudFormation stack. Once the stack is **CREATE_COMPLETE**, click on the [stack](https://us-east-2.console.aws.amazon.com/cloudformation/home?region=us-east-2#/stacks/) (starting with `aws-5-mins-secretsmanager`). Then, go to the **Outputs** pane and click on the Value for the *PipelineUrl* Key. This launches a CodePipeline pipeline. It will take another **15 minutes** for the pipeline to provision a VPC, create and populate a CodeCommit repository, build and deploy a Lambda function that rotates the MySQL admin password, create a MySQL Database in Amazon RDS, create a Secret and Rotation Schedule in AWS Secrets Manager, and link all the relevant services.
 
-* Go to the [AWS CloudFormation Console](https://us-east-2.console.aws.amazon.com/cloudformation/home?region=us-east-2#/stacks/) (search for the stacks beginning with `aws-5-mins-secretsmanager`). 
 * Go to the [AWS Secrets Manager Console](https://us-east-2.console.aws.amazon.com/secretsmanager/home?region=us-east-2#!/listSecrets). 
 
 # Pricing
