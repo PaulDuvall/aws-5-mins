@@ -2,7 +2,12 @@
 
 You can find the 5-minute video that walks through all of the steps described here. 
 
-In this episode, we'll be looking at [AWS Secrets Manager](https://aws.amazon.com/secrets-manager/). With Secrets Manager you can rotate, manage, and retrieve database credentials, API keys, and other secrets through their lifecycle.
+In this episode, we'll be looking at [AWS Secrets Manager](https://aws.amazon.com/secrets-manager/). It secures, stores, and tightly controls access to tokens, passwords, certificates, API keys, and other secrets while performing automatic secrets rotation, generating random secrets, and cross-account access.
+
+
+
+
+
 
 # CloudFormation Support
 
