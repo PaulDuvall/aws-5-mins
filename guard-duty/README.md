@@ -52,5 +52,3 @@ aws cloudformation delete-stack --stack-name aws-5-mins-sh-guardduty --region us
 aws cloudformation wait stack-delete-complete --stack-name aws-5-mins-sh-guardduty --region us-west-2
 
 ```
-
-# Additional Resources
