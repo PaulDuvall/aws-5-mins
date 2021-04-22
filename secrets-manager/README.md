@@ -57,6 +57,7 @@ For more information, see [AWS Secrets Manager Pricing](https://aws.amazon.com/s
 
 # Delete Resources
 
+From [Cloud9](https://us-east-2.console.aws.amazon.com/cloud9/) or [CloudShell](https://us-east-2.console.aws.amazon.com/cloudshell/home?region=us-east-2#), run the following commands: 
 ```
 aws s3api list-buckets --query 'Buckets[?starts_with(Name, `aws-5-mins-`) == `true`].[Name]' --output text | xargs -I {} aws s3 rb s3://{} --force
 
