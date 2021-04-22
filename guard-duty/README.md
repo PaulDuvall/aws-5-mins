@@ -40,11 +40,7 @@ There is one main CloudFormation stack and five nested stacks that get launched.
 * Go to the [Amazon GuardDuty Console](https://us-west-2.console.aws.amazon.com/guardduty/home?region=us-west-2#/). Select [Findings](https://us-west-2.console.aws.amazon.com/guardduty/home?region=us-west-2#/findings), [Settings](https://us-west-2.console.aws.amazon.com/guardduty/home?region=us-west-2#/settings), [Lists](https://us-west-2.console.aws.amazon.com/guardduty/home?region=us-west-2#/lists), [Usage](https://us-west-2.console.aws.amazon.com/guardduty/home?region=us-west-2#/usage), and [Accounts](https://us-west-2.console.aws.amazon.com/guardduty/home?region=us-west-2#/linked-accounts).
 
 # Pricing
-* AWS CloudTrail Management Event Analysis $4.00 per 1 million events per month
-* AWS CloudTrail S3 Data Event Analysis	$0.80 per 1 million events. Past 500 million events per month, this price reduces. 
-* VPC Flow Log and DNS Log Analysis	$1.00 per GB. Past 500 GB per month, this price reduces.
-
-For more information, see [Amazon GuardDuty Pricing](https://aws.amazon.com/guardduty/pricing/).
+AWS charges $4.00 per 1 million CloudTrail management events per month, $0.80 per 1 million S3 data events (Past 500 million events per month, this price reduces), and $1.00 per GB of VPC Flow Logs and DNS Logs analyzed (Past 500 GB per month, this price reduces). For more information, see [Amazon GuardDuty Pricing](https://aws.amazon.com/guardduty/pricing/).
 
 # Delete Resources
 
