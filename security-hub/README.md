@@ -20,9 +20,7 @@ Some customers might use Security Hub as a lightweight Security information and 
 sudo rm -rf ~/aws-security-hub-workshop
 git clone https://github.com/aws-samples/aws-security-hub-workshop.git
 cd ~/aws-security-hub-workshop/templates
-```
 
-```
 aws cloudformation deploy \
 --stack-name aws-5-mins-security-hub \
 --template-file sechub-workshop-setup-template.json  \

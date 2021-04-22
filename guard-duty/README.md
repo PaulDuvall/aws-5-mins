@@ -23,9 +23,7 @@ GuardDuty alerts can be integrated into event-based remediation controls using s
 sudo rm -rf ~/aws-security-hub-workshop
 git clone https://github.com/aws-samples/aws-security-hub-workshop.git
 cd ~/aws-security-hub-workshop/templates
-```
 
-```
 aws cloudformation deploy \
 --stack-name aws-5-mins-sh-guardduty \
 --template-file sechub-workshop-setup-template.json  \
