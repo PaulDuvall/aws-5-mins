@@ -53,7 +53,7 @@ Once the pipeline is complete, follow the steps below to review and rotate the s
 1. Click on **Retrieve secret value** again and view the password. Click **Close**. Note the new password. 
 
 # Pricing
-For more information, see [AWS Secrets Manager Pricing](https://aws.amazon.com/secrets-manager/pricing/).
+AWS charges $0.40 per secret per month and $0.05 per 10,000 API calls after a 30-day trial period. For more information, see [AWS Secrets Manager Pricing](https://aws.amazon.com/secrets-manager/pricing/).
 
 # Delete Resources
 
