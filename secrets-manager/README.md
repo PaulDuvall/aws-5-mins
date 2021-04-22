@@ -62,5 +62,3 @@ aws cloudformation delete-stack --stack-name aws-5-mins-secretsmanager --region 
 aws cloudformation wait stack-delete-complete --stack-name aws-5-mins-secretsmanager --region us-east-2
 
 ```
-
-# Additional Resources
