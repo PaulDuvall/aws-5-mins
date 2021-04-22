@@ -33,14 +33,10 @@ EnableSecurityHub="Yes-Enable Security Hub" EnableConfig="Yes-Enable Config" \
 --region us-west-2
 ```
 
-There is one main CloudFormation stack and five nested stacks that get launched. These nested stacks provision the Security Hub, Config, GuardDuty, Inspector, and Secrets Manager resources. It takes about 4 minutes for all of the CloudFormation stacks to be created. After all the CloudFormation stacks are complete, go to the web consoles for Security Hub, Config, GuardDuty, Inspector, and Secrets Manager to see the resources that were created when launching the stacks as shown below. 
+There is one main CloudFormation stack and five nested stacks that get launched. These nested stacks provision the Security Hub, Config, GuardDuty, Inspector, and Secrets Manager resources. It takes about **4 minutes** for all of the CloudFormation stacks to be created. After all the CloudFormation stacks are complete, go to the web consoles for Security Hub, Config, GuardDuty, Inspector, and Secrets Manager to see the resources that were created when launching the stacks as shown below. 
 
 * Go to the [AWS CloudFormation Console](https://us-west-2.console.aws.amazon.com/cloudformation/home?region=us-west-2#/stacks/) (search for the stacks beginning with `aws-5-mins-security-hub`). 
 * Go to the [AWS Security Hub Console](https://us-west-2.console.aws.amazon.com/securityhub/) and click on the **Summary**, **Security standards**, **Insights**, **Findings**, and **Integrations** links.
-* Go to the [AWS Config Console](https://us-west-2.console.aws.amazon.com/config/home?region=us-west-2) and click on the Conformance packs, Rules, Resources, Aggregators, Rules, Resources, Authorizations, Advanced queries, and Settings links.
-* Go to the [Amazon GuardDuty Console](https://us-west-2.console.aws.amazon.com/guardduty/home?region=us-west-2#/).
-* Go to the [Amazon Inspector Console](https://us-west-2.console.aws.amazon.com/inspector/home?region=us-west-2#/).
-* Go to the [AWS Secrets Manager Console](https://us-west-2.console.aws.amazon.com/secretsmanager/home?region=us-west-2#).
 
 # Pricing
 There are two pricing dimensions for Security Hub - security checks and finding ingestion events. For security checks, AWS charges $0.0010 for the first 100,000 checks per account/region/month. For finding ingestion events, there is no charge until there are over 10,000 events/account/region/month and then it's $0.00003 per event. For more information, see the [AWS Security Hub Pricing](https://aws.amazon.com/security-hub/pricing/) page.
