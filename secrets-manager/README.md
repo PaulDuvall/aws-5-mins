@@ -4,9 +4,9 @@ You can find the 5-minute video that walks through all of the steps described he
 
 In this episode, we'll be looking at [AWS Secrets Manager](https://aws.amazon.com/secrets-manager/). It secures, stores, and tightly controls access to tokens, passwords, certificates, API keys, and other secrets while performing automatic secrets rotation, generating random secrets, and cross-account access.
 
-While most of us know not to store secret data in plain text files or environment variables, it's not always obvious on which tools to use and how to use them to encrypt these secrets. In adhering to the principle of lease privilege, you also want to limit those who have access to ever see the values of these secrets.
+While most of us know not to store secret data in plain text files or environment variables, it's not always obvious on which tools to use and how to use them to encrypt these secrets. In adhering to the principle of least privilege, you also want to limit those who have access to ever see the values of these secrets.
 
-With Secrets Manager you can safely store secrets such as passwords, tokens, certificates, or API keys. What's more, Secrets Manager can automatically generate and rotate secrets and use fine-grained policies to prevent access.
+With Secrets Manager you can safely store these secrets and automatically generate and rotate secrets while providing fine-grained policies to prevent access.
 
 In the demo, I'll launch a deployment pipeline using AWS CodePipeline that creates an RDS database, generates a random secret in Secrets Manager, and attaches the secret to the RDS database. Finally, it provisions a Lambda function that performs automatic rotation of the secret.
 
