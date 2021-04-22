@@ -8,7 +8,7 @@ While most of us know not to store secret data in plain text files or environmen
 
 With Secrets Manager you can safely store these secrets and automatically generate and rotate secrets while providing fine-grained policies to prevent access.
 
-In the demo, I'll launch a deployment pipeline using AWS CodePipeline that creates an RDS database, generates a random secret in Secrets Manager, and attaches the secret to the RDS database. Finally, it provisions a Lambda function that performs automatic rotation of the secret.
+In the demo, I'll launch a CloudFormation stack that provisions a deployment pipeline using AWS CodePipeline that creates an RDS database, generates a random secret in Secrets Manager, and attaches the secret to the RDS database. Finally, it provisions a Lambda function that performs automatic rotation of the secret.
 
 # CloudFormation Support
 * [AWS::SecretsManager::ResourcePolicy](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-secretsmanager-resourcepolicy.html) - Resource-based permission policy to a secret to limit access to only those that need it.
