@@ -55,8 +55,7 @@ aws cloudformation delete-stack --stack-name aws-5-mins-secretsmanager-us-east-2
 aws cloudformation wait stack-delete-complete --stack-name aws-5-mins-secretsmanager-us-east-2-lambda --region us-east-2
 
 aws cloudformation delete-stack --stack-name aws-5-mins-secretsmanager-us-east-2-vpc --region us-east-2
-aws cloudformation wait stack-delete-complete --stack-nameaws-5-mins-secretsmanager-us-east-2-vpc --region us-east-2
-
+aws cloudformation wait stack-delete-complete --stack-name aws-5-mins-secretsmanager-us-east-2-vpc --region us-east-2
 
 aws cloudformation delete-stack --stack-name aws-5-mins-secretsmanager --region us-east-2
 aws cloudformation wait stack-delete-complete --stack-name aws-5-mins-secretsmanager --region us-east-2
