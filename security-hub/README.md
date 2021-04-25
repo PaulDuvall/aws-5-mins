@@ -1,6 +1,4 @@
-**NOTE: This video has not been released yet.**
-
-You can find the 5-minute video that walks through all of the steps described here. 
+You can find the [5-minute video](https://youtu.be/xk_u_JQfFlE) that walks through all of the steps described [here](https://youtu.be/xk_u_JQfFlE). 
 
 In this episode, we'll be looking at [AWS Security Hub](https://aws.amazon.com/security-hub/). AWS Security Hub integrates, aggregates, and distill controls from other AWS security services and 3rd party providers. It presents this information through a dashboard and can emit events that can be consumed by external providers.
 

@@ -20,7 +20,7 @@ Service or Feature | Category | Description | 5 Min Video
 [cfn_nag](./cfn-nag) | Security, Identity, & Compliance | Static Analysis Tool for finding security vulnerabilities in CloudFormation templates. | [2-Apr-2021](https://youtu.be/GkXIXjR6-wY)
 [AWS CodePipeline](codepipeline) | Developer Tools | Automate continuous delivery pipelines for fast and reliable updates. | [6-Apr-2021](https://youtu.be/itbr0LXrwTY)
 [AWS Config Rules](./config) | Security, Identity, & Compliance | Detect noncompliant AWS resources and perform automated remediation. | [16-Apr-2021](https://youtu.be/VNFhXtMP87w)
-[AWS Security Hub](./security-hub) | Security, Identity, & Compliance | Centrally view and manage security alerts and automate security checks | 23-Apr-2021
+[AWS Security Hub](./security-hub) | Security, Identity, & Compliance | Centrally view and manage security alerts and automate security checks | [23-Apr-2021](https://youtu.be/xk_u_JQfFlE)
 [Amazon GuardDuty](./guard-duty) | Security, Identity, & Compliance | Protect your AWS accounts, workloads, and data with intelligent threat detection and continuous monitoring | 23-Apr-2021
 [AWS Serverless Application Model (SAM)](./sam) | Developer Tools | Build serverless applications in simple and clean syntax | 23-Apr-2021
 [Amazon ECS deployment circuit breaker](./ecs-circuit) | Developer Tools | Automatically roll back unhealthy service deployments without the need for manual intervention | 23-Apr-2021
