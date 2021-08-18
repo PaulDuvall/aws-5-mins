@@ -296,7 +296,7 @@ Resources:
           OutputArtifacts: []
           Configuration:
             ActionMode: CHANGE_SET_REPLACE
-            ChangeSetName: pipeline-changeset
+            ChangeSetName: !Sub ${AWS::StackName}-pipeline-changeset
             RoleArn:
               Fn::GetAtt:
               - CloudFormationTrustRole
@@ -312,7 +312,7 @@ Resources:
             Version: "1"
           Configuration:
             ActionMode: CHANGE_SET_EXECUTE
-            ChangeSetName: pipeline-changeset
+            ChangeSetName: !Sub ${AWS::StackName}-pipeline-changeset
             StackName: !Sub ${AWS::StackName}-volume-${AWS::Region}
           InputArtifacts: []
           Name: VolumeCfnChangeSetExecute
