@@ -134,6 +134,45 @@ Resources:
                   - codebuild:StartBuild
                 Resource:
                   - !GetAtt CodeBuildCfnNag.Arn
+  CloudFormationTrustRole:
+    Type: AWS::IAM::Role
+    Properties: 
+      AssumeRolePolicyDocument:
+        Version: 2012-10-17
+        Statement: 
+          - Effect: Allow
+            Principal: 
+              Service: [cloudformation.amazonaws.com]
+            Action: ['sts:AssumeRole']
+      Policies:
+        - PolicyName: CanAccessEC2
+          PolicyDocument: 
+            Version: 2012-10-17
+            Statement: 
+              - Effect: Allow
+                Action:
+                  - ec2:*
+                Resource: '*'
+        - PolicyName: CanAccessS3
+          PolicyDocument: 
+            Version: 2012-10-17
+            Statement:
+              - Effect: Allow
+                Action: s3:ListBucket
+                Resource: '*'
+              - Effect: Allow
+                Action:
+                  - s3:GetObject
+                  - s3:GetObjectVersion
+                  - s3:GetBucketVersioning
+                  - s3:PutObject
+                  - s3:GetBucketPolicy
+                  - s3:GetObjectAcl
+                  - s3:PutObjectAcl
+                  - s3:DeleteObject
+                Resource:
+                  - !GetAtt PipelineBucket.Arn
+                  - !Sub '${PipelineBucket.Arn}/*'
   CodeBuildCfnNag:
     Type: AWS::CodeBuild::Project
     Properties:
