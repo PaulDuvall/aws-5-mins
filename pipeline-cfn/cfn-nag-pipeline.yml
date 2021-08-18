@@ -201,12 +201,38 @@ Resources:
           RunOrder: 1
       - Name: Deploy
         Actions:
-        - Name: Deploy
+        - InputArtifacts:
+          - Name: MyApp
+          Name: VolumeCfnChangeSetReplace
           ActionTypeId:
-            Category: Approval
+            Category: Deploy
             Owner: AWS
             Version: '1'
-            Provider: Manual
+            Provider: CloudFormation
+          OutputArtifacts: []
+          Configuration:
+            ActionMode: CHANGE_SET_REPLACE
+            ChangeSetName: pipeline-changeset
+            RoleArn:
+              Fn::GetAtt:
+              - CloudFormationTrustRole
+              - Arn
+            Capabilities: CAPABILITY_IAM
+            StackName: !Sub ${AWS::StackName}-${AWS::Region}
+            TemplatePath: MyApp::volume.yml
+          RunOrder: 1
+        - ActionTypeId:
+            Category: Deploy
+            Owner: AWS
+            Provider: CloudFormation
+            Version: "1"
+          Configuration:
+            ActionMode: CHANGE_SET_EXECUTE
+            ChangeSetName: pipeline-changeset
+            StackName: !Sub ${AWS::StackName}-${AWS::Region}
+          InputArtifacts: []
+          Name: VolumeCfnChangeSetExecute
+          OutputArtifacts: []
           RunOrder: 2
       ArtifactStore:
         Type: S3
