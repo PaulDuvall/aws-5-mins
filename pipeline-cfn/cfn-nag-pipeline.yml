@@ -185,7 +185,7 @@ Resources:
                 - iam:PassRole
                 Effect: Allow
                 Resource: "*"
-        - PolicyName: CanAccessEC2
+        - PolicyName: CanAccessEC2Volume
           PolicyDocument: 
             Version: 2012-10-17
             Statement: 
@@ -196,9 +196,7 @@ Resources:
                 - ec2:DescribeVolumes
                 - ec2:DetachVolume
                 - ec2:DeleteVolume
-                Resource:
-                - arn:aws:ec2:*:*:volume/*
-                - arn:aws:ec2:*:*:instance/*
+                Resource: "*"
         - PolicyName: CanAccessS3
           PolicyDocument: 
             Version: 2012-10-17
