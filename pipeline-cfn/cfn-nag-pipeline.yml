@@ -189,7 +189,7 @@ Resources:
             Statement: 
               - Effect: Allow
                 Action:
-                  - ec2:*
+                  - ec2:AttachVolume
                 Resource: '*'
         - PolicyName: CanAccessS3
           PolicyDocument: 

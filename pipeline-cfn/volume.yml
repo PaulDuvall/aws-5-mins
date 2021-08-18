@@ -1,6 +1,6 @@
 AWSTemplateFormatVersion: "2010-09-09"
 
-Description: cfn_nag demo template
+Description: Create an EBS Volume
 
 Resources:
   EBSVolume:    
