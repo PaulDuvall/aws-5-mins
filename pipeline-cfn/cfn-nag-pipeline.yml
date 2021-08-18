@@ -193,6 +193,7 @@ Resources:
                 Action:
                 - ec2:CreateVolume
                 - ec2:AttachVolume
+                - ec2:DescribeVolumes
                 - ec2:DetachVolume
                 - ec2:DeleteVolume
                 Resource:
