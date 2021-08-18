@@ -97,6 +97,14 @@ Resources:
               Service: [codepipeline.amazonaws.com]
             Action: ['sts:AssumeRole']
       Policies:
+        - PolicyName: CanAccessCfn
+          PolicyDocument: 
+            Version: 2012-10-17
+            Statement: 
+              - Effect: Allow
+                Action:
+                  - cloudformation:*
+                Resource: '*'
         - PolicyName: CanAccessCodeCommit
           PolicyDocument: 
             Version: 2012-10-17
