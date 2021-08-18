@@ -196,6 +196,7 @@ Resources:
                 - ec2:DescribeVolumes
                 - ec2:DetachVolume
                 - ec2:DeleteVolume
+                - ec2:ModifyVolumeAttribute
                 Resource: "*"
         - PolicyName: CanAccessS3
           PolicyDocument: 
