@@ -30,7 +30,7 @@ aws s3 sync ~/aws-5-mins-cfn-nag/aws-5-mins/pipeline-cfn s3://aws-5-mins-cfn-nag
 
 aws cloudformation deploy \
 --stack-name aws-5-mins-cfn-nag-pipeline \
---template-file ccoa-2-cfn-nag-pipeline.yml \
+--template-file cfn-nag-pipeline.yml \
 --capabilities CAPABILITY_NAMED_IAM \
 --parameter-overrides CodeCommitS3Bucket=aws-5-mins-cfn-nag-$(aws sts get-caller-identity --output text --query 'Account') CodeCommitS3Key=aws-5-mins-cfn-nag-examples.zip \
 --no-fail-on-empty-changeset \
