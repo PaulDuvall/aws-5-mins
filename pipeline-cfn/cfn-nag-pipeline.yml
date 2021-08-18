@@ -107,6 +107,7 @@ Resources:
                   - cloudformation:ChangeSetName
                   - cloudformation:CreateChangeSet
                   - cloudformation:CreateStack
+                  - cloudformation:DeleteChangeSet
                   - cloudformation:DeleteStack
                   - cloudformation:DescribeChangeSet
                   - cloudformation:DescribeStacks
@@ -174,6 +175,7 @@ Resources:
                   - cloudformation:ChangeSetName
                   - cloudformation:CreateChangeSet
                   - cloudformation:CreateStack
+                  - cloudformation:DeleteChangeSet
                   - cloudformation:DeleteStack
                   - cloudformation:DescribeChangeSet
                   - cloudformation:DescribeStacks
@@ -189,8 +191,11 @@ Resources:
             Statement: 
               - Effect: Allow
                 Action:
-                  - ec2:AttachVolume
-                Resource: '*'
+                - ec2:AttachVolume
+                - ec2:DetachVolume
+                Resource:
+                - arn:aws:ec2:*:*:volume/*
+                - arn:aws:ec2:*:*:instance/*
         - PolicyName: CanAccessS3
           PolicyDocument: 
             Version: 2012-10-17
