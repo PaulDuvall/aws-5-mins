@@ -145,6 +145,14 @@ Resources:
               Service: [cloudformation.amazonaws.com]
             Action: ['sts:AssumeRole']
       Policies:
+        - PolicyName: CanAccessCfn
+          PolicyDocument: 
+            Version: 2012-10-17
+            Statement: 
+              - Effect: Allow
+                Action:
+                  - cloudformation:*
+                Resource: '*'
         - PolicyName: CanAccessEC2
           PolicyDocument: 
             Version: 2012-10-17
