@@ -161,6 +161,10 @@ Resources:
                 Action:
                   - cloudformation:*
                 Resource: '*'
+              - Action:
+                - iam:PassRole
+                Effect: Allow
+                Resource: "*"
         - PolicyName: CanAccessEC2
           PolicyDocument: 
             Version: 2012-10-17
