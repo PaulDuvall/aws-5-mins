@@ -281,7 +281,7 @@ Resources:
               - CloudFormationTrustRole
               - Arn
             Capabilities: CAPABILITY_IAM
-            StackName: !Sub ${AWS::StackName}-${AWS::Region}
+            StackName: !Sub ${AWS::StackName}-volume-${AWS::Region}
             TemplatePath: MyApp::volume.yml
           RunOrder: 1
         - ActionTypeId:
@@ -292,7 +292,7 @@ Resources:
           Configuration:
             ActionMode: CHANGE_SET_EXECUTE
             ChangeSetName: pipeline-changeset
-            StackName: !Sub ${AWS::StackName}-${AWS::Region}
+            StackName: !Sub ${AWS::StackName}-volume-${AWS::Region}
           InputArtifacts: []
           Name: VolumeCfnChangeSetExecute
           OutputArtifacts: []
