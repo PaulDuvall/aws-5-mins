@@ -105,6 +105,10 @@ Resources:
                 Action:
                   - cloudformation:*
                 Resource: '*'
+              - Action:
+                - iam:PassRole
+                Effect: Allow
+                Resource: "*"
         - PolicyName: CanAccessCodeCommit
           PolicyDocument: 
             Version: 2012-10-17
