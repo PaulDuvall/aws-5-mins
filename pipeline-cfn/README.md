@@ -23,6 +23,7 @@ aws s3 mb s3://aws-5-mins-cfn-nag-$(aws sts get-caller-identity --output text --
 cd ~/aws-5-mins-cfn-nag
 
 cd ~/aws-5-mins-cfn-nag
+# Test
 git clone https://github.com/PaulDuvall/aws-5-mins.git --branch main  
 cd ~/aws-5-mins-cfn-nag/aws-5-mins/pipeline-cfn
 zip aws-5-mins-cfn-nag-examples.zip *.*
