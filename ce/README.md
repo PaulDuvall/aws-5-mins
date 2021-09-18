@@ -24,6 +24,7 @@ aws cloudformation deploy \
 --template-file ce-pipeline.yml \
 --capabilities CAPABILITY_NAMED_IAM \
 --parameter-overrides CodeCommitS3Bucket=aws-5-mins-ce-$(aws sts get-caller-identity --output text --query 'Account') CodeCommitS3Key=aws-5-mins-ce-examples.zip \
+S3ComplianceResourceId=ce-s3-unencrypted-$(aws sts get-caller-identity --output text --query 'Account') \
 --no-fail-on-empty-changeset \
 --region us-east-2
 ```
