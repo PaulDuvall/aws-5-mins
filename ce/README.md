@@ -35,7 +35,7 @@ First, verify that the [CloudFormation](https://console.aws.amazon.com/cloudform
 
 Next, you will create an unencrypted S3 bucket that allows people to store files to the bucket. Here are the steps:
 
-1. Go to your Cloud9 IDE terminal and type the following:
+1. From your [AWS CloudShell Environment](https://us-east-2.console.aws.amazon.com/cloudshell/home?region=us-east-2#) in the **us-east-2** region, run the following commands:
 ```aws s3 mb s3://ce-s3-unencrypted-$(aws sts get-caller-identity --output text --query 'Account')```
 1. Go to the [S3](https://console.aws.amazon.com/s3/) console and select the `ce-s3-unencrypted-ACCOUNTID` bucket and choose the *Properties* pane.
 1. Verify that the **Default encryption** is *Disabled*.
