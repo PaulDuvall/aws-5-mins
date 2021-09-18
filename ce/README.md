@@ -56,8 +56,8 @@ In this section, you will verify that the Config Rule has been triggered and tha
 ```
 aws s3api list-buckets --query 'Buckets[?starts_with(Name, `aws-5-mins-ce-`) == `true`].[Name]' --output text | xargs -I {} aws s3 rb s3://{} --force
 
-aws cloudformation delete-stack --stack-name aws-5-mins-ce-pipeline-volume-us-east-2 --region us-east-2
-aws cloudformation wait stack-delete-complete --stack-name aws-5-mins-ce-pipeline-volume-us-east-2 --region us-east-2
+aws cloudformation delete-stack --stack-name aws-5-mins-ce-pipeline-us-east-2 --region us-east-2
+aws cloudformation wait stack-delete-complete --stack-name aws-5-mins-ce-pipeline-us-east-2 --region us-east-2
 
 aws cloudformation delete-stack --stack-name aws-5-mins-ce-pipeline --region us-east-2
 aws cloudformation wait stack-delete-complete --stack-name aws-5-mins-ce-pipeline --region us-east-2
