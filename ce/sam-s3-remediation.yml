@@ -1,0 +1,31 @@
+---
+AWSTemplateFormatVersion: '2010-09-09'
+Transform:
+- AWS::Serverless-2016-10-31
+Resources:
+  S3F:
+    Type: AWS::Serverless::Function
+    Properties:
+      Handler: index.handler
+      Runtime: nodejs14.x
+      MemorySize: 128
+      Timeout: 10
+      Role:
+        Fn::ImportValue:
+          Fn::Join:
+          - "-"
+          - - Ref: AWS::StackName
+            - LambdaTrustRole
+      Events:
+        S3CWE:
+          Type: EventBridgeRule
+          Properties:
+            Pattern:
+              source:
+              - aws.config
+              detail:
+                configurationItem:
+                  configuration:
+                    configRuleList:
+                      configRuleName:
+                      - s3-bucket-server-side-encryption-enabled
