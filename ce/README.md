@@ -29,7 +29,27 @@ S3ComplianceResourceId=ce-s3-unencrypted-$(aws sts get-caller-identity --output 
 --region us-east-2
 ```
 
-* It takes about 1 minute to launch the [CloudFormation stack](https://us-east-2.console.aws.amazon.com/cloudformation/home?region=us-east-2#/stacks) and provision the CodePipeline resources.
+## Test the Deployment
+
+First, verify that the [CloudFormation](https://console.aws.amazon.com/cloudformation/) stack you just launched (called **ce-ar**) was successfully created. Click on the **PipelineUrl** Output to launch deployment pipeline in CodePipeline to see it running. Verify that the pipeline successfully went through all stages (as shown below).
+
+Next, you will create an unencrypted S3 bucket that allows people to store files to the bucket. Here are the steps:
+
+1. Go to your Cloud9 IDE terminal and type the following:
+```aws s3 mb s3://ce-s3-unencrypted-$(aws sts get-caller-identity --output text --query 'Account')```
+1. Go to the [S3](https://console.aws.amazon.com/s3/) console and select the `ce-s3-unencrypted-ACCOUNTID` bucket and choose the *Properties* pane.
+1. Verify that the **Default encryption** is *Disabled*.
+
+### Verify Compliance
+In this section, you will verify that the Config Rule has been triggered and that the S3 bucket resource has been automatically remediated.
+1. Go to the [Config](https://console.aws.amazon.com/config/) console.
+2. Click on **Rules**.
+3. Select the **s3-bucket-server-side-encryption-enabled** rule.
+4. Click the **Re-evaluate** button.
+5. Go back to **Rules** in the [Config](https://console.aws.amazon.com/config/) console.
+6. Go to the [S3](https://console.aws.amazon.com/s3/) console and choose the `ce-s3-unencrypted-ACCOUNTID` bucket
+7. Verify that the **Default encryption** is *Enabled*.
+8. Go back to **Rules** in the [Config](https://console.aws.amazon.com/config/) console and confirm that the **s3-bucket-server-side-encryption-enabled** rule is **Compliant**. 
 
 # Delete Resources
 
