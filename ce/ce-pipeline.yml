@@ -174,15 +174,40 @@ Resources:
           - sts:AssumeRole
       Path: "/"
       Policies:
-      - PolicyName: codebuild-service
+        - PolicyName: CanLog
+          PolicyDocument: 
+            Version: 2012-10-17
+            Statement: 
+              - Effect: Allow
+                Action:
+                  - logs:CreateLogStream
+                  - logs:CreateLogGroup
+                  - logs:PutLogEvents
+                Resource:
+                  - !Sub 'arn:aws:logs:${AWS::Region}:${AWS::AccountId}:log-group:/aws/codebuild/${AWS::StackName}*:log-stream:*'
+              - Effect: Allow
+                Action:
+                  - s3:GetObject
+                  - s3:PutObject
+                Resource:
+                  - !GetAtt PipelineBucket.Arn
+                  - !Sub '${PipelineBucket.Arn}/*'
+        - PolicyName: CanAccessS3
+          PolicyDocument: 
+            Version: 2012-10-17
+            Statement: 
+              - Effect: Allow
+                Action:
+                  - s3:GetObject
+                Resource:
+                  - !GetAtt PipelineBucket.Arn
+      - PolicyName: CanAccessLambdaCloudWatchCodeBuild
         PolicyDocument:
           Statement:
           - Action:
-            - logs:*
             - lambda:*
             - cloudwatch:*
             - codebuild:*
-            - s3:*
             Effect: Allow
             Resource: "*"
           Version: '2012-10-17'
