@@ -189,9 +189,7 @@ Resources:
                 Action:
                   - s3:GetObject
                   - s3:PutObject
-                Resource:
-                  - !GetAtt PipelineBucket.Arn
-                  - !Sub '${PipelineBucket.Arn}/*'
+                Resource: '*'
         - PolicyName: CanAccessS3
           PolicyDocument: 
             Version: 2012-10-17
@@ -205,6 +203,7 @@ Resources:
           PolicyDocument:
             Statement:
             - Action:
+              - logs:*
               - lambda:*
               - cloudwatch:*
               - codebuild:*
