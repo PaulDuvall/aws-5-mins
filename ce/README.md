@@ -47,7 +47,7 @@ In this section, you will verify that the Config Rule has been triggered and tha
 3. Select the **s3-bucket-server-side-encryption-enabled** rule.
 4. Click the **Re-evaluate** button.
 5. Go back to **Rules** in the [Config](https://console.aws.amazon.com/config/) console.
-6. Go to the [S3](https://console.aws.amazon.com/s3/) console and choose the `ce-s3-unencrypted-ACCOUNTID` bucket
+6. Go to the [S3](https://console.aws.amazon.com/s3/) console and choose the `aws-5-mins-ce-s3-unencrypted-ACCOUNTID` bucket
 7. Verify that the **Default encryption** is *Enabled*.
 8. Go back to **Rules** in the [Config](https://console.aws.amazon.com/config/) console and confirm that the **s3-bucket-server-side-encryption-enabled** rule is **Compliant**. 
 
