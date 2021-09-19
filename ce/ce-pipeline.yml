@@ -331,6 +331,14 @@ Resources:
                 Action:
                   - cloudformation:*
                 Resource: '*'
+        - PolicyName: PassRole
+          PolicyDocument: 
+            Version: 2012-10-17
+            Statement: 
+              - Effect: Allow
+                Action:
+                  - iam:PassRole
+                Resource: '*'
         - PolicyName: CanAccessS3
           PolicyDocument: 
             Version: 2012-10-17
