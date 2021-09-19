@@ -37,7 +37,7 @@ Next, you will create an unencrypted S3 bucket that allows people to store files
 
 1. From your [AWS CloudShell Environment](https://us-east-2.console.aws.amazon.com/cloudshell/home?region=us-east-2#) in the **us-east-2** region, run the following commands:
 ```aws s3 mb s3://aws-5-mins-ce-s3-unencrypted-$(aws sts get-caller-identity --output text --query 'Account')```
-1. Go to the [S3](https://console.aws.amazon.com/s3/) console and select the `ce-s3-unencrypted-ACCOUNTID` bucket and choose the *Properties* pane.
+1. Go to the [S3](https://console.aws.amazon.com/s3/) console and select the `aws-5-mins-ce-s3-unencrypted-ACCOUNTID` bucket and choose the *Properties* pane.
 1. Verify that the **Default encryption** is *Disabled*.
 
 ### Verify Compliance
