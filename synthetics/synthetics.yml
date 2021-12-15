@@ -114,7 +114,7 @@ Resources:
           return await pageLoadBlueprint();
           };
       ArtifactS3Location: !Sub s3://${ResultsBucket}
-      RuntimeVersion: syn-nodejs-puppeteer-3.0
+      RuntimeVersion: syn-nodejs-puppeteer-3.3
       Schedule:
         Expression: rate(1 hour)
         DurationInSeconds: 3600
