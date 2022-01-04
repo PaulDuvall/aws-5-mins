@@ -7,12 +7,9 @@
 ```
 
 aws cloudformation deploy \
---template-file aws-sharr-deploy.template \
 --stack-name aws-5-mins-security-hub-remediation-pipeline \
---s3-bucket solutions-reference.s3.amazonaws.com \
---s3-prefix aws-security-hub-automated-response-and-remediation/latest \
+--template-url "https://solutions-reference.s3.amazonaws.com/aws-security-hub-automated-response-and-remediation/latest/aws-sharr-deploy.template"
 --capabilities CAPABILITY_NAMED_IAM \
---no-fail-on-empty-changeset \
 --region us-east-2
 ```
 
