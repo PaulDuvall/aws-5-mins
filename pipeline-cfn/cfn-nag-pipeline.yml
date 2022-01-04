@@ -162,7 +162,9 @@ Resources:
         Statement: 
           - Effect: Allow
             Principal: 
-              Service: [cloudformation.amazonaws.com]
+              Service:
+              - codepipeline.amazonaws.com
+              - cloudformation.amazonaws.com
             Action: ['sts:AssumeRole']
       Policies:
         - PolicyName: CanAccessCfn
@@ -218,6 +220,12 @@ Resources:
                 Resource:
                   - !GetAtt PipelineBucket.Arn
                   - !Sub '${PipelineBucket.Arn}/*'
+              - Effect: Allow
+                Action:
+                  - codebuild:BatchGetBuilds
+                  - codebuild:StartBuild
+                Resource:
+                  - !GetAtt CodeBuildCfnNag.Arn
   CodeBuildCfnNag:
     Type: AWS::CodeBuild::Project
     Properties:
@@ -249,7 +257,7 @@ Resources:
   Pipeline:
     Type: AWS::CodePipeline::Pipeline
     Properties:
-      RoleArn: !GetAtt CodePipelineRole.Arn
+      RoleArn: !GetAtt CloudFormationTrustRole.Arn
       Stages:
       - Name: Source
         Actions:
