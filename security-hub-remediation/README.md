@@ -8,7 +8,7 @@
 
 aws cloudformation deploy \
 --stack-name aws-5-mins-security-hub-remediation-pipeline \
---template-url "https://solutions-reference.s3.amazonaws.com/aws-security-hub-automated-response-and-remediation/latest/aws-sharr-deploy.template"
+--template-url "https://solutions-reference.s3.amazonaws.com/aws-security-hub-automated-response-and-remediation/latest/aws-sharr-deploy.template" \
 --capabilities CAPABILITY_NAMED_IAM \
 --region us-east-2
 ```
