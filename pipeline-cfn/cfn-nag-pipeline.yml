@@ -86,7 +86,7 @@ Resources:
                   - s3:GetObject
                 Resource:
                   - !GetAtt PipelineBucket.Arn
-  CodePipelineRole:
+  CloudFormationTrustRole:
     Type: AWS::IAM::Role
     Properties: 
       AssumeRolePolicyDocument:
@@ -94,7 +94,9 @@ Resources:
         Statement: 
           - Effect: Allow
             Principal: 
-              Service: [codepipeline.amazonaws.com]
+              Service:
+              - codepipeline.amazonaws.com
+              - cloudformation.amazonaws.com
             Action: ['sts:AssumeRole']
       Policies:
         - PolicyName: CanAccessCfn
@@ -128,63 +130,6 @@ Resources:
                   - codecommit:UploadArchive
                   - codecommit:GetUploadArchiveStatus
                 Resource: '*'
-        - PolicyName: CanAccessS3
-          PolicyDocument: 
-            Version: 2012-10-17
-            Statement:
-              - Effect: Allow
-                Action: s3:ListBucket
-                Resource: '*'
-              - Effect: Allow
-                Action:
-                  - s3:GetObject
-                  - s3:GetObjectVersion
-                  - s3:GetBucketVersioning
-                  - s3:PutObject
-                  - s3:GetBucketPolicy
-                  - s3:GetObjectAcl
-                  - s3:PutObjectAcl
-                  - s3:DeleteObject
-                Resource:
-                  - !GetAtt PipelineBucket.Arn
-                  - !Sub '${PipelineBucket.Arn}/*'
-              - Effect: Allow
-                Action:
-                  - codebuild:BatchGetBuilds
-                  - codebuild:StartBuild
-                Resource:
-                  - !GetAtt CodeBuildCfnNag.Arn
-  CloudFormationTrustRole:
-    Type: AWS::IAM::Role
-    Properties: 
-      AssumeRolePolicyDocument:
-        Version: 2012-10-17
-        Statement: 
-          - Effect: Allow
-            Principal: 
-              Service: [cloudformation.amazonaws.com]
-            Action: ['sts:AssumeRole']
-      Policies:
-        - PolicyName: CanAccessCfn
-          PolicyDocument: 
-            Version: 2012-10-17
-            Statement: 
-              - Effect: Allow
-                Action:
-                  - cloudformation:ListStackResources
-                  - cloudformation:ChangeSetName
-                  - cloudformation:CreateChangeSet
-                  - cloudformation:CreateStack
-                  - cloudformation:DeleteChangeSet
-                  - cloudformation:DeleteStack
-                  - cloudformation:DescribeChangeSet
-                  - cloudformation:DescribeStacks
-                  - cloudformation:ExecuteChangeSet
-                Resource: '*'
-              - Action:
-                - iam:PassRole
-                Effect: Allow
-                Resource: "*"
         - PolicyName: CanAccessEC2Volume
           PolicyDocument: 
             Version: 2012-10-17
@@ -218,6 +163,12 @@ Resources:
                 Resource:
                   - !GetAtt PipelineBucket.Arn
                   - !Sub '${PipelineBucket.Arn}/*'
+              - Effect: Allow
+                Action:
+                  - codebuild:BatchGetBuilds
+                  - codebuild:StartBuild
+                Resource:
+                  - !GetAtt CodeBuildCfnNag.Arn
   CodeBuildCfnNag:
     Type: AWS::CodeBuild::Project
     Properties:
@@ -249,7 +200,7 @@ Resources:
   Pipeline:
     Type: AWS::CodePipeline::Pipeline
     Properties:
-      RoleArn: !GetAtt CodePipelineRole.Arn
+      RoleArn: !GetAtt CloudFormationTrustRole.Arn
       Stages:
       - Name: Source
         Actions:

@@ -45,6 +45,8 @@ aws cloudformation deploy \
 
 # Delete Resources
 
+1. From your [AWS CloudShell Environment](https://us-east-2.console.aws.amazon.com/cloudshell/home?region=us-east-2#) in the **us-east-2** region, run the following commands: 
+
 ```
 aws s3api list-buckets --query 'Buckets[?starts_with(Name, `aws-5-mins-cfn-nag-`) == `true`].[Name]' --output text | xargs -I {} aws s3 rb s3://{} --force
 
